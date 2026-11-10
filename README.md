@@ -119,6 +119,7 @@ mobile/                 Flutter app (Android)
   test/                 unit and widget tests
 tools/island_art/       generator of the oasis art
 tools/screenshots/      showcase images from the app screens
+tools/l10n/             translation check (every language, every key)
 docs/                   architecture, design and assets
 ```
 
