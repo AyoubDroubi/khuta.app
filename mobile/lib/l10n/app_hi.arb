@@ -1,0 +1,1626 @@
+{
+  "@@locale": "hi",
+  "app_tagline": "आदत ट्रैकर",
+  "today": "आज",
+  "stats": "आँकड़े",
+  "settings": "सेटिंग्स",
+  "new_label": "नया",
+  "save": "सेव करें",
+  "cancel": "रद्द करें",
+  "delete": "हटाएँ",
+  "good_morning": "सुप्रभात",
+  "good_afternoon": "नमस्कार",
+  "good_evening": "शुभ संध्या",
+  "no_habits_yet": "अभी कोई आदत नहीं",
+  "all_done_today": "आज सब पूरा!",
+  "x_of_y_completed": "{total} में से {done} पूरी",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "अपनी पहली स्ट्रीक शुरू करें",
+  "empty_body": "एक आदत बनाएँ और किसी दिन पर टैप करके उसे दर्ज करें। छोटे कदम, हर दिन।",
+  "add_habit": "आदत जोड़ें",
+  "all": "सभी",
+  "onb1_title": "सच्ची स्ट्रीक बनाएँ",
+  "onb1_body": "एक टैप में आदत दर्ज करें और दिन-ब-दिन अपनी गति बढ़ते देखें।",
+  "onb2_title": "सही राह पर रहें",
+  "onb2_body": "दैनिक, साप्ताहिक या मासिक लक्ष्य और स्मार्ट रिमाइंडर, ताकि कुछ न छूटे।",
+  "onb3_title": "अपनी प्रगति देखें",
+  "onb3_body": "विस्तृत आँकड़े और वार्षिक ग्रिड दिखाते हैं कि आप कितना आगे आ चुके हैं।",
+  "skip": "छोड़ें",
+  "next": "आगे",
+  "get_started": "शुरू करें",
+  "onb_kicker": "स्वागत है",
+  "onb_blurb": "छोटे दैनिक चेक-इन, जो टिकने वाली आदतें बन जाते हैं।",
+  "onb_free_title": "हमेशा मुफ़्त",
+  "onb_free_body": "कोई विज्ञापन नहीं, कोई सब्सक्रिप्शन नहीं, कोई लॉक फ़ीचर नहीं।",
+  "onb_private_title": "निजी और ऑफ़लाइन",
+  "onb_private_body": "सब कुछ आपके डिवाइस पर रहता है। खाते की ज़रूरत नहीं।",
+  "onb_yours_title": "आपका डेटा आपका है",
+  "onb_yours_body": "जब चाहें बैकअप लें या अपने साथ ले जाएँ।",
+  "onb_step": "चरण {step}/{total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "आँकड़े",
+  "done_today": "आज पूरा",
+  "best_streak": "सबसे लंबी स्ट्रीक",
+  "active_habits": "सक्रिय आदतें",
+  "total_logs": "कुल प्रविष्टियाँ",
+  "last_7_days": "पिछले 7 दिन",
+  "last_30_days": "पिछले 30 दिन",
+  "your_habits": "आपकी आदतें",
+  "stats_empty": "आँकड़े देखने के लिए आदतें जोड़ें",
+  "completion_rate_short": "निरंतरता",
+  "completion_rate": "पूर्णता दर",
+  "appearance": "रूप-रंग",
+  "theme": "थीम",
+  "system": "सिस्टम",
+  "light": "लाइट",
+  "dark": "डार्क",
+  "week_starts_on": "सप्ताह शुरू",
+  "mon": "सोम",
+  "sat": "शनि",
+  "sun": "रवि",
+  "language": "भाषा",
+  "data": "डेटा",
+  "export_backup": "बैकअप एक्सपोर्ट करें",
+  "export_backup_sub": "सभी आदतें फ़ाइल में सेव करें",
+  "auto_backup": "स्वचालित बैकअप",
+  "auto_backup_sub": "बंद",
+  "auto_backup_off": "बंद",
+  "auto_backup_daily": "हर दिन",
+  "auto_backup_weekly": "हर हफ़्ते",
+  "auto_backup_where": "ऐप खोलने पर Khuta एक बैकअप और आपकी आदतों की पढ़ने योग्य कॉपी लिखता है, जिसे आप किसी भी एडिटर में खोल सकते हैं। पिछले 5 बैकअप रखे जाते हैं।",
+  "auto_backup_folder": "फ़ोल्डर",
+  "auto_backup_folder_default": "ऐप फ़ोल्डर",
+  "auto_backup_folder_set": "फ़ोल्डर सेव हुआ",
+  "auto_backup_folder_failed": "इस फ़ोल्डर में लिखा नहीं जा सकता",
+  "auto_backup_no_permission": "स्टोरेज अनुमति अस्वीकृत",
+  "auto_backup_run_now": "अभी बैकअप लें",
+  "refresh_now": "रीफ़्रेश",
+  "refresh_now_sub": "फ़ोल्डर में आपके दूसरे डिवाइस द्वारा छोड़ा गया डेटा लाएँ",
+  "refresh_brought": "आपकी आदतें अपडेट हैं",
+  "refresh_nothing": "फ़ोल्डर में कुछ नया नहीं",
+  "import_backup": "बैकअप इम्पोर्ट करें",
+  "import_backup_sub": "फ़ाइल से आदतें पुनर्स्थापित करें",
+  "import_from_app": "दूसरे ऐप से इम्पोर्ट करें",
+  "import_from_app_sub": "Loop Habit Tracker, HabitKit…",
+  "import_from_app_done": "{source} से {habits} आदतें ({days} दिन) इम्पोर्ट हुईं",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "वह फ़ाइल इम्पोर्ट नहीं हो सकी",
+  "about": "परिचय",
+  "backup_saved": "बैकअप सेव हुआ",
+  "export_cancelled": "एक्सपोर्ट रद्द हुआ",
+  "habits_imported": "आदतें इम्पोर्ट हुईं",
+  "new_habit": "नई आदत",
+  "edit_habit": "आदत संपादित करें",
+  "name": "नाम",
+  "name_hint": "जैसे सुबह की दौड़",
+  "description": "विवरण",
+  "description_hint": "वैकल्पिक नोट",
+  "icon": "आइकन",
+  "color": "रंग",
+  "category": "श्रेणी",
+  "category_health": "स्वास्थ्य",
+  "category_fitness": "फ़िटनेस",
+  "category_mindfulness": "माइंडफ़ुलनेस",
+  "category_productivity": "उत्पादकता",
+  "category_learning": "सीखना",
+  "category_finance": "वित्त",
+  "count_days": "{count, plural, =1{1 दिन} other{{count} दिन}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, =1{1 सप्ताह} other{{count} सप्ताह}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, =1{1 महीना} other{{count} महीने}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count}स.",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count}मा.",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "आदत का प्रकार",
+  "kind_positive": "सामान्य",
+  "kind_negative": "परहेज़",
+  "kind_quantitative": "मात्रा",
+  "kind_locked_hint": "आदत बनाने के बाद प्रकार बदला नहीं जा सकता।",
+  "kind_negative_hint": "हर दिन डिफ़ॉल्ट रूप से साफ़ गिना जाता है, इसलिए आपकी स्ट्रीक अपने आप बढ़ती है। फिसलने पर ही चेक पर टैप करें; वह दिन लाल हो जाएगा और आप उसे पूर्ववत कर सकते हैं।",
+  "cost_per_day": "प्रति दिन खर्च",
+  "cost_note": "वैकल्पिक। अगर इस आदत में पैसे खर्च नहीं होते तो खाली छोड़ें।",
+  "currency": "मुद्रा",
+  "currency_custom": "कस्टम",
+  "currency_hint": "चिह्न या कोड",
+  "money_saved": "बचाए गए पैसे",
+  "clean_days": "साफ़ दिन",
+  "quant_preset_water": "पानी",
+  "quant_preset_reading": "पढ़ना",
+  "quant_preset_generic": "कस्टम",
+  "quant_unit_hint": "इकाई (जैसे मिली, पन्ने, बार)",
+  "quant_unit_ml": "मिली",
+  "quant_unit_pages": "पन्ने",
+  "quant_edit_title": "आज की मात्रा",
+  "quant_daily_goal": "दैनिक लक्ष्य",
+  "quant_tap_amount": "प्रति टैप मात्रा",
+  "quant_per_day": "प्रति दिन मात्रा",
+  "quant_average": "प्रति दिन औसत",
+  "quant_logged_days": "दर्ज दिन",
+  "quant_best_day": "सबसे अच्छा दिन",
+  "quant_goal_days": "लक्ष्य पूरा",
+  "quant_stats_empty": "मात्रा दर्ज करें, वह यहाँ जुड़ती जाएगी, लक्ष्य से कम वाले दिनों में भी।",
+  "frequency": "आवृत्ति",
+  "daily": "दैनिक",
+  "weekly": "साप्ताहिक",
+  "monthly": "मासिक",
+  "sched_days": "दिन",
+  "sched_interval": "अंतराल",
+  "times_per_week": "हफ़्ते में {n} बार",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "महीने में {n} बार",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}×/हफ़्ता",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/महीना",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "रिमाइंडर",
+  "add_reminder": "रिमाइंडर जोड़ें",
+  "delete_habit": "आदत हटाएँ",
+  "archive_habit": "आदत संग्रहीत करें",
+  "archive": "संग्रह",
+  "copy_message": "संदेश कॉपी करें",
+  "message_copied": "संदेश कॉपी हुआ",
+  "app_lock": "ऐप लॉक",
+  "app_lock_sub": "Khuta खोलने के लिए फ़िंगरप्रिंट या चेहरा माँगें",
+  "app_lock_unavailable": "इस फ़ोन में बायोमेट्रिक सेट नहीं है",
+  "app_lock_failed": "पहचान सत्यापित नहीं हो सकी",
+  "app_lock_title": "Khuta लॉक है",
+  "app_lock_unlock": "अनलॉक करें",
+  "app_lock_delay": "इसके बाद लॉक करें",
+  "app_lock_delay_instant": "तुरंत",
+  "app_lock_delay_seconds": "{value} सेकंड",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "फ़ोटो",
+  "note_take_photo": "कैमरा",
+  "note_pick_photo": "गैलरी",
+  "journey": "यात्रा",
+  "journey_sub": "{count, plural, =1{1 फ़ोटो} other{{count} फ़ोटो}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "अभी कोई फ़ोटो नहीं",
+  "journey_empty_sub": "नोट में फ़ोटो जोड़ें, वह यहाँ दिखेगी।",
+  "archive_habit_body": "\"{name}\" को संग्रह में ले जाएँ? उसका इतिहास सुरक्षित रहेगा और आप उसे सेटिंग्स से पुनर्स्थापित कर सकते हैं।",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "संग्रहीत आदतें",
+  "archived_habits_sub": "उन्हें पुनर्स्थापित करें या हमेशा के लिए हटाएँ",
+  "archived_empty": "कुछ भी संग्रहीत नहीं",
+  "archived_empty_sub": "आपके द्वारा हटाई गई आदतें पूरे इतिहास के साथ यहाँ आती हैं।",
+  "restore": "पुनर्स्थापित करें",
+  "restored": "आदत पुनर्स्थापित हुई",
+  "delete_forever": "हमेशा के लिए हटाएँ",
+  "delete_forever_body": "\"{name}\" और उसका पूरा इतिहास हटाएँ? इसे पूर्ववत नहीं किया जा सकता।",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "आदत हटाई गई",
+  "clear_progress": "प्रगति मिटाएँ",
+  "clear_progress_sub": "इतिहास, नोट और फ़ोकस सेशन",
+  "clear_progress_warning": "यह हर दर्ज दिन, नोट और फ़ोकस सेशन मिटा देगा, लेकिन आपकी आदतें, उनके शेड्यूल और सेटिंग्स रखेगा। इसे पूर्ववत नहीं किया जा सकता, जब तक आपके पास बाद में इम्पोर्ट करने के लिए बैकअप फ़ाइल न हो।",
+  "clear_progress_confirm": "प्रगति मिटाएँ",
+  "clear_progress_done": "प्रगति मिटाई गई",
+  "wipe_data": "सारा डेटा मिटाएँ",
+  "wipe_data_sub": "आदतें, नोट, फ़ोकस सेशन और सेटिंग्स",
+  "wipe_data_warning": "यह इस फ़ोन की हर आदत, नोट, फ़ोकस सेशन और सेटिंग मिटा देगा। इसे पूर्ववत नहीं किया जा सकता, जब तक आपके पास बाद में इम्पोर्ट करने के लिए बैकअप फ़ाइल न हो।",
+  "wipe_data_sure": "क्या सच में सब मिटाएँ?",
+  "wipe_data_sure_body": "आख़िरी मौका। बैकअप के बिना यह डेटा हमेशा के लिए चला जाएगा।",
+  "wipe_data_confirm": "सब मिटाएँ",
+  "wipe_data_done": "सारा डेटा मिटाया गया",
+  "day_start": "दिन शुरू होता है",
+  "day_start_sub": "देर रात की प्रविष्टियाँ पिछले दिन में गिनी जाती हैं",
+  "day_start_midnight": "आधी रात",
+  "day_start_hour": "सुबह {hour}:00",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "फ़ोटो",
+  "share_stats_short": "आँकड़े",
+  "undo": "पूर्ववत करें",
+  "habit_archived": "आदत संग्रहीत हुई",
+  "share_blur": "धुंधला",
+  "delete_habit_body": "\"{name}\" हटाएँ? इसे पूर्ववत नहीं किया जा सकता।",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "चूक दर्ज करें?",
+  "log_relapse_body": "इससे \"{name}\" की आज की साफ़ स्ट्रीक टूट जाएगी। दोबारा टैप करके आप इसे पूर्ववत कर सकते हैं।",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "हाँ, दर्ज करें",
+  "permission_required": "सूचना की अनुमति ज़रूरी है",
+  "streaks": "स्ट्रीक",
+  "activity": "गतिविधि",
+  "current": "वर्तमान",
+  "best": "सर्वश्रेष्ठ",
+  "total": "कुल",
+  "relapses": "चूक",
+  "strength": "मज़बूती",
+  "week": "सप्ताह",
+  "month": "माह",
+  "year": "वर्ष",
+  "new_reminder": "नया रिमाइंडर",
+  "edit_reminder": "रिमाइंडर संपादित करें",
+  "days": "दिन",
+  "time": "समय",
+  "save_reminder": "रिमाइंडर सेव करें",
+  "select_one_day": "कम से कम एक दिन चुनें",
+  "every_day": "हर दिन",
+  "no_days": "कोई दिन नहीं",
+  "repeat_hours": "दिन भर दोहराएँ",
+  "every_n_hours": "हर {n} घं.",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "चुने हुए दिन",
+  "repeat_interval": "हर N दिन",
+  "every_n_days": "हर {n} दिन",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "हर {n} सप्ताह",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "हर {n} महीने",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "दिन",
+  "sched_unit_weeks": "सप्ताह",
+  "sched_unit_months": "महीने",
+  "todo_tags": "टैग",
+  "todo_projects": "प्रोजेक्ट",
+  "todo_project": "प्रोजेक्ट",
+  "todo_project_new": "नया प्रोजेक्ट",
+  "todo_project_name": "प्रोजेक्ट का नाम",
+  "todo_project_edit": "प्रोजेक्ट संपादित करें",
+  "todo_project_arrange": "क्रम बदलें",
+  "todo_project_arrange_hint": "फ़ोल्डर को मनचाही जगह खींचें।",
+  "todo_project_pick": "प्रोजेक्ट चुनें",
+  "todo_project_none": "कोई प्रोजेक्ट नहीं",
+  "todo_project_delete_body": "प्रोजेक्ट हट जाएगा। कार्य बने रहेंगे।",
+  "todo_tag": "टैग",
+  "todo_tag_new": "नया टैग",
+  "todo_tag_name": "टैग का नाम",
+  "todo_tag_edit": "टैग संपादित करें",
+  "todo_tag_delete_body": "टैग हट जाएगा। कार्य बने रहेंगे।",
+  "todo_tag_none": "कोई टैग नहीं",
+  "todo_tag_all": "सभी",
+  "todo_tag_manage": "टैग प्रबंधित करें",
+  "todo_tag_empty_title": "अभी कोई टैग नहीं",
+  "todo_tag_empty_body": "कार्यों को प्रोजेक्ट, जगह या अपनी पसंद से समूहित करें।",
+  "todo_tag_folders": "फ़ोल्डर",
+  "todo_tag_list": "सूची",
+  "todo_tag_count": "{n} खुले",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "आइकन",
+  "todo_tag_pick": "टैग चुनें",
+  "todo_tag_filtered": "{name} से फ़िल्टर",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "अवर्गीकृत",
+  "more_icons": "और आइकन",
+  "less_icons": "कम आइकन",
+  "completions": "पूर्णताएँ",
+  "completion_time": "पूर्ण होने का समय",
+  "current_streak": "वर्तमान स्ट्रीक",
+  "days_active": "सक्रिय दिन",
+  "completions_per_month": "पूर्णताएँ / माह",
+  "overview": "सारांश",
+  "preferences": "प्राथमिकताएँ",
+  "profile": "प्रोफ़ाइल",
+  "about_app": "इस ऐप के बारे में",
+  "about_app_sub": "संस्करण, श्रेय और सोर्स कोड",
+  "my_heatmap": "मेरा हीटमैप",
+  "my_heatmap_sub": "वार्षिक गतिविधि ग्रिड खोलें",
+  "view_source": "GitHub पर सोर्स देखें",
+  "about_title": "आपके लिए बना। हमेशा मुफ़्त।",
+  "about_footer": "☕ और ढेर सारे खाली समय से बना।",
+  "about_body": "Khuta एक सीधे-सादे विचार से जन्मा: अपनी आदतें ट्रैक करने के लिए पैसे क्यों दें?\n\nयह ऐप पूरी तरह ओपन सोर्स है। कोई भी देख सकता है कि यह कैसे काम करता है, सुधार सुझा सकता है, या अपना संस्करण भी बना सकता है। कोई छिपी बात नहीं। कोई चौंकाने वाली बात नहीं।\n\nआपकी निजता पूरी है: सब कुछ आपके फ़ोन पर रहता है। न खाते, न सर्वर, न विज्ञापन। एक भी बाइट आपके डिवाइस से बाहर नहीं जाता।\n\nकोई सीमा नहीं। जितनी चाहें उतनी आदतें बनाएँ। कोई सब्सक्रिप्शन नहीं, कोई \"प्रो संस्करण\" नहीं, पैसे माँगने वाले कोई पॉप-अप नहीं। कभी नहीं।\n\nअगर ऐप आपके काम आए, तो GitHub पर स्टार देकर या मुझे एक कॉफ़ी पिलाकर इसका साथ दे सकते हैं। लेकिन यह पूरी तरह वैकल्पिक है: ऐप हर हाल में आपका है।",
+  "close": "बंद करें",
+  "no_data_yet": "अभी कोई डेटा नहीं",
+  "import_question_body": "अपनी सभी मौजूदा आदतों को बैकअप से बदलें, या दोनों को मिला दें?",
+  "import_replace": "सब बदलें",
+  "import_merge": "मिलाएँ",
+  "go": "चलें",
+  "quote_1": "छोटे कदम, हर दिन।",
+  "quote_2": "निरंतरता तीव्रता से जीतती है।",
+  "quote_3": "अपने लिए हाज़िर रहें।",
+  "quote_4": "एक समय में एक दिन।",
+  "quote_5": "प्रगति, पूर्णता नहीं।",
+  "quote_6": "पूरा करना परफ़ेक्ट से बेहतर है।",
+  "quote_7": "स्ट्रीक को ज़िंदा रखें।",
+  "quote_8": "छोटी आदतें, बड़ा बदलाव।",
+  "quote_9": "प्रक्रिया पर भरोसा रखें।",
+  "quote_10": "सुबह को जीत लें।",
+  "quote_11": "अनुशासन ही आज़ादी है।",
+  "quote_12": "आज मायने रखता है।",
+  "just_tracking_option": "सिर्फ़ ट्रैकिंग का विकल्प दें",
+  "just_tracking_option_sub": "आदत बनाते समय स्विच जोड़ता है",
+  "just_tracking": "सिर्फ़ ट्रैकिंग",
+  "just_tracking_sub": "अपना ग्रिड और आँकड़े रखें, लेकिन प्रगति और दिन की गिनती से बाहर रखें",
+  "quotes": "उद्धरण",
+  "quotes_which": "कौन-से उद्धरण",
+  "quotes_app": "ऐप के",
+  "quotes_mine": "मेरे",
+  "quotes_both": "दोनों",
+  "quotes_off": "बंद",
+  "quotes_my_list": "मेरे उद्धरण",
+  "quotes_add": "उद्धरण जोड़ें",
+  "quotes_edit": "उद्धरण संपादित करें",
+  "quotes_hint": "अपना उद्धरण लिखें",
+  "quotes_empty": "आपका कोई उद्धरण नहीं",
+  "quotes_empty_sub": "अपने उद्धरण लिखें, वे आज पर दिखेंगे।",
+  "motiv_start": "दिन की मज़बूत शुरुआत करें 💪",
+  "motiv_progress": "आप सही राह पर हैं, चलते रहें",
+  "motiv_almost": "बस थोड़ा और! लगभग पहुँच गए",
+  "motiv_perfect": "बेहतरीन दिन! 🔥",
+  "app_background": "पृष्ठभूमि",
+  "widgets": "विजेट",
+  "customize_widgets": "विजेट कस्टमाइज़ करें",
+  "customize_widgets_sub": "पृष्ठभूमि, पारदर्शिता, बॉर्डर",
+  "widget_background": "पृष्ठभूमि का रंग",
+  "widget_opacity": "अपारदर्शिता",
+  "widget_border": "बॉर्डर",
+  "widget_preview": "पूर्वावलोकन",
+  "bg_solid": "ठोस",
+  "bg_gradient": "ग्रेडिएंट",
+  "bg_dots": "बिंदु",
+  "bg_oled": "OLED",
+  "weekdays": "कार्यदिवस",
+  "weekends": "सप्ताहांत",
+  "reminder_message": "संदेश (वैकल्पिक)",
+  "reminder_message_hint": "प्रेरक उद्धरण के लिए खाली छोड़ें",
+  "new_category": "नई श्रेणी",
+  "edit_category": "श्रेणी संपादित करें",
+  "add_category": "नई",
+  "delete_category": "श्रेणी हटाएँ",
+  "edit": "संपादित करें",
+  "cover_image": "कवर चित्र",
+  "book_cover": "किताब का कवर",
+  "add_image": "चित्र जोड़ें",
+  "when_best": "आप कब सबसे नियमित रहते हैं?",
+  "streak_evolution": "स्ट्रीक का विकास",
+  "consistency": "निरंतरता",
+  "consistency_trend": "निरंतरता का रुझान",
+  "by_habit": "आदत के अनुसार",
+  "ranking": "रैंकिंग",
+  "active_days": "सक्रिय दिन",
+  "perfect_days": "परफ़ेक्ट दिन",
+  "per_week": "प्रति सप्ताह",
+  "best_month": "सबसे अच्छा महीना",
+  "streak_on": "🔥 लगातार {n} दिन। इसे टूटने न दें!",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 आज आप नई स्ट्रीक शुरू कर सकते हैं",
+  "not_enough_data": "अभी पर्याप्त डेटा नहीं",
+  "about_inline": "Khuta आपकी आदतें ट्रैक करने वाला ओपन-सोर्स ऐप है। न खाते, न सीमाएँ, न भुगतान। सब कुछ आपके फ़ोन पर रहता है।\n\nकोई भी कोड देख सकता है, सुधार सकता है या मुफ़्त में इस्तेमाल कर सकता है।",
+  "about_subtitle": "उन दिनों के लिए जब आप हाज़िर होना चुनते हैं।",
+  "about_story": "यह ऐप बाज़ार के आदत ट्रैकरों से निराशा से जन्मा। ज़्यादातर आदतों की संख्या सीमित करते हैं, बुनियादी फ़ीचर पेवॉल के पीछे छिपाते हैं, आपको ट्रैक करते हैं या विज्ञापनों की बौछार करते हैं। इसलिए मैंने Khuta बनाने का फ़ैसला किया: पूरी तरह मुफ़्त, न विज्ञापन, न भुगतान, न ट्रैकिंग। सब कुछ लोकल चलता है: आपका डेटा आपका है। ओपन सोर्स, कोई शर्त नहीं।",
+  "share": "शेयर करें",
+  "share_progress": "प्रगति शेयर करें",
+  "share_failed": "चित्र नहीं बन सका",
+  "share_swipe_hint": "समय में आगे-पीछे जाने के लिए कार्ड स्वाइप करें",
+  "share_background": "पृष्ठभूमि",
+  "share_size": "आकार",
+  "share_size_large": "लंबा",
+  "share_size_small": "चौकोर",
+  "share_show_stats": "आँकड़े दिखाएँ",
+  "share_save": "सेव करें",
+  "share_saved": "गैलरी में सेव हुआ",
+  "share_save_failed": "चित्र सेव नहीं हो सका",
+  "about_developer": "डेवलपर",
+  "about_credits": "श्रेय",
+  "about_credits_body": "Flutter से बना। आइकन Lucide के। चार्ट fl_chart के। Figtree और Playfair Display फ़ॉन्ट में।",
+  "dev_role": "इंडी निर्माता · Khuta",
+  "notes": "नोट",
+  "notes_enable_sub": "आदत के किसी भी दिन पर नोट जोड़ें",
+  "add_note": "नोट जोड़ें",
+  "edit_note": "नोट संपादित करें",
+  "view_notes": "नोट देखें",
+  "edit_entry": "प्रविष्टि संपादित करें",
+  "note_type": "प्रकार",
+  "note_kind_note": "नोट",
+  "note_kind_planned": "नियोजित",
+  "note_kind_completed": "पूर्ण",
+  "note_hint": "अपना नोट लिखें...",
+  "note_time_optional": "समय (वैकल्पिक)",
+  "save_note": "नोट सेव करें",
+  "notes_empty": "इस दिन के लिए अभी कोई नोट नहीं",
+  "delete_note": "नोट हटाएँ",
+  "legend_note_added": "नोट जोड़ा गया",
+  "tomorrow": "कल",
+  "notes_count": "{count, plural, =1{1 नोट} other{{count} नोट}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "कार्य",
+  "todos_enable_sub": "आपकी आदतों के साथ एक त्वरित सूची",
+  "todo_new": "नया कार्य",
+  "todo_hint": "क्या करना है?",
+  "todo_subtasks": "उप-कार्य",
+  "todo_subtask_hint": "उप-कार्य",
+  "todo_empty_title": "सूची में कुछ नहीं",
+  "todo_empty_body": "अगले कुछ दिनों में जो करना चाहते हैं, उसे लिख लें।",
+  "todo_date": "तिथि",
+  "todo_no_date": "कोई तिथि नहीं",
+  "todo_time": "समय",
+  "todo_priority": "प्राथमिकता",
+  "priority_none": "कोई प्राथमिकता नहीं",
+  "priority_low": "कम",
+  "priority_medium": "मध्यम",
+  "priority_high": "उच्च",
+  "todo_overdue": "विलंबित",
+  "todo_upcoming": "आगामी",
+  "todo_someday": "कभी",
+  "pick_a_date": "तिथि चुनें",
+  "todo_left": "{count, plural, =0{सब पूरा} =1{1 करना है} other{{count} करने हैं}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, =1{पूर्ण (1)} other{पूर्ण ({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "कार्य खोजें",
+  "todo_search_empty": "कुछ नहीं मिला",
+  "todo_clear_completed": "पूर्ण कार्य हटाएँ",
+  "todo_clear_completed_body": "{count, plural, =1{इससे पूर्ण कार्य हट जाएगा।} other{इससे {count} पूर्ण कार्य हट जाएँगे।}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "सामान्य",
+  "prefs_features": "फ़ीचर",
+  "prefs_privacy": "निजता",
+  "collapse_cards": "कार्ड समेटें",
+  "expand_cards": "कार्ड फैलाएँ",
+  "view_switcher": "व्यू स्विचर",
+  "view_switcher_sub": "आज पर सप्ताह / माह / वर्ष बटन दिखाएँ",
+  "view_switcher_needs": "इसके लिए कार्ड पर गतिविधि चालू करें",
+  "focus": "फ़ोकस",
+  "focus_enable_sub": "जिन आदतों को टाइमर चाहिए उनके लिए",
+  "focus_free_session": "मुक्त सेशन",
+  "focus_duration": "अवधि",
+  "focus_start": "सेशन शुरू करें",
+  "focus_style": "टाइमर शैली",
+  "focus_style_digital": "वृत्त",
+  "focus_style_flip": "फ़्लिप",
+  "focus_style_dots": "बिंदु",
+  "focus_countdown": "3 सेकंड की उलटी गिनती",
+  "focus_skip_break": "ब्रेक छोड़ें",
+  "focus_continue": "जारी रखें",
+  "focus_alert": "राउंड समाप्ति अलर्ट",
+  "focus_alert_chime": "घंटी",
+  "focus_alert_custom": "ध्वनि चुनें",
+  "focus_alert_none": "मौन",
+  "focus_hold": "मेरे रोकने तक प्रतीक्षा करें",
+  "focus_hold_sub": "अगला राउंड तब तक रुकता है जब तक आप जारी रखें पर टैप न करें।",
+  "focus_restart": "फिर शुरू करें",
+  "focus_restart_title": "यह राउंड फिर शुरू करें?",
+  "focus_restart_body": "इस राउंड में आपने जितना फ़ोकस किया, वह समय खो जाएगा।",
+  "focus_saved": "{time} दर्ज हुआ",
+  "focus_total": "फ़ोकस समय",
+  "focus_sessions": "सेशन",
+  "focus_stop_title": "सेशन समाप्त करें?",
+  "focus_stop_body": "आपके मिनट दोनों स्थितियों में सेव रहते हैं। आदत तभी पूरी होती है जब आप लक्ष्य तक पहुँचें।",
+  "focus_end": "समाप्त",
+  "focus_pick_habit": "आप किस पर फ़ोकस कर रहे हैं?",
+  "focus_scene_custom": "आपका चित्र",
+  "unit_hours": "घंटे",
+  "unit_minutes": "मिनट",
+  "unit_seconds": "सेकंड",
+  "focus_target_reached": "लक्ष्य पूरा",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_pause": "रोकें",
+  "focus_resume": "फिर चलाएँ",
+  "focus_sound": "ध्वनि",
+  "focus_pick_audio": "अपने फ़ोन से ट्रैक चुनें",
+  "focus_no_sound": "कोई ट्रैक नहीं चुना",
+  "focus_tasks": "उप-कार्य सूची",
+  "focus_custom_duration": "कस्टम",
+  "focus_end_short": "आप लक्ष्य से {time} पीछे हैं।",
+  "focus_end_tasks": "{count} कार्य अभी अनचेक हैं।",
+  "focus_end_reached": "लक्ष्य पूरा हुआ। आदत पूर्ण के रूप में चिह्नित होगी।",
+  "focus_end_keep": "जारी रखें",
+  "focus_end_anyway": "फिर भी समाप्त करें",
+  "focus_end_complete": "पूर्ण चिह्नित करें",
+  "focus_end_add_time": "फ़ोकस समय जोड़ें",
+  "focus_amount_added": "{habit} में {amount} जुड़ा",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "कस्टम",
+  "focus_track_rain": "बारिश",
+  "focus_track_brown": "ब्राउन नॉइज़",
+  "focus_track_pad": "गर्म पैड",
+  "focus_add_track": "ट्रैक जोड़ें",
+  "focus_shuffle": "शफ़ल",
+  "focus_loop": "क्रम से",
+  "focus_repeat_one": "एक दोहराएँ",
+  "focus_track_too_long": "ट्रैक 20 मिनट से कम के होने चाहिए",
+  "focus_track_limit": "अधिकतम 10 ट्रैक",
+  "focus_done_title": "सेशन पूरा",
+  "focus_your_tracks": "आपके ट्रैक",
+  "focus_built_in": "शामिल",
+  "unit_hour_short": "घं.",
+  "unit_min_short": "मि.",
+  "focus_notif_body": "आपका फ़ोकस सेशन पूरा हुआ। शाबाश!",
+  "celebration": "पूर्णता प्रभाव",
+  "celebration_confetti": "कॉन्फ़ेटी",
+  "celebration_fireworks": "आतिशबाज़ी",
+  "celebration_surprise": "चौंका दो",
+  "focus_notif_channel": "फ़ोकस सेशन",
+  "focus_notif_running": "फ़ोकस जारी",
+  "focus_paused": "रुका हुआ",
+  "focus_scene_black": "काला",
+  "focus_pomodoro": "पोमोडोरो",
+  "focus_pomodoro_sub": "फ़ोकस राउंड को छोटे ब्रेक के साथ जोड़ें",
+  "focus_break": "ब्रेक",
+  "focus_round": "राउंड {n}",
+  "focus_daily_goal": "फ़ोकस लक्ष्य",
+  "focus_goal_today": "आज {goal} में से {done}",
+  "focus_keep_awake": "स्क्रीन चालू रखें",
+  "focus_images_limit": "अधिकतम 10 चित्र",
+  "select_all": "सभी चुनें",
+  "selected_count": "{count, plural, =1{1 चुना गया} other{{count} चुने गए}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "सेशन हटाएँ?",
+  "focus_delete_sessions_body": "{count, plural, =1{1 फ़ोकस सेशन हट जाएगा। इसे पूर्ववत नहीं किया जा सकता।} other{{count} फ़ोकस सेशन हट जाएँगे। इसे पूर्ववत नहीं किया जा सकता।}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, =1{1 सेशन हटाया गया} other{{count} सेशन हटाए गए}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "दिन निर्धारित नहीं",
+  "unscheduled_body": "यह आदत {day} को निर्धारित नहीं है। फिर भी अतिरिक्त के रूप में दर्ज करें?",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "फिर भी दर्ज करें",
+  "rest_days_none": "कोई नहीं",
+  "last_90_days": "पिछले 90 दिन",
+  "focus_clear_today": "आज के सेशन मिटाएँ",
+  "focus_defaults": "सेशन डिफ़ॉल्ट",
+  "plan_day": "दिन की योजना",
+  "plan_day_sub": "आदतों को दिन का समय दें और उन्हें टाइमलाइन पर देखें।",
+  "habit_time": "दिन का समय",
+  "habit_time_none": "कभी भी",
+  "habit_duration": "अवधि",
+  "habit_duration_none": "कोई अवधि नहीं",
+  "day_timeline": "दिन",
+  "day_timeline_free": "{span} खाली",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "कभी भी",
+  "day_timeline_empty": "इस दिन के लिए कुछ नियोजित नहीं",
+  "day_timeline_empty_sub": "आदत को दिन का समय दें, वह यहाँ दिखेगी।",
+  "clear": "साफ़ करें",
+  "start_view": "आज इसमें खुलता है",
+  "start_view_last": "पिछला उपयोग",
+  "focus_stats": "फ़ोकस आँकड़े",
+  "focus_average": "औसत सेशन",
+  "focus_log": "सेशन दर्ज करें",
+  "focus_log_date": "तिथि",
+  "focus_log_saved": "सेशन जोड़ा गया",
+  "perfect_streak": "परफ़ेक्ट दिन स्ट्रीक",
+  "focus_history": "इतिहास",
+  "focus_history_empty": "अभी कोई सेशन नहीं",
+  "focus_history_empty_sub": "आपका हर पूरा किया फ़ोकस सेशन यहाँ दिखता है।",
+  "focus_history_day": "{count, plural, =1{1 सेशन} other{{count} सेशन}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "कल",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "notes_hint": "आदत खोलें और नोट देखने या जोड़ने के लिए उसके कैलेंडर में किसी दिन को देर तक दबाएँ",
+  "app_style": "ऐप शैली",
+  "app_style_sub": "चुनें कि पूरा ऐप कैसा दिखे और कैसा लगे।",
+  "style_classic": "क्लासिक",
+  "style_minimal": "मिनिमल",
+  "style_classic_desc": "आदत सूची, निचला बार और हर सेटिंग एक स्क्रीन पर।",
+  "style_minimal_desc": "आदत ग्रिड और सेटिंग्स चार खंडों में समूहित।",
+  "appearance_sub": "थीम, एक्सेंट और पृष्ठभूमि",
+  "preferences_sub": "भाषा, सप्ताह और क्रम",
+  "data_sub": "बैकअप और इम्पोर्ट",
+  "about_sub": "संस्करण, सोर्स कोड और सहयोग",
+  "check_style": "चेक शैली",
+  "square": "चौकोर",
+  "circle": "वृत्त",
+  "icons_tab": "आइकन",
+  "emojis_tab": "इमोजी",
+  "emoji_own": "कोई भी इमोजी टाइप या पेस्ट करें",
+  "advanced_options": "उन्नत विकल्प",
+  "default_user": "उपयोगकर्ता",
+  "your_name": "आपका नाम",
+  "edit_name": "नाम संपादित करें",
+  "change_photo": "फ़ोटो बदलें",
+  "remove_photo": "फ़ोटो हटाएँ",
+  "notif_greeting": "नमस्ते {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "ऐप आइकन",
+  "icon_default": "डिफ़ॉल्ट",
+  "icon_neutral": "चारकोल",
+  "icon_accent": "रेत",
+  "custom": "कस्टम",
+  "see_more": "और देखें",
+  "see_less": "कम देखें",
+  "colors_tab": "रंग",
+  "reorder": "क्रम बदलें",
+  "reorder_hint": "आदतों को क्रम बदलने के लिए खींचें",
+  "category_order": "श्रेणी क्रम",
+  "category_order_sub": "उन्हें मनचाहे क्रम में खींचें",
+  "category_order_empty": "आदत को श्रेणी दें, वह यहाँ दिखेगी",
+  "done": "हो गया",
+  "accent_color": "एक्सेंट रंग",
+  "heatmap_path": "दिनों को जोड़ें",
+  "heatmap_path_sub": "ग्रिड को एक लंबी राह की तरह बनाता है",
+  "sort_completed_last": "पूर्ण सबसे नीचे",
+  "sort_completed_last_sub": "जो पूरा करें उसे सूची के नीचे भेजता है",
+  "today_only": "सिर्फ़ आज की",
+  "today_only_sub": "आज के लिए निर्धारित न होने वाली आदतें छिपाता है",
+  "card_activity": "कार्ड पर गतिविधि",
+  "card_activity_sub": "कार्ड पर पिछले दिन दिखाता है, टिक के लिए तैयार",
+  "readable_copy": "पढ़ने योग्य कॉपी",
+  "readable_copy_sub": "आपकी आदतें markdown फ़ाइलों में भी लिखता है",
+  "theme_sub": "लाइट, डार्क या सिस्टम वाली",
+  "accent_color_sub": "बटन और हाइलाइट में इस्तेमाल होता है",
+  "app_background_sub": "कार्ड के पीछे जो दिखता है",
+  "check_style_sub": "चौकोर या गोल निशान",
+  "app_icon_sub": "आपकी होम स्क्रीन पर आइकन",
+  "language_sub": "पूरे ऐप की भाषा",
+  "week_start_sub": "हर ग्रिड का पहला कॉलम",
+  "celebration_sub": "आदत टिक करने पर जो दिखता है",
+  "start_view_sub": "जिस व्यू में आज खुलता है",
+  "quotes_sub": "आज पर कौन-से उद्धरण दिखें",
+  "focus_daily_goal_sub": "रोज़ फ़ोकस के लिए आपका लक्षित मिनट",
+  "app_lock_delay_sub": "छोड़ने के बाद कितनी जल्दी दोबारा माँगे",
+  "focus_only": "सिर्फ़ फ़ोकस सेशन से",
+  "focus_only_hint": "आदत टैप करने से नहीं, सेशन पूरा करने पर चेक होती है।",
+  "focus_only_title": "फ़ोकस सेशन ज़रूरी है",
+  "focus_only_body": "\"{name}\" फ़ोकस सेशन पूरा करने पर पूर्ण होती है।",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "\"{name}\" सिर्फ़ फ़ोकस सेशन से पूर्ण होती है, इसलिए बीते दिन चेक नहीं हो सकते।",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "यह चेक हटाएँ?",
+  "focus_only_clear_body": "\"{name}\" को दोबारा सिर्फ़ फ़ोकस सेशन ही चेक कर सकता है।",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "सेशन शुरू करें",
+  "focus_flowtime": "फ़्लोटाइम",
+  "focus_flowtime_hint": "न लक्ष्य, न अलार्म। घड़ी आगे गिनती है और जब मन भर जाए तब आप रुकते हैं।",
+  "focus_end_flow": "आपने {time} फ़ोकस किया।",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "चालू",
+  "off": "बंद",
+  "checklist": "चेकलिस्ट",
+  "checklist_hint": "आदत को चरणों में बाँटें। हर चरण चेक होने पर ही वह पूरी होती है।",
+  "add_step": "चरण जोड़ें",
+  "step_hint": "चरण का नाम",
+  "todays_checklist": "आज की चेकलिस्ट",
+  "steps_done": "{done}/{total} चरण",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "हर आदत रोकें",
+  "vacation_all_sub": "चालू रहने तक कुछ भी छूटा हुआ नहीं गिना जाता",
+  "vacation_mode": "छुट्टी मोड",
+  "vacation_on_desc": "रुकी हुई: ये दिन छूटे या पूरे नहीं गिने जाएँगे।",
+  "vacation_off_desc": "इस आदत को रोकें। छोड़े गए दिन आपकी स्ट्रीक नहीं तोड़ेंगे।",
+  "paused": "रुकी हुई",
+  "start_vacation": "छुट्टी शुरू करें",
+  "end_vacation": "छुट्टी समाप्त करें",
+  "vacation_day_on": "छुट्टी का दिन चिह्नित करें",
+  "vacation_day_off": "छुट्टी का दिन हटाएँ",
+  "rest_days": "विश्राम दिवस",
+  "rest_days_desc": "इन दिनों हर हफ़्ते इसे रोकें। आप फिर भी इन्हें दर्ज कर सकते हैं और ये गिने जाएँगे।",
+  "widget_no_habits": "अभी कोई आदत नहीं\nKhuta खोलने के लिए टैप करें",
+  "widget_no_data": "अभी कोई डेटा नहीं\nसिंक के लिए Khuta खोलें",
+  "widget_open_to_sync": "सिंक के लिए Khuta खोलें",
+  "widget_activity": "गतिविधि",
+  "widget_today_progress": "आज  {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "कार्य  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "आज के लिए कुछ बाकी नहीं",
+  "widget_done_today": "आज पूरा",
+  "widget_best_streak": "🔥 {streak} सबसे लंबी स्ट्रीक",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "विजेट कस्टमाइज़ करें",
+  "widget_cfg_color": "रंग",
+  "widget_cfg_image": "चित्र",
+  "widget_cfg_choose_image": "चित्र चुनें",
+  "widget_cfg_change_image": "चित्र बदलें",
+  "widget_cfg_custom_color": "कस्टम रंग",
+  "widget_cfg_follow_system": "सिस्टम थीम का पालन करें",
+  "widget_cfg_dark_color": "डार्क थीम",
+  "widget_cfg_light_color": "लाइट थीम",
+  "widget_cfg_opacity": "अपारदर्शिता  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "बॉर्डर",
+  "widget_cfg_thickness": "मोटाई  {value}dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "कार्य",
+  "widget_cfg_todos_all": "हर कार्य दिखाएँ",
+  "widget_cfg_todos_hint": "बंद: सिर्फ़ आज, विलंबित और बिना तिथि वाले कार्य",
+  "widget_cfg_show_activity": "इसकी गतिविधि दिखाएँ",
+  "widget_cfg_dot_color": "बिंदु का रंग",
+  "widget_cfg_style": "शैली",
+  "widget_cfg_style_classic": "क्लासिक",
+  "widget_cfg_style_card": "कार्ड",
+  "widget_cfg_all_habits": "सभी आदतें",
+  "widget_cfg_save": "सेव करें",
+  "widget_cfg_add": "विजेट जोड़ें",
+  "widget_cfg_reset": "डिफ़ॉल्ट पर लौटें",
+  "widget_cfg_hue": "रंगत",
+  "widget_cfg_saturation": "संतृप्ति",
+  "widget_cfg_brightness": "चमक",
+  "widget_demo_read": "पढ़ना",
+  "widget_demo_run": "दौड़",
+  "widget_demo_water": "पानी",
+  "notif_streak": "🔥 {streak} दिन की स्ट्रीक",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 {streak} सप्ताह की स्ट्रीक",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 {streak} महीने की स्ट्रीक",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "हो गया",
+  "notif_action_snooze": "स्नूज़",
+  "notif_action_add": "मात्रा जोड़ें",
+  "notif_action_add_hint": "कितनी?",
+  "snooze_duration": "स्नूज़ अवधि",
+  "snooze_custom": "कस्टम",
+  "snooze_custom_hint": "मिनट",
+  "minutes_short": "{value} मिनट",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "{name} को पूर्ण चिह्नित करें",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "{name} को अपूर्ण चिह्नित करें",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "{name} में जोड़ें",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "{name} के लिए चूक दर्ज करें",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "{name} की आज की चूक हटाएँ",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "अपूर्ण",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "पिछला सप्ताह",
+  "a11y_next_week": "अगला सप्ताह",
+  "a11y_increase": "बढ़ाएँ",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "घटाएँ",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "रंग चुनें",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "इस सप्ताह",
+  "period_last_week": "पिछले सप्ताह",
+  "period_this_month": "इस महीने",
+  "period_last_month": "पिछले महीने",
+  "period_this_year": "इस वर्ष",
+  "period_all_time": "अब तक",
+  "times_completed": "पूर्ण होने की बार",
+  "period_last_year": "पिछले वर्ष",
+  "period_week_of": "{date} वाला सप्ताह",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{कोई सेशन नहीं} =1{1 सेशन} other{{count} सेशन}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "सभी नोट",
+  "notes_empty_all": "अभी कोई नोट नहीं",
+  "quant_preset_time": "समय",
+  "style_express": "एक्सप्रेस",
+  "style_express_desc": "गोल आकार, लचीली गति और चौड़ा फ़ॉन्ट।",
+  "celebration_none": "कोई नहीं",
+  "quant_add_title": "मात्रा जोड़ें",
+  "pane_hint": "यहाँ देखने के लिए सूची से कुछ खोलें",
+  "average_short": "औसत",
+  "island": "द्वीप",
+  "island_enable_sub": "अपनी आदतों को ऐसी नखलिस्तान में बदलें जिसे आप टुकड़ा-टुकड़ा बनाते हैं",
+  "island_open": "द्वीप खोलें",
+  "island_shop": "दुकान",
+  "island_build": "बनाएँ",
+  "island_done": "बना",
+  "island_complete": "नखलिस्तान पूरा हुआ",
+  "island_tap_hint": "वहाँ क्या लगेगा, यह देखने के लिए आकार पर टैप करें",
+  "island_empty": "कोई आदत चेक करें, नखलिस्तान बढ़ना शुरू होगा",
+  "island_how": "अंक कैसे काम करते हैं",
+  "island_how_check": "हर चेक की गई आदत पर 10",
+  "island_how_focus": "हर फ़ोकस मिनट पर 1",
+  "island_how_perfect": "परफ़ेक्ट दिन पर 25 और",
+  "island_how_note": "सिक्के आपके इतिहास से आते हैं, इसलिए बैकअप उन्हें लौटा देता है।",
+  "island_built": "{total} में से {done} बने",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "{count} अंक और चाहिए",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} अब द्वीप पर है",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "रेगिस्तानी घृतकुमारी",
+  "island_p_altar": "बद्दू तंबू",
+  "island_p_archway": "पत्थर का मेहराब",
+  "island_p_banner": "झंडा",
+  "island_p_bench": "बेंच",
+  "island_p_blue_railing": "जालीदार पर्दा",
+  "island_p_bougainvillea": "बोगनवेलिया",
+  "island_p_boulder": "शिलाखंड",
+  "island_p_crate": "क्रेट",
+  "island_p_crop_patch": "फ़सल की क्यारी",
+  "island_p_cube_house": "गुंबददार घर",
+  "island_p_cypress": "खजूर का पेड़",
+  "island_p_dry_grass": "सूखी घास",
+  "island_p_flat_stone": "चपटा पत्थर",
+  "island_p_flower_pot": "फूलों का गमला",
+  "island_p_garden_bed": "बगीचे की क्यारी",
+  "island_p_hanging_lantern": "लटकती लालटेन",
+  "island_p_hay_bale": "भूसे की गठरी",
+  "island_p_house": "छोटा घर",
+  "island_p_lantern_post": "लैंप पोस्ट",
+  "island_p_large_rock": "बड़ी चट्टान",
+  "island_p_main_chapel": "मस्जिद",
+  "island_p_mossy_stone": "झाड़ीदार पत्थर",
+  "island_p_olive": "बबूल का पेड़",
+  "island_p_pebbles": "कंकड़",
+  "island_p_pergola_house": "पर्गोला घर",
+  "island_p_pottery_jar": "मिट्टी का घड़ा",
+  "island_p_rocks": "चट्टानें",
+  "island_p_signpost": "दिशा-सूचक",
+  "island_p_small_bridge": "तख़्तों का पुल",
+  "island_p_stone_basin": "फ़व्वारा",
+  "island_p_stone_lantern": "पत्थर की लालटेन",
+  "island_p_stone_pile": "पत्थरों का ढेर",
+  "island_p_storage_box": "संदूक",
+  "island_p_terrace_house": "छत वाला घर",
+  "island_p_terracotta_pot": "टेराकोटा गमला",
+  "island_p_tower_chapel": "मीनार",
+  "island_p_two_story": "दो मंज़िला घर",
+  "island_p_veg_garden": "सब्ज़ी का बगीचा",
+  "island_p_villa": "आँगन वाला घर",
+  "island_p_water_bucket": "पानी की बाल्टी",
+  "island_p_well": "कुआँ",
+  "island_p_windmill": "विंडकैचर",
+  "island_p_wood_pile": "लकड़ियों का ढेर",
+  "island_reset": "द्वीप फिर से शुरू करें",
+  "island_reset_sub": "सब कुछ हट जाता है और हर अंक आपके बैलेंस में लौट आता है।",
+  "island_coins": "सिक्के",
+  "island_g_pueblo": "गाँव",
+  "island_g_cala": "झरना",
+  "island_g_terrazas": "सीढ़ीदार खेत",
+  "island_g_puerto": "कारवाँ का पड़ाव",
+  "island_g_molino": "विंडकैचर की पहाड़ी",
+  "island_how_todo": "हर पूरे किए कार्य पर 4",
+  "island_how_streak": "आदत के 7, 30, 100 और 365 दिन पूरे होने पर बोनस",
+  "island_zoom_hint": "हिलाने के लिए एक उँगली से खींचें। ज़ूम के लिए दो उँगलियों से पिंच करें, द्वीप घुमाने के लिए मरोड़ें।",
+  "island_t_teal": "फ़िरोज़ी",
+  "island_t_clay": "टेराकोटा",
+  "island_t_white": "सफ़ेद",
+  "island_t_coral": "मूंगा",
+  "island_t_lilac": "लाइलैक",
+  "island_t_autumn": "पतझड़",
+  "island_t_deep": "गहरा",
+  "island_t_silver": "चाँदी",
+  "island_g_huerta": "खजूर का बाग़",
+  "island_g_faro": "चट्टानों के ढेर",
+  "island_turn": "व्यू घुमाएँ",
+  "gamification": "गेमिफ़िकेशन",
+  "island_default_name": "मेरा द्वीप",
+  "island_rename": "अपने द्वीप का नाम रखें",
+  "island_only_affordable": "सिर्फ़ जो खरीद सकूँ",
+  "island_nothing_here": "यहाँ अभी कुछ नहीं",
+  "island_g_vega": "वादी",
+  "island_g_mirador": "निगरानी स्थल",
+  "island_g_astillero": "कार्यशाला",
+  "island_g_ermita": "मस्जिद का बाग़",
+  "island_g_caleta": "छोटा झरना",
+  "island_g_cabo": "अंतरीप",
+  "island_goal": "हर टुकड़ा बन जाने पर यह ऐसा दिखता है।",
+  "island_reset_go": "फिर शुरू करें",
+  "island_beta": "यह गेमिफ़िकेशन की पहली कोशिश है और अभी बीटा में है। आप सब इसे कैसे इस्तेमाल करते हैं, इसके आधार पर यह बढ़ सकती है, बदल सकती है या पूरी तरह बदली जा सकती है।",
+  "gamification_beta": "गेमिफ़िकेशन (बीटा)",
+  "last_check": "आख़िरी चेक",
+  "check_history": "चेक इतिहास",
+  "check_history_sub": "{count} दिन चेक किए गए",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "कभी नहीं",
+  "check_no_time": "समय सेव नहीं",
+  "heatmap_rolling": "पिछले 12 महीने",
+  "heatmap_rolling_sub": "वार्षिक ग्रिड 31 दिसंबर की जगह आज पर खत्म होता है",
+  "check_marks": "{count} निशान",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "आज पर प्रगति",
+  "today_progress_option_sub": "दिन का रिंग और हर आदत पर मज़बूती बार",
+  "quiet_when_done": "पूरा होने पर शांत",
+  "quiet_when_done_sub": "पूरी हो चुकी आदत के लिए आज और रिमाइंडर नहीं",
+  "plan_tab": "योजना",
+  "difficulty": "कठिनाई",
+  "difficulty_hint": "कठिन आदतें दिन की प्रगति में ज़्यादा गिनी जाती हैं",
+  "difficulty_easy": "आसान",
+  "difficulty_medium": "मध्यम",
+  "difficulty_hard": "कठिन",
+  "pin_lock": "PIN कोड",
+  "pin_lock_sub": "आपका अपना कोड, फ़ोन के लॉक से अलग",
+  "pin_choose": "PIN चुनें",
+  "pin_choose_sub": "4 से 8 अंक",
+  "pin_repeat": "इसे फिर दर्ज करें",
+  "pin_mismatch": "मेल नहीं खाते। फिर से शुरू करें।",
+  "pin_enter": "अपना PIN दर्ज करें",
+  "pin_wrong": "गलत PIN",
+  "pin_wait": "बहुत कोशिशें हुईं। {seconds} सेकंड रुकें",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "आपका रिकवरी कोड",
+  "pin_recovery_body": "अगर आप PIN भूल जाएँ, तो यह कोड Khuta खोलता है और लॉक बंद कर देता है। इसे सुरक्षित रखें: यह दोबारा नहीं दिखाया जाएगा।",
+  "pin_copy": "कोड कॉपी करें",
+  "pin_copied": "कोड कॉपी हुआ",
+  "pin_forgot": "PIN भूल गए?",
+  "pin_recovery_hint": "रिकवरी कोड",
+  "pin_recovery_wrong": "यह कोड सही नहीं है",
+  "pin_recovered": "लॉक बंद हो गया। आप सेटिंग्स में नया PIN सेट कर सकते हैं।",
+  "pin_change": "PIN बदलें",
+  "pin_remove": "PIN हटाएँ",
+  "pin_fingerprint": "फ़िंगरप्रिंट इस्तेमाल करें",
+  "app_lock_method": "इससे अनलॉक करें",
+  "app_lock_biometric": "फ़िंगरप्रिंट या चेहरा",
+  "difficulty_option": "आदत की कठिनाई",
+  "difficulty_option_sub": "कठिन आदतों को दिन की प्रगति में ज़्यादा गिनने दें",
+  "todo_save_another": "सेव करें और एक और जोड़ें",
+  "todo_add_subtask": "उप-कार्य जोड़ें",
+  "pin_paste": "कोड पेस्ट करें",
+  "journal": "जर्नल",
+  "journal_today": "आज",
+  "journal_calendar": "कैलेंडर",
+  "journal_empty": "यहाँ अभी कुछ लिखा नहीं गया",
+  "journal_empty_sub": "पल, चिंतन और आपकी Khuta गतिविधि यहाँ एक साथ आते हैं।",
+  "journal_add_moment": "पल जोड़ें",
+  "journal_daily_reflection": "दैनिक चिंतन",
+  "journal_write_moment": "क्या हुआ?",
+  "journal_write_reflection": "आज कैसा लगा?",
+  "journal_moment": "पल",
+  "journal_reflection": "चिंतन",
+  "journal_activity": "Khuta गतिविधि",
+  "journeys": "यात्राएँ",
+  "journey_new": "नई यात्रा",
+  "journey_edit": "यात्रा संपादित करें",
+  "journey_title": "यात्रा का शीर्षक",
+  "journey_description": "आप किस दिशा में काम कर रहे हैं?",
+  "journey_start_date": "आरंभ तिथि",
+  "journey_target_date": "लक्ष्य तिथि",
+  "journey_milestones": "पड़ाव",
+  "journey_add_milestone": "पड़ाव जोड़ें",
+  "journey_linked_habits": "जुड़ी आदतें",
+  "journey_focus_target": "फ़ोकस लक्ष्य",
+  "journey_no_items": "अभी कोई यात्रा नहीं",
+  "journey_no_items_sub": "यात्रा बनाएँ और उसे आगे बढ़ाने वाली आदतें जोड़ें।",
+  "journey_planned": "नियोजित",
+  "journey_active": "सक्रिय",
+  "journey_completed": "पूर्ण",
+  "journey_archived": "संग्रहीत",
+  "journey_timeline": "टाइमलाइन",
+  "journey_progress": "{total} में से {done} पड़ाव",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "यादें",
+  "journey_invalid_dates": "लक्ष्य तिथि आरंभ तिथि से पहले नहीं हो सकती",
+  "journey_invalid_focus_target": "फ़ोकस लक्ष्य 0 से 525600 मिनट के बीच होना चाहिए",
+  "journal_photo_limit": "आप अधिकतम 8 फ़ोटो जोड़ सकते हैं",
+  "journal_content_required": "कुछ लिखें या फ़ोटो जोड़ें",
+  "daily_plan_title": "मेरा दिन",
+  "daily_plan_progress": "{total} में से {done} प्राथमिकताएँ पूरी",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "आज के लिए अधिकतम 3 प्राथमिकताएँ चुनें।",
+  "daily_plan_add": "प्राथमिकता जोड़ें",
+  "daily_plan_edit": "प्राथमिकताएँ संपादित करें",
+  "daily_plan_limit": "अधिकतम 3 प्राथमिकताएँ",
+  "daily_plan_habit": "आदत",
+  "daily_plan_todo": "कार्य",
+  "daily_plan_milestones": "यात्रा के पड़ाव",
+  "daily_plan_source_missing": "स्रोत उपलब्ध नहीं",
+  "daily_plan_no_sources": "आज जोड़ने के लिए और कुछ उपलब्ध नहीं है।",
+  "app_usage_title": "आज ऐप का उपयोग",
+  "app_usage_disclosure": "आज इस्तेमाल किए गए ऐप के नाम और समय दिखाने के लिए Khuta को Android के उपयोग डेटा की अनुमति चाहिए। सारांश इसी डिवाइस पर तैयार होता है, ऐप बंद होने पर मिट जाता है और कभी सिंक नहीं होता। Khuta ऐप की सामग्री या सूचनाएँ नहीं पढ़ता।",
+  "app_usage_accept_and_show": "मैं सहमत हूँ, आज का उपयोग दिखाएँ",
+  "app_usage_open_settings": "उपयोग डेटा की अनुमति की सेटिंग खोलें",
+  "app_usage_access_off": "उपयोग डेटा की अनुमति बंद है",
+  "app_usage_loading": "आज के ऐप उपयोग का डेटा पढ़ा जा रहा है…",
+  "app_usage_retry": "फिर से कोशिश करें",
+  "app_usage_total": "सभी ऐप का कुल उपयोग",
+  "app_usage_most_used": "सबसे ज़्यादा इस्तेमाल किए गए ऐप",
+  "app_usage_empty": "आज के लिए अभी ऐप उपयोग का कोई डेटा उपलब्ध नहीं है।",
+  "app_usage_unsupported": "ऐप उपयोग का सारांश सिर्फ़ Android पर उपलब्ध है।",
+  "app_usage_error": "अभी ऐप उपयोग का डेटा नहीं पढ़ा जा सका।",
+  "app_usage_local_only": "यह सारांश इसी डिवाइस पर रहता है और Khuta इसे सेव नहीं करता।",
+  "app_usage_duration_hours_minutes": "{hours} घंटे {minutes} मिनट",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} मिनट",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "1 मिनट से कम",
+  "goals": "लक्ष्य",
+  "goal_new": "नया लक्ष्य",
+  "goal_edit": "लक्ष्य संपादित करें",
+  "goal_title": "लक्ष्य का शीर्षक",
+  "goal_title_required": "लक्ष्य का शीर्षक आवश्यक है",
+  "goal_description": "आप किस परिणाम की दिशा में काम कर रहे हैं?",
+  "goal_parent": "मूल लक्ष्य",
+  "goal_no_parent": "कोई मूल लक्ष्य नहीं",
+  "goal_target_date": "लक्ष्य तिथि",
+  "goal_no_target_date": "कोई लक्ष्य तिथि नहीं",
+  "goal_state": "स्थिति",
+  "goal_active": "सक्रिय",
+  "goal_completed": "पूर्ण",
+  "goal_archived": "संग्रहीत",
+  "goal_link_sources": "जुड़े स्रोत",
+  "goals_empty": "अभी कोई लक्ष्य नहीं",
+  "goals_empty_sub": "एक परिणाम बनाएँ और उन आदतों, कार्यों और यात्राओं को जोड़ें जो आपको आगे बढ़ाती हैं।",
+  "goals_entry_empty": "अपना पहला लक्ष्य बनाएँ",
+  "goal_progress": "प्रगति",
+  "goal_progress_empty": "गणना की गई प्रगति देखने के लिए कोई स्रोत जोड़ें।",
+  "goal_no_sources": "अभी कोई स्रोत नहीं जुड़ा है।",
+  "goal_source_unavailable": "स्रोत उपलब्ध नहीं",
+  "goal_unavailable": "यह लक्ष्य उपलब्ध नहीं है।",
+  "goal_subgoals": "उप-लक्ष्य",
+  "goal_mark_completed": "पूर्ण के रूप में चिह्नित करें",
+  "goal_restore": "लक्ष्य पुनर्स्थापित करें",
+  "goal_archive": "लक्ष्य संग्रहीत करें",
+  "goals_entry_count": "{count} सक्रिय लक्ष्य",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} स्रोत",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "आदतें",
+  "legal_attribution": "InlitX के Streak पर आधारित",
+  "legal_licenses": "ओपन सोर्स लाइसेंस",
+  "calendar": "कैलेंडर",
+  "calendar_sub": "तिथियाँ कैसे दिखें",
+  "calendar_gregorian": "ग्रेगोरियन",
+  "calendar_hijri": "हिजरी",
+  "calendar_gregorian_hijri": "ग्रेगोरियन + हिजरी",
+  "calendar_hijri_gregorian": "हिजरी + ग्रेगोरियन",
+  "hijri_adjust": "हिजरी समायोजन",
+  "hijri_adjust_sub": "हिजरी तिथियाँ अपने स्थानीय चाँद दिखने के अनुसार खिसकाएँ",
+  "app_name": "Khuta",
+  "hijri_months_hint": "चुने हुए महीनों के हर दिन देय। अन्य दिन स्ट्रीक के पक्ष या विपक्ष में नहीं गिने जाते।",
+  "every_day_in": "{months} के हर दिन",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "गिना जाने वाला न्यूनतम",
+  "minimum_goal_hint": "न्यूनतम तक पहुँचने पर दिन पूरा माना जाता है। ऊपर का लक्ष्य आपका पूरा लक्ष्य रहता है।",
+  "minimum_suffix": "न्यूनतम {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "लक्ष्य इतिहास",
+  "history_minimum": "न्यूनतम {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "लक्ष्य {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "{amount} बाकी",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "एक छोटे कदम के साथ लौट आइए।",
+  "recovery_threshold": "ब्रेक के बाद रिकवरी",
+  "recovery_threshold_sub": "रिकवरी आपको दोबारा शुरू कराने से पहले आदत बिना चेक कितना समय रह सकती है",
+  "recovery_days": "दिन",
+  "recovery_hours": "घंटे",
+  "duration_days_hours": "{days}दि {hours}घं",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "रिकवरी",
+  "recovery_hint": "दोबारा शुरू करने के लिए एक छोटा कदम काफ़ी है।",
+  "recovery_dismiss": "हटाएँ",
+  "recovery_adjust": "बदलें",
+  "recovery_enable": "रिकवरी रिमाइंडर",
+  "recovery_enable_sub": "ब्रेक के बाद कोमल रिमाइंडर",
+  "recovery_first_delay": "पहला रिमाइंडर इसके बाद",
+  "recovery_count": "रिमाइंडर",
+  "recovery_repeat_every": "हर इतने पर दोहराएँ",
+  "recovery_at_time": "तय समय पर",
+  "recovery_time": "समय",
+  "hours_short": "{n} घं.",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

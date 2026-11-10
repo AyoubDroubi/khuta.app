@@ -1,0 +1,1626 @@
+{
+  "@@locale": "he",
+  "app_tagline": "מעקב הרגלים",
+  "today": "היום",
+  "stats": "סטטיסטיקה",
+  "settings": "הגדרות",
+  "new_label": "חדש",
+  "save": "שמירה",
+  "cancel": "ביטול",
+  "delete": "מחיקה",
+  "good_morning": "בוקר טוב",
+  "good_afternoon": "צהריים טובים",
+  "good_evening": "ערב טוב",
+  "no_habits_yet": "עדיין אין הרגלים",
+  "all_done_today": "סיימנו הכול להיום!",
+  "x_of_y_completed": "הושלמו {done} מתוך {total}",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "מתחילים את הרצף הראשון",
+  "empty_body": "יוצרים הרגל ונוגעים ביום כדי לתעד אותו. צעדים קטנים, כל יום.",
+  "add_habit": "הוספת הרגל",
+  "all": "הכול",
+  "onb1_title": "בניית הרגלים אמיתיים",
+  "onb1_body": "מתעדים הרגל בנגיעה אחת ורואים את המומנטום גדל מיום ליום.",
+  "onb2_title": "נשארים על המסלול",
+  "onb2_body": "יעדים יומיים, שבועיים או חודשיים עם תזכורות חכמות, כדי ששום דבר לא יישכח.",
+  "onb3_title": "רואים את ההתקדמות",
+  "onb3_body": "סטטיסטיקה עשירה ולוח שנתי מראים בדיוק כמה התקדמת.",
+  "skip": "דילוג",
+  "next": "הבא",
+  "get_started": "התחלה",
+  "onb_kicker": "ברוכים הבאים אל",
+  "onb_blurb": "צעדים קטנים בכל יום שהופכים להרגלים שנשארים.",
+  "onb_free_title": "בחינם, לתמיד",
+  "onb_free_body": "בלי פרסומות, בלי מנויים, בלי תכונות נעולות.",
+  "onb_private_title": "פרטי ולא מקוון",
+  "onb_private_body": "הכול נשאר במכשיר שלך. אין צורך בחשבון.",
+  "onb_yours_title": "הנתונים שלך שלך",
+  "onb_yours_body": "גבה אותם או קח אותם איתך בכל רגע.",
+  "onb_step": "שלב {step} מתוך {total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "סטטיסטיקה",
+  "done_today": "השלמתי היום",
+  "best_streak": "הרצף הארוך ביותר",
+  "active_habits": "הרגלים פעילים",
+  "total_logs": "סה״כ תיעודים",
+  "last_7_days": "7 הימים האחרונים",
+  "last_30_days": "30 הימים האחרונים",
+  "your_habits": "ההרגלים שלך",
+  "stats_empty": "יש להוסיף הרגלים כדי לראות את הסטטיסטיקה שלך",
+  "completion_rate_short": "התמדה",
+  "completion_rate": "מדד השלמה",
+  "appearance": "מראה",
+  "theme": "עיצוב",
+  "system": "מערכת",
+  "light": "בהיר",
+  "dark": "כהה",
+  "week_starts_on": "השבוע מתחיל ביום",
+  "mon": "שני",
+  "sat": "ש׳",
+  "sun": "ראשון",
+  "language": "שפה",
+  "data": "נתונים",
+  "export_backup": "ייצוא גיבוי",
+  "export_backup_sub": "שמירת כל ההרגלים בקובץ",
+  "auto_backup": "גיבוי אוטומטי",
+  "auto_backup_sub": "כבוי",
+  "auto_backup_off": "כבוי",
+  "auto_backup_daily": "כל יום",
+  "auto_backup_weekly": "כל שבוע",
+  "auto_backup_where": "כשפותחים את היישום, Khuta כותב גיבוי וגם עותק קריא של ההרגלים שאפשר לפתוח בכל עורך. 5 הגיבויים האחרונים נשמרים.",
+  "auto_backup_folder": "תיקייה",
+  "auto_backup_folder_default": "תיקיית היישום",
+  "auto_backup_folder_set": "התיקייה נשמרה",
+  "auto_backup_folder_failed": "אי אפשר לערוך קבצים בתיקייה זו",
+  "auto_backup_no_permission": "נדחתה הרשאת הגישה לאחסון",
+  "auto_backup_run_now": "גיבוי כעת",
+  "refresh_now": "רענון",
+  "refresh_now_sub": "הבא את מה שהמכשירים האחרים שלך השאירו בתיקייה",
+  "refresh_brought": "ההרגלים שלך מעודכנים",
+  "refresh_nothing": "אין חדש בתיקייה",
+  "import_backup": "ייבוא מגיבוי",
+  "import_backup_sub": "שחזור הרגלים מקובץ",
+  "import_from_app": "ייבוא מיישום אחר",
+  "import_from_app_sub": "‏„Loop” לניהול הרגלים, HabitKit…",
+  "import_from_app_done": "יובאו {habits} הרגלים ({days} ימים) מתוך {source}",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "לא היה ניתן לייבא קובץ זה",
+  "about": "על אודות",
+  "backup_saved": "הגיבוי נשמר",
+  "export_cancelled": "הייצוא בוטל",
+  "habits_imported": "ההרגלים יובאו",
+  "new_habit": "הרגל חדש",
+  "edit_habit": "עריכת הרגל",
+  "name": "שם",
+  "name_hint": "למשל: אימון ריצה בבוקר",
+  "description": "תיאור",
+  "description_hint": "הערה לבחירתך",
+  "icon": "סמל",
+  "color": "צבע",
+  "category": "קטגוריה",
+  "category_health": "בריאות",
+  "category_fitness": "כושר",
+  "category_mindfulness": "קשיבות (מיינדפולנס)",
+  "category_productivity": "יעילות",
+  "category_learning": "למידה",
+  "category_finance": "התנהלות כלכלית",
+  "count_days": "{count, plural, =1{יום} two{יומיים} other{{count} ימים}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, =1{שבוע} two{שבועיים} other{{count} שבועות}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, =1{חודש} two{חודשיים} other{{count} חודשים}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count} שב׳",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count} חו׳",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "סוג הרגל",
+  "kind_positive": "רגיל",
+  "kind_negative": "להימנעות",
+  "kind_quantitative": "כמות",
+  "kind_locked_hint": "לא ניתן לשנות את סוג ההרגל לאחר יצירתו.",
+  "kind_negative_hint": "כל יום נחשב נקי כברירת מחדל, והרצף שלך גדל מעצמו. מסמנים רק אם מחמיצים; היום הזה יהפוך לאדום ואפשר לבטל.",
+  "cost_per_day": "עלות ליום",
+  "cost_note": "רשות. אפשר להשאיר ריק אם ההרגל לא עולה כסף.",
+  "currency": "מטבע",
+  "currency_custom": "התאמה אישית",
+  "currency_hint": "סמל או קוד",
+  "money_saved": "כסף שנחסך",
+  "clean_days": "ימים נקיים",
+  "quant_preset_water": "שתייה",
+  "quant_preset_reading": "קריאה",
+  "quant_preset_generic": "התאמה אישית",
+  "quant_unit_hint": "יחידת מידה (למשל: מ״ל, עמודים, חזרות)",
+  "quant_unit_ml": "מ״ל",
+  "quant_unit_pages": "עמודים",
+  "quant_edit_title": "הכמות של היום",
+  "quant_daily_goal": "מטרה יומית",
+  "quant_tap_amount": "כמות לנגיעה",
+  "quant_per_day": "כמות ליום",
+  "quant_average": "ממוצע ליום",
+  "quant_logged_days": "ימים מתועדים",
+  "quant_best_day": "היום הטוב ביותר",
+  "quant_goal_days": "היעד הושג",
+  "quant_stats_empty": "מתעדים כמות והיא מצטברת כאן, גם בימים שלא הגעת ליעד.",
+  "frequency": "תדירות",
+  "daily": "יומית",
+  "weekly": "שבועית",
+  "monthly": "חודשית",
+  "sched_days": "ימים",
+  "sched_interval": "מרווח זמן",
+  "times_per_week": "{n} פעמים בשבוע",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "{n} פעמים בחודש",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}×/שבוע",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/חודש",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "תזכורות",
+  "add_reminder": "הוספת תזכורת",
+  "delete_habit": "מחיקת הרגל",
+  "archive_habit": "העברת הרגל לארכיון",
+  "archive": "ארכיון",
+  "copy_message": "העתקת הודעה",
+  "message_copied": "ההודעה הועתקה",
+  "app_lock": "נעילת היישום",
+  "app_lock_sub": "דרישת טביעת אצבע או זיהוי פנים לפתיחת Khuta",
+  "app_lock_unavailable": "לא הוגדרו פרטי אימות ביומטריים בטלפון זה",
+  "app_lock_failed": "לא היה ניתן לאמת את זהותך",
+  "app_lock_title": "היישום Khuta נעול",
+  "app_lock_unlock": "שחרור",
+  "app_lock_delay": "נעילה אחרי",
+  "app_lock_delay_instant": "מיד",
+  "app_lock_delay_seconds": "{value} שניות",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "תמונות",
+  "note_take_photo": "מצלמה",
+  "note_pick_photo": "גלריה",
+  "journey": "מסע",
+  "journey_sub": "{count, plural, =1{תמונה אחת} other{{count} תמונות}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "עדיין אין תמונות",
+  "journey_empty_sub": "אפשר להוסיף תמונה להערה ואז היא תופיע כאן.",
+  "archive_habit_body": "להעביר את ההרגל „{name}” לארכיון? ההיסטוריה שלו תישמר וניתן לשחזר אותו אחר כך דרך ההגדרות.",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "הרגלים בארכיון",
+  "archived_habits_sub": "שחזור או מחיקה לצמיתות",
+  "archived_empty": "אין כלום בארכיון",
+  "archived_empty_sub": "ההרגלים שמוחקים מופיעים כאן, עם כל ההיסטוריה שלהם.",
+  "restore": "שחזור",
+  "restored": "ההרגל שוחזר",
+  "delete_forever": "מחיקה לצמיתות",
+  "delete_forever_body": "למחוק את ההרגל „{name}” עם כל ההיסטוריה שלו? לא ניתן לבטל פעולה זו.",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "ההרגל נמחק",
+  "clear_progress": "ניקוי התקדמות",
+  "clear_progress_sub": "היסטוריה, הערות וסבבי מיקוד",
+  "clear_progress_warning": "הפעולה מוחקת כל יום מתועד, הערה וסבב מיקוד, אבל משאירה את ההרגלים, את לוחות הזמנים שלהם ואת ההגדרות. אי אפשר לבטל אותה, אלא אם יש לך קובץ גיבוי לייבוא אחר כך.",
+  "clear_progress_confirm": "ניקוי התקדמות",
+  "clear_progress_done": "ההתקדמות נוקתה",
+  "wipe_data": "מחיקת כל הנתונים",
+  "wipe_data_sub": "ההרגלים, ההערות, סבבי המיקוד וההגדרות",
+  "wipe_data_warning": "הפעולה מוחקת כל הרגל, הערה, סבב מיקוד והגדרה בטלפון הזה. אי אפשר לבטל אותה, אלא אם יש לך קובץ גיבוי לייבוא אחר כך.",
+  "wipe_data_sure": "למחוק הכול באמת?",
+  "wipe_data_sure_body": "זו ההזדמנות האחרונה. בלי גיבוי, הנתונים האלה אבודים לצמיתות.",
+  "wipe_data_confirm": "למחוק הכול",
+  "wipe_data_done": "כל הנתונים נמחקו",
+  "day_start": "היום מתחיל בשעה",
+  "day_start_sub": "לילות מאוחרים עדיין נחשבים ליום הקודם",
+  "day_start_midnight": "חצות הלילה",
+  "day_start_hour": "{hour}:00",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "תמונה",
+  "share_stats_short": "ססטיסטיקה",
+  "undo": "ביטול פעולה",
+  "habit_archived": "ההרגל הועבר לארכיון",
+  "share_blur": "טשטוש",
+  "delete_habit_body": "למחוק את ההרגל „{name}”? לא ניתן לבטל פעולה זו.",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "לתעד החמצה?",
+  "log_relapse_body": "זה שובר את הרצף הנקי של היום עבור „{name}”. אפשר לבטל בנגיעה נוספת.",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "כן, לתעד",
+  "permission_required": "נדרשת הרשאת גישה להתראות",
+  "streaks": "הרגלים",
+  "activity": "פעילות",
+  "current": "נוכחי",
+  "best": "שיא",
+  "total": "סה״כ",
+  "relapses": "החמצות",
+  "strength": "עוצמה",
+  "week": "שבוע",
+  "month": "חודש",
+  "year": "שנה",
+  "new_reminder": "תזכורת חדשה",
+  "edit_reminder": "עריכת תזכורת",
+  "days": "ימים",
+  "time": "זמן",
+  "save_reminder": "שמירת תזכורת",
+  "select_one_day": "יש לבחור יום אחד לפחות",
+  "every_day": "כל יום",
+  "no_days": "אין ימים",
+  "repeat_hours": "חזרה במהלך היום",
+  "every_n_hours": "כל {n} ש׳",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "ימים מסוימים",
+  "repeat_interval": "כל N ימים",
+  "every_n_days": "כל {n} ימים",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "כל {n} שבועות",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "כל {n} חודשים",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "ימים",
+  "sched_unit_weeks": "שבועות",
+  "sched_unit_months": "חודשים",
+  "todo_tags": "תגיות",
+  "todo_projects": "פרויקטים",
+  "todo_project": "פרויקט",
+  "todo_project_new": "פרויקט חדש",
+  "todo_project_name": "שם הפרויקט",
+  "todo_project_edit": "עריכת פרויקט",
+  "todo_project_arrange": "סידור מחדש",
+  "todo_project_arrange_hint": "גרור את התיקיות למקום הרצוי.",
+  "todo_project_pick": "בחירת פרויקט",
+  "todo_project_none": "ללא פרויקט",
+  "todo_project_delete_body": "הפרויקט יימחק. המשימות יישארו.",
+  "todo_tag": "תגית",
+  "todo_tag_new": "תגית חדשה",
+  "todo_tag_name": "שם התגית",
+  "todo_tag_edit": "עריכת תגית",
+  "todo_tag_delete_body": "התגית תימחק. המשימות יישארו.",
+  "todo_tag_none": "ללא תגית",
+  "todo_tag_all": "הכול",
+  "todo_tag_manage": "ניהול תגיות",
+  "todo_tag_empty_title": "אין תגיות עדיין",
+  "todo_tag_empty_body": "קבץ משימות לפי פרויקט, מקום או כל דבר שתרצה.",
+  "todo_tag_folders": "תיקיות",
+  "todo_tag_list": "רשימה",
+  "todo_tag_count": "{n} פתוחות",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "סמל",
+  "todo_tag_pick": "בחירת תגיות",
+  "todo_tag_filtered": "מסונן לפי {name}",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "ללא קטגוריה",
+  "more_icons": "עוד סמלים",
+  "less_icons": "פחות סמלים",
+  "completions": "השלמות",
+  "completion_time": "זמן השלמה",
+  "current_streak": "שיא נוכחי",
+  "days_active": "ימי פעילות",
+  "completions_per_month": "השלמות / חודש",
+  "overview": "סקירה",
+  "preferences": "העדפות",
+  "profile": "פרופיל",
+  "about_app": "על יישום זה",
+  "about_app_sub": "גרסה, תודות, וקוד מקור",
+  "my_heatmap": "מפת ההתפלגות שלי",
+  "my_heatmap_sub": "פתיחת לוח הפעילות השנתי",
+  "view_source": "הצגת קוד המקור ב־GitHub",
+  "about_title": "נבנה בשבילך. בחינם, לתמיד.",
+  "about_footer": "נעשה עם ☕ והרבה זמן פנוי.",
+  "about_body": "Khuta נולד מרעיון פשוט: למה לשלם כדי לעקוב אחרי ההרגלים שלך?\n\nהיישום הזה הוא קוד פתוח לחלוטין. כל אחד יכול לראות בדיוק איך הוא עובד, להציע שיפורים, ואפילו לבנות גרסה משלו. בלי קופסאות שחורות. בלי הפתעות.\n\nהפרטיות שלך מלאה: הכול נשאר בטלפון שלך. בלי חשבונות, בלי שרתים, בלי פרסומות. אף בייט לא עוזב את המכשיר.\n\nבלי מגבלות. אפשר ליצור כמה הרגלים שרוצים. בלי מנויים, בלי גרסת פרו, בלי חלונות קופצים שמבקשים תשלום. אף פעם.\n\nאם היישום נותן לך משהו, אפשר לתמוך בו בכוכב ב-GitHub או בקנייה של קפה בשבילי. אבל זה לגמרי רשות: היישום שלך בכל מקרה.",
+  "close": "סגירה",
+  "no_data_yet": "עדיין אין נתונים",
+  "import_question_body": "להחליף את כל ההרגלים הנוכחיים בגיבוי, או למזג ביניהם?",
+  "import_replace": "להחליף הכול",
+  "import_merge": "מיזוג",
+  "go": "קדימה",
+  "quote_1": "צעדים קטנים, כל יום.",
+  "quote_2": "התמדה מנצחת עוצמה.",
+  "quote_3": "מגיעים בשביל עצמך.",
+  "quote_4": "יום אחד בכל פעם.",
+  "quote_5": "התקדמות, לא שלמות.",
+  "quote_6": "עשוי עדיף על מושלם.",
+  "quote_7": "שומרים על הרצף חי.",
+  "quote_8": "הרגלים זעירים, שינוי גדול.",
+  "quote_9": "סומכים על התהליך.",
+  "quote_10": "מנצחים את הבוקר.",
+  "quote_11": "משמעת שווה חופש.",
+  "quote_12": "היום נחשב.",
+  "just_tracking_option": "הצעת מעקב בלבד",
+  "just_tracking_option_sub": "מוסיף את המתג בעת יצירת הרגל",
+  "just_tracking": "מעקב בלבד",
+  "just_tracking_sub": "שומר לוח ומספרים משלו, אבל משאיר אותו מחוץ להתקדמות ולספירת היום",
+  "quotes": "ציטוטים",
+  "quotes_which": "אילו ציטוטים",
+  "quotes_app": "מהיישום",
+  "quotes_mine": "שלי",
+  "quotes_both": "שניהם",
+  "quotes_off": "כבוי",
+  "quotes_my_list": "הציטוטים שלי",
+  "quotes_add": "הוספת ציטוט",
+  "quotes_edit": "עריכת ציטוט",
+  "quotes_hint": "כתיבת הציטוט שלך",
+  "quotes_empty": "אין ציטוטים משלך",
+  "quotes_empty_sub": "כותבים ציטוטים משלך והם יופיעו ב״היום״.",
+  "motiv_start": "מתחילים את היום חזק 💪",
+  "motiv_progress": "אתה על המסלול, ממשיכים",
+  "motiv_almost": "כמעט סיימנו! נותר רק עוד קצת",
+  "motiv_perfect": "יום מושלם! 🔥",
+  "app_background": "רקע",
+  "widgets": "יישומונים",
+  "customize_widgets": "התאמה אישית של היישומונים",
+  "customize_widgets_sub": "רגע, אטימות וגבול",
+  "widget_background": "צבע רקע",
+  "widget_opacity": "אטימות",
+  "widget_border": "גבול",
+  "widget_preview": "תצוגה מקדימה",
+  "bg_solid": "אחיד",
+  "bg_gradient": "מדרג צבעים",
+  "bg_dots": "נקודות",
+  "bg_oled": "OLED",
+  "weekdays": "אמצע השבוע",
+  "weekends": "סוף השבוע",
+  "reminder_message": "הודעה (רשות)",
+  "reminder_message_hint": "להשאיר ריק לציטוט מעורר מוטיבציה",
+  "new_category": "קטגוריה חדשה",
+  "edit_category": "עריכת קטגוריה",
+  "add_category": "יצירת חדשה",
+  "delete_category": "מחיקת קטגוריה",
+  "edit": "עריכה",
+  "cover_image": "תמונת כיסוי",
+  "book_cover": "כריכת ספר",
+  "add_image": "הוספת תמונה",
+  "when_best": "מתי אתה הכי עקבי?",
+  "streak_evolution": "התפתחות הרצף",
+  "consistency": "התמדה",
+  "consistency_trend": "מגמת התמדה",
+  "by_habit": "לפי הרגל",
+  "ranking": "דירוג",
+  "active_days": "ימים פעילים",
+  "perfect_days": "ימים מושלמים",
+  "per_week": "לפי שבוע",
+  "best_month": "החודש הטוב ביותר",
+  "streak_on": "🔥 {n} ימים ברצף. לא שוברים!",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 היום אפשר להתחיל רצף חדש",
+  "not_enough_data": "עדיין אין מספיק נתונים",
+  "about_inline": "Khuta הוא יישום בקוד פתוח למעקב אחר הרגלים. בלי חשבונות, בלי מגבלות, בלי תשלומים. הכול נשאר בטלפון שלך.\n\nכל אחד יכול לראות את הקוד, לשפר אותו או להשתמש בו בחופשיות.",
+  "about_subtitle": "בשביל הימים שבהם בוחרים להגיע.",
+  "about_story": "היישום הזה נולד מתסכול ממעקבי ההרגלים שקיימים. רובם מגבילים את מספר ההרגלים, נועלים תכונות בסיסיות מאחורי תשלום, עוקבים אחריך או מפציצים בפרסומות. אז החלטתי לבנות את Khuta: בחינם לגמרי, בלי פרסומות, בלי תשלומים, בלי מעקב. הכול רץ מקומית, והנתונים שלך שלך. קוד פתוח, בלי תנאים נסתרים.",
+  "share": "שיתוף",
+  "share_progress": "שיתוף ההתקדמות",
+  "share_failed": "לא ניתן ליצור את התמונה",
+  "share_swipe_hint": "מחליקים על הכרטיס כדי לנוע בזמן",
+  "share_background": "רקע",
+  "share_size": "גודל",
+  "share_size_large": "גבוה",
+  "share_size_small": "ריבוע",
+  "share_show_stats": "הצגת סטטיסטיקה",
+  "share_save": "שמירה",
+  "share_saved": "נשמר בגלריה",
+  "share_save_failed": "לא ניתן לשמור את התמונה",
+  "about_developer": "המפתח",
+  "about_credits": "תודות",
+  "about_credits_body": "נבנה עם Flutter. סמלים מאת Lucide. תרשימים מאת fl_chart. בגופנים Figtree ו-Playfair Display.",
+  "dev_role": "יוצר עצמאי · Khuta",
+  "notes": "הערות",
+  "notes_enable_sub": "צירוף הערות לכל יום של הרגל",
+  "add_note": "הוספת הערה",
+  "edit_note": "עריכת הערה",
+  "view_notes": "הצגת הערות",
+  "edit_entry": "עריכת רשומה",
+  "note_type": "סוג",
+  "note_kind_note": "הערה",
+  "note_kind_planned": "מתוכנן",
+  "note_kind_completed": "הושלם",
+  "note_hint": "כתיבת ההערה...",
+  "note_time_optional": "זמן (רשות)",
+  "save_note": "שמירת הערה",
+  "notes_empty": "עדיין אין הערות ליום הזה",
+  "delete_note": "מחיקת הערה",
+  "legend_note_added": "ההערה נוספה",
+  "tomorrow": "מחר",
+  "notes_count": "{count, plural, =1{הערה אחת} other{{count} הערות}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "משימות",
+  "todos_enable_sub": "רשימה מהירה לצד ההרגלים",
+  "todo_new": "משימה חדשה",
+  "todo_hint": "מה צריך לעשות?",
+  "todo_subtasks": "תתי-משימות",
+  "todo_subtask_hint": "תת-משימה",
+  "todo_empty_title": "הרשימה ריקה",
+  "todo_empty_body": "רושמים מה רוצים להספיק בימים הקרובים.",
+  "todo_date": "תאריך",
+  "todo_no_date": "ללא תאריך",
+  "todo_time": "שעה",
+  "todo_priority": "עדיפות",
+  "priority_none": "ללא עדיפות",
+  "priority_low": "נמוכה",
+  "priority_medium": "בינונית",
+  "priority_high": "גבוהה",
+  "todo_overdue": "באיחור",
+  "todo_upcoming": "בקרוב",
+  "todo_someday": "מתישהו",
+  "pick_a_date": "בחירת תאריך",
+  "todo_left": "{count, plural, =0{הכול הושלם} =1{נותרה משימה אחת} two{נותרו שתי משימות} other{נותרו {count} משימות}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, =1{הושלמה (1)} other{הושלמו ({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "חיפוש במשימות",
+  "todo_search_empty": "אין התאמות",
+  "todo_clear_completed": "ניקוי שהושלמו",
+  "todo_clear_completed_body": "{count, plural, =1{הפעולה מוחקת את המשימה שהושלמה.} two{הפעולה מוחקת את שתי המשימות שהושלמו.} other{הפעולה מוחקת את {count} המשימות שהושלמו.}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "כללי",
+  "prefs_features": "תכונות",
+  "prefs_privacy": "פרטיות",
+  "collapse_cards": "כיווץ כרטיסים",
+  "expand_cards": "הרחבת כרטיסים",
+  "view_switcher": "מחליף תצוגה",
+  "view_switcher_sub": "הצגת הכפתורים שבוע / חודש / שנה ב״היום״",
+  "view_switcher_needs": "הפעל פעילות בכרטיסים כדי להשתמש בזה",
+  "focus": "מיקוד",
+  "focus_enable_sub": "טיימר להרגלים שזקוקים לו",
+  "focus_free_session": "סבב חופשי",
+  "focus_duration": "משך זמן",
+  "focus_start": "התחלת סבב",
+  "focus_style": "סגנון טיימר",
+  "focus_style_digital": "עיגול",
+  "focus_style_flip": "דפדוף",
+  "focus_style_dots": "נקודות",
+  "focus_countdown": "ספירה לאחור של 3 שניות",
+  "focus_skip_break": "דילוג על הפסקה",
+  "focus_continue": "המשך",
+  "focus_alert": "התראה בסוף סבב",
+  "focus_alert_chime": "צלצול",
+  "focus_alert_custom": "בחירת צליל",
+  "focus_alert_none": "שקט",
+  "focus_hold": "המתן עד שאעצור",
+  "focus_hold_sub": "הסבב הבא ימתין עד שתקיש על המשך.",
+  "focus_restart": "התחלה מחדש",
+  "focus_restart_title": "להתחיל את הסבב מחדש?",
+  "focus_restart_body": "הזמן שהתמקדת בו בסבב הזה יאבד.",
+  "focus_saved": "{time} נרשמו",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_total": "זמן מיקוד",
+  "focus_sessions": "סבבים",
+  "focus_stop_title": "לסיים את הסבב?",
+  "focus_stop_body": "הדקות שלך נשמרות בכל מקרה. ההרגל יושלם רק אם הגעת ליעד.",
+  "focus_end": "סיום",
+  "focus_pick_habit": "במה להתמקד?",
+  "focus_scene_custom": "התמונה שלך",
+  "unit_hours": "שעות",
+  "unit_minutes": "דקות",
+  "unit_seconds": "שניות",
+  "focus_target_reached": "המטרה הושגה",
+  "focus_pause": "השהיה",
+  "focus_resume": "המשך",
+  "focus_sound": "צליל",
+  "focus_pick_audio": "בחירת רצועה מהטלפון",
+  "focus_no_sound": "לא נבחרה רצועה",
+  "focus_tasks": "רשימת תתי-משימות",
+  "focus_custom_duration": "התאמה אישית",
+  "focus_end_short": "חסר לך {time} עד היעד.",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_end_tasks": "{count} משימות עדיין לא סומנו.",
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_end_reached": "היעד הושג. ההרגל יסומן כהושלם.",
+  "focus_end_keep": "ממשיכים",
+  "focus_end_anyway": "לסיים בכל זאת",
+  "focus_end_complete": "סימון כהושלם",
+  "focus_end_add_time": "הוספת זמן מיקוד",
+  "focus_amount_added": "{amount} נוספו אל {habit}",
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "התאמה אישית",
+  "focus_track_rain": "גשם",
+  "focus_track_brown": "רעש חום",
+  "focus_track_pad": "פד חם",
+  "focus_add_track": "הוספת רצועה",
+  "focus_shuffle": "ערבוב",
+  "focus_loop": "לפי הסדר",
+  "focus_repeat_one": "חזרה על אחד",
+  "focus_track_too_long": "הרצועות חייבות להיות קצרות מ-20 דקות",
+  "focus_track_limit": "עד 10 רצועות",
+  "focus_done_title": "הסבב הושלם",
+  "focus_your_tracks": "הרצועות שלך",
+  "focus_built_in": "כלולות",
+  "unit_hour_short": "ש׳",
+  "unit_min_short": "דק׳",
+  "focus_notif_body": "סבב המיקוד שלך הסתיים. כל הכבוד!",
+  "celebration": "אפקט השלמה",
+  "celebration_confetti": "קונפטי",
+  "celebration_fireworks": "זיקוקים",
+  "celebration_surprise": "הפתיעו אותי",
+  "focus_notif_channel": "סבבי מיקוד",
+  "focus_notif_running": "ממוקד",
+  "focus_paused": "מושהה",
+  "focus_scene_black": "שחור",
+  "focus_pomodoro": "פומודורו",
+  "focus_pomodoro_sub": "שרשור סבבי מיקוד עם הפסקות קצרות",
+  "focus_break": "הפסקה",
+  "focus_round": "סבב {n}",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_daily_goal": "יעד מיקוד",
+  "focus_goal_today": "{done} מתוך {goal} היום",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_keep_awake": "השארת המסך דלוק",
+  "focus_images_limit": "עד 10 תמונות",
+  "select_all": "בחירת הכול",
+  "selected_count": "{count, plural, =1{אחד נבחר} two{שניים נבחרו} other{{count} נבחרו}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "למחוק סבבים?",
+  "focus_delete_sessions_body": "{count, plural, =1{סבב מיקוד אחד יוסר. אי אפשר לבטל פעולה זו.} two{שני סבבי מיקוד יוסרו. אי אפשר לבטל פעולה זו.} other{{count} סבבי מיקוד יוסרו. אי אפשר לבטל פעולה זו.}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, =1{סבב אחד נמחק} two{שני סבבים נמחקו} other{{count} סבבים נמחקו}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "היום לא מתוזמן",
+  "unscheduled_body": "ההרגל הזה לא מתוזמן ל-{day}. לתעד אותו בכל זאת כתוספת?",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "לתעד בכל זאת",
+  "rest_days_none": "אין",
+  "last_90_days": "90 הימים האחרונים",
+  "focus_clear_today": "ניקוי הסבבים של היום",
+  "focus_defaults": "ברירות מחדל לסבב",
+  "plan_day": "תכנון היום",
+  "plan_day_sub": "נותנים להרגלים שעה ביום ורואים אותם על ציר זמן.",
+  "habit_time": "שעה ביום",
+  "habit_time_none": "בכל שעה",
+  "habit_duration": "משך",
+  "habit_duration_none": "ללא משך",
+  "day_timeline": "יום",
+  "day_timeline_free": "{span} פנויות",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "בכל שעה",
+  "day_timeline_empty": "אין תוכניות ליום הזה",
+  "day_timeline_empty_sub": "נותנים להרגל שעה ביום והוא יופיע כאן.",
+  "clear": "ניקוי",
+  "start_view": "היום נפתח על",
+  "start_view_last": "האחרון שנעשה בו שימוש",
+  "focus_stats": "סטטיסטיקת מיקוד",
+  "focus_average": "סבב ממוצע",
+  "focus_log": "תיעוד סבב",
+  "focus_log_date": "תאריך",
+  "focus_log_saved": "הסבב נוסף",
+  "perfect_streak": "רצף ימים מושלמים",
+  "focus_history": "היסטוריה",
+  "focus_history_empty": "עדיין אין סבבים",
+  "focus_history_empty_sub": "כל סבב מיקוד שתסיים יופיע כאן.",
+  "focus_history_day": "{count, plural, =1{סבב אחד} two{שני סבבים} other{{count} סבבים}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "אתמול",
+  "notes_hint": "פותחים הרגל ולוחצים לחיצה ארוכה על יום בלוח השנה שלו כדי לראות או להוסיף הערות",
+  "app_style": "סגנון היישום",
+  "app_style_sub": "בחירה איך כל היישום נראה ומרגיש.",
+  "style_classic": "קלאסי",
+  "style_minimal": "מינימלי",
+  "style_classic_desc": "רשימת הרגלים, סרגל תחתון וכל ההגדרות במסך אחד.",
+  "style_minimal_desc": "רשת הרגלים והגדרות מקובצות בארבעה חלקים.",
+  "appearance_sub": "עיצוב, צבע הדגשה ורקע",
+  "preferences_sub": "שפה, שבוע ומיון",
+  "data_sub": "גיבויים וייבוא",
+  "about_sub": "גרסה, קוד מקור ותמיכה",
+  "check_style": "סגנון סימון",
+  "square": "ריבוע",
+  "circle": "עיגול",
+  "icons_tab": "סמלים",
+  "emojis_tab": "אימוג׳ים",
+  "emoji_own": "הקלד או הדבק כל אימוג׳י",
+  "advanced_options": "אפשרויות מתקדמות",
+  "default_user": "משתמש",
+  "your_name": "השם שלך",
+  "edit_name": "עריכת שם",
+  "change_photo": "החלפת תמונה",
+  "remove_photo": "הסרת תמונה",
+  "notif_greeting": "היי {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "סמל היישום",
+  "icon_default": "ברירת מחדל",
+  "icon_neutral": "פחם",
+  "icon_accent": "חול",
+  "custom": "התאמה אישית",
+  "see_more": "הרחבה",
+  "see_less": "צמצום",
+  "colors_tab": "צבעים",
+  "reorder": "סידור מחדש",
+  "reorder_hint": "גוררים את ההרגלים כדי לסדר אותם מחדש",
+  "category_order": "סדר הקטגוריות",
+  "category_order_sub": "גרור אותן לסדר הרצוי",
+  "category_order_empty": "תן להרגל קטגוריה והיא תופיע כאן",
+  "done": "סיום",
+  "accent_color": "צבע נושא",
+  "heatmap_path": "חיבור הימים",
+  "heatmap_path_sub": "מצייר את הלוח כמסלול אחד ארוך",
+  "sort_completed_last": "שהושלמו בסוף",
+  "sort_completed_last_sub": "מעביר את מה שסיימת לתחתית הרשימה",
+  "today_only": "רק של היום",
+  "today_only_sub": "מסתיר הרגלים שלא מתוזמנים להיום",
+  "card_activity": "פעילות בכרטיסים",
+  "card_activity_sub": "מציג בכרטיס את הימים האחרונים, מוכנים לסימון",
+  "readable_copy": "עותק קריא",
+  "readable_copy_sub": "כותב את ההרגלים שלך גם כקובצי markdown",
+  "theme_sub": "בהיר, כהה או לפי המערכת",
+  "accent_color_sub": "בשימוש בכפתורים ובהדגשות",
+  "app_background_sub": "מה שרואים מאחורי הכרטיסים",
+  "check_style_sub": "סימונים מרובעים או עגולים",
+  "app_icon_sub": "הסמל במסך הבית שלך",
+  "language_sub": "שפת האפליקציה כולה",
+  "week_start_sub": "העמודה הראשונה בכל לוח",
+  "celebration_sub": "מה שרואים כשמסמנים הרגל",
+  "start_view_sub": "התצוגה שבה נפתח היום",
+  "quotes_sub": "אילו ציטוטים יופיעו ביום",
+  "focus_daily_goal_sub": "דקות המיקוד שאתה שואף אליהן בכל יום",
+  "app_lock_delay_sub": "כמה זמן אחרי היציאה הוא יבקש שוב",
+  "focus_only": "רק עם סבב מיקוד",
+  "focus_only_hint": "ההרגל מסומן כשמסיימים סבב, לא בנגיעה.",
+  "focus_only_title": "דורש סבב מיקוד",
+  "focus_only_body": "„{name}” מושלם בסיום סבב מיקוד.",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "„{name}” מושלם רק על ידי סבב מיקוד, ולכן אי אפשר לסמן ימים קודמים.",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "לנקות את הסימון?",
+  "focus_only_clear_body": "רק סבב מיקוד יכול לסמן שוב את „{name}”.",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "התחלת סבב",
+  "focus_flowtime": "זרימה חופשית",
+  "focus_flowtime_hint": "בלי יעד ובלי התראה. השעון סופר קדימה ועוצרים כשמרגישים שסיימת.",
+  "focus_end_flow": "התמקדת במשך {time}.",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "מופעל",
+  "off": "כבוי",
+  "checklist": "רשימת סימון",
+  "checklist_hint": "מפרקים את ההרגל לשלבים. הוא מושלם רק כשכל שלב מסומן.",
+  "add_step": "הוספת שלב",
+  "step_hint": "שם השלב",
+  "todays_checklist": "הרשימה של היום",
+  "steps_done": "{done}/{total} צעדים",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "השהיית כל ההרגלים",
+  "vacation_all_sub": "שום דבר לא נחשב כהחמצה כל עוד זה פעיל",
+  "vacation_mode": "מצב חופשה",
+  "vacation_on_desc": "מושהה: הימים האלה לא ייחשבו כהחמצה או כהשלמה.",
+  "vacation_off_desc": "השהיית ההרגל. ימים שדולגו לא ישברו את הרצף.",
+  "paused": "מושהה",
+  "start_vacation": "תחילת חופשה",
+  "end_vacation": "סיום חופשה",
+  "vacation_day_on": "סימון כיום חופשה",
+  "vacation_day_off": "הסרת יום חופשה",
+  "rest_days": "ימי מנוחה",
+  "rest_days_desc": "משהים אותו בכל שבוע בימים האלה. עדיין אפשר לתעד אותם, והם ייחשבו.",
+  "widget_no_habits": "עדיין אין הרגלים\nנוגעים כדי לפתוח את Khuta",
+  "widget_no_data": "עדיין אין נתונים\nפותחים את Khuta לסנכרון",
+  "widget_open_to_sync": "פותחים את Khuta לסנכרון",
+  "widget_activity": "פעילות",
+  "widget_today_progress": "היום  {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "משימות  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "לא נשאר דבר להיום",
+  "widget_done_today": "הושלמו היום",
+  "widget_best_streak": "🔥 {streak} הרצף הארוך ביותר",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "התאמת היישומון",
+  "widget_cfg_color": "צבע",
+  "widget_cfg_image": "תמונה",
+  "widget_cfg_choose_image": "בחירת תמונה",
+  "widget_cfg_change_image": "החלפת תמונה",
+  "widget_cfg_custom_color": "צבע מותאם",
+  "widget_cfg_follow_system": "לפי עיצוב המערכת",
+  "widget_cfg_dark_color": "עיצוב כהה",
+  "widget_cfg_light_color": "עיצוב בהיר",
+  "widget_cfg_opacity": "אטימות  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "גבול",
+  "widget_cfg_thickness": "עובי  {value}dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "משימות",
+  "widget_cfg_todos_all": "הצגת כל המשימות",
+  "widget_cfg_todos_hint": "כבוי: רק משימות של היום, באיחור וללא תאריך",
+  "widget_cfg_show_activity": "הצגת פעילות של",
+  "widget_cfg_dot_color": "צבע הנקודה",
+  "widget_cfg_style": "סגנון",
+  "widget_cfg_style_classic": "קלאסי",
+  "widget_cfg_style_card": "כרטיס",
+  "widget_cfg_all_habits": "כל ההרגלים",
+  "widget_cfg_save": "שמירה",
+  "widget_cfg_add": "הוספת יישומון",
+  "widget_cfg_reset": "איפוס לברירת מחדל",
+  "widget_cfg_hue": "גוון",
+  "widget_cfg_saturation": "רוויה",
+  "widget_cfg_brightness": "בהירות",
+  "widget_demo_read": "קריאה",
+  "widget_demo_run": "ריצה",
+  "widget_demo_water": "מים",
+  "notif_streak": "🔥 רצף של {streak} ימים",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 רצף של {streak} שבועות",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 רצף של {streak} חודשים",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "בוצע",
+  "notif_action_snooze": "נודניק",
+  "notif_action_add": "הוספת כמות",
+  "notif_action_add_hint": "כמה?",
+  "snooze_duration": "נודניק למשך",
+  "snooze_custom": "התאמה אישית",
+  "snooze_custom_hint": "דקות",
+  "minutes_short": "{value} דק׳",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "סימון {name} כהושלם",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "סימון {name} כלא הושלם",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "הוספה אל {name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "תיעוד החמצה עבור {name}",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "ניקוי ההחמצה של היום עבור {name}",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "לא הושלם",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "השבוע הקודם",
+  "a11y_next_week": "השבוע הבא",
+  "a11y_increase": "הגדלה",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "הקטנה",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "בחירת צבע",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "השבוע",
+  "period_last_week": "שבוע שעבר",
+  "period_this_month": "החודש",
+  "period_last_month": "חודש שעבר",
+  "period_this_year": "השנה",
+  "period_all_time": "כל הזמנים",
+  "times_completed": "פעמים שהושלם",
+  "period_last_year": "שנה שעברה",
+  "period_week_of": "שבוע של {date}",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{אין סבבים} =1{סבב אחד} two{{count} סבבים} other{{count} סבבים}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "כל ההערות",
+  "notes_empty_all": "אין הערות עדיין",
+  "quant_preset_time": "זמן",
+  "style_express": "אקספרס",
+  "style_express_desc": "צורות מעוגלות, תנועה קפיצית וגופן רחב יותר.",
+  "celebration_none": "ללא",
+  "quant_add_title": "הוספת כמות",
+  "pane_hint": "פתח פריט מהרשימה כדי לראות אותו כאן",
+  "average_short": "ממוצע",
+  "island": "אי",
+  "island_enable_sub": "הפוך את ההרגלים שלך לנווה מדבר שנבנה חלק אחר חלק",
+  "island_open": "פתיחת האי",
+  "island_shop": "חנות",
+  "island_build": "בנייה",
+  "island_done": "נבנה",
+  "island_complete": "נווה המדבר הושלם",
+  "island_tap_hint": "הקש על צורה כדי לראות מה ממקמים שם",
+  "island_empty": "סמן הרגל ונווה המדבר יתחיל לצמוח",
+  "island_how": "איך עובדות הנקודות",
+  "island_how_check": "10 על כל הרגל שמסמנים",
+  "island_how_focus": "1 על כל דקת מיקוד",
+  "island_how_perfect": "עוד 25 ליום מושלם",
+  "island_how_note": "המטבעות נובעים מההיסטוריה שלך, ולכן גיבוי מחזיר אותם.",
+  "island_built": "{done} מתוך {total} נבנו",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "חסרות {count} נקודות",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} נמצא עכשיו על האי",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "אלוורה מדברית",
+  "island_p_altar": "אוהל בדואי",
+  "island_p_archway": "קשת אבן",
+  "island_p_banner": "דגל",
+  "island_p_bench": "ספסל",
+  "island_p_blue_railing": "מחיצת סבכה",
+  "island_p_bougainvillea": "בוגנוויליה",
+  "island_p_boulder": "גוש סלע",
+  "island_p_crate": "ארגז",
+  "island_p_crop_patch": "חלקת גידולים",
+  "island_p_cube_house": "בית כיפות",
+  "island_p_cypress": "עץ תמר",
+  "island_p_dry_grass": "עשב יבש",
+  "island_p_flat_stone": "אבן שטוחה",
+  "island_p_flower_pot": "עציץ פרחים",
+  "island_p_garden_bed": "ערוגת גן",
+  "island_p_hanging_lantern": "פנס תלוי",
+  "island_p_hay_bale": "חבילת חציר",
+  "island_p_house": "בית קטן",
+  "island_p_lantern_post": "עמוד תאורה",
+  "island_p_large_rock": "סלע גדול",
+  "island_p_main_chapel": "מסגד",
+  "island_p_mossy_stone": "סלע שיחים",
+  "island_p_olive": "עץ שיטה",
+  "island_p_pebbles": "חלוקי נחל",
+  "island_p_pergola_house": "בית פרגולה",
+  "island_p_pottery_jar": "כד חרס",
+  "island_p_rocks": "סלעים",
+  "island_p_signpost": "תמרור",
+  "island_p_small_bridge": "גשר קרשים",
+  "island_p_stone_basin": "מזרקה",
+  "island_p_stone_lantern": "פנס אבן",
+  "island_p_stone_pile": "ערמת אבנים",
+  "island_p_storage_box": "תיבת אחסון",
+  "island_p_terrace_house": "בית מרפסת",
+  "island_p_terracotta_pot": "עציץ טרקוטה",
+  "island_p_tower_chapel": "מינרט",
+  "island_p_two_story": "בית דו-קומתי",
+  "island_p_veg_garden": "גן ירק",
+  "island_p_villa": "בית חצר",
+  "island_p_water_bucket": "דלי מים",
+  "island_p_well": "באר",
+  "island_p_windmill": "מלקף רוח",
+  "island_p_wood_pile": "ערמת עצים",
+  "island_reset": "התחלת האי מחדש",
+  "island_reset_sub": "הכול יפורק וכל הנקודות יחזרו ליתרה שלך.",
+  "island_coins": "מטבעות",
+  "island_g_pueblo": "הכפר",
+  "island_g_cala": "המעיין",
+  "island_g_terrazas": "המדרגות",
+  "island_g_puerto": "תחנת השיירות",
+  "island_g_molino": "רכס מלקפי הרוח",
+  "island_how_todo": "4 על כל משימה שמסיימים",
+  "island_how_streak": "בונוס כשהרגל מגיע ל-7, 30, 100 ו-365 ימים",
+  "island_zoom_hint": "גרור באצבע אחת כדי להזיז. צבוט בשתיים כדי להתקרב, סובב כדי לסובב את האי.",
+  "island_t_teal": "טורקיז",
+  "island_t_clay": "טרקוטה",
+  "island_t_white": "לבן",
+  "island_t_coral": "אלמוג",
+  "island_t_lilac": "לילך",
+  "island_t_autumn": "סתיו",
+  "island_t_deep": "כהה",
+  "island_t_silver": "כסף",
+  "island_g_huerta": "מטע התמרים",
+  "island_g_faro": "ערמות הסלעים",
+  "island_turn": "סיבוב התצוגה",
+  "gamification": "גיימיפיקציה",
+  "island_default_name": "האי שלי",
+  "island_rename": "תן שם לאי שלך",
+  "island_only_affordable": "רק מה שאני יכול להרשות לעצמי",
+  "island_nothing_here": "אין כאן כלום עדיין",
+  "island_g_vega": "הואדי",
+  "island_g_mirador": "נקודת התצפית",
+  "island_g_astillero": "חצר העבודה",
+  "island_g_ermita": "גן המסגד",
+  "island_g_caleta": "המעיין הקטן",
+  "island_g_cabo": "הכף",
+  "island_goal": "כך זה נראה כשכל החלקים נבנו.",
+  "island_reset_go": "התחלה מחדש",
+  "island_beta": "זו גרסה ראשונה של גיימיפיקציה והיא עדיין בבטא. היא עשויה לגדול, לשנות צורה או להיות מוחלפת לגמרי, בהתאם לאופן שבו תשתמשו בה.",
+  "gamification_beta": "גיימיפיקציה (בטא)",
+  "last_check": "סימון אחרון",
+  "check_history": "היסטוריית סימונים",
+  "check_history_sub": "{count} ימים סומנו",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "אף פעם",
+  "check_no_time": "לא נשמר זמן",
+  "heatmap_rolling": "12 החודשים האחרונים",
+  "heatmap_rolling_sub": "לוח השנה מסתיים היום ולא ב-31 בדצמבר",
+  "check_marks": "{count} סימונים",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "התקדמות ביום",
+  "today_progress_option_sub": "טבעת היום ופס החוזק בכל הרגל",
+  "quiet_when_done": "שקט אחרי השלמה",
+  "quiet_when_done_sub": "אין עוד תזכורות היום להרגל שכבר השלמת",
+  "plan_tab": "תכנון",
+  "difficulty": "קושי",
+  "difficulty_hint": "הרגלים קשים יותר נחשבים יותר בהתקדמות היום",
+  "difficulty_easy": "קל",
+  "difficulty_medium": "בינוני",
+  "difficulty_hard": "קשה",
+  "pin_lock": "קוד PIN",
+  "pin_lock_sub": "קוד משלך, נפרד מנעילת הטלפון",
+  "pin_choose": "בחירת PIN",
+  "pin_choose_sub": "4 עד 8 ספרות",
+  "pin_repeat": "הזן שוב",
+  "pin_mismatch": "הקודים אינם תואמים. התחל מחדש.",
+  "pin_enter": "הזן את ה-PIN",
+  "pin_wrong": "PIN שגוי",
+  "pin_wait": "יותר מדי ניסיונות. המתן {seconds} שנ׳",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "קוד השחזור שלך",
+  "pin_recovery_body": "אם תשכח את ה-PIN, הקוד הזה פותח את Khuta ומכבה את הנעילה. שמור אותו במקום בטוח: הוא לא יוצג שוב.",
+  "pin_copy": "העתקת הקוד",
+  "pin_copied": "הקוד הועתק",
+  "pin_forgot": "שכחת את ה-PIN?",
+  "pin_recovery_hint": "קוד שחזור",
+  "pin_recovery_wrong": "הקוד אינו נכון",
+  "pin_recovered": "הנעילה כובתה. אפשר להגדיר PIN חדש בהגדרות.",
+  "pin_change": "שינוי PIN",
+  "pin_remove": "הסרת PIN",
+  "pin_fingerprint": "שימוש בטביעת אצבע",
+  "app_lock_method": "פתיחה באמצעות",
+  "app_lock_biometric": "טביעת אצבע או פנים",
+  "difficulty_option": "קושי ההרגל",
+  "difficulty_option_sub": "הרגלים קשים יותר ייחשבו יותר בהתקדמות היום",
+  "todo_save_another": "שמירה והוספת נוספת",
+  "todo_add_subtask": "הוספת תת-משימה",
+  "pin_paste": "הדבקת קוד",
+  "journal": "יומן",
+  "journal_today": "היום",
+  "journal_calendar": "לוח שנה",
+  "journal_empty": "עוד לא נכתב כאן דבר",
+  "journal_empty_sub": "רגעים, הרהורים והפעילות שלך ב-Khuta מתכנסים כאן.",
+  "journal_add_moment": "הוספת רגע",
+  "journal_daily_reflection": "הרהור יומי",
+  "journal_write_moment": "מה קרה?",
+  "journal_write_reflection": "איך היה היום?",
+  "journal_moment": "רגע",
+  "journal_reflection": "הרהור",
+  "journal_activity": "פעילות ב-Khuta",
+  "journeys": "מסעות",
+  "journey_new": "מסע חדש",
+  "journey_edit": "עריכת מסע",
+  "journey_title": "שם המסע",
+  "journey_description": "לאן אתה שואף להגיע?",
+  "journey_start_date": "תאריך התחלה",
+  "journey_target_date": "תאריך יעד",
+  "journey_milestones": "אבני דרך",
+  "journey_add_milestone": "הוספת אבן דרך",
+  "journey_linked_habits": "הרגלים מקושרים",
+  "journey_focus_target": "יעד מיקוד",
+  "journey_no_items": "אין מסעות עדיין",
+  "journey_no_items_sub": "צור מסע וחבר אליו את ההרגלים שמקדמים אותו.",
+  "journey_planned": "מתוכנן",
+  "journey_active": "פעיל",
+  "journey_completed": "הושלם",
+  "journey_archived": "בארכיון",
+  "journey_timeline": "ציר זמן",
+  "journey_progress": "{done} מתוך {total} אבני דרך",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "זיכרונות",
+  "journey_invalid_dates": "תאריך היעד לא יכול להיות לפני תאריך ההתחלה",
+  "journey_invalid_focus_target": "יעד המיקוד חייב להיות בין 0 ל-525600 דקות",
+  "journal_photo_limit": "אפשר לצרף עד 8 תמונות",
+  "journal_content_required": "כתוב משהו או הוסף תמונה",
+  "daily_plan_title": "היום שלי",
+  "daily_plan_progress": "{done} מתוך {total} עדיפויות הושלמו",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "בחר עד 3 עדיפויות להיום.",
+  "daily_plan_add": "הוספת עדיפות",
+  "daily_plan_edit": "עריכת עדיפויות",
+  "daily_plan_limit": "עד 3 עדיפויות",
+  "daily_plan_habit": "הרגל",
+  "daily_plan_todo": "משימה",
+  "daily_plan_milestones": "אבני דרך במסע",
+  "daily_plan_source_missing": "המקור אינו זמין",
+  "daily_plan_no_sources": "אין עוד פריטים זמינים להוספה היום.",
+  "app_usage_title": "השימוש באפליקציות היום",
+  "app_usage_disclosure": "כדי להציג שמות של אפליקציות ואת זמן השימוש היום, Khuta זקוקה לגישה לנתוני שימוש ב-Android. הסיכום מעובד במכשיר הזה, נמחק כשהאפליקציה נסגרת ולעולם לא מסתנכרן. Khuta לא קוראת תוכן של אפליקציות או התראות.",
+  "app_usage_accept_and_show": "אני מסכים/ה, הציגו את השימוש היום",
+  "app_usage_open_settings": "פתיחת הגדרות הגישה לנתוני שימוש",
+  "app_usage_access_off": "הגישה לנתוני שימוש כבויה",
+  "app_usage_loading": "נתוני השימוש היום נטענים…",
+  "app_usage_retry": "ניסיון חוזר",
+  "app_usage_total": "סך השימוש באפליקציות",
+  "app_usage_most_used": "האפליקציות שבשימוש הרב ביותר",
+  "app_usage_empty": "עדיין אין נתוני שימוש באפליקציות להיום.",
+  "app_usage_unsupported": "סיכומי שימוש באפליקציות זמינים רק ב-Android.",
+  "app_usage_error": "אי אפשר לקרוא כרגע את נתוני השימוש באפליקציות.",
+  "app_usage_local_only": "הסיכום נשאר במכשיר הזה ו-Khuta לא שומרת אותו.",
+  "app_usage_duration_hours_minutes": "{hours} שעות ו-{minutes} דקות",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} דקות",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "פחות מדקה",
+  "goals": "יעדים",
+  "goal_new": "יעד חדש",
+  "goal_edit": "עריכת יעד",
+  "goal_title": "כותרת היעד",
+  "goal_title_required": "נדרשת כותרת ליעד",
+  "goal_description": "לאיזו תוצאה ברצונך להגיע?",
+  "goal_parent": "יעד אב",
+  "goal_no_parent": "ללא יעד אב",
+  "goal_target_date": "תאריך יעד",
+  "goal_no_target_date": "ללא תאריך יעד",
+  "goal_state": "מצב",
+  "goal_active": "פעיל",
+  "goal_completed": "הושלם",
+  "goal_archived": "בארכיון",
+  "goal_link_sources": "מקורות מקושרים",
+  "goals_empty": "עדיין אין יעדים",
+  "goals_empty_sub": "צרו תוצאה וקשרו את ההרגלים, המשימות והמסעות שמקדמים אתכם אליה.",
+  "goals_entry_empty": "צרו את היעד הראשון שלכם",
+  "goal_progress": "התקדמות",
+  "goal_progress_empty": "יש לקשר מקור כדי לראות התקדמות מחושבת.",
+  "goal_no_sources": "עדיין לא קושרו מקורות.",
+  "goal_source_unavailable": "המקור אינו זמין",
+  "goal_unavailable": "היעד הזה אינו זמין.",
+  "goal_subgoals": "יעדי משנה",
+  "goal_mark_completed": "סימון כהושלם",
+  "goal_restore": "שחזור יעד",
+  "goal_archive": "העברת יעד לארכיון",
+  "goals_entry_count": "{count} יעדים פעילים",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} מקורות",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "הרגלים",
+  "legal_attribution": "מבוסס על Streak מאת InlitX",
+  "legal_licenses": "רישיונות קוד פתוח",
+  "calendar": "לוח שנה",
+  "calendar_sub": "איך מוצגים התאריכים",
+  "calendar_gregorian": "גרגוריאני",
+  "calendar_hijri": "Hijri",
+  "calendar_gregorian_hijri": "גרגוריאני + Hijri",
+  "calendar_hijri_gregorian": "Hijri + גרגוריאני",
+  "hijri_adjust": "התאמת Hijri",
+  "hijri_adjust_sub": "הזז תאריכי Hijri כדי שיתאימו לראיית הירח המקומית שלך",
+  "app_name": "Khuta",
+  "hijri_months_hint": "מתוזמן בכל יום בחודשים שנבחרו. ימים אחרים לא נחשבים לטובת הרצף או נגדו.",
+  "every_day_in": "כל יום ב-{months}",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "המינימום שנחשב",
+  "minimum_goal_hint": "הגעה למינימום משלימה את היום. היעד שלמעלה נשאר היעד המלא שלך.",
+  "minimum_suffix": "מינ׳ {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "היסטוריית יעדים",
+  "history_minimum": "מינימום {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "יעד {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "נותרו {amount}",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "חזור עם צעד קטן אחד.",
+  "recovery_threshold": "התאוששות אחרי הפסקה",
+  "recovery_threshold_sub": "כמה זמן הרגל יכול להישאר בלי סימון לפני שההתאוששות תעזור לך להתחיל מחדש",
+  "recovery_days": "ימים",
+  "recovery_hours": "שעות",
+  "duration_days_hours": "{days} י׳ {hours} ש׳",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "התאוששות",
+  "recovery_hint": "צעד קטן מספיק כדי להתחיל מחדש.",
+  "recovery_dismiss": "סגירה",
+  "recovery_adjust": "התאמה",
+  "recovery_enable": "תזכורות התאוששות",
+  "recovery_enable_sub": "תזכורות עדינות אחרי הפסקה",
+  "recovery_first_delay": "תזכורת ראשונה אחרי",
+  "recovery_count": "תזכורות",
+  "recovery_repeat_every": "חזרה כל",
+  "recovery_at_time": "בשעה קבועה",
+  "recovery_time": "שעה",
+  "hours_short": "{n} ש׳",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

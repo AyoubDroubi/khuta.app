@@ -1,0 +1,1626 @@
+{
+  "@@locale": "zh",
+  "app_tagline": "习惯追踪",
+  "today": "今天",
+  "stats": "统计",
+  "settings": "设置",
+  "new_label": "新增",
+  "save": "保存",
+  "cancel": "取消",
+  "delete": "删除",
+  "good_morning": "早上好",
+  "good_afternoon": "中午好",
+  "good_evening": "晚上好",
+  "no_habits_yet": "暂无习惯",
+  "all_done_today": "今日全部完成！",
+  "x_of_y_completed": "已完成 {done}/{total}",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "开启你的首个连胜打卡",
+  "empty_body": "创建习惯，轻点日期完成打卡。点滴进步，贵在每日坚持。",
+  "add_habit": "添加习惯",
+  "all": "全部",
+  "onb1_title": "持续保持打卡连胜",
+  "onb1_body": "轻点一下即可完成习惯打卡，见证日复一日积累的前进动力。",
+  "onb2_title": "保持习惯",
+  "onb2_body": "设置日、周、月度目标，搭配提醒，不漏下任何事项。",
+  "onb3_title": "查看进度",
+  "onb3_body": "详尽统计数据与年度网格视图，见证你的每一步成长。",
+  "skip": "跳过",
+  "next": "下一步",
+  "get_started": "开始使用",
+  "onb_kicker": "欢迎使用",
+  "onb_blurb": "每天一次小小的打卡，慢慢养成坚持的习惯。",
+  "onb_free_title": "永久免费",
+  "onb_free_body": "没有广告，没有订阅，没有锁定的功能。",
+  "onb_private_title": "私密，可离线使用",
+  "onb_private_body": "所有数据都保存在你的设备上，无需账号。",
+  "onb_yours_title": "数据属于你",
+  "onb_yours_body": "随时备份，或随时带走。",
+  "onb_step": "第 {step} 步，共 {total} 步",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "统计",
+  "done_today": "今日完成",
+  "best_streak": "最高连胜纪录",
+  "active_habits": "进行中的习惯",
+  "total_logs": "总打卡次数",
+  "last_7_days": "近 7 天",
+  "last_30_days": "近30天",
+  "your_habits": "你的习惯",
+  "stats_empty": "添加习惯，即可查看数据统计",
+  "completion_rate_short": "持续",
+  "completion_rate": "完成率",
+  "appearance": "外观",
+  "theme": "主题",
+  "system": "系统",
+  "light": "浅色",
+  "dark": "深色",
+  "week_starts_on": "周起始日",
+  "mon": "周一",
+  "sat": "周六",
+  "sun": "周日",
+  "language": "语言",
+  "data": "数据",
+  "export_backup": "导出备份",
+  "export_backup_sub": "将所有习惯保存至文件",
+  "auto_backup": "自动备份",
+  "auto_backup_sub": "关闭",
+  "auto_backup_off": "关闭",
+  "auto_backup_daily": "每日",
+  "auto_backup_weekly": "每周",
+  "auto_backup_where": "打开应用时会自动创建完整备份，仅保留最近 5 个备份。",
+  "auto_backup_folder": "文件夹",
+  "auto_backup_folder_default": "应用文件夹",
+  "auto_backup_folder_set": "文件夹已保存",
+  "auto_backup_folder_failed": "无法对此文件夹执行写入操作",
+  "auto_backup_no_permission": "存储权限被拒绝",
+  "auto_backup_run_now": "立即备份",
+  "refresh_now": "刷新",
+  "refresh_now_sub": "同步其他设备放在文件夹里的内容",
+  "refresh_brought": "你的习惯已是最新",
+  "refresh_nothing": "文件夹里没有新内容",
+  "import_backup": "导入备份",
+  "import_backup_sub": "从文件恢复习惯",
+  "import_from_app": "从其他应用导入",
+  "import_from_app_sub": "Loop Habit Tracker, HabitKit…",
+  "import_from_app_done": "已从 {source} 导入 {habits} 项习惯（共 {days} 天数据）",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "无法导入该文件",
+  "about": "关于",
+  "backup_saved": "备份已保存",
+  "export_cancelled": "导出已取消",
+  "habits_imported": "习惯已导入",
+  "new_habit": "新建习惯",
+  "edit_habit": "编辑习惯",
+  "name": "名称",
+  "name_hint": "例如：晨跑",
+  "description": "描述",
+  "description_hint": "选填备注",
+  "icon": "图标",
+  "color": "颜色",
+  "category": "分类",
+  "category_health": "健康",
+  "category_fitness": "健身",
+  "category_mindfulness": "正念",
+  "category_productivity": "效率",
+  "category_learning": "学习",
+  "category_finance": "财务",
+  "count_days": "{count, plural, other{{count} 天}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, other{{count} 周}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, other{{count} 个月}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count}周",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count}个月",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "习惯类型",
+  "kind_positive": "普通",
+  "kind_negative": "戒除",
+  "kind_quantitative": "可量化",
+  "kind_locked_hint": "创建习惯后，类型无法修改。",
+  "kind_negative_hint": "默认每日达标，连胜天数自动累积。点击打卡视为破戒，当日会标红，支持撤销操作。",
+  "cost_per_day": "每日花费",
+  "cost_note": "可选，不涉及花费可留空。",
+  "currency": "货币",
+  "currency_custom": "自定义",
+  "currency_hint": "符号或代码",
+  "money_saved": "已省金额",
+  "clean_days": "无失误天数",
+  "quant_preset_water": "水",
+  "quant_preset_reading": "阅读",
+  "quant_preset_generic": "自定义",
+  "quant_unit_hint": "单位（例如：毫升、页、次）",
+  "quant_unit_ml": "毫升",
+  "quant_unit_pages": "页",
+  "quant_edit_title": "今日完成量",
+  "quant_daily_goal": "每日目标",
+  "quant_tap_amount": "每次增量",
+  "quant_per_day": "每日数量",
+  "quant_average": "平均每天",
+  "quant_logged_days": "记录天数",
+  "quant_best_day": "最佳记录",
+  "quant_goal_days": "目标达成",
+  "quant_stats_empty": "即使当天未达到目标，记录的数量也会在这里累计显示。",
+  "frequency": "频率",
+  "daily": "每日",
+  "weekly": "每周",
+  "monthly": "每月",
+  "sched_days": "天数",
+  "sched_interval": "间隔",
+  "times_per_week": "周均 {n} 次",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "每月{n}次",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}×/周",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/月",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "提醒",
+  "add_reminder": "添加提醒",
+  "delete_habit": "删除习惯",
+  "archive_habit": "归档习惯",
+  "archive": "归档",
+  "copy_message": "复制消息",
+  "message_copied": "消息已复制",
+  "app_lock": "应用锁",
+  "app_lock_sub": "使用指纹或面容解锁 Khuta",
+  "app_lock_unavailable": "此手机未设置生物识别",
+  "app_lock_failed": "无法验证您的身份",
+  "app_lock_title": "Khuta 已锁定",
+  "app_lock_unlock": "解锁",
+  "app_lock_delay": "多久后锁定",
+  "app_lock_delay_instant": "立即",
+  "app_lock_delay_seconds": "{value} 秒",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "照片",
+  "note_take_photo": "相机",
+  "note_pick_photo": "相册",
+  "journey": "旅程",
+  "journey_sub": "{count, plural, =1{1 照片} other{{count} 照片}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "暂无照片",
+  "journey_empty_sub": "将照片添加到笔记中，它会显示在这里。",
+  "archive_habit_body": "确定将\"{name}\"归档吗？该习惯的历史记录会完整保留，你可在设置页恢复它。",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "已归档习惯",
+  "archived_habits_sub": "可恢复或永久删除",
+  "archived_empty": "暂无已归档习惯",
+  "archived_empty_sub": "你删除的习惯会存放在这里，历史记录一并保留。",
+  "restore": "恢复",
+  "restored": "习惯已恢复",
+  "delete_forever": "永久删除",
+  "delete_forever_body": "确定永久删除\"{name}\"及其全部历史记录吗？此操作无法撤销。",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "习惯已删除",
+  "clear_progress": "清除进度",
+  "clear_progress_sub": "历史记录、笔记和专注记录",
+  "clear_progress_warning": "此操作将删除所有已打卡的日期、笔记和专注记录，但会保留你的习惯、它们的计划和设置。该操作无法撤销，除非你有可导入的备份文件。",
+  "clear_progress_confirm": "清除进度",
+  "clear_progress_done": "进度已清除",
+  "wipe_data": "清除全部数据",
+  "wipe_data_sub": "习惯、笔记、专注记录和设置",
+  "wipe_data_warning": "此操作将删除此手机上的所有习惯、笔记、专注记录和设置。该操作无法撤销，除非您有可导入的备份文件。",
+  "wipe_data_sure": "确定要清除所有数据吗？",
+  "wipe_data_sure_body": "最后警告。若未备份，数据将彻底删除。",
+  "wipe_data_confirm": "全部清除",
+  "wipe_data_done": "所有数据已清除",
+  "day_start": "日起始时间",
+  "day_start_sub": "深夜完成的习惯仍计入前一天",
+  "day_start_midnight": "凌晨",
+  "day_start_hour": "上午{hour}:00",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "照片",
+  "share_stats_short": "统计",
+  "undo": "撤销",
+  "habit_archived": "习惯已归档",
+  "share_blur": "模糊",
+  "delete_habit_body": "确定删除“{name}”？此操作无法撤销。",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "记录一次破戒？",
+  "log_relapse_body": "这将中断“{name}”今日连续未破戒记录。再次点击可撤销操作。",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "确认记录",
+  "permission_required": "需要通知权限",
+  "streaks": "连胜",
+  "activity": "打卡记录",
+  "current": "当前",
+  "best": "最高",
+  "total": "总计",
+  "relapses": "破戒次数",
+  "strength": "意志力",
+  "week": "周",
+  "month": "月",
+  "year": "年",
+  "new_reminder": "新建提醒",
+  "edit_reminder": "编辑提醒",
+  "days": "天",
+  "time": "时间",
+  "save_reminder": "保存提醒",
+  "select_one_day": "至少选择一天",
+  "every_day": "每天",
+  "no_days": "未选择日期",
+  "repeat_hours": "重复",
+  "every_n_hours": "每{n}小时",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "指定日期",
+  "repeat_interval": "每 N 天",
+  "every_n_days": "每 {n} 天",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "每 {n} 周",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "每 {n} 个月",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "天",
+  "sched_unit_weeks": "周",
+  "sched_unit_months": "月",
+  "todo_tags": "标签",
+  "todo_projects": "项目",
+  "todo_project": "项目",
+  "todo_project_new": "新建项目",
+  "todo_project_name": "项目名称",
+  "todo_project_edit": "编辑项目",
+  "todo_project_arrange": "重新排序",
+  "todo_project_arrange_hint": "拖动文件夹到你想要的位置。",
+  "todo_project_pick": "选择项目",
+  "todo_project_none": "无项目",
+  "todo_project_delete_body": "项目会被删除，任务会保留。",
+  "todo_tag": "标签",
+  "todo_tag_new": "新建标签",
+  "todo_tag_name": "标签名称",
+  "todo_tag_edit": "编辑标签",
+  "todo_tag_delete_body": "标签会被删除，任务会保留。",
+  "todo_tag_none": "无标签",
+  "todo_tag_all": "全部",
+  "todo_tag_manage": "管理标签",
+  "todo_tag_empty_title": "还没有标签",
+  "todo_tag_empty_body": "按项目、地点或任何你喜欢的方式给任务分组。",
+  "todo_tag_folders": "文件夹",
+  "todo_tag_list": "列表",
+  "todo_tag_count": "{n} 项待办",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "图标",
+  "todo_tag_pick": "选择标签",
+  "todo_tag_filtered": "按 {name} 筛选",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "未分类",
+  "more_icons": "更多图标",
+  "less_icons": "精简图标",
+  "completions": "完成次数",
+  "completion_time": "打卡时间",
+  "current_streak": "当前连胜",
+  "days_active": "活跃天数",
+  "completions_per_month": "月度完成频率",
+  "overview": "总览",
+  "preferences": "偏好设置",
+  "profile": "主页",
+  "about_app": "关于应用",
+  "about_app_sub": "版本、鸣谢与源代码",
+  "my_heatmap": "我的热力图",
+  "my_heatmap_sub": "打开年度活动网格图",
+  "view_source": "在 GitHub 查看源代码",
+  "about_title": "为你而生，永久免费。",
+  "about_footer": "由☕与大量闲暇时光打磨而成。",
+  "about_body": "Khuta 诞生于一个简单的想法：为什么要为记录自己的习惯付费？\n\n这款应用完全开源。任何人都能看清它的运作方式、提出改进建议，甚至打造自己的版本。没有黑箱，没有意外。\n\n你的隐私绝对完整 — 一切数据都保存在你的手机上。无需账号，没有服务器，没有广告。连一个字节都不会离开你的设备。\n\n毫无限制。想创建多少习惯都行。没有订阅，没有 \"专业版\"，没有弹窗催你付费。永远不会。\n\n如果这款应用对你有所帮助，你可以在 GitHub 上点颗星，或是请我喝杯咖啡来支持它。但这完全自愿 —— 无论如何，应用都属于你。",
+  "close": "关闭",
+  "no_data_yet": "暂无数据",
+  "import_question_body": "使用备份覆盖现有所有习惯，还是将两者合并？",
+  "import_replace": "全部覆盖",
+  "import_merge": "合并",
+  "go": "开始",
+  "quote_1": "每天一小步。",
+  "quote_2": "坚持胜过猛干。",
+  "quote_3": "为自己坚持。",
+  "quote_4": "一天一天来。",
+  "quote_5": "追求进步，不求完美。",
+  "quote_6": "做完胜过完美。",
+  "quote_7": "别让连胜断掉。",
+  "quote_8": "微小习惯，巨大改变。",
+  "quote_9": "相信过程。",
+  "quote_10": "赢下早晨。",
+  "quote_11": "自律即自由。",
+  "quote_12": "今天很重要。",
+  "just_tracking_option": "提供“仅记录”选项",
+  "just_tracking_option_sub": "创建习惯时显示该开关",
+  "just_tracking": "仅记录",
+  "just_tracking_sub": "保留独立的网格和数据，但不计入进度和当日统计",
+  "quotes": "语录",
+  "quotes_which": "显示哪些语录",
+  "quotes_app": "应用自带",
+  "quotes_mine": "我的",
+  "quotes_both": "全部",
+  "quotes_off": "关闭",
+  "quotes_my_list": "我的语录",
+  "quotes_add": "添加语录",
+  "quotes_edit": "编辑语录",
+  "quotes_hint": "写下你的语录",
+  "quotes_empty": "还没有自己的语录",
+  "quotes_empty_sub": "写下你自己的语录，它们会显示在「今天」页面。",
+  "motiv_start": "全力以赴，开启今日 💪",
+  "motiv_progress": "进度稳步向前，继续坚持",
+  "motiv_almost": "就快达成！再加把劲",
+  "motiv_perfect": "完美的一天！🔥",
+  "app_background": "背景",
+  "widgets": "小组件",
+  "customize_widgets": "自定义小组件",
+  "customize_widgets_sub": "背景，不透明度，边框",
+  "widget_background": "背景颜色",
+  "widget_opacity": "不透明度",
+  "widget_border": "边框",
+  "widget_preview": "预览",
+  "bg_solid": "纯色",
+  "bg_gradient": "渐变",
+  "bg_dots": "圆点",
+  "bg_oled": "OLED",
+  "weekdays": "工作日",
+  "weekends": "周末",
+  "reminder_message": "信息（选填）",
+  "reminder_message_hint": "留空将显示励志语录",
+  "new_category": "新增分类",
+  "edit_category": "编辑分类",
+  "add_category": "新",
+  "delete_category": "删除分类",
+  "edit": "编辑",
+  "cover_image": "封面图片",
+  "book_cover": "书籍封面",
+  "add_image": "添加照片",
+  "when_best": "你在什么时候最能持之以恒？",
+  "streak_evolution": "连胜打卡趋势",
+  "consistency": "持续",
+  "consistency_trend": "稳定趋势",
+  "by_habit": "习惯维度",
+  "ranking": "排行榜",
+  "active_days": "活跃天数",
+  "perfect_days": "完美天数",
+  "per_week": "周均打卡次数",
+  "best_month": "最佳月份",
+  "streak_on": "🔥 已连胜 {n} 天，不要中断！",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 今天，开启你的新连胜吧",
+  "not_enough_data": "暂无足够数据",
+  "about_inline": "Khuta 是一款用于追踪习惯的开源应用。无需注册账号、没有功能限制、无需付费。所有数据仅保存在你的手机本地。\n\n任何人都可以查看源代码、进行优化，或是自由使用。",
+  "about_subtitle": "致你全力以赴的每一天。",
+  "about_story": "开发这款应用，源于我对市面上各类习惯追踪软件的不满。大多数应用会限制可创建的习惯数量，把基础功能设为付费内容、收集用户数据，或是充斥大量广告。于是我打造了 Khuta：完全免费、无广告、无需付费、不追踪用户信息。所有数据本地运行，你的数据全权归你所有。开源软件，无任何隐藏套路。",
+  "share": "分享",
+  "share_progress": "分享进度",
+  "share_failed": "无法生成图片",
+  "share_swipe_hint": "滑动卡片以切换日期",
+  "share_background": "背景",
+  "share_size": "大小",
+  "share_size_large": "高",
+  "share_size_small": "方形",
+  "share_show_stats": "显示统计",
+  "share_save": "保存",
+  "share_saved": "已保存到相册",
+  "share_save_failed": "无法保存图片",
+  "about_developer": "开发者",
+  "about_credits": "致谢",
+  "about_credits_body": "基于 Flutter 开发。图标源自 Lucide。图表组件使用 fl_chart。字体采用 Figtree 与 Playfair Display。",
+  "dev_role": "独立开发者・Khuta",
+  "notes": "笔记",
+  "notes_enable_sub": "给习惯的任意日期附加笔记",
+  "add_note": "添加笔记",
+  "edit_note": "编辑笔记",
+  "view_notes": "查看笔记",
+  "edit_entry": "编辑记录",
+  "note_type": "类型",
+  "note_kind_note": "笔记",
+  "note_kind_planned": "计划中",
+  "note_kind_completed": "已完成",
+  "note_hint": "写笔记...",
+  "note_time_optional": "时间（可选）",
+  "save_note": "保存笔记",
+  "notes_empty": "当日暂无笔记",
+  "delete_note": "删除笔记",
+  "legend_note_added": "笔记已添加",
+  "tomorrow": "明天",
+  "notes_count": "{count, plural, =1{1 笔记} other{{count} 笔记}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "待办",
+  "todos_enable_sub": "习惯旁边的快捷清单",
+  "todo_new": "新建待办",
+  "todo_hint": "需要做什么？",
+  "todo_subtasks": "子任务",
+  "todo_subtask_hint": "子任务",
+  "todo_empty_title": "清单是空的",
+  "todo_empty_body": "记下你想在接下来几天完成的事。",
+  "todo_date": "日期",
+  "todo_no_date": "无日期",
+  "todo_time": "时间",
+  "todo_priority": "优先级",
+  "priority_none": "无优先级",
+  "priority_low": "低",
+  "priority_medium": "中",
+  "priority_high": "高",
+  "todo_overdue": "已逾期",
+  "todo_upcoming": "即将到来",
+  "todo_someday": "有空再说",
+  "pick_a_date": "选择日期",
+  "todo_left": "{count, plural, =0{全部完成} other{{count} 项待办}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, other{已完成 ({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "搜索待办",
+  "todo_search_empty": "没有匹配项",
+  "todo_clear_completed": "清除已完成",
+  "todo_clear_completed_body": "{count, plural, other{这将删除 {count} 项已完成的待办。}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "通用",
+  "prefs_features": "功能",
+  "prefs_privacy": "隐私",
+  "collapse_cards": "折叠卡片",
+  "expand_cards": "展开卡片",
+  "view_switcher": "视图切换器",
+  "view_switcher_sub": "在「今天」页面显示周 / 月 / 年按钮",
+  "view_switcher_needs": "请先开启卡片上的打卡记录",
+  "focus": "专注",
+  "focus_enable_sub": "为需要计时的习惯提供计时器",
+  "focus_free_session": "自由计时",
+  "focus_duration": "时长",
+  "focus_start": "开始计时",
+  "focus_style": "计时器样式",
+  "focus_style_digital": "圆形",
+  "focus_style_flip": "翻页",
+  "focus_style_dots": "圆点",
+  "focus_countdown": "3 秒倒计时",
+  "focus_skip_break": "跳过休息",
+  "focus_continue": "继续",
+  "focus_alert": "回合结束提醒",
+  "focus_alert_chime": "提示音",
+  "focus_alert_custom": "选择声音",
+  "focus_alert_none": "静音",
+  "focus_hold": "等我手动停止",
+  "focus_hold_sub": "下一回合会等你点击“继续”后再开始。",
+  "focus_restart": "重新开始",
+  "focus_restart_title": "重新开始这一回合？",
+  "focus_restart_body": "这一回合已专注的时间将会丢失。",
+  "focus_saved": "已记录 {time}",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_total": "专注时间",
+  "focus_sessions": "次数",
+  "focus_stop_title": "结束计时?",
+  "focus_stop_body": "时间始终会保存，但习惯需达到目标时长才算完成。",
+  "focus_end": "结束",
+  "focus_pick_habit": "你正在专注做什么？",
+  "focus_scene_custom": "你的图片",
+  "unit_hours": "小时",
+  "unit_minutes": "分钟",
+  "unit_seconds": "秒",
+  "focus_target_reached": "目标已达成",
+  "focus_pause": "暂停",
+  "focus_resume": "继续",
+  "focus_sound": "声音",
+  "focus_pick_audio": "从手机选择音频",
+  "focus_no_sound": "尚未选择音频曲目",
+  "focus_tasks": "子任务列表",
+  "focus_custom_duration": "自定义",
+  "focus_end_short": "距离目标还差{time}。",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_end_tasks": "还有 {count} 项任务未勾选。",
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_end_reached": "目标达成，习惯已标记完成。",
+  "focus_end_keep": "继续保持",
+  "focus_end_anyway": "仍要结束",
+  "focus_end_complete": "标记已完成",
+  "focus_end_add_time": "记录专注时间",
+  "focus_amount_added": "{amount} 已添加至 {habit}",
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "自定义",
+  "focus_track_rain": "雨声",
+  "focus_track_brown": "布朗噪声",
+  "focus_track_pad": "温暖氛围音",
+  "focus_add_track": "添加音频",
+  "focus_shuffle": "随机播放",
+  "focus_loop": "顺序播放",
+  "focus_repeat_one": "单曲循环",
+  "focus_track_too_long": "音频时长不得超过 20 分钟",
+  "focus_track_limit": "最多 10 首音频",
+  "focus_done_title": "计时完成",
+  "focus_your_tracks": "你的音频",
+  "focus_built_in": "已包含",
+  "unit_hour_short": "小时",
+  "unit_min_short": "分钟",
+  "focus_notif_body": "你的专注计时已结束，做得好！",
+  "celebration": "完成特效",
+  "celebration_confetti": "彩纸",
+  "celebration_fireworks": "烟花",
+  "celebration_surprise": "随机惊喜",
+  "focus_notif_channel": "专注计时",
+  "focus_notif_running": "专注中",
+  "focus_paused": "已暂停",
+  "focus_scene_black": "黑色",
+  "focus_pomodoro": "番茄钟",
+  "focus_pomodoro_sub": "串联多个专注时段，中间安排短休息",
+  "focus_break": "休息",
+  "focus_round": "第 {n} 轮",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_daily_goal": "专注目标",
+  "focus_goal_today": "今日 {done} / {goal}",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_keep_awake": "保持屏幕常亮",
+  "focus_images_limit": "最多10张图片",
+  "select_all": "全选",
+  "selected_count": "{count, plural, other{已选择 {count} 项}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "删除这些记录？",
+  "focus_delete_sessions_body": "{count, plural, other{将删除 {count} 条专注记录，此操作无法撤销。}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, other{已删除 {count} 条记录}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "这天没有安排",
+  "unscheduled_body": "这个习惯在 {day} 没有安排。仍然作为额外记录打卡吗？",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "仍然打卡",
+  "rest_days_none": "无",
+  "last_90_days": "最近 90 天",
+  "focus_clear_today": "清除今天的记录",
+  "focus_defaults": "计时默认设置",
+  "plan_day": "规划一天",
+  "plan_day_sub": "给习惯设定时间，并在时间轴上查看。",
+  "habit_time": "时间",
+  "habit_time_none": "任意时间",
+  "habit_duration": "时长",
+  "habit_duration_none": "不设时长",
+  "day_timeline": "日程",
+  "day_timeline_free": "空闲 {span}",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "任意时间",
+  "day_timeline_empty": "这天没有安排任何计划",
+  "day_timeline_empty_sub": "给习惯设定一个时间，它就会出现在这里。",
+  "clear": "清除",
+  "start_view": "「今天」默认打开",
+  "start_view_last": "上次使用的",
+  "focus_stats": "专注统计",
+  "focus_average": "平均时长",
+  "focus_log": "补记一次专注",
+  "focus_log_date": "日期",
+  "focus_log_saved": "已添加记录",
+  "perfect_streak": "完美天数连胜",
+  "focus_history": "历史",
+  "focus_history_empty": "暂无专注记录",
+  "focus_history_empty_sub": "你完成的每次专注记录都会显示在这里。",
+  "focus_history_day": "{count, plural, other{{count} 次专注}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "昨日",
+  "notes_hint": "打开一个习惯，长按其日历中的某一天即可查看或添加笔记",
+  "app_style": "应用风格",
+  "app_style_sub": "选择应用的整体外观与风格。",
+  "style_classic": "经典",
+  "style_minimal": "简约",
+  "style_classic_desc": "习惯列表、底部栏和所有设置同屏显示。",
+  "style_minimal_desc": "习惯网格和设置被分为四个板块。",
+  "appearance_sub": "主题、强调色和背景",
+  "preferences_sub": "语言、星期与排序",
+  "data_sub": "备份与导入",
+  "about_sub": "版本、源代码与支持",
+  "check_style": "查看样式",
+  "square": "方形",
+  "circle": "圆形",
+  "icons_tab": "图标",
+  "emojis_tab": "表情符号",
+  "emoji_own": "输入或粘贴任意表情符号",
+  "advanced_options": "高级选项",
+  "default_user": "用户",
+  "your_name": "你的名称",
+  "edit_name": "编辑名称",
+  "change_photo": "更换照片",
+  "remove_photo": "移除照片",
+  "notif_greeting": "你好 {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "应用图标",
+  "icon_default": "默认",
+  "icon_neutral": "炭灰",
+  "icon_accent": "沙色",
+  "custom": "自定义",
+  "see_more": "查看更多",
+  "see_less": "收起",
+  "colors_tab": "颜色",
+  "reorder": "重新排序",
+  "reorder_hint": "拖动习惯进行排序",
+  "category_order": "分类顺序",
+  "category_order_sub": "拖动调整到你想要的顺序",
+  "category_order_empty": "为习惯设置分类后，会显示在这里",
+  "done": "完成",
+  "accent_color": "强调色",
+  "heatmap_path": "连接日期",
+  "heatmap_path_sub": "把日期连成一条连续路径",
+  "sort_completed_last": "完成项置底",
+  "sort_completed_last_sub": "将已完成的习惯排到列表底部",
+  "today_only": "仅今日",
+  "today_only_sub": "隐藏今天没有安排的习惯",
+  "card_activity": "卡片上的打卡记录",
+  "card_activity_sub": "在卡片上显示最近几天，可直接打卡",
+  "readable_copy": "可读副本",
+  "readable_copy_sub": "同时将习惯保存为 Markdown 文件",
+  "theme_sub": "浅色、深色或跟随系统",
+  "accent_color_sub": "用于按钮和高亮",
+  "app_background_sub": "卡片后面的背景",
+  "check_style_sub": "方形或圆形标记",
+  "app_icon_sub": "主屏幕上的图标",
+  "language_sub": "整个应用的语言",
+  "week_start_sub": "每个网格的第一列",
+  "celebration_sub": "完成习惯时看到的效果",
+  "start_view_sub": "“今天”页面默认打开的视图",
+  "quotes_sub": "在“今天”页面显示哪些语录",
+  "focus_daily_goal_sub": "你每天的专注分钟目标",
+  "app_lock_delay_sub": "离开应用后多久再次要求验证",
+  "focus_only": "仅通过专注计时完成",
+  "focus_only_hint": "这个习惯在你完成一次计时后才算完成，而不是点一下。",
+  "focus_only_title": "需要一次专注计时",
+  "focus_only_body": "「{name}」需要完成一次专注计时才算完成。",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "「{name}」只能通过专注计时完成，因此无法补打过去的日子。",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "取消这次打卡？",
+  "focus_only_clear_body": "只有完成一次专注才能再次打卡「{name}」。",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "开始计时",
+  "focus_flowtime": "心流计时",
+  "focus_flowtime_hint": "没有目标，也没有提醒。时间往上走，你觉得够了就停。",
+  "focus_end_flow": "你专注了 {time}。",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "开启",
+  "off": "关闭",
+  "checklist": "清单",
+  "checklist_hint": "将习惯拆分为多个步骤，只有全部步骤勾选完成后，该习惯才算完成。",
+  "add_step": "添加步骤",
+  "step_hint": "步骤名称",
+  "todays_checklist": "今日的清单",
+  "steps_done": "{done}/{total} 个步骤",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "暂停所有习惯",
+  "vacation_all_sub": "开启后，任何习惯都不会算作未完成",
+  "vacation_mode": "休假模式",
+  "vacation_on_desc": "已暂停 — 这些日期既不会算作未完成，也不会记为已完成。",
+  "vacation_off_desc": "暂停此习惯。跳过的天数不会中断你的连胜。",
+  "paused": "已暂停",
+  "start_vacation": "开始休假",
+  "end_vacation": "结束休假",
+  "vacation_day_on": "标记为假期",
+  "vacation_day_off": "取消假期",
+  "rest_days": "休息日",
+  "rest_days_desc": "每周在这些日子自动暂停。你仍然可以打卡，打了就会计入。",
+  "widget_no_habits": "暂无习惯\n点击打开 Khuta",
+  "widget_no_data": "暂无数据\n打开 Khuta 进行同步",
+  "widget_open_to_sync": "打开 Khuta 进行同步",
+  "widget_activity": "打卡记录",
+  "widget_today_progress": "今日  {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "待办  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "今日无剩余待办",
+  "widget_done_today": "今日已完成",
+  "widget_best_streak": "🔥 {streak} 最长连胜",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "自定义小组件",
+  "widget_cfg_color": "颜色",
+  "widget_cfg_image": "图片",
+  "widget_cfg_choose_image": "选择图片",
+  "widget_cfg_change_image": "更换图片",
+  "widget_cfg_custom_color": "自定义颜色",
+  "widget_cfg_follow_system": "跟随系统主题",
+  "widget_cfg_dark_color": "深色主题",
+  "widget_cfg_light_color": "浅色主题",
+  "widget_cfg_opacity": "不透明度  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "边框",
+  "widget_cfg_thickness": "粗细  {value}dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "任务",
+  "widget_cfg_todos_all": "显示所有任务",
+  "widget_cfg_todos_hint": "关闭仅显示今天、逾期和无日期的任务",
+  "widget_cfg_show_activity": "展示对应习惯的打卡记录",
+  "widget_cfg_dot_color": "圆点颜色",
+  "widget_cfg_style": "样式",
+  "widget_cfg_style_classic": "经典",
+  "widget_cfg_style_card": "卡片",
+  "widget_cfg_all_habits": "全部习惯",
+  "widget_cfg_save": "保存",
+  "widget_cfg_add": "添加小组件",
+  "widget_cfg_reset": "恢复默认设置",
+  "widget_cfg_hue": "色相",
+  "widget_cfg_saturation": "饱和度",
+  "widget_cfg_brightness": "亮度",
+  "widget_demo_read": "阅读",
+  "widget_demo_run": "跑步",
+  "widget_demo_water": "水",
+  "notif_streak": "🔥连续 {streak} 天",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥连续 {streak} 周",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥连续 {streak} 个月",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "已完成",
+  "notif_action_snooze": "暂缓",
+  "notif_action_add": "添加可量化",
+  "notif_action_add_hint": "多少？",
+  "snooze_duration": "暂缓持续",
+  "snooze_custom": "自定义",
+  "snooze_custom_hint": "分钟",
+  "minutes_short": "{value} 分",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "将{name}标记为已完成",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "将{name}标记为未完成",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "添加至{name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "记录{name}中断打卡",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "清除{name}今日的破戒记录",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "未完成",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "上一周",
+  "a11y_next_week": "下一周",
+  "a11y_increase": "数值增加",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "数值减少",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "选择颜色",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "本周",
+  "period_last_week": "上周",
+  "period_this_month": "本月",
+  "period_last_month": "上月",
+  "period_this_year": "本年",
+  "period_all_time": "全部时间",
+  "times_completed": "完成次数",
+  "period_last_year": "去年",
+  "period_week_of": "{date} 所在周",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count} 次专注",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "全部笔记",
+  "notes_empty_all": "暂无笔记",
+  "quant_preset_time": "时间",
+  "style_express": "活泼",
+  "style_express_desc": "圆润的形状、轻快的动效和更宽的字体。",
+  "celebration_none": "无",
+  "quant_add_title": "添加数量",
+  "pane_hint": "从列表中打开一项，即可在此查看",
+  "average_short": "平均",
+  "island": "岛屿",
+  "island_enable_sub": "把你的习惯变成一片绿洲，一点一点建造",
+  "island_open": "打开岛屿",
+  "island_shop": "商店",
+  "island_build": "建造",
+  "island_done": "已建成",
+  "island_complete": "绿洲已建成",
+  "island_tap_hint": "点按一个形状，查看这里可以放什么",
+  "island_empty": "完成一次打卡，绿洲便开始生长",
+  "island_how": "积分规则",
+  "island_how_check": "每完成一次习惯打卡得 10 分",
+  "island_how_focus": "每专注 1 分钟得 1 分",
+  "island_how_perfect": "完美的一天再加 25 分",
+  "island_how_note": "金币来自你的历史记录，所以恢复备份后也会找回。",
+  "island_built": "已建成 {done}/{total}",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "还差 {count} 分",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} 已放到岛上",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "沙漠芦荟",
+  "island_p_altar": "贝都因帐篷",
+  "island_p_archway": "石拱门",
+  "island_p_banner": "旗帜",
+  "island_p_bench": "长凳",
+  "island_p_blue_railing": "格栅屏风",
+  "island_p_bougainvillea": "三角梅",
+  "island_p_boulder": "巨石",
+  "island_p_crate": "木箱",
+  "island_p_crop_patch": "农作物地块",
+  "island_p_cube_house": "圆顶房屋",
+  "island_p_cypress": "椰枣树",
+  "island_p_dry_grass": "干草",
+  "island_p_flat_stone": "平石",
+  "island_p_flower_pot": "花盆",
+  "island_p_garden_bed": "花圃",
+  "island_p_hanging_lantern": "吊灯笼",
+  "island_p_hay_bale": "干草捆",
+  "island_p_house": "小屋",
+  "island_p_lantern_post": "灯柱",
+  "island_p_large_rock": "大岩石",
+  "island_p_main_chapel": "清真寺",
+  "island_p_mossy_stone": "灌木岩",
+  "island_p_olive": "金合欢树",
+  "island_p_pebbles": "鹅卵石",
+  "island_p_pergola_house": "藤架屋",
+  "island_p_pottery_jar": "陶罐",
+  "island_p_rocks": "岩石",
+  "island_p_signpost": "路标",
+  "island_p_small_bridge": "木板桥",
+  "island_p_stone_basin": "喷泉",
+  "island_p_stone_lantern": "石灯笼",
+  "island_p_stone_pile": "石堆",
+  "island_p_storage_box": "储物箱",
+  "island_p_terrace_house": "露台房屋",
+  "island_p_terracotta_pot": "赤陶盆",
+  "island_p_tower_chapel": "宣礼塔",
+  "island_p_two_story": "两层小楼",
+  "island_p_veg_garden": "菜园",
+  "island_p_villa": "庭院住宅",
+  "island_p_water_bucket": "水桶",
+  "island_p_well": "水井",
+  "island_p_windmill": "捕风塔",
+  "island_p_wood_pile": "木柴堆",
+  "island_reset": "重新开始岛屿",
+  "island_reset_sub": "所有建筑都会拆除，所有积分都会退回你的余额。",
+  "island_coins": "金币",
+  "island_g_pueblo": "村庄",
+  "island_g_cala": "泉水",
+  "island_g_terrazas": "梯田",
+  "island_g_puerto": "商队驿站",
+  "island_g_molino": "捕风塔山脊",
+  "island_how_todo": "每完成一项待办得 4 分",
+  "island_how_streak": "习惯连胜达到 7、30、100 和 365 天时有奖励",
+  "island_zoom_hint": "单指拖动可移动，双指捏合可缩放，扭转可旋转岛屿。",
+  "island_t_teal": "青绿色",
+  "island_t_clay": "陶土色",
+  "island_t_white": "白色",
+  "island_t_coral": "珊瑚色",
+  "island_t_lilac": "淡紫色",
+  "island_t_autumn": "秋色",
+  "island_t_deep": "深色",
+  "island_t_silver": "银色",
+  "island_g_huerta": "椰枣林",
+  "island_g_faro": "岩堆",
+  "island_turn": "旋转视角",
+  "gamification": "游戏化",
+  "island_default_name": "我的岛屿",
+  "island_rename": "为你的岛屿命名",
+  "island_only_affordable": "仅显示买得起的",
+  "island_nothing_here": "这里还没有东西",
+  "island_g_vega": "旱谷",
+  "island_g_mirador": "瞭望台",
+  "island_g_astillero": "工坊",
+  "island_g_ermita": "清真寺花园",
+  "island_g_caleta": "小泉",
+  "island_g_cabo": "岬角",
+  "island_goal": "全部建成后就是这个样子。",
+  "island_reset_go": "重新开始",
+  "island_beta": "这是游戏化功能的初步尝试，仍处于测试阶段。它可能会扩展、改变形态，甚至被完全替换，取决于大家如何使用。",
+  "gamification_beta": "游戏化（测试版）",
+  "last_check": "上次打卡",
+  "check_history": "打卡历史",
+  "check_history_sub": "已打卡 {count} 天",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "从未",
+  "check_no_time": "未记录时间",
+  "heatmap_rolling": "近 12 个月",
+  "heatmap_rolling_sub": "年度网格截止到今天，而不是 12 月 31 日",
+  "check_marks": "{count} 个标记",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "今日页进度",
+  "today_progress_option_sub": "当天的进度环和每个习惯的强度条",
+  "quiet_when_done": "完成后静音",
+  "quiet_when_done_sub": "已完成的习惯今天不再提醒",
+  "plan_tab": "计划",
+  "difficulty": "难度",
+  "difficulty_hint": "越难的习惯在当天进度中占比越高",
+  "difficulty_easy": "简单",
+  "difficulty_medium": "中等",
+  "difficulty_hard": "困难",
+  "pin_lock": "PIN 码",
+  "pin_lock_sub": "独立于手机锁屏的专属密码",
+  "pin_choose": "设置 PIN",
+  "pin_choose_sub": "4 到 8 位数字",
+  "pin_repeat": "再输入一次",
+  "pin_mismatch": "两次不一致，请重新设置。",
+  "pin_enter": "输入 PIN",
+  "pin_wrong": "PIN 错误",
+  "pin_wait": "尝试次数过多，请等待 {seconds} 秒",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "恢复码",
+  "pin_recovery_body": "忘记 PIN 时，此恢复码可打开 Khuta 并关闭锁定。请妥善保存：它不会再次显示。",
+  "pin_copy": "复制恢复码",
+  "pin_copied": "已复制",
+  "pin_forgot": "忘记 PIN？",
+  "pin_recovery_hint": "恢复码",
+  "pin_recovery_wrong": "恢复码不正确",
+  "pin_recovered": "已关闭锁定。可在设置中重新设置 PIN。",
+  "pin_change": "修改 PIN",
+  "pin_remove": "移除 PIN",
+  "pin_fingerprint": "使用指纹",
+  "app_lock_method": "解锁方式",
+  "app_lock_biometric": "指纹或面部",
+  "difficulty_option": "习惯难度",
+  "difficulty_option_sub": "让更难的习惯在当天进度中占比更高",
+  "todo_save_another": "保存并继续添加",
+  "todo_add_subtask": "添加子任务",
+  "pin_paste": "粘贴恢复码",
+  "journal": "日记",
+  "journal_today": "今天",
+  "journal_calendar": "日历",
+  "journal_empty": "这里还没有内容",
+  "journal_empty_sub": "片刻、感想和你的 Khuta 活动都汇集在这里。",
+  "journal_add_moment": "添加片刻",
+  "journal_daily_reflection": "每日感想",
+  "journal_write_moment": "发生了什么？",
+  "journal_write_reflection": "今天感觉如何？",
+  "journal_moment": "片刻",
+  "journal_reflection": "感想",
+  "journal_activity": "Khuta 活动",
+  "journeys": "旅程",
+  "journey_new": "新建旅程",
+  "journey_edit": "编辑旅程",
+  "journey_title": "旅程标题",
+  "journey_description": "你在朝着什么努力？",
+  "journey_start_date": "开始日期",
+  "journey_target_date": "目标日期",
+  "journey_milestones": "里程碑",
+  "journey_add_milestone": "添加里程碑",
+  "journey_linked_habits": "关联的习惯",
+  "journey_focus_target": "专注目标",
+  "journey_no_items": "还没有旅程",
+  "journey_no_items_sub": "创建一段旅程，并关联推动它前进的习惯。",
+  "journey_planned": "计划中",
+  "journey_active": "进行中",
+  "journey_completed": "已完成",
+  "journey_archived": "已归档",
+  "journey_timeline": "时间线",
+  "journey_progress": "已完成 {done}/{total} 个里程碑",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "回忆",
+  "journey_invalid_dates": "目标日期不能早于开始日期",
+  "journey_invalid_focus_target": "专注目标须在 0 到 525600 分钟之间",
+  "journal_photo_limit": "最多可附加 8 张照片",
+  "journal_content_required": "请写点内容或添加照片",
+  "daily_plan_title": "我的一天",
+  "daily_plan_progress": "已完成 {done}/{total} 个优先事项",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "为今天选择最多 3 个优先事项。",
+  "daily_plan_add": "添加优先事项",
+  "daily_plan_edit": "编辑优先事项",
+  "daily_plan_limit": "最多 3 个优先事项",
+  "daily_plan_habit": "习惯",
+  "daily_plan_todo": "待办事项",
+  "daily_plan_milestones": "旅程里程碑",
+  "daily_plan_source_missing": "来源不可用",
+  "daily_plan_no_sources": "今天没有其他可添加的内容。",
+  "app_usage_title": "今日应用使用情况",
+  "app_usage_disclosure": "如需显示应用名称和今日使用时长，Khuta 需要 Android 使用情况访问权限。摘要仅在此设备上处理，关闭应用后清除，且不会同步。Khuta 不会读取应用内容或通知。",
+  "app_usage_accept_and_show": "我同意，显示今日使用情况",
+  "app_usage_open_settings": "打开使用情况访问设置",
+  "app_usage_access_off": "使用情况访问权限已关闭",
+  "app_usage_loading": "正在读取今日应用使用情况…",
+  "app_usage_retry": "重试",
+  "app_usage_total": "应用总使用时长",
+  "app_usage_most_used": "使用最多的应用",
+  "app_usage_empty": "暂无今日应用使用数据。",
+  "app_usage_unsupported": "应用使用摘要仅支持 Android。",
+  "app_usage_error": "暂时无法读取应用使用情况。",
+  "app_usage_local_only": "此摘要仅保留在本设备上，Khuta 不会保存。",
+  "app_usage_duration_hours_minutes": "{hours} 小时 {minutes} 分钟",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} 分钟",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "不到 1 分钟",
+  "goals": "目标",
+  "goal_new": "新建目标",
+  "goal_edit": "编辑目标",
+  "goal_title": "目标标题",
+  "goal_title_required": "必须填写目标标题",
+  "goal_description": "你正在努力实现什么结果？",
+  "goal_parent": "上级目标",
+  "goal_no_parent": "无上级目标",
+  "goal_target_date": "目标日期",
+  "goal_no_target_date": "无目标日期",
+  "goal_state": "状态",
+  "goal_active": "进行中",
+  "goal_completed": "已完成",
+  "goal_archived": "已归档",
+  "goal_link_sources": "已关联来源",
+  "goals_empty": "还没有目标",
+  "goals_empty_sub": "创建一个结果，并关联推动你前进的习惯、待办和旅程。",
+  "goals_entry_empty": "创建你的第一个目标",
+  "goal_progress": "进度",
+  "goal_progress_empty": "关联一个来源以查看计算出的进度。",
+  "goal_no_sources": "尚未关联来源。",
+  "goal_source_unavailable": "来源不可用",
+  "goal_unavailable": "此目标不可用。",
+  "goal_subgoals": "子目标",
+  "goal_mark_completed": "标记为已完成",
+  "goal_restore": "恢复目标",
+  "goal_archive": "归档目标",
+  "goals_entry_count": "{count} 个进行中的目标",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} 个来源",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "习惯",
+  "legal_attribution": "基于 InlitX 的 Streak",
+  "legal_licenses": "开源许可",
+  "calendar": "日历",
+  "calendar_sub": "日期的显示方式",
+  "calendar_gregorian": "公历",
+  "calendar_hijri": "伊斯兰历 (Hijri)",
+  "calendar_gregorian_hijri": "公历 + 伊斯兰历",
+  "calendar_hijri_gregorian": "伊斯兰历 + 公历",
+  "hijri_adjust": "伊斯兰历调整",
+  "hijri_adjust_sub": "调整伊斯兰历日期，以匹配当地的见月结果",
+  "app_name": "Khuta",
+  "hijri_months_hint": "所选月份的每一天都需完成。其他日子既不算入连胜，也不会中断连胜。",
+  "every_day_in": "{months}的每一天",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "最低完成量",
+  "minimum_goal_hint": "达到最低完成量即算当天完成。上方的目标仍是你的完整目标。",
+  "minimum_suffix": "最低 {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "目标历史",
+  "history_minimum": "最低 {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "目标 {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "还差 {amount}",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "迈出一小步，重新回来吧。",
+  "recovery_threshold": "中断后的恢复",
+  "recovery_threshold_sub": "习惯多久没有打卡后，“恢复”会帮你重新开始",
+  "recovery_days": "天",
+  "recovery_hours": "小时",
+  "duration_days_hours": "{days}天{hours}小时",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "恢复",
+  "recovery_hint": "迈出一小步，就足以重新开始。",
+  "recovery_dismiss": "忽略",
+  "recovery_adjust": "调整",
+  "recovery_enable": "恢复提醒",
+  "recovery_enable_sub": "中断后的温和提醒",
+  "recovery_first_delay": "首次提醒时间",
+  "recovery_count": "提醒次数",
+  "recovery_repeat_every": "重复间隔",
+  "recovery_at_time": "固定时间",
+  "recovery_time": "时间",
+  "hours_short": "{n} 小时",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

@@ -1,0 +1,1626 @@
+{
+  "@@locale": "fr",
+  "app_tagline": "Suivi des habitudes",
+  "today": "Aujourd'hui",
+  "stats": "Stats",
+  "settings": "Paramètres",
+  "new_label": "Nouveau",
+  "save": "Sauvegarder",
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "good_morning": "Bonjour",
+  "good_afternoon": "Bon après-midi",
+  "good_evening": "Bonsoir",
+  "no_habits_yet": "Pas encore d'habitudes",
+  "all_done_today": "Tout est fait aujourd'hui !",
+  "x_of_y_completed": "{done} sur {total} complétées",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "Commencez votre premier streak",
+  "empty_body": "Ajoute une habitude, puis coche tes jours. Un petit pas à la fois.",
+  "add_habit": "Ajouter une habitude",
+  "all": "Tous",
+  "onb1_title": "Construiez de vraies habitudes",
+  "onb1_body": "Coche tes habitudes en un geste et regarde ta série grandir jour après jour.",
+  "onb2_title": "Garde le cap",
+  "onb2_body": "Des objectifs journaliers, hebdomadaires et mensuels avec des rappels intelligents pour ne rien rater.",
+  "onb3_title": "Vois ton progrès",
+  "onb3_body": "Des statistiques riches et une grille annuelle révèle tout ton progrès.",
+  "skip": "Passer",
+  "next": "Suivant",
+  "get_started": "Commencer",
+  "onb_kicker": "Bienvenue sur",
+  "onb_blurb": "De petits rendez-vous quotidiens qui deviennent des habitudes durables.",
+  "onb_free_title": "Gratuit, pour toujours",
+  "onb_free_body": "Sans pub, sans abonnement, sans fonctions bloquées.",
+  "onb_private_title": "Privé et hors ligne",
+  "onb_private_body": "Tout reste sur votre appareil. Aucun compte requis.",
+  "onb_yours_title": "Vos données sont à vous",
+  "onb_yours_body": "Sauvegardez-les ou emportez-les quand vous voulez.",
+  "onb_step": "Étape {step} sur {total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "Statistiques",
+  "done_today": "Fait aujourd'hui",
+  "best_streak": "Meilleur streak",
+  "active_habits": "Habitudes actives",
+  "total_logs": "Total enregistrés",
+  "last_7_days": "7 derniers jours",
+  "last_30_days": "30 derniers jours",
+  "your_habits": "Vos habitudes",
+  "stats_empty": "Ajoutez des habitudes pour voir vos statistiques",
+  "completion_rate_short": "Constance",
+  "completion_rate": "Taux de réussite",
+  "appearance": "Apparence",
+  "theme": "Thème",
+  "system": "Système",
+  "light": "Clair",
+  "dark": "Sombre",
+  "week_starts_on": "La semaine commence le",
+  "mon": "Lun",
+  "sat": "Sam",
+  "sun": "Dim",
+  "language": "Langue",
+  "data": "Données",
+  "export_backup": "Exporter la sauvegarde",
+  "export_backup_sub": "Sauvegarder toutes les habitudes dans un fichier",
+  "auto_backup": "Sauvegarde automatique",
+  "auto_backup_sub": "Désactivée",
+  "auto_backup_off": "Désactivée",
+  "auto_backup_daily": "Tous les jours",
+  "auto_backup_weekly": "Toutes les semaines",
+  "auto_backup_where": "Une sauvegarde entière est écrite quand tu ouvres l'app. Les cinq dernières sont gardées.",
+  "auto_backup_folder": "Fichier",
+  "auto_backup_folder_default": "Fichier de l'application",
+  "auto_backup_folder_set": "Fichier sauvegardé",
+  "auto_backup_folder_failed": "Il est impossible d'écrire dans ce dossier",
+  "auto_backup_no_permission": "Autorisation de stockage refusée",
+  "auto_backup_run_now": "Sauvegarder maintenant",
+  "refresh_now": "Actualiser",
+  "refresh_now_sub": "Récupère ce que vos autres appareils ont laissé dans le dossier",
+  "refresh_brought": "Vos habitudes sont à jour",
+  "refresh_nothing": "Rien de nouveau dans le dossier",
+  "import_backup": "Importer la sauvegarde",
+  "import_backup_sub": "Restaurer les habitudes depuis une sauvegarde",
+  "import_from_app": "Importer depuis une autre application",
+  "import_from_app_sub": "Loop Habit Tracker, HabitKit…",
+  "import_from_app_done": "Habitudes importées {habits} ({days} jours) de {source}",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "Impossible d'importer ce fichier",
+  "about": "À propos",
+  "backup_saved": "Sauvegarde effectuée",
+  "export_cancelled": "Export annulé",
+  "habits_imported": "Habitudes importées",
+  "new_habit": "Nouvelle habitude",
+  "edit_habit": "Modifier l'habitude",
+  "name": "Nom",
+  "name_hint": "e.x. Course matinale",
+  "description": "Description",
+  "description_hint": "Note optionnelle",
+  "icon": "Icône",
+  "color": "Couleur",
+  "category": "Catégorie",
+  "category_health": "Santé",
+  "category_fitness": "Fitness",
+  "category_mindfulness": "Pleine conscience",
+  "category_productivity": "Productivité",
+  "category_learning": "Apprentissage",
+  "category_finance": "Finances",
+  "count_days": "{count, plural, =1{1 jour} other{{count} jours}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, =1{1 semaine} other{{count} semaines}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, =1{1 mois} other{{count} mois}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count} sem",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count} mois",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "Type d'habitude",
+  "kind_positive": "Normal",
+  "kind_negative": "Éviter",
+  "kind_quantitative": "Quantité",
+  "kind_locked_hint": "Le type ne peut pas être changé après avoir créé l'habitude.",
+  "kind_negative_hint": "Les jours sont marqués vierges par défaut — ton streak grandit tout seul. Appuie sur la coche si tu échoues;ce jour deviendra rouge mais tu peux toujours annuler.",
+  "cost_per_day": "Coût par jour",
+  "cost_note": "Facultatif. Veillez laisser vide si l'habitude ne coûte rien.",
+  "currency": "Devise",
+  "currency_custom": "Personnalisé",
+  "currency_hint": "Symbole ou code",
+  "money_saved": "Epargne",
+  "clean_days": "Jours sains",
+  "quant_preset_water": "Eau",
+  "quant_preset_reading": "Lecture",
+  "quant_preset_generic": "Customisé",
+  "quant_unit_hint": "Unité (Ex. : ml, pages, répétitions)",
+  "quant_unit_ml": "ml",
+  "quant_unit_pages": "pages",
+  "quant_edit_title": "Quantité d'aujourd'hui",
+  "quant_daily_goal": "But du jour",
+  "quant_tap_amount": "Montant par click",
+  "quant_per_day": "Quantité journalière",
+  "quant_average": "Moyenne journalière",
+  "quant_logged_days": "Jours enregistrés",
+  "quant_best_day": "Meilleur jour",
+  "quant_goal_days": "Objectif atteint",
+  "quant_stats_empty": "Notez un montant et ce sera additionné ici, même jours au l'objectif n'était pas atteint.",
+  "frequency": "Fréquence",
+  "daily": "Journalier",
+  "weekly": "Hebdomadaire",
+  "monthly": "Mensuellement",
+  "sched_days": "Jours",
+  "sched_interval": "Interval",
+  "times_per_week": "{n} fois par mois",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "{n} fois par mois",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}×/semaine",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/mois",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "Rappels",
+  "add_reminder": "Ajouter un rappel",
+  "delete_habit": "Supprimer l ' habitude",
+  "archive_habit": "Archiver l'habitude",
+  "archive": "Archiver",
+  "copy_message": "Copiez message",
+  "message_copied": "Message copié",
+  "app_lock": "Verrouillage de l'application",
+  "app_lock_sub": "Pour ouvrir Khuta avec vos empreinte ou visage",
+  "app_lock_unavailable": "Ce téléphone n'a pas de biométriques de configurés",
+  "app_lock_failed": "Impossible de vérifier qu'il s'agisse bien de vous",
+  "app_lock_title": "Khuta est verrouillé",
+  "app_lock_unlock": "Déverrouiller",
+  "app_lock_delay": "Déverrouiller après",
+  "app_lock_delay_instant": "Immediatement",
+  "app_lock_delay_seconds": "{value} secondes",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "Photos",
+  "note_take_photo": "Caméra",
+  "note_pick_photo": "Galerie",
+  "journey": "Journée",
+  "journey_sub": "{count, plural, =1{1 photo} other{{count} photos}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "Pas encore de photos",
+  "journey_empty_sub": "Ajoutez une photo à une note et elle apparaît ici.",
+  "archive_habit_body": "Déplacer \"{name}\" dans l'archive ? Son historique est conservé et vous pouvez le restaurer depuis les paramètres.",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "Habitudes archivées",
+  "archived_habits_sub": "Les restaurer ou les supprimer définitivement",
+  "archived_empty": "Rien archivé",
+  "archived_empty_sub": "Les habitudes supprimés arriverons ici avec tous les historiques.",
+  "restore": "Restaurer",
+  "restored": "Habitudes restaurés",
+  "delete_forever": "Supprimer pour de bon",
+  "delete_forever_body": "Supprimer \"{name}\" et tout son historique ? Cela ne pourra pas être annulé.",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "Habitude effacé",
+  "clear_progress": "Supprimer progrès",
+  "clear_progress_sub": "Historiques, notes et sessions focus",
+  "clear_progress_warning": "Ceci efface chaque jour, note et session focus, mais garde vos habitudes, leurs horaires et vos paramètres. Il ne peut pas être annulé à moins que vous ayez une sauvegarde à importer après.",
+  "clear_progress_confirm": "Supprimer progrès",
+  "clear_progress_done": "Progrès supprimé",
+  "wipe_data": "Supprimer toutes les données",
+  "wipe_data_sub": "Habitudes, notes, sessions focus et paramètres",
+  "wipe_data_warning": "Ceci efface toutes les habitudes, notes, séances de focus et paramètres de ce téléphone. Ca ne pourra pas être annulé à moins que vous ayez un fichier de sauvegarde à importer après.",
+  "wipe_data_sure": "Vraiment tout effacer ?",
+  "wipe_data_sure_body": "Dernière chance. Sans sauvegarde, ses données seront partis pour de bon.",
+  "wipe_data_confirm": "Tout supprimé",
+  "wipe_data_done": "Toutes les données effacées",
+  "day_start": "La journée commence",
+  "day_start_sub": "Les nuits tardives comptent encore pour la veille",
+  "day_start_midnight": "Minuit",
+  "day_start_hour": "{hour} h 00",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "Photo",
+  "share_stats_short": "Stats",
+  "undo": "Annuler",
+  "habit_archived": "Habitude archivée",
+  "share_blur": "Flou",
+  "delete_habit_body": "Supprimez \"{name}\" ? Cela ne pourra pas être annulé.",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "Une rechute ?",
+  "log_relapse_body": "Cela brise la série d'aujourd'hui pour \"{name}\". Vous pouvez le annuler en clickent à nouveau.",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "Oui, enregistrez-le",
+  "permission_required": "L'autorisation de notification est requise",
+  "streaks": "Streaks",
+  "activity": "Activité",
+  "current": "Actuel",
+  "best": "Meilleur",
+  "total": "Total",
+  "relapses": "Rechute",
+  "strength": "Force",
+  "week": "Semaine",
+  "month": "Mois",
+  "year": "Année",
+  "new_reminder": "Nouveau rappel",
+  "edit_reminder": "Modifier le rappel",
+  "days": "Jours",
+  "time": "Heure",
+  "save_reminder": "Sauvegarder le rappel",
+  "select_one_day": "Sélectionnez au moins un jour",
+  "every_day": "Tous les jours",
+  "no_days": "Pas de jours",
+  "repeat_hours": "Répéter pendant la journée",
+  "every_n_hours": "Chaque {n} h",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "Jours spécifiques",
+  "repeat_interval": "Tous les N jours",
+  "every_n_days": "Tous les {n} jours",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "Toutes les {n} semaines",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "Tous les {n} mois",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "Jours",
+  "sched_unit_weeks": "Semaines",
+  "sched_unit_months": "Mois",
+  "todo_tags": "Étiquettes",
+  "todo_projects": "Projets",
+  "todo_project": "Projet",
+  "todo_project_new": "Nouveau projet",
+  "todo_project_name": "Nom du projet",
+  "todo_project_edit": "Modifier le projet",
+  "todo_project_arrange": "Réorganiser",
+  "todo_project_arrange_hint": "Faites glisser les dossiers où vous voulez.",
+  "todo_project_pick": "Choisir un projet",
+  "todo_project_none": "Aucun projet",
+  "todo_project_delete_body": "Le projet disparaît. Les tâches restent.",
+  "todo_tag": "Étiquette",
+  "todo_tag_new": "Nouvelle étiquette",
+  "todo_tag_name": "Nom de l'étiquette",
+  "todo_tag_edit": "Modifier l'étiquette",
+  "todo_tag_delete_body": "L'étiquette disparaît. Les tâches restent.",
+  "todo_tag_none": "Aucune étiquette",
+  "todo_tag_all": "Toutes",
+  "todo_tag_manage": "Gérer les étiquettes",
+  "todo_tag_empty_title": "Pas encore d'étiquettes",
+  "todo_tag_empty_body": "Regroupez vos tâches par projet, lieu ou ce que vous voulez.",
+  "todo_tag_folders": "Dossiers",
+  "todo_tag_list": "Liste",
+  "todo_tag_count": "{n} en cours",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "Icône",
+  "todo_tag_pick": "Choisir des étiquettes",
+  "todo_tag_filtered": "Filtré par {name}",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "Non classé",
+  "more_icons": "Plus d'icônes",
+  "less_icons": "Moins d'icônes",
+  "completions": "Achèvements",
+  "completion_time": "Temps d'achèvement",
+  "current_streak": "Streak actuel",
+  "days_active": "Jours actifs",
+  "completions_per_month": "Achèvements / mois",
+  "overview": "Aperçu",
+  "preferences": "Préférences",
+  "profile": "Profil",
+  "about_app": "A propos de cette application",
+  "about_app_sub": "Version, crédits et code source",
+  "my_heatmap": "Ma carte de chaleur",
+  "my_heatmap_sub": "Ouvrir le tableau d'activité annuel",
+  "view_source": "Voir la code source sur GitHub",
+  "about_title": "Construit pour vous. Gratuit, pour toujours.",
+  "about_footer": "Fabriqué avec du ☕ et beaucoup de temps libre.",
+  "about_body": "Khuta est né d'une idée simple : pourquoi payer pour suivre tes habitudes?\n\nCette application est complètement open-source. N'importe qui peut vérifier son fonctionnement, suggéré des améliorations, et même créer leur propre version. Pas de boîte noire. Pas de surprises.\n\nTa vie privée est total - tout le contenu reste sur ton téléphone. Pas de comptes, pas de serveurs, pas de pubs. Pas un seul octet ne quitte ton téléphone.\n\nPas de limites. Tu peux créer autant d'habitude que tu le souhaite. Pas d'abonnement, pas de version \"pro\", pas d'annonce qui t'incite à payer. Jamais.\n\nSi cette application t'apporte quelque chose, tu peux la supporter en étoilant le projet sur GitHub ou en m'achetant un café. Mais c'est optionnel — cette application est la tienne dans tout les cas.",
+  "close": "Fermer",
+  "no_data_yet": "Pas encore de données",
+  "import_question_body": "Remplacez toutes vos habitudes actuelles avec la sauvegarde, ou fusionnez-les ensemble ?",
+  "import_replace": "Tout remplacer",
+  "import_merge": "Fusionner",
+  "go": "C'est parti",
+  "quote_1": "De petites étapes, tous les jours.",
+  "quote_2": "La régularité bat l'intensité.",
+  "quote_3": "Prenez soin de vous.",
+  "quote_4": "Un jour à la fois.",
+  "quote_5": "Progresser, pas de perfection.",
+  "quote_6": "C'est mieux que parfait.",
+  "quote_7": "Gardez la série en vie.",
+  "quote_8": "De petites habitudes, gros changement.",
+  "quote_9": "Fais confiance au processus.",
+  "quote_10": "Gagnez le matin.",
+  "quote_11": "La discipline égale la liberté.",
+  "quote_12": "Aujourd'hui compte.",
+  "just_tracking_option": "Proposer le simple suivi",
+  "just_tracking_option_sub": "Ajoute l'option à la création d'une habitude",
+  "just_tracking": "Simple suivi",
+  "just_tracking_sub": "Garde sa grille et ses chiffres, mais l'exclut de la Progression et du décompte du jour",
+  "quotes": "Citations",
+  "quotes_which": "Quelles citations",
+  "quotes_app": "De l'application",
+  "quotes_mine": "Mien",
+  "quotes_both": "Les deux",
+  "quotes_off": "Désactivées",
+  "quotes_my_list": "Mes citations",
+  "quotes_add": "Ajouter une citation",
+  "quotes_edit": "Editer une citation",
+  "quotes_hint": "Ecrivez votre citation",
+  "quotes_empty": "Pas de citations propres",
+  "quotes_empty_sub": "Écrivez-vous et ils se présenteront aujourd'hui.",
+  "motiv_start": "Commencez en force la journée 💪",
+  "motiv_progress": "Vous êtes sur la bonne voie, continuez",
+  "motiv_almost": "Presque ! Percévérez",
+  "motiv_perfect": "Journée parfaite ! 🔥",
+  "app_background": "Arrière-fond",
+  "widgets": "Widgets",
+  "customize_widgets": "Personnaliser les widgets",
+  "customize_widgets_sub": "Arrière-fond, opacité, bordure",
+  "widget_background": "Couleur du fond",
+  "widget_opacity": "Opacité",
+  "widget_border": "Bordure",
+  "widget_preview": "Aperçu",
+  "bg_solid": "Uni",
+  "bg_gradient": "Gradient",
+  "bg_dots": "Points",
+  "bg_oled": "OLED",
+  "weekdays": "Jours de semaine",
+  "weekends": "Weekends",
+  "reminder_message": "Message (optionnel)",
+  "reminder_message_hint": "Laisser vide pour une citation motivativate",
+  "new_category": "Nouvelle catégorie",
+  "edit_category": "Edité catégorie",
+  "add_category": "Nouveau",
+  "delete_category": "Supprimer la catégorie",
+  "edit": "Editer",
+  "cover_image": "Image de couverture",
+  "book_cover": "Couverture de livre",
+  "add_image": "Ajouter une image",
+  "when_best": "Quand êtes-vous le plus régulier ?",
+  "streak_evolution": "L'évolution du Streak",
+  "consistency": "Régularité",
+  "consistency_trend": "Tendance regulière",
+  "by_habit": "Par habitude",
+  "ranking": "Classement",
+  "active_days": "Journées actives",
+  "perfect_days": "Des journées parfaites",
+  "per_week": "Par semaine",
+  "best_month": "Meilleur mois",
+  "streak_on": "🔥 {n} jours de suite. Persévère !",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 Aujourd'hui, vous pouvez commencer un nouveau streak",
+  "not_enough_data": "Pas assez de données",
+  "about_inline": "Khuta est une application open-source pour suivre vos habitudes. Pas de comptes, pas de limites, pas de paiements. Tout reste sur le téléphone.\n\nN'importe qui peut voir le code source, l'améliorer ou l'utiliser librement.",
+  "about_subtitle": "Pour les jours que vous choisissez de venir.",
+  "about_story": "Cette application est née d'une frustration avec les traqueurs d'habitude. La plupart limitent combien d'habitudes vous pouvez créer, cachent les caractéristiques de base derrière un accès payant, vous traquent ou vous bombardent avec des pubs. J'ai donc décidé de construire Khuta : complètement libre, pas de pubs, pas de paiements, pas de suivi. Tout fonctionne localement — vos données sont à vous. Open source, sans piège.",
+  "share": "Partager",
+  "share_progress": "Partagez votre progrès",
+  "share_failed": "Impossible de créer l'image",
+  "share_swipe_hint": "Swipe la carte pour voyager dans le temps",
+  "share_background": "Arrière-fond",
+  "share_size": "Taille",
+  "share_size_large": "Grand",
+  "share_size_small": "Carré",
+  "share_show_stats": "Afficher les statistiques",
+  "share_save": "Sauvegarder",
+  "share_saved": "Sauvegardé dans votre galerie",
+  "share_save_failed": "Sauvegarde de l'image n'a pas fonctionné",
+  "about_developer": "Le développeur",
+  "about_credits": "Crédits",
+  "about_credits_body": "Construit avec Flutter. Les icônes de Lucide. Cartes par fl_chart. Une collection de Figtree & Playfair Display.",
+  "dev_role": "Créateur indépendant · Khuta",
+  "notes": "Notes",
+  "notes_enable_sub": "Joindre des notes à un jour d'habitude",
+  "add_note": "Ajouter une note",
+  "edit_note": "Modifier la note",
+  "view_notes": "Voir notes",
+  "edit_entry": "Modifier la rubrique",
+  "note_type": "Type",
+  "note_kind_note": "Note",
+  "note_kind_planned": "Prévu",
+  "note_kind_completed": "Complété",
+  "note_hint": "Ecrivez votre note...",
+  "note_time_optional": "Temps (facultatif)",
+  "save_note": "Sauvegardez note",
+  "notes_empty": "Pas de notes pour ce jour",
+  "delete_note": "Supprimer la note",
+  "legend_note_added": "Note ajoutée",
+  "tomorrow": "Demain",
+  "notes_count": "{count, plural, =1{1 note} other{{count} notes}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "A faire",
+  "todos_enable_sub": "Une liste rapide à côté de vos habitudes",
+  "todo_new": "Nouvelle liste to-do",
+  "todo_hint": "Que faut-il faire ?",
+  "todo_subtasks": "Sous-tâches",
+  "todo_subtask_hint": "Sous-tâche",
+  "todo_empty_title": "Rien sur la liste",
+  "todo_empty_body": "Ecrivez ce que vous voulez faire dans les prochains jours.",
+  "todo_date": "Date",
+  "todo_no_date": "Aucune date",
+  "todo_time": "Heure",
+  "todo_priority": "Priorité",
+  "priority_none": "Pas de priorité",
+  "priority_low": "Bas",
+  "priority_medium": "Moyen",
+  "priority_high": "Haut",
+  "todo_overdue": "Depassé",
+  "todo_upcoming": "A venir",
+  "todo_someday": "Un certain jour",
+  "pick_a_date": "Choisir une date",
+  "todo_left": "{count, plural, =0{Tout fait} =1{1 à faire} other{{count} à faire}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, =1{Complété (1)} other{Complétés({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "Rechercher des to-do",
+  "todo_search_empty": "Aucun résultat",
+  "todo_clear_completed": "Suppression terminée",
+  "todo_clear_completed_body": "{count, plural, =1{Ceci supprime les to-do fait.} other{Ceci supprime les {count} to-do fait.}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "Général",
+  "prefs_features": "Caractéristiques",
+  "prefs_privacy": "Vie privée",
+  "collapse_cards": "Réduire cartes",
+  "expand_cards": "Etendre cartes",
+  "view_switcher": "Changer de vue",
+  "view_switcher_sub": "Afficher les boutons Semaine / Mois / Année sur Aujourd'hui",
+  "view_switcher_needs": "Activez l'activité sur les cartes pour l'utiliser",
+  "focus": "Focus",
+  "focus_enable_sub": "Un minuteur pour les habitudes qui ont besoin",
+  "focus_free_session": "Session libre",
+  "focus_duration": "Durée",
+  "focus_start": "Débuter session",
+  "focus_style": "Style de minuteur",
+  "focus_style_digital": "Cercle",
+  "focus_style_flip": "Retourner",
+  "focus_style_dots": "Points",
+  "focus_countdown": "Compte à rebours de 3 secondes",
+  "focus_skip_break": "Passer la pause",
+  "focus_continue": "Continuer",
+  "focus_alert": "Alerte de fin de période",
+  "focus_alert_chime": "Carillon",
+  "focus_alert_custom": "Choisir un son",
+  "focus_alert_none": "Silencieux",
+  "focus_hold": "Attendre que je l'arrête",
+  "focus_hold_sub": "La période suivante attend que vous touchiez Continuer.",
+  "focus_restart": "Recommencer",
+  "focus_restart_title": "Recommencer cette période ?",
+  "focus_restart_body": "Le temps de focus de cette période sera perdu.",
+  "focus_saved": "{time} enregistré",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_total": "Temps focus",
+  "focus_sessions": "Sessions",
+  "focus_stop_title": "Finir la session ?",
+  "focus_stop_body": "Vos minutes sont de toute façon enregistrés. Votre habitude est complété si vous atteignez votre objectif.",
+  "focus_end": "Fin",
+  "focus_pick_habit": "Quel est votre focus ?",
+  "focus_scene_custom": "Votre image",
+  "unit_hours": "heures",
+  "unit_minutes": "minutes",
+  "unit_seconds": "secondes",
+  "focus_target_reached": "Objectif atteint",
+  "focus_pause": "Pause",
+  "focus_resume": "Résumé",
+  "focus_sound": "Son",
+  "focus_pick_audio": "Choissiez un track depuis votre téléphone",
+  "focus_no_sound": "Pas de track choissi",
+  "focus_tasks": "Liste de sous-tâches",
+  "focus_custom_duration": "Personalisé",
+  "focus_end_short": "Vous a {time} de votre objectif.",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_end_tasks": "{count} tâches pas complétés.",
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_end_reached": "Objectif atteint. Votre habitude est complétée.",
+  "focus_end_keep": "Conituez",
+  "focus_end_anyway": "Confirmez la fin",
+  "focus_end_complete": "Notez comme complété",
+  "focus_end_add_time": "Ajouter le temps de focus",
+  "focus_amount_added": "{amount} ajouté à {habit}",
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "Personalisé",
+  "focus_track_rain": "Pluie",
+  "focus_track_brown": "Bruit brun",
+  "focus_track_pad": "Tapis chaud",
+  "focus_add_track": "Ajouter une piste",
+  "focus_shuffle": "Mélanger",
+  "focus_loop": "Dans l'ordre",
+  "focus_repeat_one": "Répéter une fois",
+  "focus_track_too_long": "Les tracks doivent être de minimum 20 minutes",
+  "focus_track_limit": "Jusqu'à 10 tracks",
+  "focus_done_title": "Session complétée",
+  "focus_your_tracks": "Vos tracks",
+  "focus_built_in": "Inclus",
+  "unit_hour_short": "h",
+  "unit_min_short": "min",
+  "focus_notif_body": "Votre session focus est terminée. Bien joué !",
+  "celebration": "Effect d'achèvement",
+  "celebration_confetti": "Confetti",
+  "celebration_fireworks": "Feux d'artifices",
+  "celebration_surprise": "Surprenez-moi",
+  "focus_notif_channel": "Sessions focus",
+  "focus_notif_running": "En focus",
+  "focus_paused": "En pause",
+  "focus_scene_black": "Noir",
+  "focus_pomodoro": "Pomodoro",
+  "focus_pomodoro_sub": "Suite de temps focus avec des petites pauses",
+  "focus_break": "Pause",
+  "focus_round": "Periode {n}",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_daily_goal": "Focus global",
+  "focus_goal_today": "{done} sur {goal} aujourd'hui",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_keep_awake": "Gardez l'écran allumé",
+  "focus_images_limit": "Jusqu'à 10 images",
+  "select_all": "Tout séléctionner",
+  "selected_count": "{count, plural, =1{1 sélectionné} other{{count} sélectionnés}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "Supprimer les sessions ?",
+  "focus_delete_sessions_body": "{count, plural, =1{1 session focus va être supprimé. Ceci ne pourra pas être annulé.} other{{count} sessions focus vont être supprimé. Ceci ne pourra pas être annulé.}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, =1{1 session supprimée} other{{count} sessions supprimées}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "Jours non prévus",
+  "unscheduled_body": "Cette habitude n'est pas prévue sur {day}. Enregistrez-la en plus ?",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "Enregistrer quand même",
+  "rest_days_none": "Aucun",
+  "last_90_days": "Derniers 90 jours",
+  "focus_clear_today": "Supprimer les sessions d'aujourd'hui",
+  "focus_defaults": "Session par défaut",
+  "plan_day": "Plan pour aujourd'hui",
+  "plan_day_sub": "Donnez aux habitudes une heure dans la journée et observez les dans le temps.",
+  "habit_time": "Heure du jour",
+  "habit_time_none": "N'importe quelle heure",
+  "habit_duration": "Durée",
+  "habit_duration_none": "Aucune durée",
+  "day_timeline": "Jour",
+  "day_timeline_free": "{span} libre",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "N'importe quelle heure",
+  "day_timeline_empty": "Rien prévu pour cette journée",
+  "day_timeline_empty_sub": "Donnez à une habitude une heure et celle-ci apparaitra ici.",
+  "clear": "Effacer",
+  "start_view": "Aujourd'hui s'ouvre sur",
+  "start_view_last": "Dernier utilisé",
+  "focus_stats": "Statistiques de concentration",
+  "focus_average": "Session moyenne",
+  "focus_log": "Enregistrer une session",
+  "focus_log_date": "Date",
+  "focus_log_saved": "Session ajouté",
+  "perfect_streak": "Série de jours parfait",
+  "focus_history": "Historique",
+  "focus_history_empty": "Pas de sessions pour le moment",
+  "focus_history_empty_sub": "Chaque session focus finie, sera affichée ici.",
+  "focus_history_day": "{count, plural, =1{1 session} other{{count} sessions}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "Hier",
+  "notes_hint": "Appuyer longuement sur un jour pour voir ou ajouter des notes",
+  "app_style": "Style de l'application",
+  "app_style_sub": "Choisis à quoi ressemble l'application toute entière.",
+  "style_classic": "Classique",
+  "style_minimal": "Minimaliste",
+  "style_classic_desc": "Liste d'habitudes, barre du bas et chaque paramètres sur un écran.",
+  "style_minimal_desc": "Grille d'habitudes et paramètres groupés en quatre sections.",
+  "appearance_sub": "Thème, couleur et arrière-fond",
+  "preferences_sub": "Langage, semaine et rangement",
+  "data_sub": "Sauvegardes et importations",
+  "about_sub": "Version, code source et support",
+  "check_style": "Vérifier le style",
+  "square": "Carré",
+  "circle": "Cercle",
+  "icons_tab": "Icônes",
+  "emojis_tab": "Emojis",
+  "emoji_own": "Saisissez ou collez n'importe quel emoji",
+  "advanced_options": "Options avancées",
+  "default_user": "Utilisateur",
+  "your_name": "Votre nom",
+  "edit_name": "Modifier le nom",
+  "change_photo": "Changer de photo",
+  "remove_photo": "Retirer la photo",
+  "notif_greeting": "Bonjour {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "Icône de l'application",
+  "icon_default": "Par défaut",
+  "icon_neutral": "Charbon",
+  "icon_accent": "Sable",
+  "custom": "Personnalisé",
+  "see_more": "Voir plus",
+  "see_less": "Voir moins",
+  "colors_tab": "Couleurs",
+  "reorder": "Réagencer",
+  "reorder_hint": "Déplacer les habitudes pour les réagencé",
+  "category_order": "Ordre des catégories",
+  "category_order_sub": "Faites-les glisser dans l'ordre voulu",
+  "category_order_empty": "Donnez une catégorie à une habitude et elle apparaîtra ici",
+  "done": "Fait",
+  "accent_color": "Couleur d'accent",
+  "heatmap_path": "Relier les jours",
+  "heatmap_path_sub": "Dessine la grille comme un seul long parcours",
+  "sort_completed_last": "Dernièrement complété",
+  "sort_completed_last_sub": "Envoie ce que vous terminez en bas de la liste",
+  "today_only": "Uniquement aujourd'hui",
+  "today_only_sub": "Masque les habitudes non prévues aujourd'hui",
+  "card_activity": "Activité sur les cartes",
+  "card_activity_sub": "Affiche les derniers jours sur la carte, prêts à cocher",
+  "readable_copy": "Copie lisible",
+  "readable_copy_sub": "Écrit aussi vos habitudes en fichiers markdown",
+  "theme_sub": "Clair, sombre ou celui du système",
+  "accent_color_sub": "Utilisée sur les boutons et les éléments clés",
+  "app_background_sub": "Ce que vous voyez derrière les cartes",
+  "check_style_sub": "Coches carrées ou rondes",
+  "app_icon_sub": "L'icône sur votre écran d'accueil",
+  "language_sub": "La langue de toute l'application",
+  "week_start_sub": "La première colonne de chaque grille",
+  "celebration_sub": "Ce que vous voyez quand vous cochez une habitude",
+  "start_view_sub": "La vue dans laquelle s'ouvre Aujourd'hui",
+  "quotes_sub": "Les citations affichées dans Aujourd'hui",
+  "focus_daily_goal_sub": "Minutes de focus visées chaque jour",
+  "app_lock_delay_sub": "Délai avant une nouvelle demande après votre départ",
+  "focus_only": "Seulement avec une session focus",
+  "focus_only_hint": "L'habitude est cochée seulement quand la session se termine, non en appuyant dessus.",
+  "focus_only_title": "Besoin d'une session focus",
+  "focus_only_body": "\"{name}\" est terminé en finissant une session focus.",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "\"{name}\" est uniquement complété par une session focus, donc les jours antérieurs ne peuvent pas être cochés.",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "Effacer cette coche ?",
+  "focus_only_clear_body": "Seule une session de focus peut cocher à nouveau « {name} ».",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "Démarrer une session",
+  "focus_flowtime": "Temps dans le flow",
+  "focus_flowtime_hint": "Pas d'objectifs ni d'alarmes. L'horloge tourne et vous pouvez l'arrêter quand vous voulez.",
+  "focus_end_flow": "Vous vous êtes concentrés pendant {time}.",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "Activé",
+  "off": "Désactivé",
+  "checklist": "Check-list",
+  "checklist_hint": "Divisez vos habitudes en étapes. Ça sera validé lorsque chaque étape est coché.",
+  "add_step": "Ajouter étape",
+  "step_hint": "Nom de l'étape",
+  "todays_checklist": "Check-list d'aujourd'hui",
+  "steps_done": "{done}/{total} étapes",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "Mettre en pause toutes les habitudes",
+  "vacation_all_sub": "Cela ne comptera pas comme raté tant que ce sera actif",
+  "vacation_mode": "Mode vacances",
+  "vacation_on_desc": "Mise en pause - ces jours ne conteront pas comme loupés ou complétés.",
+  "vacation_off_desc": "Mettre en pause cette habitude. Les jours sautés ne casseront pas ta série.",
+  "paused": "En pause",
+  "start_vacation": "Commencer les vacances",
+  "end_vacation": "Finir les vacances",
+  "vacation_day_on": "Marquer comme jour de vacances",
+  "vacation_day_off": "Enlever le jour de vacances",
+  "rest_days": "Jours de repos",
+  "rest_days_desc": "Mettre en pause chaque semaine ces jours-ci. Vous pouvez toujours les enregistrer, et ils vont compter.",
+  "widget_no_habits": "Pas encore d'habitudes\nAppuyez sur pour ouvrir Khuta",
+  "widget_no_data": "Pas encore de données\nOuvre Khuta pour synchroniser",
+  "widget_open_to_sync": "Ouvre Khuta pour synchroniser",
+  "widget_activity": "Activité",
+  "widget_today_progress": "Aujourd'hui {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "To-do {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "Plus rien pour aujourd'hui",
+  "widget_done_today": "fait aujourd'hui",
+  "widget_best_streak": "🔥 {streak} meilleure série",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "Personnaliser le widget",
+  "widget_cfg_color": "Couleur",
+  "widget_cfg_image": "Image",
+  "widget_cfg_choose_image": "Choisir une image",
+  "widget_cfg_change_image": "Changer l'image",
+  "widget_cfg_custom_color": "Couleur personnalisée",
+  "widget_cfg_follow_system": "Suivre le thème du système",
+  "widget_cfg_dark_color": "Mode sombre",
+  "widget_cfg_light_color": "Mode clair",
+  "widget_cfg_opacity": "Opacité  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "Bordure",
+  "widget_cfg_thickness": "Épaisseur {value} dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "Tâches",
+  "widget_cfg_todos_all": "Montrer toutes les tâches",
+  "widget_cfg_todos_hint": "Désactivé : seulement aujourd'hui, tâches tardives et non datées",
+  "widget_cfg_show_activity": "Afficher l'activité de",
+  "widget_cfg_dot_color": "Couleur du point",
+  "widget_cfg_style": "Style",
+  "widget_cfg_style_classic": "Classique",
+  "widget_cfg_style_card": "Carte",
+  "widget_cfg_all_habits": "Toutes les habitudes",
+  "widget_cfg_save": "Sauvegarder",
+  "widget_cfg_add": "Ajouter un widget",
+  "widget_cfg_reset": "Réinitialiser par défaut",
+  "widget_cfg_hue": "Teinte",
+  "widget_cfg_saturation": "Saturation",
+  "widget_cfg_brightness": "Luminosité",
+  "widget_demo_read": "Lire",
+  "widget_demo_run": "Courir",
+  "widget_demo_water": "Eau",
+  "notif_streak": "🔥 {streak} série du jour",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 Streak de {streak} semaines",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 Streak de {streak} mois",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "Fait",
+  "notif_action_snooze": "Snooze",
+  "notif_action_add": "Ajouter une quantité",
+  "notif_action_add_hint": "Combien ?",
+  "snooze_duration": "Répéter dans",
+  "snooze_custom": "Personnalisé",
+  "snooze_custom_hint": "Minutes",
+  "minutes_short": "{value} min",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "Marquer {name} comme terminé",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "Marquer {name} comme non terminé",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "Ajouter à {name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "Enregistrer une rechute pour {name}",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "Supprimer la rechute d'aujourd'hui pour {name}",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "non terminé",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "Semaine passée",
+  "a11y_next_week": "Semaine prochaine",
+  "a11y_increase": "Augmenter",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "Diminuer",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "Choisir une couleur",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "Cette semaine",
+  "period_last_week": "La semaine dernière",
+  "period_this_month": "Ce mois-ci",
+  "period_last_month": "Le mois dernier",
+  "period_this_year": "Cette année",
+  "period_all_time": "Depuis le début",
+  "times_completed": "Fois accomplie",
+  "period_last_year": "L'année dernière",
+  "period_week_of": "Semaine du {date}",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{Aucune session} =1{1 session} other{{count} sessions}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "Toutes les notes",
+  "notes_empty_all": "Pas encore de notes",
+  "quant_preset_time": "Durée",
+  "style_express": "Express",
+  "style_express_desc": "Formes arrondies, mouvement élastique et police plus large.",
+  "celebration_none": "Aucune",
+  "quant_add_title": "Ajouter une quantité",
+  "pane_hint": "Ouvrez un élément de la liste pour le voir ici",
+  "average_short": "Moy.",
+  "island": "Île",
+  "island_enable_sub": "Transformez vos habitudes en oasis que vous bâtissez pièce par pièce",
+  "island_open": "Ouvrir l'île",
+  "island_shop": "Boutique",
+  "island_build": "Construire",
+  "island_done": "Construit",
+  "island_complete": "L'oasis est terminée",
+  "island_tap_hint": "Touchez une forme pour voir ce qui va là",
+  "island_empty": "Cochez une habitude et l'oasis commence à pousser",
+  "island_how": "Comment fonctionnent les points",
+  "island_how_check": "10 pour chaque habitude cochée",
+  "island_how_focus": "1 par minute de focus",
+  "island_how_perfect": "25 de plus pour une journée parfaite",
+  "island_how_note": "Les pièces viennent de votre historique : une sauvegarde les restaure.",
+  "island_built": "{done} sur {total} construits",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "Encore {count} points",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} est maintenant sur l'île",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "Aloès du désert",
+  "island_p_altar": "Tente bédouine",
+  "island_p_archway": "Arche de pierre",
+  "island_p_banner": "Bannière",
+  "island_p_bench": "Banc",
+  "island_p_blue_railing": "Moucharabieh",
+  "island_p_bougainvillea": "Bougainvillier",
+  "island_p_boulder": "Rocher",
+  "island_p_crate": "Caisse",
+  "island_p_crop_patch": "Parcelle cultivée",
+  "island_p_cube_house": "Maison à dôme",
+  "island_p_cypress": "Palmier dattier",
+  "island_p_dry_grass": "Herbe sèche",
+  "island_p_flat_stone": "Pierre plate",
+  "island_p_flower_pot": "Pot de fleurs",
+  "island_p_garden_bed": "Parterre",
+  "island_p_hanging_lantern": "Lanterne suspendue",
+  "island_p_hay_bale": "Botte de foin",
+  "island_p_house": "Petite maison",
+  "island_p_lantern_post": "Lampadaire",
+  "island_p_large_rock": "Gros rocher",
+  "island_p_main_chapel": "Mosquée",
+  "island_p_mossy_stone": "Roche de garrigue",
+  "island_p_olive": "Acacia",
+  "island_p_pebbles": "Galets",
+  "island_p_pergola_house": "Maison à pergola",
+  "island_p_pottery_jar": "Jarre en poterie",
+  "island_p_rocks": "Rochers",
+  "island_p_signpost": "Panneau indicateur",
+  "island_p_small_bridge": "Passerelle en planches",
+  "island_p_stone_basin": "Fontaine",
+  "island_p_stone_lantern": "Lanterne de pierre",
+  "island_p_stone_pile": "Tas de pierres",
+  "island_p_storage_box": "Coffre de rangement",
+  "island_p_terrace_house": "Maison à terrasse",
+  "island_p_terracotta_pot": "Pot en terre cuite",
+  "island_p_tower_chapel": "Minaret",
+  "island_p_two_story": "Maison à étage",
+  "island_p_veg_garden": "Potager",
+  "island_p_villa": "Maison à cour",
+  "island_p_water_bucket": "Seau d'eau",
+  "island_p_well": "Puits",
+  "island_p_windmill": "Capteur de vent",
+  "island_p_wood_pile": "Tas de bois",
+  "island_reset": "Recommencer l'île",
+  "island_reset_sub": "Tout est démonté et tous les points retournent dans votre solde.",
+  "island_coins": "Pièces",
+  "island_g_pueblo": "Le village",
+  "island_g_cala": "La source",
+  "island_g_terrazas": "Les terrasses",
+  "island_g_puerto": "L'étape des caravanes",
+  "island_g_molino": "La crête des capteurs de vent",
+  "island_how_todo": "4 pour chaque to-do terminée",
+  "island_how_streak": "Un bonus quand une habitude atteint 7, 30, 100 et 365 jours",
+  "island_zoom_hint": "Glissez un doigt pour déplacer. Pincez à deux doigts pour zoomer, tournez pour faire pivoter l'île.",
+  "island_t_teal": "sarcelle",
+  "island_t_clay": "terre cuite",
+  "island_t_white": "blanc",
+  "island_t_coral": "corail",
+  "island_t_lilac": "lilas",
+  "island_t_autumn": "automne",
+  "island_t_deep": "sombre",
+  "island_t_silver": "argent",
+  "island_g_huerta": "La palmeraie",
+  "island_g_faro": "Les empilements de roches",
+  "island_turn": "Faire pivoter la vue",
+  "gamification": "Ludification",
+  "island_default_name": "Mon île",
+  "island_rename": "Nommez votre île",
+  "island_only_affordable": "Seulement ce que je peux acheter",
+  "island_nothing_here": "Rien ici pour l'instant",
+  "island_g_vega": "L'oued",
+  "island_g_mirador": "Le belvédère",
+  "island_g_astillero": "Le chantier",
+  "island_g_ermita": "Le jardin de la mosquée",
+  "island_g_caleta": "La petite source",
+  "island_g_cabo": "Le cap",
+  "island_goal": "Voici à quoi elle ressemble quand chaque pièce est construite.",
+  "island_reset_go": "Recommencer",
+  "island_beta": "Ceci est une première version de la ludification, encore en bêta. Elle peut évoluer, changer de forme ou être remplacée, selon la façon dont vous l'utilisez.",
+  "gamification_beta": "Ludification (bêta)",
+  "last_check": "Dernière coche",
+  "check_history": "Historique des coches",
+  "check_history_sub": "{count} jours cochés",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "Jamais",
+  "check_no_time": "heure non enregistrée",
+  "heatmap_rolling": "12 derniers mois",
+  "heatmap_rolling_sub": "La grille annuelle se termine aujourd'hui et non au 31 décembre",
+  "check_marks": "{count} coches",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "Progression dans Aujourd'hui",
+  "today_progress_option_sub": "L'anneau du jour et la barre de force sur chaque habitude",
+  "quiet_when_done": "Silence une fois fait",
+  "quiet_when_done_sub": "Plus de rappels aujourd'hui pour une habitude déjà accomplie",
+  "plan_tab": "Plan",
+  "difficulty": "Difficulté",
+  "difficulty_hint": "Les habitudes plus difficiles comptent davantage dans la progression du jour",
+  "difficulty_easy": "Facile",
+  "difficulty_medium": "Moyenne",
+  "difficulty_hard": "Difficile",
+  "pin_lock": "Code PIN",
+  "pin_lock_sub": "Votre propre code, distinct du verrouillage du téléphone",
+  "pin_choose": "Choisissez un PIN",
+  "pin_choose_sub": "4 à 8 chiffres",
+  "pin_repeat": "Saisissez-le à nouveau",
+  "pin_mismatch": "Les codes ne correspondent pas. Recommencez.",
+  "pin_enter": "Saisissez votre PIN",
+  "pin_wrong": "PIN incorrect",
+  "pin_wait": "Trop d'essais. Attendez {seconds} s",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "Votre code de récupération",
+  "pin_recovery_body": "Si vous oubliez le PIN, ce code ouvre Khuta et désactive le verrou. Gardez-le en lieu sûr : il ne sera plus affiché.",
+  "pin_copy": "Copier le code",
+  "pin_copied": "Code copié",
+  "pin_forgot": "PIN oublié ?",
+  "pin_recovery_hint": "Code de récupération",
+  "pin_recovery_wrong": "Ce code n'est pas correct",
+  "pin_recovered": "Verrou désactivé. Vous pouvez définir un nouveau PIN dans les Réglages.",
+  "pin_change": "Changer le PIN",
+  "pin_remove": "Supprimer le PIN",
+  "pin_fingerprint": "Utiliser l'empreinte",
+  "app_lock_method": "Déverrouiller avec",
+  "app_lock_biometric": "Empreinte ou visage",
+  "difficulty_option": "Difficulté des habitudes",
+  "difficulty_option_sub": "Les habitudes plus difficiles comptent davantage dans la progression du jour",
+  "todo_save_another": "Enregistrer et en ajouter une autre",
+  "todo_add_subtask": "Ajouter une sous-tâche",
+  "pin_paste": "Coller le code",
+  "journal": "Journal",
+  "journal_today": "Aujourd'hui",
+  "journal_calendar": "Calendrier",
+  "journal_empty": "Rien d'écrit ici pour l'instant",
+  "journal_empty_sub": "Moments, réflexions et activité Khuta se retrouvent ici.",
+  "journal_add_moment": "Ajouter un moment",
+  "journal_daily_reflection": "Réflexion du jour",
+  "journal_write_moment": "Que s'est-il passé ?",
+  "journal_write_reflection": "Comment s'est passée la journée ?",
+  "journal_moment": "Moment",
+  "journal_reflection": "Réflexion",
+  "journal_activity": "Activité Khuta",
+  "journeys": "Parcours",
+  "journey_new": "Nouveau parcours",
+  "journey_edit": "Modifier le parcours",
+  "journey_title": "Titre du parcours",
+  "journey_description": "Vers quoi travaillez-vous ?",
+  "journey_start_date": "Date de début",
+  "journey_target_date": "Date cible",
+  "journey_milestones": "Jalons",
+  "journey_add_milestone": "Ajouter un jalon",
+  "journey_linked_habits": "Habitudes liées",
+  "journey_focus_target": "Objectif de focus",
+  "journey_no_items": "Pas encore de parcours",
+  "journey_no_items_sub": "Créez un parcours et reliez les habitudes qui le font avancer.",
+  "journey_planned": "Prévu",
+  "journey_active": "En cours",
+  "journey_completed": "Terminé",
+  "journey_archived": "Archivé",
+  "journey_timeline": "Chronologie",
+  "journey_progress": "{done} jalons sur {total}",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "Souvenirs",
+  "journey_invalid_dates": "La date cible ne peut pas précéder la date de début",
+  "journey_invalid_focus_target": "L'objectif de focus doit être compris entre 0 et 525600 minutes",
+  "journal_photo_limit": "Vous pouvez joindre jusqu'à 8 photos",
+  "journal_content_required": "Écrivez quelque chose ou ajoutez une photo",
+  "daily_plan_title": "Ma journée",
+  "daily_plan_progress": "{done} sur {total} priorités terminées",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "Choisissez jusqu’à 3 priorités pour aujourd’hui.",
+  "daily_plan_add": "Ajouter une priorité",
+  "daily_plan_edit": "Modifier les priorités",
+  "daily_plan_limit": "Jusqu’à 3 priorités",
+  "daily_plan_habit": "Habitude",
+  "daily_plan_todo": "Tâche",
+  "daily_plan_milestones": "Étapes du parcours",
+  "daily_plan_source_missing": "Source indisponible",
+  "daily_plan_no_sources": "Rien d’autre à ajouter aujourd’hui.",
+  "app_usage_title": "Utilisation des applis aujourd’hui",
+  "app_usage_disclosure": "Pour afficher les noms des applis et le temps d’utilisation d’aujourd’hui, Khuta a besoin de l’accès Android aux données d’utilisation. Le résumé est traité sur cet appareil, effacé à la fermeture de l’application et jamais synchronisé. Khuta ne lit ni le contenu des applis ni les notifications.",
+  "app_usage_accept_and_show": "J’accepte, afficher l’utilisation du jour",
+  "app_usage_open_settings": "Ouvrir les paramètres d’accès à l’utilisation",
+  "app_usage_access_off": "L’accès aux données d’utilisation est désactivé",
+  "app_usage_loading": "Lecture de l’utilisation des applis du jour…",
+  "app_usage_retry": "Réessayer",
+  "app_usage_total": "Utilisation totale des applis",
+  "app_usage_most_used": "Applis les plus utilisées",
+  "app_usage_empty": "Aucune donnée d’utilisation des applis n’est encore disponible pour aujourd’hui.",
+  "app_usage_unsupported": "Les résumés d’utilisation des applis sont disponibles uniquement sur Android.",
+  "app_usage_error": "Impossible de lire l’utilisation des applis pour le moment.",
+  "app_usage_local_only": "Ce résumé reste sur cet appareil et n’est pas enregistré par Khuta.",
+  "app_usage_duration_hours_minutes": "{hours} h {minutes} min",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} min",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "<1 min",
+  "goals": "Objectifs",
+  "goal_new": "Nouvel objectif",
+  "goal_edit": "Modifier l’objectif",
+  "goal_title": "Titre de l’objectif",
+  "goal_title_required": "Le titre de l’objectif est requis",
+  "goal_description": "Quel résultat cherchez-vous à atteindre ?",
+  "goal_parent": "Objectif parent",
+  "goal_no_parent": "Aucun objectif parent",
+  "goal_target_date": "Date cible",
+  "goal_no_target_date": "Aucune date cible",
+  "goal_state": "État",
+  "goal_active": "Actif",
+  "goal_completed": "Terminé",
+  "goal_archived": "Archivé",
+  "goal_link_sources": "Sources liées",
+  "goals_empty": "Aucun objectif pour le moment",
+  "goals_empty_sub": "Créez un résultat et reliez les habitudes, tâches et parcours qui vous y conduisent.",
+  "goals_entry_empty": "Créez votre premier objectif",
+  "goal_progress": "Progression",
+  "goal_progress_empty": "Liez une source pour afficher la progression calculée.",
+  "goal_no_sources": "Aucune source liée pour le moment.",
+  "goal_source_unavailable": "Source indisponible",
+  "goal_unavailable": "Cet objectif est indisponible.",
+  "goal_subgoals": "Sous-objectifs",
+  "goal_mark_completed": "Marquer comme terminé",
+  "goal_restore": "Restaurer l’objectif",
+  "goal_archive": "Archiver l’objectif",
+  "goals_entry_count": "{count} objectifs actifs",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} sources",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "Habitudes",
+  "legal_attribution": "Basé sur Streak par InlitX",
+  "legal_licenses": "Licences open source",
+  "calendar": "Calendrier",
+  "calendar_sub": "Comment les dates sont affichées",
+  "calendar_gregorian": "Grégorien",
+  "calendar_hijri": "Hijri",
+  "calendar_gregorian_hijri": "Grégorien + Hijri",
+  "calendar_hijri_gregorian": "Hijri + Grégorien",
+  "hijri_adjust": "Ajustement Hijri",
+  "hijri_adjust_sub": "Décale les dates Hijri selon l'observation de la lune dans votre région",
+  "app_name": "Khuta",
+  "hijri_months_hint": "Due chaque jour des mois choisis. Les autres jours ne comptent ni pour ni contre le streak.",
+  "every_day_in": "Chaque jour en {months}",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "Minimum qui compte",
+  "minimum_goal_hint": "Atteindre le minimum valide la journée. L'objectif ci-dessus reste votre cible complète.",
+  "minimum_suffix": "minimum {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "Historique des objectifs",
+  "history_minimum": "Minimum {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "Objectif {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "{amount} restant",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "Revenez avec un petit pas.",
+  "recovery_threshold": "Récupération après une pause",
+  "recovery_threshold_sub": "Combien de temps une habitude peut rester sans coche avant que la Récupération vous aide à repartir",
+  "recovery_days": "Jours",
+  "recovery_hours": "Heures",
+  "duration_days_hours": "{days} j {hours} h",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "Récupération",
+  "recovery_hint": "Un petit pas suffit pour repartir.",
+  "recovery_dismiss": "Ignorer",
+  "recovery_adjust": "Ajuster",
+  "recovery_enable": "Rappels de récupération",
+  "recovery_enable_sub": "Des rappels doux après une pause",
+  "recovery_first_delay": "Premier rappel après",
+  "recovery_count": "Rappels",
+  "recovery_repeat_every": "Répéter tous les",
+  "recovery_at_time": "À heure fixe",
+  "recovery_time": "Heure",
+  "hours_short": "{n} h",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

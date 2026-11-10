@@ -1,0 +1,1626 @@
+{
+  "@@locale": "id",
+  "app_tagline": "Pelacak kebiasaan",
+  "today": "Hari ini",
+  "stats": "Statistik",
+  "settings": "Pengaturan",
+  "new_label": "Baru",
+  "save": "Simpan",
+  "cancel": "Batal",
+  "delete": "Hapus",
+  "good_morning": "Selamat pagi",
+  "good_afternoon": "Selamat sore",
+  "good_evening": "Selamat malam",
+  "no_habits_yet": "Belum ada kebiasaan",
+  "all_done_today": "Semua selesai hari ini!",
+  "x_of_y_completed": "{done} dari {total} selesai",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "Mulai streak pertama Anda",
+  "empty_body": "Buat kebiasaan lalu ketuk satu hari untuk mencatatnya. Langkah kecil, setiap hari.",
+  "add_habit": "Tambah kebiasaan",
+  "all": "Semua",
+  "onb1_title": "Bangun streak yang nyata",
+  "onb1_body": "Catat kebiasaan dengan satu ketukan dan lihat momentum Anda tumbuh dari hari ke hari.",
+  "onb2_title": "Tetap di jalur",
+  "onb2_body": "Target harian, mingguan, atau bulanan dengan pengingat cerdas agar tidak ada yang terlewat.",
+  "onb3_title": "Lihat kemajuan Anda",
+  "onb3_body": "Statistik lengkap dan grid tahunan menunjukkan seberapa jauh Anda melangkah.",
+  "skip": "Lewati",
+  "next": "Lanjut",
+  "get_started": "Mulai",
+  "onb_kicker": "Selamat datang di",
+  "onb_blurb": "Check-in harian kecil yang berubah menjadi kebiasaan yang bertahan.",
+  "onb_free_title": "Gratis, selamanya",
+  "onb_free_body": "Tanpa iklan, tanpa langganan, tanpa fitur terkunci.",
+  "onb_private_title": "Pribadi dan offline",
+  "onb_private_body": "Semuanya tetap di perangkat Anda. Tanpa akun.",
+  "onb_yours_title": "Data Anda milik Anda",
+  "onb_yours_body": "Cadangkan atau bawa kapan pun Anda mau.",
+  "onb_step": "Langkah {step} dari {total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "Statistik",
+  "done_today": "Selesai hari ini",
+  "best_streak": "Streak terbaik",
+  "active_habits": "Kebiasaan aktif",
+  "total_logs": "Total catatan",
+  "last_7_days": "7 hari terakhir",
+  "last_30_days": "30 hari terakhir",
+  "your_habits": "Kebiasaan Anda",
+  "stats_empty": "Tambahkan kebiasaan untuk melihat statistik Anda",
+  "completion_rate_short": "Konsistensi",
+  "completion_rate": "Tingkat penyelesaian",
+  "appearance": "Tampilan",
+  "theme": "Tema",
+  "system": "Sistem",
+  "light": "Terang",
+  "dark": "Gelap",
+  "week_starts_on": "Minggu dimulai",
+  "mon": "Sen",
+  "sat": "Sab",
+  "sun": "Min",
+  "language": "Bahasa",
+  "data": "Data",
+  "export_backup": "Ekspor cadangan",
+  "export_backup_sub": "Simpan semua kebiasaan ke file",
+  "auto_backup": "Cadangan otomatis",
+  "auto_backup_sub": "Mati",
+  "auto_backup_off": "Mati",
+  "auto_backup_daily": "Setiap hari",
+  "auto_backup_weekly": "Setiap minggu",
+  "auto_backup_where": "Saat Anda membuka aplikasi, Khuta menulis cadangan beserta salinan kebiasaan Anda yang bisa dibaca dan dibuka di editor mana pun. 5 cadangan terakhir disimpan.",
+  "auto_backup_folder": "Folder",
+  "auto_backup_folder_default": "Folder aplikasi",
+  "auto_backup_folder_set": "Folder disimpan",
+  "auto_backup_folder_failed": "Folder itu tidak bisa ditulisi",
+  "auto_backup_no_permission": "Izin penyimpanan ditolak",
+  "auto_backup_run_now": "Cadangkan sekarang",
+  "refresh_now": "Segarkan",
+  "refresh_now_sub": "Ambil yang ditinggalkan perangkat Anda yang lain di folder",
+  "refresh_brought": "Kebiasaan Anda sudah terbaru",
+  "refresh_nothing": "Tidak ada yang baru di folder",
+  "import_backup": "Impor cadangan",
+  "import_backup_sub": "Pulihkan kebiasaan dari file",
+  "import_from_app": "Impor dari aplikasi lain",
+  "import_from_app_sub": "Loop Habit Tracker, HabitKit…",
+  "import_from_app_done": "{habits} kebiasaan ({days} hari) diimpor dari {source}",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "File itu tidak bisa diimpor",
+  "about": "Tentang",
+  "backup_saved": "Cadangan disimpan",
+  "export_cancelled": "Ekspor dibatalkan",
+  "habits_imported": "Kebiasaan diimpor",
+  "new_habit": "Kebiasaan baru",
+  "edit_habit": "Ubah kebiasaan",
+  "name": "Nama",
+  "name_hint": "mis. Lari pagi",
+  "description": "Deskripsi",
+  "description_hint": "Catatan opsional",
+  "icon": "Ikon",
+  "color": "Warna",
+  "category": "Kategori",
+  "category_health": "Kesehatan",
+  "category_fitness": "Kebugaran",
+  "category_mindfulness": "Mindfulness",
+  "category_productivity": "Produktivitas",
+  "category_learning": "Belajar",
+  "category_finance": "Keuangan",
+  "count_days": "{count, plural, other{{count} hari}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, other{{count} minggu}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, other{{count} bulan}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count} mgg",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count} bln",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "Jenis kebiasaan",
+  "kind_positive": "Biasa",
+  "kind_negative": "Hindari",
+  "kind_quantitative": "Jumlah",
+  "kind_locked_hint": "Jenis tidak dapat diubah setelah kebiasaan dibuat.",
+  "kind_negative_hint": "Setiap hari dianggap bersih secara default — streak Anda bertambah dengan sendirinya. Ketuk centang hanya jika Anda tergelincir; hari itu menjadi merah dan bisa dibatalkan.",
+  "cost_per_day": "Biaya per hari",
+  "cost_note": "Opsional. Kosongkan jika kebiasaan ini tidak mengeluarkan uang.",
+  "currency": "Mata uang",
+  "currency_custom": "Kustom",
+  "currency_hint": "Simbol atau kode",
+  "money_saved": "Uang yang dihemat",
+  "clean_days": "Hari bersih",
+  "quant_preset_water": "Air",
+  "quant_preset_reading": "Membaca",
+  "quant_preset_generic": "Kustom",
+  "quant_unit_hint": "Satuan (mis. ml, halaman, repetisi)",
+  "quant_unit_ml": "ml",
+  "quant_unit_pages": "halaman",
+  "quant_edit_title": "Jumlah hari ini",
+  "quant_daily_goal": "Target harian",
+  "quant_tap_amount": "Jumlah per ketukan",
+  "quant_per_day": "Jumlah per hari",
+  "quant_average": "Rata-rata per hari",
+  "quant_logged_days": "Hari tercatat",
+  "quant_best_day": "Hari terbaik",
+  "quant_goal_days": "Target tercapai",
+  "quant_stats_empty": "Catat jumlahnya dan akan terkumpul di sini, bahkan di hari ketika target belum tercapai.",
+  "frequency": "Frekuensi",
+  "daily": "Harian",
+  "weekly": "Mingguan",
+  "monthly": "Bulanan",
+  "sched_days": "Hari",
+  "sched_interval": "Interval",
+  "times_per_week": "{n} kali per minggu",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "{n} kali per bulan",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}×/mgg",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/bln",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "Pengingat",
+  "add_reminder": "Tambah pengingat",
+  "delete_habit": "Hapus kebiasaan",
+  "archive_habit": "Arsipkan kebiasaan",
+  "archive": "Arsipkan",
+  "copy_message": "Salin pesan",
+  "message_copied": "Pesan disalin",
+  "app_lock": "Kunci aplikasi",
+  "app_lock_sub": "Minta sidik jari atau wajah untuk membuka Khuta",
+  "app_lock_unavailable": "Ponsel ini belum menyiapkan biometrik",
+  "app_lock_failed": "Gagal memverifikasi bahwa itu Anda",
+  "app_lock_title": "Khuta terkunci",
+  "app_lock_unlock": "Buka kunci",
+  "app_lock_delay": "Kunci setelah",
+  "app_lock_delay_instant": "Segera",
+  "app_lock_delay_seconds": "{value} detik",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "Foto",
+  "note_take_photo": "Kamera",
+  "note_pick_photo": "Galeri",
+  "journey": "Perjalanan",
+  "journey_sub": "{count, plural, other{{count} foto}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "Belum ada foto",
+  "journey_empty_sub": "Tambahkan foto ke catatan dan foto itu muncul di sini.",
+  "archive_habit_body": "Pindahkan \"{name}\" ke arsip? Riwayatnya tetap tersimpan dan bisa dipulihkan dari Pengaturan.",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "Kebiasaan diarsipkan",
+  "archived_habits_sub": "Pulihkan atau hapus permanen",
+  "archived_empty": "Tidak ada yang diarsipkan",
+  "archived_empty_sub": "Kebiasaan yang Anda hapus masuk ke sini, lengkap dengan riwayatnya.",
+  "restore": "Pulihkan",
+  "restored": "Kebiasaan dipulihkan",
+  "delete_forever": "Hapus permanen",
+  "delete_forever_body": "Hapus \"{name}\" beserta seluruh riwayatnya? Tindakan ini tidak dapat dibatalkan.",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "Kebiasaan dihapus",
+  "clear_progress": "Hapus progres",
+  "clear_progress_sub": "Riwayat, catatan, dan sesi fokus",
+  "clear_progress_warning": "Ini menghapus semua hari yang tercatat, catatan, dan sesi fokus, tetapi kebiasaan, jadwal, dan pengaturan Anda tetap ada. Tidak dapat dibatalkan kecuali Anda punya file cadangan untuk diimpor kembali.",
+  "clear_progress_confirm": "Hapus progres",
+  "clear_progress_done": "Progres dihapus",
+  "wipe_data": "Hapus semua data",
+  "wipe_data_sub": "Kebiasaan, catatan, sesi fokus, dan pengaturan",
+  "wipe_data_warning": "Ini menghapus semua kebiasaan, catatan, sesi fokus, dan pengaturan di ponsel ini. Tidak dapat dibatalkan kecuali Anda punya file cadangan untuk diimpor kembali.",
+  "wipe_data_sure": "Yakin hapus semuanya?",
+  "wipe_data_sure_body": "Kesempatan terakhir. Tanpa cadangan, data ini hilang selamanya.",
+  "wipe_data_confirm": "Hapus semuanya",
+  "wipe_data_done": "Semua data dihapus",
+  "day_start": "Hari dimulai",
+  "day_start_sub": "Begadang tetap dihitung untuk hari sebelumnya",
+  "day_start_midnight": "Tengah malam",
+  "day_start_hour": "{hour}:00 pagi",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "Foto",
+  "share_stats_short": "Statistik",
+  "undo": "Urungkan",
+  "habit_archived": "Kebiasaan diarsipkan",
+  "share_blur": "Buram",
+  "delete_habit_body": "Hapus \"{name}\"? Tindakan ini tidak dapat dibatalkan.",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "Catat kekambuhan?",
+  "log_relapse_body": "Ini memutus streak bersih hari ini untuk \"{name}\". Anda bisa membatalkannya dengan mengetuk lagi.",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "Ya, catat",
+  "permission_required": "Izin notifikasi diperlukan",
+  "streaks": "Streak",
+  "activity": "Aktivitas",
+  "current": "Saat ini",
+  "best": "Terbaik",
+  "total": "Total",
+  "relapses": "Kekambuhan",
+  "strength": "Kekuatan",
+  "week": "Minggu",
+  "month": "Bulan",
+  "year": "Tahun",
+  "new_reminder": "Pengingat baru",
+  "edit_reminder": "Ubah pengingat",
+  "days": "Hari",
+  "time": "Waktu",
+  "save_reminder": "Simpan pengingat",
+  "select_one_day": "Pilih setidaknya satu hari",
+  "every_day": "Setiap hari",
+  "no_days": "Tanpa hari",
+  "repeat_hours": "Ulangi sepanjang hari",
+  "every_n_hours": "Setiap {n} jam",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "Hari tertentu",
+  "repeat_interval": "Setiap N hari",
+  "every_n_days": "Setiap {n} hari",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "Setiap {n} minggu",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "Setiap {n} bulan",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "Hari",
+  "sched_unit_weeks": "Minggu",
+  "sched_unit_months": "Bulan",
+  "todo_tags": "Tag",
+  "todo_projects": "Proyek",
+  "todo_project": "Proyek",
+  "todo_project_new": "Proyek baru",
+  "todo_project_name": "Nama proyek",
+  "todo_project_edit": "Ubah proyek",
+  "todo_project_arrange": "Atur ulang",
+  "todo_project_arrange_hint": "Seret folder ke tempat yang Anda mau.",
+  "todo_project_pick": "Pilih proyek",
+  "todo_project_none": "Tanpa proyek",
+  "todo_project_delete_body": "Proyek dihapus. Tugasnya tetap ada.",
+  "todo_tag": "Tag",
+  "todo_tag_new": "Tag baru",
+  "todo_tag_name": "Nama tag",
+  "todo_tag_edit": "Ubah tag",
+  "todo_tag_delete_body": "Tag dihapus. Tugasnya tetap ada.",
+  "todo_tag_none": "Tanpa tag",
+  "todo_tag_all": "Semua",
+  "todo_tag_manage": "Kelola tag",
+  "todo_tag_empty_title": "Belum ada tag",
+  "todo_tag_empty_body": "Kelompokkan tugas berdasarkan proyek, tempat, atau apa pun yang Anda suka.",
+  "todo_tag_folders": "Folder",
+  "todo_tag_list": "Daftar",
+  "todo_tag_count": "{n} terbuka",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "Ikon",
+  "todo_tag_pick": "Pilih tag",
+  "todo_tag_filtered": "Difilter menurut {name}",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "Tanpa kategori",
+  "more_icons": "Lebih banyak ikon",
+  "less_icons": "Lebih sedikit ikon",
+  "completions": "Penyelesaian",
+  "completion_time": "Waktu penyelesaian",
+  "current_streak": "Streak saat ini",
+  "days_active": "Hari aktif",
+  "completions_per_month": "Penyelesaian / Bulan",
+  "overview": "Ringkasan",
+  "preferences": "Preferensi",
+  "profile": "Profil",
+  "about_app": "Tentang aplikasi ini",
+  "about_app_sub": "Versi, kredit, dan kode sumber",
+  "my_heatmap": "Heatmap saya",
+  "my_heatmap_sub": "Buka grid aktivitas tahunan",
+  "view_source": "Lihat sumber di GitHub",
+  "about_title": "Dibuat untuk Anda. Gratis, selamanya.",
+  "about_footer": "Dibuat dengan ☕ dan banyak waktu luang.",
+  "about_body": "Khuta lahir dari ide sederhana: mengapa harus membayar untuk melacak kebiasaan sendiri?\n\nAplikasi ini sepenuhnya sumber terbuka. Siapa pun dapat melihat persis cara kerjanya, mengusulkan perbaikan, bahkan membuat versinya sendiri. Tanpa kotak hitam. Tanpa kejutan.\n\nPrivasi Anda utuh — semuanya tetap di ponsel Anda. Tanpa akun, tanpa server, tanpa iklan. Tidak satu byte pun keluar dari perangkat Anda.\n\nTanpa batas. Buat kebiasaan sebanyak yang Anda mau. Tanpa langganan, tanpa \"versi pro\", tanpa pop-up yang meminta Anda membayar. Selamanya.\n\nJika aplikasi ini bermanfaat bagi Anda, Anda bisa mendukungnya dengan bintang di GitHub atau dengan mentraktir saya kopi. Tetapi itu sepenuhnya opsional — aplikasi ini milik Anda apa pun pilihannya.",
+  "close": "Tutup",
+  "no_data_yet": "Belum ada data",
+  "import_question_body": "Ganti semua kebiasaan Anda saat ini dengan cadangan, atau gabungkan keduanya?",
+  "import_replace": "Ganti semua",
+  "import_merge": "Gabungkan",
+  "go": "Buka",
+  "quote_1": "Langkah kecil, setiap hari.",
+  "quote_2": "Konsistensi mengalahkan intensitas.",
+  "quote_3": "Hadirlah untuk diri sendiri.",
+  "quote_4": "Satu hari pada satu waktu.",
+  "quote_5": "Kemajuan, bukan kesempurnaan.",
+  "quote_6": "Selesai lebih baik daripada sempurna.",
+  "quote_7": "Jaga streak tetap menyala.",
+  "quote_8": "Kebiasaan kecil, perubahan besar.",
+  "quote_9": "Percayalah pada prosesnya.",
+  "quote_10": "Menangkan pagi hari.",
+  "quote_11": "Disiplin adalah kebebasan.",
+  "quote_12": "Hari ini berarti.",
+  "just_tracking_option": "Tawarkan pelacakan saja",
+  "just_tracking_option_sub": "Menambahkan sakelar saat Anda membuat kebiasaan",
+  "just_tracking": "Pelacakan saja",
+  "just_tracking_sub": "Tetap punya grid dan angkanya sendiri, tetapi tidak masuk ke Progres dan hitungan hari ini",
+  "quotes": "Kutipan",
+  "quotes_which": "Kutipan yang mana",
+  "quotes_app": "Dari aplikasi",
+  "quotes_mine": "Milik saya",
+  "quotes_both": "Keduanya",
+  "quotes_off": "Mati",
+  "quotes_my_list": "Kutipan saya",
+  "quotes_add": "Tambah kutipan",
+  "quotes_edit": "Ubah kutipan",
+  "quotes_hint": "Tulis kutipan Anda",
+  "quotes_empty": "Belum ada kutipan sendiri",
+  "quotes_empty_sub": "Tulis kutipan Anda dan kutipan itu muncul di Hari ini.",
+  "motiv_start": "Awali hari dengan semangat 💪",
+  "motiv_progress": "Anda di jalur yang tepat, teruskan",
+  "motiv_almost": "Hampir sampai! Sedikit lagi",
+  "motiv_perfect": "Hari yang sempurna! 🔥",
+  "app_background": "Latar belakang",
+  "widgets": "Widget",
+  "customize_widgets": "Sesuaikan widget",
+  "customize_widgets_sub": "Latar belakang, opasitas, bingkai",
+  "widget_background": "Warna latar belakang",
+  "widget_opacity": "Opasitas",
+  "widget_border": "Bingkai",
+  "widget_preview": "Pratinjau",
+  "bg_solid": "Polos",
+  "bg_gradient": "Gradien",
+  "bg_dots": "Titik",
+  "bg_oled": "OLED",
+  "weekdays": "Hari kerja",
+  "weekends": "Akhir pekan",
+  "reminder_message": "Pesan (opsional)",
+  "reminder_message_hint": "Kosongkan untuk kutipan motivasi",
+  "new_category": "Kategori baru",
+  "edit_category": "Ubah kategori",
+  "add_category": "Baru",
+  "delete_category": "Hapus kategori",
+  "edit": "Ubah",
+  "cover_image": "Gambar sampul",
+  "book_cover": "Sampul buku",
+  "add_image": "Tambah gambar",
+  "when_best": "Kapan Anda paling konsisten?",
+  "streak_evolution": "Perkembangan streak",
+  "consistency": "Konsistensi",
+  "consistency_trend": "Tren konsistensi",
+  "by_habit": "Per kebiasaan",
+  "ranking": "Peringkat",
+  "active_days": "Hari aktif",
+  "perfect_days": "Hari sempurna",
+  "per_week": "Per minggu",
+  "best_month": "Bulan terbaik",
+  "streak_on": "🔥 {n} hari berturut-turut. Jangan putus!",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 Hari ini Anda bisa memulai streak baru",
+  "not_enough_data": "Data belum cukup",
+  "about_inline": "Khuta adalah aplikasi sumber terbuka untuk melacak kebiasaan Anda. Tanpa akun, tanpa batas, tanpa pembayaran. Semuanya tetap di ponsel Anda.\n\nSiapa pun bisa melihat kodenya, memperbaikinya, atau menggunakannya dengan bebas.",
+  "about_subtitle": "Untuk hari-hari ketika Anda memilih hadir.",
+  "about_story": "Aplikasi ini lahir dari rasa frustrasi terhadap pelacak kebiasaan yang ada. Kebanyakan membatasi jumlah kebiasaan, menyembunyikan fitur dasar di balik paywall, melacak Anda, atau membombardir Anda dengan iklan. Jadi saya memutuskan membuat Khuta: sepenuhnya gratis, tanpa iklan, tanpa pembayaran, tanpa pelacakan. Semuanya berjalan secara lokal — data Anda milik Anda. Sumber terbuka, tanpa syarat tersembunyi.",
+  "share": "Bagikan",
+  "share_progress": "Bagikan progres",
+  "share_failed": "Gambar tidak dapat dibuat",
+  "share_swipe_hint": "Geser kartu untuk menjelajahi waktu",
+  "share_background": "Latar belakang",
+  "share_size": "Ukuran",
+  "share_size_large": "Tinggi",
+  "share_size_small": "Persegi",
+  "share_show_stats": "Tampilkan statistik",
+  "share_save": "Simpan",
+  "share_saved": "Disimpan ke galeri Anda",
+  "share_save_failed": "Gambar tidak dapat disimpan",
+  "about_developer": "Pengembang",
+  "about_credits": "Kredit",
+  "about_credits_body": "Dibuat dengan Flutter. Ikon oleh Lucide. Grafik oleh fl_chart. Menggunakan font Figtree & Playfair Display.",
+  "dev_role": "Pembuat independen · Khuta",
+  "notes": "Catatan",
+  "notes_enable_sub": "Lampirkan catatan pada hari mana pun dari sebuah kebiasaan",
+  "add_note": "Tambah catatan",
+  "edit_note": "Ubah catatan",
+  "view_notes": "Lihat catatan",
+  "edit_entry": "Ubah entri",
+  "note_type": "Jenis",
+  "note_kind_note": "Catatan",
+  "note_kind_planned": "Direncanakan",
+  "note_kind_completed": "Selesai",
+  "note_hint": "Tulis catatan Anda...",
+  "note_time_optional": "Waktu (opsional)",
+  "save_note": "Simpan catatan",
+  "notes_empty": "Belum ada catatan untuk hari ini",
+  "delete_note": "Hapus catatan",
+  "legend_note_added": "Catatan ditambahkan",
+  "tomorrow": "Besok",
+  "notes_count": "{count, plural, other{{count} catatan}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "Tugas",
+  "todos_enable_sub": "Daftar cepat di samping kebiasaan Anda",
+  "todo_new": "Tugas baru",
+  "todo_hint": "Apa yang perlu dikerjakan?",
+  "todo_subtasks": "Subtugas",
+  "todo_subtask_hint": "Subtugas",
+  "todo_empty_title": "Daftar masih kosong",
+  "todo_empty_body": "Catat apa yang ingin Anda selesaikan beberapa hari ke depan.",
+  "todo_date": "Tanggal",
+  "todo_no_date": "Tanpa tanggal",
+  "todo_time": "Waktu",
+  "todo_priority": "Prioritas",
+  "priority_none": "Tanpa prioritas",
+  "priority_low": "Rendah",
+  "priority_medium": "Sedang",
+  "priority_high": "Tinggi",
+  "todo_overdue": "Terlambat",
+  "todo_upcoming": "Mendatang",
+  "todo_someday": "Suatu hari nanti",
+  "pick_a_date": "Pilih tanggal",
+  "todo_left": "{count, plural, =0{Semua selesai} other{{count} tugas}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, other{Selesai ({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "Cari tugas",
+  "todo_search_empty": "Tidak ada yang cocok",
+  "todo_clear_completed": "Hapus yang selesai",
+  "todo_clear_completed_body": "{count, plural, other{Ini menghapus {count} tugas yang sudah selesai.}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "Umum",
+  "prefs_features": "Fitur",
+  "prefs_privacy": "Privasi",
+  "collapse_cards": "Ciutkan kartu",
+  "expand_cards": "Bentangkan kartu",
+  "view_switcher": "Pengalih tampilan",
+  "view_switcher_sub": "Tampilkan tombol Minggu / Bulan / Tahun di Hari ini",
+  "view_switcher_needs": "Aktifkan aktivitas pada kartu untuk menggunakannya",
+  "focus": "Fokus",
+  "focus_enable_sub": "Pengatur waktu untuk kebiasaan yang membutuhkannya",
+  "focus_free_session": "Sesi bebas",
+  "focus_duration": "Durasi",
+  "focus_start": "Mulai sesi",
+  "focus_style": "Gaya pengatur waktu",
+  "focus_style_digital": "Lingkaran",
+  "focus_style_flip": "Balik",
+  "focus_style_dots": "Titik",
+  "focus_countdown": "Hitung mundur 3 detik",
+  "focus_skip_break": "Lewati istirahat",
+  "focus_continue": "Lanjutkan",
+  "focus_alert": "Peringatan akhir ronde",
+  "focus_alert_chime": "Denting",
+  "focus_alert_custom": "Pilih suara",
+  "focus_alert_none": "Senyap",
+  "focus_hold": "Tunggu sampai saya menghentikannya",
+  "focus_hold_sub": "Ronde berikutnya menunggu sampai Anda mengetuk Lanjutkan.",
+  "focus_restart": "Mulai ulang",
+  "focus_restart_title": "Mulai ulang ronde ini?",
+  "focus_restart_body": "Waktu fokus Anda di ronde ini akan hilang.",
+  "focus_saved": "{time} tercatat",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_total": "Waktu fokus",
+  "focus_sessions": "Sesi",
+  "focus_stop_title": "Akhiri sesi?",
+  "focus_stop_body": "Menit Anda tersimpan apa pun pilihannya. Kebiasaan hanya selesai jika Anda mencapai target.",
+  "focus_end": "Akhiri",
+  "focus_pick_habit": "Apa yang ingin Anda fokuskan?",
+  "focus_scene_custom": "Gambar Anda",
+  "unit_hours": "jam",
+  "unit_minutes": "menit",
+  "unit_seconds": "detik",
+  "focus_target_reached": "Target tercapai",
+  "focus_pause": "Jeda",
+  "focus_resume": "Lanjutkan",
+  "focus_sound": "Suara",
+  "focus_pick_audio": "Pilih trek dari ponsel Anda",
+  "focus_no_sound": "Belum ada trek dipilih",
+  "focus_tasks": "Daftar subtugas",
+  "focus_custom_duration": "Kustom",
+  "focus_end_short": "Anda kurang {time} dari target.",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_end_tasks": "{count} tugas masih belum dicentang.",
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_end_reached": "Target tercapai. Kebiasaan akan ditandai selesai.",
+  "focus_end_keep": "Lanjutkan",
+  "focus_end_anyway": "Tetap akhiri",
+  "focus_end_complete": "Tandai selesai",
+  "focus_end_add_time": "Tambahkan waktu fokus",
+  "focus_amount_added": "{amount} ditambahkan ke {habit}",
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "Kustom",
+  "focus_track_rain": "Hujan",
+  "focus_track_brown": "Derau cokelat",
+  "focus_track_pad": "Pad hangat",
+  "focus_add_track": "Tambah trek",
+  "focus_shuffle": "Acak",
+  "focus_loop": "Berurutan",
+  "focus_repeat_one": "Ulangi satu",
+  "focus_track_too_long": "Trek harus kurang dari 20 menit",
+  "focus_track_limit": "Maksimal 10 trek",
+  "focus_done_title": "Sesi selesai",
+  "focus_your_tracks": "Trek Anda",
+  "focus_built_in": "Bawaan",
+  "unit_hour_short": "j",
+  "unit_min_short": "mnt",
+  "focus_notif_body": "Sesi fokus Anda telah berakhir. Kerja bagus!",
+  "celebration": "Efek penyelesaian",
+  "celebration_confetti": "Konfeti",
+  "celebration_fireworks": "Kembang api",
+  "celebration_surprise": "Kejutkan saya",
+  "focus_notif_channel": "Sesi fokus",
+  "focus_notif_running": "Sedang fokus",
+  "focus_paused": "Dijeda",
+  "focus_scene_black": "Hitam",
+  "focus_pomodoro": "Pomodoro",
+  "focus_pomodoro_sub": "Rangkai ronde fokus dengan istirahat singkat",
+  "focus_break": "Istirahat",
+  "focus_round": "Ronde {n}",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_daily_goal": "Target fokus",
+  "focus_goal_today": "{done} dari {goal} hari ini",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_keep_awake": "Biarkan layar menyala",
+  "focus_images_limit": "Maksimal 10 gambar",
+  "select_all": "Pilih semua",
+  "selected_count": "{count, plural, other{{count} dipilih}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "Hapus sesi?",
+  "focus_delete_sessions_body": "{count, plural, other{{count} sesi fokus akan dihapus. Tindakan ini tidak dapat dibatalkan.}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, other{{count} sesi dihapus}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "Hari tidak terjadwal",
+  "unscheduled_body": "Kebiasaan ini tidak dijadwalkan pada {day}. Tetap catat sebagai tambahan?",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "Tetap catat",
+  "rest_days_none": "Tidak ada",
+  "last_90_days": "90 hari terakhir",
+  "focus_clear_today": "Hapus sesi hari ini",
+  "focus_defaults": "Bawaan sesi",
+  "plan_day": "Rencanakan hari",
+  "plan_day_sub": "Beri kebiasaan waktu dalam sehari dan lihat di lini masa.",
+  "habit_time": "Waktu dalam sehari",
+  "habit_time_none": "Kapan saja",
+  "habit_duration": "Durasi",
+  "habit_duration_none": "Tanpa durasi",
+  "day_timeline": "Hari",
+  "day_timeline_free": "{span} kosong",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "Kapan saja",
+  "day_timeline_empty": "Belum ada rencana untuk hari ini",
+  "day_timeline_empty_sub": "Beri kebiasaan waktu dalam sehari dan kebiasaan itu muncul di sini.",
+  "clear": "Hapus",
+  "start_view": "Hari ini dibuka di",
+  "start_view_last": "Terakhir digunakan",
+  "focus_stats": "Statistik fokus",
+  "focus_average": "Rata-rata sesi",
+  "focus_log": "Catat sesi",
+  "focus_log_date": "Tanggal",
+  "focus_log_saved": "Sesi ditambahkan",
+  "perfect_streak": "Streak hari sempurna",
+  "focus_history": "Riwayat",
+  "focus_history_empty": "Belum ada sesi",
+  "focus_history_empty_sub": "Setiap sesi fokus yang Anda selesaikan muncul di sini.",
+  "focus_history_day": "{count, plural, other{{count} sesi}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "Kemarin",
+  "notes_hint": "Buka kebiasaan dan tekan lama sebuah hari di kalendernya untuk melihat atau menambah catatan",
+  "app_style": "Gaya aplikasi",
+  "app_style_sub": "Pilih tampilan dan nuansa seluruh aplikasi.",
+  "style_classic": "Klasik",
+  "style_minimal": "Minimal",
+  "style_classic_desc": "Daftar kebiasaan, bilah bawah, dan semua pengaturan dalam satu layar.",
+  "style_minimal_desc": "Grid kebiasaan dan pengaturan yang dikelompokkan menjadi empat bagian.",
+  "appearance_sub": "Tema, aksen, dan latar belakang",
+  "preferences_sub": "Bahasa, minggu, dan pengurutan",
+  "data_sub": "Cadangan dan impor",
+  "about_sub": "Versi, kode sumber, dan dukungan",
+  "check_style": "Gaya centang",
+  "square": "Persegi",
+  "circle": "Lingkaran",
+  "icons_tab": "Ikon",
+  "emojis_tab": "Emoji",
+  "emoji_own": "Ketik atau tempel emoji apa pun",
+  "advanced_options": "Opsi lanjutan",
+  "default_user": "Pengguna",
+  "your_name": "Nama Anda",
+  "edit_name": "Ubah nama",
+  "change_photo": "Ganti foto",
+  "remove_photo": "Hapus foto",
+  "notif_greeting": "Hai {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "Ikon aplikasi",
+  "icon_default": "Bawaan",
+  "icon_neutral": "Arang",
+  "icon_accent": "Pasir",
+  "custom": "Kustom",
+  "see_more": "Lihat lebih banyak",
+  "see_less": "Lihat lebih sedikit",
+  "colors_tab": "Warna",
+  "reorder": "Urutkan ulang",
+  "reorder_hint": "Seret kebiasaan untuk mengurutkannya ulang",
+  "category_order": "Urutan kategori",
+  "category_order_sub": "Seret sesuai urutan yang Anda mau",
+  "category_order_empty": "Beri kategori pada kebiasaan dan kategori itu akan muncul di sini",
+  "done": "Selesai",
+  "accent_color": "Warna aksen",
+  "heatmap_path": "Hubungkan hari-hari",
+  "heatmap_path_sub": "Menggambar grid sebagai satu perjalanan panjang",
+  "sort_completed_last": "Yang selesai di akhir",
+  "sort_completed_last_sub": "Memindahkan yang selesai ke bagian bawah daftar",
+  "today_only": "Hanya hari ini",
+  "today_only_sub": "Menyembunyikan kebiasaan yang tidak dijadwalkan hari ini",
+  "card_activity": "Aktivitas pada kartu",
+  "card_activity_sub": "Menampilkan beberapa hari terakhir di kartu, siap dicentang",
+  "readable_copy": "Salinan terbaca",
+  "readable_copy_sub": "Juga menulis kebiasaan Anda sebagai berkas markdown",
+  "theme_sub": "Terang, gelap, atau mengikuti sistem",
+  "accent_color_sub": "Dipakai pada tombol dan sorotan",
+  "app_background_sub": "Yang terlihat di belakang kartu",
+  "check_style_sub": "Tanda persegi atau bulat",
+  "app_icon_sub": "Ikon di layar utama Anda",
+  "language_sub": "Bahasa untuk seluruh aplikasi",
+  "week_start_sub": "Kolom pertama di setiap grid",
+  "celebration_sub": "Yang Anda lihat saat mencentang kebiasaan",
+  "start_view_sub": "Tampilan tempat Hari ini terbuka",
+  "quotes_sub": "Kutipan mana yang muncul di Hari ini",
+  "focus_daily_goal_sub": "Menit fokus yang Anda targetkan setiap hari",
+  "app_lock_delay_sub": "Seberapa cepat aplikasi meminta lagi setelah Anda pergi",
+  "focus_only": "Hanya dengan sesi fokus",
+  "focus_only_hint": "Kebiasaan dicentang saat Anda menyelesaikan sesi, bukan dengan mengetuknya.",
+  "focus_only_title": "Perlu sesi fokus",
+  "focus_only_body": "\"{name}\" diselesaikan dengan menuntaskan sesi fokus.",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "\"{name}\" hanya diselesaikan lewat sesi fokus, jadi hari yang lalu tidak dapat dicentang.",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "Hapus centang ini?",
+  "focus_only_clear_body": "Hanya sesi fokus yang bisa mencentang \"{name}\" lagi.",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "Mulai sesi",
+  "focus_flowtime": "Flowtime",
+  "focus_flowtime_hint": "Tanpa target dan tanpa alarm. Jam menghitung maju dan Anda berhenti saat merasa cukup.",
+  "focus_end_flow": "Anda fokus selama {time}.",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "Aktif",
+  "off": "Mati",
+  "checklist": "Daftar periksa",
+  "checklist_hint": "Pecah kebiasaan menjadi langkah-langkah. Baru selesai jika setiap langkah dicentang.",
+  "add_step": "Tambah langkah",
+  "step_hint": "Nama langkah",
+  "todays_checklist": "Daftar periksa hari ini",
+  "steps_done": "{done}/{total} langkah",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "Jeda semua kebiasaan",
+  "vacation_all_sub": "Tidak ada yang dihitung terlewat selama aktif",
+  "vacation_mode": "Mode liburan",
+  "vacation_on_desc": "Dijeda — hari-hari ini tidak dihitung terlewat maupun selesai.",
+  "vacation_off_desc": "Jeda kebiasaan ini. Hari yang dilewati tidak memutus streak Anda.",
+  "paused": "Dijeda",
+  "start_vacation": "Mulai liburan",
+  "end_vacation": "Akhiri liburan",
+  "vacation_day_on": "Tandai sebagai hari libur",
+  "vacation_day_off": "Hapus hari libur",
+  "rest_days": "Hari istirahat",
+  "rest_days_desc": "Jeda setiap minggu pada hari-hari ini. Anda tetap bisa mencatatnya, dan tetap dihitung.",
+  "widget_no_habits": "Belum ada kebiasaan\nKetuk untuk membuka Khuta",
+  "widget_no_data": "Belum ada data\nBuka Khuta untuk sinkronisasi",
+  "widget_open_to_sync": "Buka Khuta untuk sinkronisasi",
+  "widget_activity": "Aktivitas",
+  "widget_today_progress": "Hari ini  {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "Tugas  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "Tidak ada lagi untuk hari ini",
+  "widget_done_today": "selesai hari ini",
+  "widget_best_streak": "🔥 {streak} streak terbaik",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "Sesuaikan widget",
+  "widget_cfg_color": "Warna",
+  "widget_cfg_image": "Gambar",
+  "widget_cfg_choose_image": "Pilih gambar",
+  "widget_cfg_change_image": "Ganti gambar",
+  "widget_cfg_custom_color": "Warna kustom",
+  "widget_cfg_follow_system": "Ikuti tema sistem",
+  "widget_cfg_dark_color": "Tema gelap",
+  "widget_cfg_light_color": "Tema terang",
+  "widget_cfg_opacity": "Opasitas  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "Bingkai",
+  "widget_cfg_thickness": "Ketebalan  {value}dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "Tugas",
+  "widget_cfg_todos_all": "Tampilkan semua tugas",
+  "widget_cfg_todos_hint": "Mati: hanya tugas hari ini, terlambat, dan tanpa tanggal",
+  "widget_cfg_show_activity": "Tampilkan aktivitas dari",
+  "widget_cfg_dot_color": "Warna titik",
+  "widget_cfg_style": "Gaya",
+  "widget_cfg_style_classic": "Klasik",
+  "widget_cfg_style_card": "Kartu",
+  "widget_cfg_all_habits": "Semua kebiasaan",
+  "widget_cfg_save": "Simpan",
+  "widget_cfg_add": "Tambah widget",
+  "widget_cfg_reset": "Setel ulang ke bawaan",
+  "widget_cfg_hue": "Rona",
+  "widget_cfg_saturation": "Saturasi",
+  "widget_cfg_brightness": "Kecerahan",
+  "widget_demo_read": "Baca",
+  "widget_demo_run": "Lari",
+  "widget_demo_water": "Air",
+  "notif_streak": "🔥 Streak {streak} hari",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 Streak {streak} minggu",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 Streak {streak} bulan",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "Selesai",
+  "notif_action_snooze": "Tunda",
+  "notif_action_add": "Tambah jumlah",
+  "notif_action_add_hint": "Berapa banyak?",
+  "snooze_duration": "Tunda selama",
+  "snooze_custom": "Kustom",
+  "snooze_custom_hint": "Menit",
+  "minutes_short": "{value} mnt",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "Tandai {name} selesai",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "Tandai {name} belum selesai",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "Tambah ke {name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "Catat kekambuhan untuk {name}",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "Hapus kekambuhan hari ini untuk {name}",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "belum selesai",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "Minggu sebelumnya",
+  "a11y_next_week": "Minggu berikutnya",
+  "a11y_increase": "Tambah",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "Kurangi",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "Pilih warna",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "Minggu ini",
+  "period_last_week": "Minggu lalu",
+  "period_this_month": "Bulan ini",
+  "period_last_month": "Bulan lalu",
+  "period_this_year": "Tahun ini",
+  "period_all_time": "Sepanjang waktu",
+  "times_completed": "Kali diselesaikan",
+  "period_last_year": "Tahun lalu",
+  "period_week_of": "Minggu {date}",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{Tidak ada sesi} =1{1 sesi} other{{count} sesi}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "Semua catatan",
+  "notes_empty_all": "Belum ada catatan",
+  "quant_preset_time": "Waktu",
+  "style_express": "Express",
+  "style_express_desc": "Bentuk membulat, gerakan membal, dan huruf yang lebih lebar.",
+  "celebration_none": "Tidak ada",
+  "quant_add_title": "Tambah jumlah",
+  "pane_hint": "Buka sesuatu dari daftar untuk melihatnya di sini",
+  "average_short": "Rata-rata",
+  "island": "Pulau",
+  "island_enable_sub": "Ubah kebiasaan Anda menjadi oasis yang dibangun sepotong demi sepotong",
+  "island_open": "Buka pulau",
+  "island_shop": "Toko",
+  "island_build": "Bangun",
+  "island_done": "Dibangun",
+  "island_complete": "Oasis sudah selesai",
+  "island_tap_hint": "Ketuk sebuah bentuk untuk melihat apa yang ditaruh di sana",
+  "island_empty": "Centang kebiasaan dan oasis mulai tumbuh",
+  "island_how": "Cara kerja poin",
+  "island_how_check": "10 untuk setiap kebiasaan yang dicentang",
+  "island_how_focus": "1 per menit fokus",
+  "island_how_perfect": "25 tambahan untuk hari yang sempurna",
+  "island_how_note": "Koin berasal dari riwayat Anda, jadi cadangan akan mengembalikannya.",
+  "island_built": "{done} dari {total} dibangun",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "{count} poin lagi",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} sekarang ada di pulau",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "Lidah buaya gurun",
+  "island_p_altar": "Tenda Badui",
+  "island_p_archway": "Lengkungan batu",
+  "island_p_banner": "Spanduk",
+  "island_p_bench": "Bangku",
+  "island_p_blue_railing": "Sekat kisi",
+  "island_p_bougainvillea": "Bunga kertas",
+  "island_p_boulder": "Batu besar",
+  "island_p_crate": "Peti kayu",
+  "island_p_crop_patch": "Petak tanaman",
+  "island_p_cube_house": "Rumah berkubah",
+  "island_p_cypress": "Pohon kurma",
+  "island_p_dry_grass": "Rumput kering",
+  "island_p_flat_stone": "Batu pipih",
+  "island_p_flower_pot": "Pot bunga",
+  "island_p_garden_bed": "Bedeng taman",
+  "island_p_hanging_lantern": "Lentera gantung",
+  "island_p_hay_bale": "Tumpukan jerami",
+  "island_p_house": "Rumah kecil",
+  "island_p_lantern_post": "Tiang lampu",
+  "island_p_large_rock": "Batu karang besar",
+  "island_p_main_chapel": "Masjid",
+  "island_p_mossy_stone": "Batu semak",
+  "island_p_olive": "Pohon akasia",
+  "island_p_pebbles": "Kerikil",
+  "island_p_pergola_house": "Rumah pergola",
+  "island_p_pottery_jar": "Guci tembikar",
+  "island_p_rocks": "Bebatuan",
+  "island_p_signpost": "Papan petunjuk",
+  "island_p_small_bridge": "Jembatan papan",
+  "island_p_stone_basin": "Air mancur",
+  "island_p_stone_lantern": "Lentera batu",
+  "island_p_stone_pile": "Tumpukan batu",
+  "island_p_storage_box": "Peti penyimpanan",
+  "island_p_terrace_house": "Rumah teras",
+  "island_p_terracotta_pot": "Pot terakota",
+  "island_p_tower_chapel": "Menara",
+  "island_p_two_story": "Rumah dua lantai",
+  "island_p_veg_garden": "Kebun sayur",
+  "island_p_villa": "Rumah berhalaman",
+  "island_p_water_bucket": "Ember air",
+  "island_p_well": "Sumur",
+  "island_p_windmill": "Penangkap angin",
+  "island_p_wood_pile": "Tumpukan kayu",
+  "island_reset": "Mulai ulang pulau",
+  "island_reset_sub": "Semuanya dibongkar dan setiap poin kembali ke saldo Anda.",
+  "island_coins": "Koin",
+  "island_g_pueblo": "Desa",
+  "island_g_cala": "Mata air",
+  "island_g_terrazas": "Teras-teras",
+  "island_g_puerto": "Perhentian kafilah",
+  "island_g_molino": "Punggungan penangkap angin",
+  "island_how_todo": "4 untuk setiap tugas yang selesai",
+  "island_how_streak": "Bonus saat kebiasaan mencapai 7, 30, 100, dan 365 hari",
+  "island_zoom_hint": "Seret dengan satu jari untuk menggeser. Cubit dengan dua jari untuk zoom, putar untuk memutar pulau.",
+  "island_t_teal": "hijau kebiruan",
+  "island_t_clay": "terakota",
+  "island_t_white": "putih",
+  "island_t_coral": "koral",
+  "island_t_lilac": "ungu muda",
+  "island_t_autumn": "musim gugur",
+  "island_t_deep": "gelap",
+  "island_t_silver": "perak",
+  "island_g_huerta": "Kebun kurma",
+  "island_g_faro": "Tumpukan batu karang",
+  "island_turn": "Putar tampilan",
+  "gamification": "Gamifikasi",
+  "island_default_name": "Pulau saya",
+  "island_rename": "Beri nama pulau Anda",
+  "island_only_affordable": "Hanya yang mampu saya beli",
+  "island_nothing_here": "Belum ada apa-apa di sini",
+  "island_g_vega": "Wadi",
+  "island_g_mirador": "Tempat pengamatan",
+  "island_g_astillero": "Tempat kerja",
+  "island_g_ermita": "Taman masjid",
+  "island_g_caleta": "Mata air kecil",
+  "island_g_cabo": "Tanjung",
+  "island_goal": "Beginilah tampilannya saat setiap bagian sudah dibangun.",
+  "island_reset_go": "Mulai ulang",
+  "island_beta": "Ini adalah versi awal gamifikasi dan masih dalam beta. Fitur ini bisa berkembang, berubah bentuk, atau diganti sepenuhnya, tergantung bagaimana kalian menggunakannya.",
+  "gamification_beta": "Gamifikasi (beta)",
+  "last_check": "Centang terakhir",
+  "check_history": "Riwayat centang",
+  "check_history_sub": "{count} hari dicentang",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "Tidak pernah",
+  "check_no_time": "waktu tidak disimpan",
+  "heatmap_rolling": "12 bulan terakhir",
+  "heatmap_rolling_sub": "Grid tahunan berakhir hari ini, bukan pada 31 Desember",
+  "check_marks": "{count} tanda",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "Progres di Hari ini",
+  "today_progress_option_sub": "Cincin hari ini dan bilah kekuatan pada setiap kebiasaan",
+  "quiet_when_done": "Diam setelah selesai",
+  "quiet_when_done_sub": "Tidak ada lagi pengingat hari ini untuk kebiasaan yang sudah selesai",
+  "plan_tab": "Rencana",
+  "difficulty": "Tingkat kesulitan",
+  "difficulty_hint": "Kebiasaan yang lebih sulit bernilai lebih dalam progres hari ini",
+  "difficulty_easy": "Mudah",
+  "difficulty_medium": "Sedang",
+  "difficulty_hard": "Sulit",
+  "pin_lock": "Kode PIN",
+  "pin_lock_sub": "Kode Anda sendiri, terpisah dari kunci ponsel",
+  "pin_choose": "Pilih PIN",
+  "pin_choose_sub": "4 sampai 8 digit",
+  "pin_repeat": "Masukkan lagi",
+  "pin_mismatch": "Tidak cocok. Ulangi dari awal.",
+  "pin_enter": "Masukkan PIN Anda",
+  "pin_wrong": "PIN salah",
+  "pin_wait": "Terlalu banyak percobaan. Tunggu {seconds} dtk",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "Kode pemulihan Anda",
+  "pin_recovery_body": "Jika Anda lupa PIN, kode ini membuka Khuta dan mematikan kunci. Simpan di tempat aman: kode ini tidak akan ditampilkan lagi.",
+  "pin_copy": "Salin kode",
+  "pin_copied": "Kode disalin",
+  "pin_forgot": "Lupa PIN?",
+  "pin_recovery_hint": "Kode pemulihan",
+  "pin_recovery_wrong": "Kode itu tidak benar",
+  "pin_recovered": "Kunci dimatikan. Anda bisa mengatur PIN baru di Pengaturan.",
+  "pin_change": "Ubah PIN",
+  "pin_remove": "Hapus PIN",
+  "pin_fingerprint": "Gunakan sidik jari",
+  "app_lock_method": "Buka dengan",
+  "app_lock_biometric": "Sidik jari atau wajah",
+  "difficulty_option": "Kesulitan kebiasaan",
+  "difficulty_option_sub": "Biarkan kebiasaan yang lebih sulit bernilai lebih dalam progres hari ini",
+  "todo_save_another": "Simpan dan tambah lagi",
+  "todo_add_subtask": "Tambah subtugas",
+  "pin_paste": "Tempel kode",
+  "journal": "Jurnal",
+  "journal_today": "Hari ini",
+  "journal_calendar": "Kalender",
+  "journal_empty": "Belum ada tulisan di sini",
+  "journal_empty_sub": "Momen, refleksi, dan aktivitas Khuta Anda berkumpul di sini.",
+  "journal_add_moment": "Tambah momen",
+  "journal_daily_reflection": "Refleksi harian",
+  "journal_write_moment": "Apa yang terjadi?",
+  "journal_write_reflection": "Bagaimana rasanya hari ini?",
+  "journal_moment": "Momen",
+  "journal_reflection": "Refleksi",
+  "journal_activity": "Aktivitas Khuta",
+  "journeys": "Perjalanan",
+  "journey_new": "Perjalanan baru",
+  "journey_edit": "Ubah perjalanan",
+  "journey_title": "Judul perjalanan",
+  "journey_description": "Apa yang sedang Anda tuju?",
+  "journey_start_date": "Tanggal mulai",
+  "journey_target_date": "Tanggal target",
+  "journey_milestones": "Tonggak",
+  "journey_add_milestone": "Tambah tonggak",
+  "journey_linked_habits": "Kebiasaan terkait",
+  "journey_focus_target": "Target fokus",
+  "journey_no_items": "Belum ada perjalanan",
+  "journey_no_items_sub": "Buat perjalanan dan hubungkan kebiasaan yang memajukannya.",
+  "journey_planned": "Direncanakan",
+  "journey_active": "Aktif",
+  "journey_completed": "Selesai",
+  "journey_archived": "Diarsipkan",
+  "journey_timeline": "Linimasa",
+  "journey_progress": "{done} dari {total} tonggak",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "Kenangan",
+  "journey_invalid_dates": "Tanggal target tidak boleh sebelum tanggal mulai",
+  "journey_invalid_focus_target": "Target fokus harus antara 0 dan 525600 menit",
+  "journal_photo_limit": "Anda bisa melampirkan hingga 8 foto",
+  "journal_content_required": "Tulis sesuatu atau tambahkan foto",
+  "daily_plan_title": "Hari Saya",
+  "daily_plan_progress": "{done} dari {total} prioritas selesai",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "Pilih hingga 3 prioritas untuk hari ini.",
+  "daily_plan_add": "Tambah prioritas",
+  "daily_plan_edit": "Edit prioritas",
+  "daily_plan_limit": "Hingga 3 prioritas",
+  "daily_plan_habit": "Kebiasaan",
+  "daily_plan_todo": "Tugas",
+  "daily_plan_milestones": "Milestone perjalanan",
+  "daily_plan_source_missing": "Sumber tidak tersedia",
+  "daily_plan_no_sources": "Tidak ada lagi yang tersedia untuk ditambahkan hari ini.",
+  "app_usage_title": "Penggunaan aplikasi hari ini",
+  "app_usage_disclosure": "Untuk menampilkan nama aplikasi dan waktu penggunaan hari ini, Khuta memerlukan akses Android ke data penggunaan. Ringkasan diproses di perangkat ini, dihapus saat aplikasi ditutup, dan tidak pernah disinkronkan. Khuta tidak membaca isi aplikasi atau notifikasi.",
+  "app_usage_accept_and_show": "Saya setuju, tampilkan penggunaan hari ini",
+  "app_usage_open_settings": "Buka setelan Akses Penggunaan",
+  "app_usage_access_off": "Akses Penggunaan nonaktif",
+  "app_usage_loading": "Membaca penggunaan aplikasi hari ini…",
+  "app_usage_retry": "Coba lagi",
+  "app_usage_total": "Total penggunaan semua aplikasi",
+  "app_usage_most_used": "Aplikasi paling sering digunakan",
+  "app_usage_empty": "Belum ada data penggunaan aplikasi untuk hari ini.",
+  "app_usage_unsupported": "Ringkasan penggunaan aplikasi hanya tersedia di Android.",
+  "app_usage_error": "Penggunaan aplikasi tidak dapat dibaca saat ini.",
+  "app_usage_local_only": "Ringkasan ini tetap di perangkat dan tidak disimpan oleh Khuta.",
+  "app_usage_duration_hours_minutes": "{hours} jam {minutes} mnt",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} mnt",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "<1 mnt",
+  "goals": "Sasaran",
+  "goal_new": "Sasaran baru",
+  "goal_edit": "Edit sasaran",
+  "goal_title": "Judul sasaran",
+  "goal_title_required": "Judul sasaran wajib diisi",
+  "goal_description": "Hasil apa yang sedang Anda upayakan?",
+  "goal_parent": "Sasaran induk",
+  "goal_no_parent": "Tanpa sasaran induk",
+  "goal_target_date": "Tanggal target",
+  "goal_no_target_date": "Tanpa tanggal target",
+  "goal_state": "Status",
+  "goal_active": "Aktif",
+  "goal_completed": "Selesai",
+  "goal_archived": "Diarsipkan",
+  "goal_link_sources": "Sumber tertaut",
+  "goals_empty": "Belum ada sasaran",
+  "goals_empty_sub": "Buat hasil dan hubungkan kebiasaan, tugas, serta perjalanan yang mendorong Anda ke sana.",
+  "goals_entry_empty": "Buat sasaran pertama Anda",
+  "goal_progress": "Progres",
+  "goal_progress_empty": "Tautkan sumber untuk melihat progres yang dihitung.",
+  "goal_no_sources": "Belum ada sumber yang ditautkan.",
+  "goal_source_unavailable": "Sumber tidak tersedia",
+  "goal_unavailable": "Sasaran ini tidak tersedia.",
+  "goal_subgoals": "Subsasaran",
+  "goal_mark_completed": "Tandai selesai",
+  "goal_restore": "Pulihkan sasaran",
+  "goal_archive": "Arsipkan sasaran",
+  "goals_entry_count": "{count} sasaran aktif",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} sumber",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "Kebiasaan",
+  "legal_attribution": "Berdasarkan Streak oleh InlitX",
+  "legal_licenses": "Lisensi sumber terbuka",
+  "calendar": "Kalender",
+  "calendar_sub": "Cara tanggal ditampilkan",
+  "calendar_gregorian": "Masehi",
+  "calendar_hijri": "Hijri",
+  "calendar_gregorian_hijri": "Masehi + Hijri",
+  "calendar_hijri_gregorian": "Hijri + Masehi",
+  "hijri_adjust": "Penyesuaian Hijri",
+  "hijri_adjust_sub": "Geser tanggal Hijri agar sesuai dengan rukyat hilal di daerah Anda",
+  "app_name": "Khuta",
+  "hijri_months_hint": "Jatuh tempo setiap hari pada bulan yang dipilih. Hari lainnya tidak berpengaruh pada streak.",
+  "every_day_in": "Setiap hari di {months}",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "Minimum yang dihitung",
+  "minimum_goal_hint": "Mencapai minimum menyelesaikan hari itu. Target di atas tetap menjadi target penuh Anda.",
+  "minimum_suffix": "minimal {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "Riwayat target",
+  "history_minimum": "Minimal {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "Target: {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "sisa {amount}",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "Kembali dengan satu langkah kecil.",
+  "recovery_threshold": "Pemulihan setelah jeda",
+  "recovery_threshold_sub": "Berapa lama kebiasaan boleh tanpa centang sebelum Pemulihan membantu Anda memulai lagi",
+  "recovery_days": "Hari",
+  "recovery_hours": "Jam",
+  "duration_days_hours": "{days}h {hours}j",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "Pemulihan",
+  "recovery_hint": "Satu langkah kecil cukup untuk memulai lagi.",
+  "recovery_dismiss": "Tutup",
+  "recovery_adjust": "Atur",
+  "recovery_enable": "Pengingat pemulihan",
+  "recovery_enable_sub": "Pengingat lembut setelah jeda",
+  "recovery_first_delay": "Pengingat pertama setelah",
+  "recovery_count": "Pengingat",
+  "recovery_repeat_every": "Ulangi setiap",
+  "recovery_at_time": "Pada waktu tetap",
+  "recovery_time": "Waktu",
+  "hours_short": "{n} j",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

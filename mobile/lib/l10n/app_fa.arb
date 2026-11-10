@@ -1,0 +1,1626 @@
+{
+  "@@locale": "fa",
+  "app_tagline": "ردیاب عادت",
+  "today": "امروز",
+  "stats": "آمار",
+  "settings": "تنظیمات",
+  "new_label": "جدید",
+  "save": "ذخیره",
+  "cancel": "لغو",
+  "delete": "حذف",
+  "good_morning": "صبح بخیر",
+  "good_afternoon": "ظهر بخیر",
+  "good_evening": "عصر بخیر",
+  "no_habits_yet": "هنوز عادتی ندارید",
+  "all_done_today": "همه امروز انجام شد!",
+  "x_of_y_completed": "{done} از {total} انجام شد",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "اولین زنجیره‌تان را شروع کنید",
+  "empty_body": "یک عادت بسازید و روی یک روز بزنید تا ثبت شود. قدم‌های کوچک، هر روز.",
+  "add_habit": "افزودن عادت",
+  "all": "همه",
+  "onb1_title": "زنجیره‌های واقعی بسازید",
+  "onb1_body": "عادت را با یک لمس ثبت کنید و ببینید شتابتان روز به روز بیشتر می‌شود.",
+  "onb2_title": "در مسیر بمانید",
+  "onb2_body": "هدف‌های روزانه، هفتگی یا ماهانه با یادآورهای هوشمند تا چیزی از قلم نیفتد.",
+  "onb3_title": "پیشرفتتان را ببینید",
+  "onb3_body": "آمار کامل و جدول سالانه نشان می‌دهد دقیقاً چقدر پیش آمده‌اید.",
+  "skip": "رد کردن",
+  "next": "بعدی",
+  "get_started": "شروع کنید",
+  "onb_kicker": "خوش آمدید به",
+  "onb_blurb": "مرورهای کوچک روزانه که به عادت‌های ماندگار تبدیل می‌شوند.",
+  "onb_free_title": "رایگان، برای همیشه",
+  "onb_free_body": "بدون تبلیغ، بدون اشتراک، بدون قابلیت قفل‌شده.",
+  "onb_private_title": "خصوصی و آفلاین",
+  "onb_private_body": "همه‌چیز روی دستگاه شما می‌ماند. نیازی به حساب کاربری نیست.",
+  "onb_yours_title": "داده‌هایتان مال شماست",
+  "onb_yours_body": "هر وقت خواستید پشتیبان بگیرید یا با خودتان ببرید.",
+  "onb_step": "مرحله {step} از {total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "آمار",
+  "done_today": "انجام‌شده امروز",
+  "best_streak": "بهترین زنجیره",
+  "active_habits": "عادت‌های فعال",
+  "total_logs": "مجموع ثبت‌ها",
+  "last_7_days": "7 روز گذشته",
+  "last_30_days": "30 روز گذشته",
+  "your_habits": "عادت‌های شما",
+  "stats_empty": "برای دیدن آمار، عادت اضافه کنید",
+  "completion_rate_short": "پایداری",
+  "completion_rate": "نرخ انجام",
+  "appearance": "ظاهر",
+  "theme": "پوسته",
+  "system": "سیستم",
+  "light": "روشن",
+  "dark": "تیره",
+  "week_starts_on": "شروع هفته",
+  "mon": "دوشنبه",
+  "sat": "شنبه",
+  "sun": "یکشنبه",
+  "language": "زبان",
+  "data": "داده‌ها",
+  "export_backup": "خروجی پشتیبان",
+  "export_backup_sub": "ذخیره همه عادت‌ها در یک فایل",
+  "auto_backup": "پشتیبان خودکار",
+  "auto_backup_sub": "خاموش",
+  "auto_backup_off": "خاموش",
+  "auto_backup_daily": "هر روز",
+  "auto_backup_weekly": "هر هفته",
+  "auto_backup_where": "هنگام باز کردن برنامه، Khuta یک پشتیبان و یک نسخه خوانا از عادت‌هایتان می‌نویسد که با هر ویرایشگری باز می‌شود. 5 پشتیبان آخر نگه داشته می‌شود.",
+  "auto_backup_folder": "پوشه",
+  "auto_backup_folder_default": "پوشه برنامه",
+  "auto_backup_folder_set": "پوشه ذخیره شد",
+  "auto_backup_folder_failed": "نوشتن در آن پوشه ممکن نیست",
+  "auto_backup_no_permission": "دسترسی به حافظه رد شد",
+  "auto_backup_run_now": "اکنون پشتیبان بگیر",
+  "refresh_now": "تازه‌سازی",
+  "refresh_now_sub": "آنچه دستگاه‌های دیگرتان در پوشه گذاشته‌اند را بیاورید",
+  "refresh_brought": "عادت‌هایتان به‌روز است",
+  "refresh_nothing": "چیز جدیدی در پوشه نیست",
+  "import_backup": "درون‌ریزی پشتیبان",
+  "import_backup_sub": "بازیابی عادت‌ها از یک فایل",
+  "import_from_app": "درون‌ریزی از برنامه دیگر",
+  "import_from_app_sub": "Loop Habit Tracker، HabitKit…",
+  "import_from_app_done": "{habits} عادت ({days} روز) از {source} درون‌ریزی شد",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "درون‌ریزی آن فایل ممکن نشد",
+  "about": "درباره",
+  "backup_saved": "پشتیبان ذخیره شد",
+  "export_cancelled": "خروجی لغو شد",
+  "habits_imported": "عادت‌ها درون‌ریزی شدند",
+  "new_habit": "عادت جدید",
+  "edit_habit": "ویرایش عادت",
+  "name": "نام",
+  "name_hint": "مثلاً دویدن صبحگاهی",
+  "description": "توضیحات",
+  "description_hint": "یادداشت اختیاری",
+  "icon": "نماد",
+  "color": "رنگ",
+  "category": "دسته",
+  "category_health": "سلامت",
+  "category_fitness": "تناسب اندام",
+  "category_mindfulness": "ذهن‌آگاهی",
+  "category_productivity": "بهره‌وری",
+  "category_learning": "یادگیری",
+  "category_finance": "مالی",
+  "count_days": "{count, plural, =1{1 روز} other{{count} روز}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, =1{1 هفته} other{{count} هفته}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, =1{1 ماه} other{{count} ماه}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count} هفته",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count} ماه",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "نوع عادت",
+  "kind_positive": "عادی",
+  "kind_negative": "پرهیز",
+  "kind_quantitative": "مقدار",
+  "kind_locked_hint": "نوع عادت پس از ساخت قابل تغییر نیست.",
+  "kind_negative_hint": "هر روز به‌طور پیش‌فرض پاک حساب می‌شود و زنجیره‌تان خودش بزرگ می‌شود. فقط اگر لغزیدید تیک را بزنید؛ آن روز قرمز می‌شود و می‌توانید برگردانید.",
+  "cost_per_day": "هزینه در روز",
+  "cost_note": "اختیاری. اگر این عادت هزینه‌ای ندارد خالی بگذارید.",
+  "currency": "واحد پول",
+  "currency_custom": "سفارشی",
+  "currency_hint": "نماد یا کد",
+  "money_saved": "پول پس‌انداز‌شده",
+  "clean_days": "روزهای پاک",
+  "quant_preset_water": "آب",
+  "quant_preset_reading": "مطالعه",
+  "quant_preset_generic": "سفارشی",
+  "quant_unit_hint": "واحد (مثلاً میلی‌لیتر، صفحه، تکرار)",
+  "quant_unit_ml": "میلی‌لیتر",
+  "quant_unit_pages": "صفحه",
+  "quant_edit_title": "مقدار امروز",
+  "quant_daily_goal": "هدف روزانه",
+  "quant_tap_amount": "مقدار هر لمس",
+  "quant_per_day": "مقدار در روز",
+  "quant_average": "میانگین در روز",
+  "quant_logged_days": "روزهای ثبت‌شده",
+  "quant_best_day": "بهترین روز",
+  "quant_goal_days": "رسیدن به هدف",
+  "quant_stats_empty": "مقداری ثبت کنید تا اینجا جمع شود، حتی در روزهایی که به هدف نرسیده‌اید.",
+  "frequency": "تکرار",
+  "daily": "روزانه",
+  "weekly": "هفتگی",
+  "monthly": "ماهانه",
+  "sched_days": "روزها",
+  "sched_interval": "فاصله",
+  "times_per_week": "{n} بار در هفته",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "{n} بار در ماه",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}×/هفته",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/ماه",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "یادآورها",
+  "add_reminder": "افزودن یادآور",
+  "delete_habit": "حذف عادت",
+  "archive_habit": "بایگانی عادت",
+  "archive": "بایگانی",
+  "copy_message": "کپی پیام",
+  "message_copied": "پیام کپی شد",
+  "app_lock": "قفل برنامه",
+  "app_lock_sub": "برای باز کردن Khuta اثر انگشت یا چهره بخواهد",
+  "app_lock_unavailable": "در این گوشی زیست‌سنجی تنظیم نشده است",
+  "app_lock_failed": "تأیید هویت شما ممکن نشد",
+  "app_lock_title": "Khuta قفل است",
+  "app_lock_unlock": "باز کردن قفل",
+  "app_lock_delay": "قفل بعد از",
+  "app_lock_delay_instant": "بلافاصله",
+  "app_lock_delay_seconds": "{value} ثانیه",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "عکس‌ها",
+  "note_take_photo": "دوربین",
+  "note_pick_photo": "گالری",
+  "journey": "مسیر",
+  "journey_sub": "{count, plural, =1{1 عکس} other{{count} عکس}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "هنوز عکسی نیست",
+  "journey_empty_sub": "به یک یادداشت عکس اضافه کنید تا اینجا نمایش داده شود.",
+  "archive_habit_body": "«{name}» به بایگانی منتقل شود؟ تاریخچه‌اش حفظ می‌شود و از تنظیمات می‌توانید بازیابی کنید.",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "عادت‌های بایگانی‌شده",
+  "archived_habits_sub": "بازیابی یا حذف همیشگی",
+  "archived_empty": "چیزی بایگانی نشده",
+  "archived_empty_sub": "عادت‌هایی که حذف می‌کنید با همه تاریخچه‌شان اینجا می‌آیند.",
+  "restore": "بازیابی",
+  "restored": "عادت بازیابی شد",
+  "delete_forever": "حذف همیشگی",
+  "delete_forever_body": "«{name}» و همه تاریخچه‌اش حذف شود؟ این کار قابل بازگشت نیست.",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "عادت حذف شد",
+  "clear_progress": "پاک کردن پیشرفت",
+  "clear_progress_sub": "تاریخچه، یادداشت‌ها و جلسه‌های تمرکز",
+  "clear_progress_warning": "این کار همه روزهای ثبت‌شده، یادداشت‌ها و جلسه‌های تمرکز را پاک می‌کند، اما عادت‌ها، برنامه‌شان و تنظیماتتان می‌ماند. قابل بازگشت نیست مگر اینکه بعداً فایل پشتیبانی برای درون‌ریزی داشته باشید.",
+  "clear_progress_confirm": "پاک کردن پیشرفت",
+  "clear_progress_done": "پیشرفت پاک شد",
+  "wipe_data": "پاک کردن همه داده‌ها",
+  "wipe_data_sub": "عادت‌ها، یادداشت‌ها، جلسه‌های تمرکز و تنظیمات",
+  "wipe_data_warning": "این کار همه عادت‌ها، یادداشت‌ها، جلسه‌های تمرکز و تنظیمات این گوشی را پاک می‌کند. قابل بازگشت نیست مگر اینکه بعداً فایل پشتیبانی برای درون‌ریزی داشته باشید.",
+  "wipe_data_sure": "واقعاً همه‌چیز پاک شود؟",
+  "wipe_data_sure_body": "فرصت آخر. بدون پشتیبان، این داده‌ها برای همیشه از بین می‌روند.",
+  "wipe_data_confirm": "پاک کردن همه‌چیز",
+  "wipe_data_done": "همه داده‌ها پاک شد",
+  "day_start": "شروع روز",
+  "day_start_sub": "شب‌بیداری‌ها هنوز برای روز قبل حساب می‌شوند",
+  "day_start_midnight": "نیمه‌شب",
+  "day_start_hour": "{hour}:00 صبح",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "عکس",
+  "share_stats_short": "آمار",
+  "undo": "واگرد",
+  "habit_archived": "عادت بایگانی شد",
+  "share_blur": "محو",
+  "delete_habit_body": "«{name}» حذف شود؟ این کار قابل بازگشت نیست.",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "لغزش ثبت شود؟",
+  "log_relapse_body": "این کار زنجیره پاک امروز «{name}» را می‌شکند. با لمس دوباره می‌توانید برگردانید.",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "بله، ثبت کن",
+  "permission_required": "دسترسی اعلان لازم است",
+  "streaks": "زنجیره‌ها",
+  "activity": "فعالیت",
+  "current": "فعلی",
+  "best": "بهترین",
+  "total": "مجموع",
+  "relapses": "لغزش‌ها",
+  "strength": "قدرت",
+  "week": "هفته",
+  "month": "ماه",
+  "year": "سال",
+  "new_reminder": "یادآور جدید",
+  "edit_reminder": "ویرایش یادآور",
+  "days": "روزها",
+  "time": "زمان",
+  "save_reminder": "ذخیره یادآور",
+  "select_one_day": "دست‌کم یک روز انتخاب کنید",
+  "every_day": "هر روز",
+  "no_days": "بدون روز",
+  "repeat_hours": "تکرار در طول روز",
+  "every_n_hours": "هر {n} ساعت",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "روزهای مشخص",
+  "repeat_interval": "هر N روز",
+  "every_n_days": "هر {n} روز",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "هر {n} هفته",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "هر {n} ماه",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "روز",
+  "sched_unit_weeks": "هفته",
+  "sched_unit_months": "ماه",
+  "todo_tags": "برچسب‌ها",
+  "todo_projects": "پروژه‌ها",
+  "todo_project": "پروژه",
+  "todo_project_new": "پروژه جدید",
+  "todo_project_name": "نام پروژه",
+  "todo_project_edit": "ویرایش پروژه",
+  "todo_project_arrange": "چیدمان",
+  "todo_project_arrange_hint": "پوشه‌ها را به جای دلخواه بکشید.",
+  "todo_project_pick": "انتخاب پروژه",
+  "todo_project_none": "بدون پروژه",
+  "todo_project_delete_body": "پروژه حذف می‌شود اما کارها می‌مانند.",
+  "todo_tag": "برچسب",
+  "todo_tag_new": "برچسب جدید",
+  "todo_tag_name": "نام برچسب",
+  "todo_tag_edit": "ویرایش برچسب",
+  "todo_tag_delete_body": "برچسب حذف می‌شود اما کارها می‌مانند.",
+  "todo_tag_none": "بدون برچسب",
+  "todo_tag_all": "همه",
+  "todo_tag_manage": "مدیریت برچسب‌ها",
+  "todo_tag_empty_title": "هنوز برچسبی نیست",
+  "todo_tag_empty_body": "کارها را بر اساس پروژه، مکان یا هر چیز دیگر گروه‌بندی کنید.",
+  "todo_tag_folders": "پوشه‌ها",
+  "todo_tag_list": "فهرست",
+  "todo_tag_count": "{n} باز",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "نماد",
+  "todo_tag_pick": "انتخاب برچسب‌ها",
+  "todo_tag_filtered": "فیلتر بر اساس {name}",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "بدون دسته",
+  "more_icons": "نمادهای بیشتر",
+  "less_icons": "نمادهای کمتر",
+  "completions": "انجام‌ها",
+  "completion_time": "زمان انجام",
+  "current_streak": "زنجیره فعلی",
+  "days_active": "روزهای فعال",
+  "completions_per_month": "انجام‌ها / ماه",
+  "overview": "نمای کلی",
+  "preferences": "ترجیحات",
+  "profile": "پروفایل",
+  "about_app": "درباره این برنامه",
+  "about_app_sub": "نسخه، سازندگان و کد منبع",
+  "my_heatmap": "نقشه حرارتی من",
+  "my_heatmap_sub": "باز کردن جدول فعالیت سالانه",
+  "view_source": "مشاهده کد منبع در GitHub",
+  "about_title": "ساخته‌شده برای شما. رایگان، برای همیشه.",
+  "about_footer": "ساخته‌شده با ☕ و کلی وقت آزاد.",
+  "about_body": "Khuta از یک ایده ساده به دنیا آمد: چرا باید برای ردیابی عادت‌های خودمان پول بدهیم؟\n\nاین برنامه کاملاً متن‌باز است. هر کسی می‌تواند ببیند دقیقاً چطور کار می‌کند، پیشنهاد بدهد یا حتی نسخه خودش را بسازد. بدون جعبه سیاه. بدون سورپرایز.\n\nحریم خصوصی شما کامل است: همه‌چیز روی گوشی شما می‌ماند. بدون حساب کاربری، بدون سرور، بدون تبلیغ. حتی یک بایت از دستگاهتان خارج نمی‌شود.\n\nبدون محدودیت. هر تعداد عادت که بخواهید بسازید. بدون اشتراک، بدون «نسخه حرفه‌ای»، بدون پنجره‌ای که پرداخت بخواهد. هرگز.\n\nاگر برنامه برایتان ارزشی داشت، می‌توانید با یک ستاره در GitHub یا خرید یک قهوه از آن حمایت کنید. اما کاملاً اختیاری است؛ برنامه در هر حال مال شماست.",
+  "close": "بستن",
+  "no_data_yet": "هنوز داده‌ای نیست",
+  "import_question_body": "همه عادت‌های فعلی با پشتیبان جایگزین شوند یا با هم ادغام شوند؟",
+  "import_replace": "جایگزینی همه",
+  "import_merge": "ادغام",
+  "go": "برو",
+  "quote_1": "قدم‌های کوچک، هر روز.",
+  "quote_2": "پایداری از شدت برتر است.",
+  "quote_3": "برای خودت حاضر شو.",
+  "quote_4": "یک روز در هر زمان.",
+  "quote_5": "پیشرفت، نه کمال.",
+  "quote_6": "انجام‌شده بهتر از بی‌نقص است.",
+  "quote_7": "زنجیره را زنده نگه دار.",
+  "quote_8": "عادت‌های کوچک، تغییر بزرگ.",
+  "quote_9": "به فرایند اعتماد کن.",
+  "quote_10": "صبح را ببر.",
+  "quote_11": "انضباط یعنی آزادی.",
+  "quote_12": "امروز مهم است.",
+  "just_tracking_option": "پیشنهاد فقط ردیابی",
+  "just_tracking_option_sub": "هنگام ساخت عادت، گزینه‌اش را اضافه می‌کند",
+  "just_tracking": "فقط ردیابی",
+  "just_tracking_sub": "جدول و اعداد خودش را نگه می‌دارد، اما در پیشرفت و شمارش روز نمی‌آید",
+  "quotes": "جمله‌های انگیزشی",
+  "quotes_which": "کدام جمله‌ها",
+  "quotes_app": "از برنامه",
+  "quotes_mine": "از من",
+  "quotes_both": "هر دو",
+  "quotes_off": "خاموش",
+  "quotes_my_list": "جمله‌های من",
+  "quotes_add": "افزودن جمله",
+  "quotes_edit": "ویرایش جمله",
+  "quotes_hint": "جمله‌تان را بنویسید",
+  "quotes_empty": "جمله‌ای از خودتان ندارید",
+  "quotes_empty_sub": "جمله‌های خودتان را بنویسید تا در امروز نمایش داده شوند.",
+  "motiv_start": "روز را قوی شروع کن 💪",
+  "motiv_progress": "در مسیر هستی، ادامه بده",
+  "motiv_almost": "تقریباً رسیدی! کمی دیگر",
+  "motiv_perfect": "روزی عالی! 🔥",
+  "app_background": "پس‌زمینه",
+  "widgets": "ویجت‌ها",
+  "customize_widgets": "سفارشی‌سازی ویجت‌ها",
+  "customize_widgets_sub": "پس‌زمینه، شفافیت، حاشیه",
+  "widget_background": "رنگ پس‌زمینه",
+  "widget_opacity": "شفافیت",
+  "widget_border": "حاشیه",
+  "widget_preview": "پیش‌نمایش",
+  "bg_solid": "ساده",
+  "bg_gradient": "گرادیان",
+  "bg_dots": "نقطه‌ای",
+  "bg_oled": "OLED",
+  "weekdays": "روزهای هفته",
+  "weekends": "آخر هفته",
+  "reminder_message": "پیام (اختیاری)",
+  "reminder_message_hint": "برای جمله انگیزشی خالی بگذارید",
+  "new_category": "دسته جدید",
+  "edit_category": "ویرایش دسته",
+  "add_category": "جدید",
+  "delete_category": "حذف دسته",
+  "edit": "ویرایش",
+  "cover_image": "تصویر جلد",
+  "book_cover": "جلد کتاب",
+  "add_image": "افزودن تصویر",
+  "when_best": "چه زمانی پایدارترید؟",
+  "streak_evolution": "روند زنجیره",
+  "consistency": "پایداری",
+  "consistency_trend": "روند پایداری",
+  "by_habit": "بر اساس عادت",
+  "ranking": "رتبه‌بندی",
+  "active_days": "روزهای فعال",
+  "perfect_days": "روزهای عالی",
+  "per_week": "در هفته",
+  "best_month": "بهترین ماه",
+  "streak_on": "🔥 {n} روز پیاپی. نشکنش!",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 امروز می‌توانید زنجیره‌ای تازه شروع کنید",
+  "not_enough_data": "هنوز داده کافی نیست",
+  "about_inline": "Khuta یک برنامه متن‌باز برای ردیابی عادت‌های شماست. بدون حساب کاربری، بدون محدودیت، بدون پرداخت. همه‌چیز روی گوشی شما می‌ماند.\n\nهر کسی می‌تواند کد را ببیند، بهتر کند یا آزادانه استفاده کند.",
+  "about_subtitle": "برای روزهایی که تصمیم می‌گیرید حاضر شوید.",
+  "about_story": "این برنامه از ناامیدی از ردیاب‌های عادت موجود به وجود آمد. بیشترشان تعداد عادت‌ها را محدود می‌کنند، قابلیت‌های پایه را پشت پرداخت پنهان می‌کنند، شما را ردیابی می‌کنند یا با تبلیغ بمباران‌تان می‌کنند. پس تصمیم گرفتم Khuta را بسازم: کاملاً رایگان، بدون تبلیغ، بدون پرداخت، بدون ردیابی. همه‌چیز محلی اجرا می‌شود و داده‌هایتان مال خودتان است. متن‌باز، بدون هیچ شرطی.",
+  "share": "اشتراک‌گذاری",
+  "share_progress": "اشتراک‌گذاری پیشرفت",
+  "share_failed": "ساخت تصویر ممکن نشد",
+  "share_swipe_hint": "کارت را بکشید تا در زمان جابه‌جا شوید",
+  "share_background": "پس‌زمینه",
+  "share_size": "اندازه",
+  "share_size_large": "بلند",
+  "share_size_small": "مربع",
+  "share_show_stats": "نمایش آمار",
+  "share_save": "ذخیره",
+  "share_saved": "در گالری ذخیره شد",
+  "share_save_failed": "ذخیره تصویر ممکن نشد",
+  "about_developer": "توسعه‌دهنده",
+  "about_credits": "سازندگان",
+  "about_credits_body": "ساخته‌شده با Flutter. نمادها از Lucide. نمودارها از fl_chart. حروف‌چینی با Figtree و Playfair Display.",
+  "dev_role": "سازنده مستقل · Khuta",
+  "notes": "یادداشت‌ها",
+  "notes_enable_sub": "به هر روز یک عادت یادداشت اضافه کنید",
+  "add_note": "افزودن یادداشت",
+  "edit_note": "ویرایش یادداشت",
+  "view_notes": "مشاهده یادداشت‌ها",
+  "edit_entry": "ویرایش مورد",
+  "note_type": "نوع",
+  "note_kind_note": "یادداشت",
+  "note_kind_planned": "برنامه‌ریزی‌شده",
+  "note_kind_completed": "انجام‌شده",
+  "note_hint": "یادداشتتان را بنویسید...",
+  "note_time_optional": "زمان (اختیاری)",
+  "save_note": "ذخیره یادداشت",
+  "notes_empty": "هنوز یادداشتی برای این روز نیست",
+  "delete_note": "حذف یادداشت",
+  "legend_note_added": "یادداشت اضافه شد",
+  "tomorrow": "فردا",
+  "notes_count": "{count, plural, =1{1 یادداشت} other{{count} یادداشت}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "کارها",
+  "todos_enable_sub": "فهرستی سریع در کنار عادت‌ها",
+  "todo_new": "کار جدید",
+  "todo_hint": "چه کاری باید انجام شود؟",
+  "todo_subtasks": "زیرکارها",
+  "todo_subtask_hint": "زیرکار",
+  "todo_empty_title": "فهرست خالی است",
+  "todo_empty_body": "کارهایی که می‌خواهید در چند روز آینده انجام دهید را یادداشت کنید.",
+  "todo_date": "تاریخ",
+  "todo_no_date": "بدون تاریخ",
+  "todo_time": "زمان",
+  "todo_priority": "اولویت",
+  "priority_none": "بدون اولویت",
+  "priority_low": "کم",
+  "priority_medium": "متوسط",
+  "priority_high": "زیاد",
+  "todo_overdue": "عقب‌افتاده",
+  "todo_upcoming": "پیش رو",
+  "todo_someday": "روزی",
+  "pick_a_date": "انتخاب تاریخ",
+  "todo_left": "{count, plural, =0{همه انجام شد} =1{1 کار مانده} other{{count} کار مانده}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, =1{انجام‌شده (1)} other{انجام‌شده ({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "جستجوی کارها",
+  "todo_search_empty": "موردی مطابقت ندارد",
+  "todo_clear_completed": "پاک کردن انجام‌شده‌ها",
+  "todo_clear_completed_body": "{count, plural, =1{کار انجام‌شده حذف می‌شود.} other{{count} کار انجام‌شده حذف می‌شوند.}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "عمومی",
+  "prefs_features": "قابلیت‌ها",
+  "prefs_privacy": "حریم خصوصی",
+  "collapse_cards": "بستن کارت‌ها",
+  "expand_cards": "باز کردن کارت‌ها",
+  "view_switcher": "تعویض نما",
+  "view_switcher_sub": "دکمه‌های هفته / ماه / سال را در امروز نشان بده",
+  "view_switcher_needs": "برای استفاده، فعالیت روی کارت‌ها را روشن کنید",
+  "focus": "تمرکز",
+  "focus_enable_sub": "زمان‌سنج برای عادت‌هایی که به آن نیاز دارند",
+  "focus_free_session": "جلسه آزاد",
+  "focus_duration": "مدت",
+  "focus_start": "شروع جلسه",
+  "focus_style": "سبک زمان‌سنج",
+  "focus_style_digital": "دایره",
+  "focus_style_flip": "ورق‌زن",
+  "focus_style_dots": "نقطه‌ها",
+  "focus_countdown": "شمارش معکوس 3 ثانیه‌ای",
+  "focus_skip_break": "رد کردن استراحت",
+  "focus_continue": "ادامه",
+  "focus_alert": "هشدار پایان دور",
+  "focus_alert_chime": "زنگ",
+  "focus_alert_custom": "انتخاب صدا",
+  "focus_alert_none": "بی‌صدا",
+  "focus_hold": "صبر کن تا خودم متوقف کنم",
+  "focus_hold_sub": "دور بعدی تا زمانی که ادامه را بزنید منتظر می‌ماند.",
+  "focus_restart": "شروع دوباره",
+  "focus_restart_title": "این دور دوباره شروع شود؟",
+  "focus_restart_body": "زمانی که در این دور متمرکز بوده‌اید از دست می‌رود.",
+  "focus_saved": "{time} ثبت شد",
+  "focus_total": "زمان تمرکز",
+  "focus_sessions": "جلسه‌ها",
+  "focus_stop_title": "جلسه پایان یابد؟",
+  "focus_stop_body": "دقیقه‌هایتان در هر حال ذخیره می‌شود. عادت فقط در صورت رسیدن به هدف انجام‌شده حساب می‌شود.",
+  "focus_end": "پایان",
+  "focus_pick_habit": "روی چه چیزی تمرکز دارید؟",
+  "focus_scene_custom": "تصویر شما",
+  "unit_hours": "ساعت",
+  "unit_minutes": "دقیقه",
+  "unit_seconds": "ثانیه",
+  "focus_target_reached": "به هدف رسیدید",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_pause": "توقف",
+  "focus_resume": "ادامه",
+  "focus_sound": "صدا",
+  "focus_pick_audio": "یک آهنگ از گوشی انتخاب کنید",
+  "focus_no_sound": "آهنگی انتخاب نشده",
+  "focus_tasks": "فهرست زیرکار",
+  "focus_custom_duration": "سفارشی",
+  "focus_end_short": "{time} تا هدف کم دارید.",
+  "focus_end_tasks": "{count} کار هنوز تیک نخورده است.",
+  "focus_end_reached": "به هدف رسیدید. عادت انجام‌شده علامت می‌خورد.",
+  "focus_end_keep": "ادامه بده",
+  "focus_end_anyway": "به هر حال پایان",
+  "focus_end_complete": "علامت انجام‌شده",
+  "focus_end_add_time": "افزودن زمان تمرکز",
+  "focus_amount_added": "{amount} به {habit} اضافه شد",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "سفارشی",
+  "focus_track_rain": "باران",
+  "focus_track_brown": "نویز قهوه‌ای",
+  "focus_track_pad": "پد گرم",
+  "focus_add_track": "افزودن آهنگ",
+  "focus_shuffle": "تصادفی",
+  "focus_loop": "به ترتیب",
+  "focus_repeat_one": "تکرار یکی",
+  "focus_track_too_long": "آهنگ‌ها باید کمتر از 20 دقیقه باشند",
+  "focus_track_limit": "حداکثر 10 آهنگ",
+  "focus_done_title": "جلسه تمام شد",
+  "focus_your_tracks": "آهنگ‌های شما",
+  "focus_built_in": "همراه برنامه",
+  "unit_hour_short": "ساعت",
+  "unit_min_short": "دقیقه",
+  "focus_notif_body": "جلسه تمرکزتان تمام شد. آفرین!",
+  "celebration": "جلوه انجام",
+  "celebration_confetti": "کاغذرنگی",
+  "celebration_fireworks": "آتش‌بازی",
+  "celebration_surprise": "غافلگیرم کن",
+  "focus_notif_channel": "جلسه‌های تمرکز",
+  "focus_notif_running": "در حال تمرکز",
+  "focus_paused": "متوقف",
+  "focus_scene_black": "سیاه",
+  "focus_pomodoro": "پومودورو",
+  "focus_pomodoro_sub": "دورهای تمرکز را با استراحت‌های کوتاه زنجیره کنید",
+  "focus_break": "استراحت",
+  "focus_round": "دور {n}",
+  "focus_daily_goal": "هدف تمرکز",
+  "focus_goal_today": "{done} از {goal} امروز",
+  "focus_keep_awake": "روشن ماندن صفحه",
+  "focus_images_limit": "حداکثر 10 تصویر",
+  "select_all": "انتخاب همه",
+  "selected_count": "{count, plural, =1{1 انتخاب‌شده} other{{count} انتخاب‌شده}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "جلسه‌ها حذف شوند؟",
+  "focus_delete_sessions_body": "{count, plural, =1{1 جلسه تمرکز حذف می‌شود. این کار قابل بازگشت نیست.} other{{count} جلسه تمرکز حذف می‌شوند. این کار قابل بازگشت نیست.}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, =1{1 جلسه حذف شد} other{{count} جلسه حذف شد}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "روز برنامه‌ریزی نشده",
+  "unscheduled_body": "این عادت برای {day} برنامه‌ریزی نشده است. به‌عنوان مورد اضافه ثبت شود؟",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "به هر حال ثبت کن",
+  "rest_days_none": "هیچ",
+  "last_90_days": "90 روز گذشته",
+  "focus_clear_today": "پاک کردن جلسه‌های امروز",
+  "focus_defaults": "پیش‌فرض جلسه‌ها",
+  "plan_day": "برنامه‌ریزی روز",
+  "plan_day_sub": "به عادت‌ها ساعتی بدهید و آن‌ها را روی خط زمان ببینید.",
+  "habit_time": "ساعت روز",
+  "habit_time_none": "هر زمان",
+  "habit_duration": "مدت",
+  "habit_duration_none": "بدون مدت",
+  "day_timeline": "روز",
+  "day_timeline_free": "{span} آزاد",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "هر زمان",
+  "day_timeline_empty": "برای این روز چیزی برنامه‌ریزی نشده",
+  "day_timeline_empty_sub": "به یک عادت ساعتی بدهید تا اینجا نمایش داده شود.",
+  "clear": "پاک کردن",
+  "start_view": "امروز باز می‌شود روی",
+  "start_view_last": "آخرین استفاده",
+  "focus_stats": "آمار تمرکز",
+  "focus_average": "میانگین جلسه",
+  "focus_log": "ثبت جلسه",
+  "focus_log_date": "تاریخ",
+  "focus_log_saved": "جلسه اضافه شد",
+  "perfect_streak": "زنجیره روزهای عالی",
+  "focus_history": "تاریخچه",
+  "focus_history_empty": "هنوز جلسه‌ای نیست",
+  "focus_history_empty_sub": "هر جلسه تمرکزی که تمام کنید اینجا نمایش داده می‌شود.",
+  "focus_history_day": "{count, plural, =1{1 جلسه} other{{count} جلسه}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "دیروز",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "notes_hint": "یک عادت را باز کنید و روی یک روز در تقویمش نگه دارید تا یادداشت‌ها را ببینید یا اضافه کنید",
+  "app_style": "سبک برنامه",
+  "app_style_sub": "ظاهر و حال‌وهوای کل برنامه را انتخاب کنید.",
+  "style_classic": "کلاسیک",
+  "style_minimal": "مینیمال",
+  "style_classic_desc": "فهرست عادت‌ها، نوار پایین و همه تنظیمات در یک صفحه.",
+  "style_minimal_desc": "جدول عادت‌ها و تنظیمات گروه‌بندی‌شده در چهار بخش.",
+  "appearance_sub": "پوسته، رنگ تأکید و پس‌زمینه",
+  "preferences_sub": "زبان، هفته و مرتب‌سازی",
+  "data_sub": "پشتیبان‌ها و درون‌ریزی",
+  "about_sub": "نسخه، کد منبع و پشتیبانی",
+  "check_style": "سبک تیک",
+  "square": "مربع",
+  "circle": "دایره",
+  "icons_tab": "نمادها",
+  "emojis_tab": "ایموجی‌ها",
+  "emoji_own": "هر ایموجی را تایپ یا جایگذاری کنید",
+  "advanced_options": "گزینه‌های پیشرفته",
+  "default_user": "کاربر",
+  "your_name": "نام شما",
+  "edit_name": "ویرایش نام",
+  "change_photo": "تغییر عکس",
+  "remove_photo": "حذف عکس",
+  "notif_greeting": "سلام {name}، ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "نماد برنامه",
+  "icon_default": "پیش‌فرض",
+  "icon_neutral": "زغالی",
+  "icon_accent": "شنی",
+  "custom": "سفارشی",
+  "see_more": "بیشتر",
+  "see_less": "کمتر",
+  "colors_tab": "رنگ‌ها",
+  "reorder": "ترتیب",
+  "reorder_hint": "عادت‌ها را بکشید تا ترتیبشان عوض شود",
+  "category_order": "ترتیب دسته‌ها",
+  "category_order_sub": "آن‌ها را به ترتیب دلخواه بکشید",
+  "category_order_empty": "به یک عادت دسته بدهید تا اینجا نمایش داده شود",
+  "done": "تمام",
+  "accent_color": "رنگ تأکید",
+  "heatmap_path": "اتصال روزها",
+  "heatmap_path_sub": "جدول را مانند یک مسیر پیوسته می‌کشد",
+  "sort_completed_last": "انجام‌شده‌ها آخر",
+  "sort_completed_last_sub": "آنچه تمام کرده‌اید را به پایین فهرست می‌برد",
+  "today_only": "فقط امروز",
+  "today_only_sub": "عادت‌هایی که برای امروز برنامه ندارند را پنهان می‌کند",
+  "card_activity": "فعالیت روی کارت‌ها",
+  "card_activity_sub": "روزهای اخیر را روی کارت نشان می‌دهد، آماده برای تیک زدن",
+  "readable_copy": "نسخه خوانا",
+  "readable_copy_sub": "عادت‌هایتان را به‌صورت فایل‌های markdown هم می‌نویسد",
+  "theme_sub": "روشن، تیره یا مطابق سیستم",
+  "accent_color_sub": "برای دکمه‌ها و تأکیدها",
+  "app_background_sub": "آنچه پشت کارت‌ها می‌بینید",
+  "check_style_sub": "علامت مربعی یا گرد",
+  "app_icon_sub": "نماد روی صفحه اصلی",
+  "language_sub": "زبان کل برنامه",
+  "week_start_sub": "ستون اول هر جدول",
+  "celebration_sub": "آنچه با تیک زدن عادت می‌بینید",
+  "start_view_sub": "نمایی که امروز با آن باز می‌شود",
+  "quotes_sub": "کدام جمله‌ها در امروز نمایش داده شوند",
+  "focus_daily_goal_sub": "دقیقه‌های تمرکز هدف شما در هر روز",
+  "app_lock_delay_sub": "پس از ترک برنامه، چقدر بعد دوباره بپرسد",
+  "focus_only": "فقط با جلسه تمرکز",
+  "focus_only_hint": "عادت با تمام کردن یک جلسه تیک می‌خورد، نه با لمس کردن.",
+  "focus_only_title": "به جلسه تمرکز نیاز دارد",
+  "focus_only_body": "«{name}» با تمام کردن یک جلسه تمرکز انجام می‌شود.",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "«{name}» فقط با جلسه تمرکز انجام می‌شود، پس روزهای گذشته را نمی‌توان تیک زد.",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "این تیک پاک شود؟",
+  "focus_only_clear_body": "فقط یک جلسه تمرکز می‌تواند «{name}» را دوباره تیک بزند.",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "شروع جلسه",
+  "focus_flowtime": "فلوتایم",
+  "focus_flowtime_hint": "بدون هدف و بدون زنگ. ساعت بالا می‌شمارد و هر وقت احساس کردید تمام شد متوقف می‌کنید.",
+  "focus_end_flow": "{time} تمرکز داشتید.",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "روشن",
+  "off": "خاموش",
+  "checklist": "چک‌لیست",
+  "checklist_hint": "عادت را به مرحله‌ها تقسیم کنید. فقط وقتی همه مرحله‌ها تیک بخورند انجام‌شده است.",
+  "add_step": "افزودن مرحله",
+  "step_hint": "نام مرحله",
+  "todays_checklist": "چک‌لیست امروز",
+  "steps_done": "{done}/{total} مرحله",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "توقف همه عادت‌ها",
+  "vacation_all_sub": "تا وقتی روشن است هیچ‌چیز از دست‌رفته حساب نمی‌شود",
+  "vacation_mode": "حالت تعطیلات",
+  "vacation_on_desc": "متوقف — این روزها نه از دست‌رفته حساب می‌شوند نه انجام‌شده.",
+  "vacation_off_desc": "این عادت را متوقف کنید. روزهای رد شده زنجیره‌تان را نمی‌شکنند.",
+  "paused": "متوقف",
+  "start_vacation": "شروع تعطیلات",
+  "end_vacation": "پایان تعطیلات",
+  "vacation_day_on": "علامت‌گذاری به‌عنوان روز تعطیل",
+  "vacation_day_off": "حذف روز تعطیل",
+  "rest_days": "روزهای استراحت",
+  "rest_days_desc": "هر هفته در این روزها متوقف می‌شود. باز هم می‌توانید ثبتشان کنید و حساب می‌شوند.",
+  "widget_no_habits": "هنوز عادتی ندارید\nبرای باز کردن Khuta لمس کنید",
+  "widget_no_data": "هنوز داده‌ای نیست",
+  "widget_open_to_sync": "برای همگام‌سازی Khuta را باز کنید",
+  "widget_activity": "فعالیت",
+  "widget_today_progress": "امروز  {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "کارها  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "برای امروز چیزی نمانده",
+  "widget_done_today": "انجام‌شده امروز",
+  "widget_best_streak": "🔥 بهترین زنجیره {streak}",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "سفارشی‌سازی ویجت",
+  "widget_cfg_color": "رنگ",
+  "widget_cfg_image": "تصویر",
+  "widget_cfg_choose_image": "انتخاب تصویر",
+  "widget_cfg_change_image": "تغییر تصویر",
+  "widget_cfg_custom_color": "رنگ سفارشی",
+  "widget_cfg_follow_system": "مطابق پوسته سیستم",
+  "widget_cfg_dark_color": "پوسته تیره",
+  "widget_cfg_light_color": "پوسته روشن",
+  "widget_cfg_opacity": "شفافیت  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "حاشیه",
+  "widget_cfg_thickness": "ضخامت  {value}dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "کارها",
+  "widget_cfg_todos_all": "نمایش همه کارها",
+  "widget_cfg_todos_hint": "خاموش: فقط کارهای امروز، عقب‌افتاده و بدون تاریخ",
+  "widget_cfg_show_activity": "نمایش فعالیت",
+  "widget_cfg_dot_color": "رنگ نقطه",
+  "widget_cfg_style": "سبک",
+  "widget_cfg_style_classic": "کلاسیک",
+  "widget_cfg_style_card": "کارتی",
+  "widget_cfg_all_habits": "همه عادت‌ها",
+  "widget_cfg_save": "ذخیره",
+  "widget_cfg_add": "افزودن ویجت",
+  "widget_cfg_reset": "بازنشانی به پیش‌فرض",
+  "widget_cfg_hue": "فام",
+  "widget_cfg_saturation": "اشباع",
+  "widget_cfg_brightness": "روشنایی",
+  "widget_demo_read": "مطالعه",
+  "widget_demo_run": "دویدن",
+  "widget_demo_water": "آب",
+  "notif_streak": "🔥 زنجیره {streak} روزه",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 زنجیره {streak} هفته‌ای",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 زنجیره {streak} ماهه",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "انجام شد",
+  "notif_action_snooze": "به تعویق",
+  "notif_action_add": "افزودن مقدار",
+  "notif_action_add_hint": "چقدر؟",
+  "snooze_duration": "تعویق به مدت",
+  "snooze_custom": "سفارشی",
+  "snooze_custom_hint": "دقیقه",
+  "minutes_short": "{value} دقیقه",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "علامت‌گذاری {name} به‌عنوان انجام‌شده",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "علامت‌گذاری {name} به‌عنوان انجام‌نشده",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "افزودن به {name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "ثبت لغزش برای {name}",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "پاک کردن لغزش امروز برای {name}",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "انجام‌نشده",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "هفته قبل",
+  "a11y_next_week": "هفته بعد",
+  "a11y_increase": "افزایش",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "کاهش",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "انتخاب رنگ",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "این هفته",
+  "period_last_week": "هفته گذشته",
+  "period_this_month": "این ماه",
+  "period_last_month": "ماه گذشته",
+  "period_this_year": "امسال",
+  "period_all_time": "همیشه",
+  "times_completed": "دفعات انجام",
+  "period_last_year": "سال گذشته",
+  "period_week_of": "هفته {date}",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{بدون جلسه} =1{1 جلسه} other{{count} جلسه}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "همه یادداشت‌ها",
+  "notes_empty_all": "هنوز یادداشتی نیست",
+  "quant_preset_time": "زمان",
+  "style_express": "اکسپرس",
+  "style_express_desc": "شکل‌های گرد، حرکت فنری و فونت پهن‌تر.",
+  "celebration_none": "هیچ",
+  "quant_add_title": "افزودن مقدار",
+  "pane_hint": "چیزی را از فهرست باز کنید تا اینجا ببینید",
+  "average_short": "میانگین",
+  "island": "جزیره",
+  "island_enable_sub": "عادت‌هایتان را به یک واحه تبدیل کنید که تکه‌تکه می‌سازید",
+  "island_open": "باز کردن جزیره",
+  "island_shop": "فروشگاه",
+  "island_build": "ساخت",
+  "island_done": "ساخته شد",
+  "island_complete": "واحه کامل شد",
+  "island_tap_hint": "روی یک شکل بزنید تا ببینید چه چیزی آنجا قرار می‌گیرد",
+  "island_empty": "یک عادت را تیک بزنید تا واحه شروع به رشد کند",
+  "island_how": "امتیازها چطور کار می‌کنند",
+  "island_how_check": "10 امتیاز برای هر عادتی که تیک می‌زنید",
+  "island_how_focus": "1 امتیاز برای هر دقیقه تمرکز",
+  "island_how_perfect": "25 امتیاز بیشتر برای یک روز عالی",
+  "island_how_note": "سکه‌ها از تاریخچه‌تان می‌آیند، پس پشتیبان آن‌ها را برمی‌گرداند.",
+  "island_built": "{done} از {total} ساخته شد",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "{count} امتیاز مانده",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} اکنون روی جزیره است",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "آلوئه بیابانی",
+  "island_p_altar": "چادر بدوی",
+  "island_p_archway": "طاق سنگی",
+  "island_p_banner": "پرچم",
+  "island_p_bench": "نیمکت",
+  "island_p_blue_railing": "پرده مشبک",
+  "island_p_bougainvillea": "گل کاغذی",
+  "island_p_boulder": "تخته‌سنگ",
+  "island_p_crate": "جعبه",
+  "island_p_crop_patch": "قطعه کشت",
+  "island_p_cube_house": "خانه گنبدی",
+  "island_p_cypress": "نخل خرما",
+  "island_p_dry_grass": "علف خشک",
+  "island_p_flat_stone": "سنگ تخت",
+  "island_p_flower_pot": "گلدان",
+  "island_p_garden_bed": "باغچه",
+  "island_p_hanging_lantern": "فانوس آویز",
+  "island_p_hay_bale": "عدل کاه",
+  "island_p_house": "خانه کوچک",
+  "island_p_lantern_post": "ستون چراغ",
+  "island_p_large_rock": "صخره بزرگ",
+  "island_p_main_chapel": "مسجد",
+  "island_p_mossy_stone": "سنگ بوته‌زار",
+  "island_p_olive": "درخت اقاقیا",
+  "island_p_pebbles": "سنگریزه",
+  "island_p_pergola_house": "خانه چفته‌دار",
+  "island_p_pottery_jar": "خمره سفالی",
+  "island_p_rocks": "صخره‌ها",
+  "island_p_signpost": "تابلو راهنما",
+  "island_p_small_bridge": "پل چوبی",
+  "island_p_stone_basin": "فواره",
+  "island_p_stone_lantern": "فانوس سنگی",
+  "island_p_stone_pile": "توده سنگ",
+  "island_p_storage_box": "صندوق انبار",
+  "island_p_terrace_house": "خانه پلکانی",
+  "island_p_terracotta_pot": "گلدان سفالی",
+  "island_p_tower_chapel": "مناره",
+  "island_p_two_story": "خانه دوطبقه",
+  "island_p_veg_garden": "باغ سبزی",
+  "island_p_villa": "خانه حیاط‌دار",
+  "island_p_water_bucket": "سطل آب",
+  "island_p_well": "چاه",
+  "island_p_windmill": "بادگیر",
+  "island_p_wood_pile": "توده هیزم",
+  "island_reset": "شروع دوباره جزیره",
+  "island_reset_sub": "همه‌چیز برچیده می‌شود و هر امتیاز به موجودی‌تان برمی‌گردد.",
+  "island_coins": "سکه‌ها",
+  "island_g_pueblo": "دهکده",
+  "island_g_cala": "چشمه",
+  "island_g_terrazas": "تراس‌ها",
+  "island_g_puerto": "کاروانسرا",
+  "island_g_molino": "پشته بادگیر",
+  "island_how_todo": "4 امتیاز برای هر کاری که تمام می‌کنید",
+  "island_how_streak": "پاداش وقتی عادتی به 7، 30، 100 و 365 روز برسد",
+  "island_zoom_hint": "با یک انگشت بکشید تا جابه‌جا شود. با دو انگشت بزرگ کنید و بچرخانید تا جزیره بچرخد.",
+  "island_t_teal": "فیروزه‌ای",
+  "island_t_clay": "سفالی",
+  "island_t_white": "سفید",
+  "island_t_coral": "مرجانی",
+  "island_t_lilac": "یاسی",
+  "island_t_autumn": "پاییزی",
+  "island_t_deep": "تیره",
+  "island_t_silver": "نقره‌ای",
+  "island_g_huerta": "نخلستان",
+  "island_g_faro": "توده‌های صخره",
+  "island_turn": "چرخاندن نما",
+  "gamification": "بازی‌وارسازی",
+  "island_default_name": "جزیره من",
+  "island_rename": "نام جزیره‌تان را بگذارید",
+  "island_only_affordable": "فقط آنچه می‌توانم بخرم",
+  "island_nothing_here": "هنوز چیزی اینجا نیست",
+  "island_g_vega": "وادی",
+  "island_g_mirador": "دیدگاه",
+  "island_g_astillero": "کارگاه",
+  "island_g_ermita": "باغ مسجد",
+  "island_g_caleta": "چشمه کوچک",
+  "island_g_cabo": "دماغه",
+  "island_goal": "وقتی همه تکه‌ها ساخته شوند اینطور به نظر می‌رسد.",
+  "island_reset_go": "شروع دوباره",
+  "island_beta": "این اولین نسخه بازی‌وارسازی است و هنوز آزمایشی است. بسته به نحوه استفاده شما ممکن است رشد کند، تغییر شکل دهد یا کاملاً جایگزین شود.",
+  "gamification_beta": "بازی‌وارسازی (آزمایشی)",
+  "last_check": "آخرین تیک",
+  "check_history": "تاریخچه تیک‌ها",
+  "check_history_sub": "{count} روز تیک خورده",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "هرگز",
+  "check_no_time": "زمانی ذخیره نشده",
+  "heatmap_rolling": "12 ماه گذشته",
+  "heatmap_rolling_sub": "جدول سالانه به‌جای 31 دسامبر در امروز تمام می‌شود",
+  "check_marks": "{count} علامت",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "پیشرفت در امروز",
+  "today_progress_option_sub": "حلقه روز و نوار قدرت روی هر عادت",
+  "quiet_when_done": "پس از انجام ساکت",
+  "quiet_when_done_sub": "دیگر برای عادتی که امروز انجام داده‌اید یادآوری نمی‌فرستد",
+  "plan_tab": "برنامه",
+  "difficulty": "سختی",
+  "difficulty_hint": "عادت‌های سخت‌تر در پیشرفت روز بیشتر حساب می‌شوند",
+  "difficulty_easy": "آسان",
+  "difficulty_medium": "متوسط",
+  "difficulty_hard": "سخت",
+  "pin_lock": "کد PIN",
+  "pin_lock_sub": "کد اختصاصی شما، جدا از قفل گوشی",
+  "pin_choose": "یک PIN انتخاب کنید",
+  "pin_choose_sub": "4 تا 8 رقم",
+  "pin_repeat": "دوباره وارد کنید",
+  "pin_mismatch": "مطابقت ندارند. از اول شروع کنید.",
+  "pin_enter": "PIN را وارد کنید",
+  "pin_wrong": "PIN اشتباه است",
+  "pin_wait": "تلاش‌های زیاد. {seconds} ثانیه صبر کنید",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "کد بازیابی شما",
+  "pin_recovery_body": "اگر PIN را فراموش کردید، این کد Khuta را باز می‌کند و قفل را خاموش می‌کند. آن را جای امنی نگه دارید: دوباره نمایش داده نمی‌شود.",
+  "pin_copy": "کپی کد",
+  "pin_copied": "کد کپی شد",
+  "pin_forgot": "PIN را فراموش کرده‌اید؟",
+  "pin_recovery_hint": "کد بازیابی",
+  "pin_recovery_wrong": "این کد درست نیست",
+  "pin_recovered": "قفل خاموش شد. می‌توانید در تنظیمات PIN جدید بگذارید.",
+  "pin_change": "تغییر PIN",
+  "pin_remove": "حذف PIN",
+  "pin_fingerprint": "استفاده از اثر انگشت",
+  "app_lock_method": "باز کردن با",
+  "app_lock_biometric": "اثر انگشت یا چهره",
+  "difficulty_option": "سختی عادت",
+  "difficulty_option_sub": "عادت‌های سخت‌تر در پیشرفت روز بیشتر حساب شوند",
+  "todo_save_another": "ذخیره و افزودن دیگری",
+  "todo_add_subtask": "افزودن زیرکار",
+  "pin_paste": "جایگذاری کد",
+  "journal": "دفترچه",
+  "journal_today": "امروز",
+  "journal_calendar": "تقویم",
+  "journal_empty": "هنوز چیزی اینجا نوشته نشده",
+  "journal_empty_sub": "لحظه‌ها، بازتاب‌ها و فعالیت Khuta شما اینجا کنار هم جمع می‌شوند.",
+  "journal_add_moment": "افزودن لحظه",
+  "journal_daily_reflection": "بازتاب روزانه",
+  "journal_write_moment": "چه اتفاقی افتاد؟",
+  "journal_write_reflection": "امروز چه حسی داشت؟",
+  "journal_moment": "لحظه",
+  "journal_reflection": "بازتاب",
+  "journal_activity": "فعالیت Khuta",
+  "journeys": "مسیرها",
+  "journey_new": "مسیر جدید",
+  "journey_edit": "ویرایش مسیر",
+  "journey_title": "عنوان مسیر",
+  "journey_description": "به چه چیزی می‌خواهید برسید؟",
+  "journey_start_date": "تاریخ شروع",
+  "journey_target_date": "تاریخ هدف",
+  "journey_milestones": "نقاط عطف",
+  "journey_add_milestone": "افزودن نقطه عطف",
+  "journey_linked_habits": "عادت‌های پیوندشده",
+  "journey_focus_target": "هدف تمرکز",
+  "journey_no_items": "هنوز مسیری نیست",
+  "journey_no_items_sub": "یک مسیر بسازید و عادت‌هایی را که آن را پیش می‌برند پیوند دهید.",
+  "journey_planned": "برنامه‌ریزی‌شده",
+  "journey_active": "فعال",
+  "journey_completed": "تکمیل‌شده",
+  "journey_archived": "بایگانی‌شده",
+  "journey_timeline": "خط زمان",
+  "journey_progress": "{done} از {total} نقطه عطف",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "خاطره‌ها",
+  "journey_invalid_dates": "تاریخ هدف نمی‌تواند قبل از تاریخ شروع باشد",
+  "journey_invalid_focus_target": "هدف تمرکز باید بین 0 و 525600 دقیقه باشد",
+  "journal_photo_limit": "حداکثر 8 عکس می‌توانید پیوست کنید",
+  "journal_content_required": "چیزی بنویسید یا عکسی اضافه کنید",
+  "daily_plan_title": "روز من",
+  "daily_plan_progress": "{done} از {total} اولویت انجام شده",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "برای امروز حداکثر 3 اولویت انتخاب کنید.",
+  "daily_plan_add": "افزودن اولویت",
+  "daily_plan_edit": "ویرایش اولویت‌ها",
+  "daily_plan_limit": "حداکثر 3 اولویت",
+  "daily_plan_habit": "عادت",
+  "daily_plan_todo": "کار",
+  "daily_plan_milestones": "نقاط عطف مسیر",
+  "daily_plan_source_missing": "منبع در دسترس نیست",
+  "daily_plan_no_sources": "مورد دیگری برای افزودن امروز در دسترس نیست.",
+  "app_usage_title": "استفاده از برنامه‌ها امروز",
+  "app_usage_disclosure": "برای نمایش نام برنامه‌ها و مدت استفاده امروز، Khuta به دسترسی Android به داده‌های استفاده نیاز دارد. این خلاصه روی همین دستگاه پردازش می‌شود، با بستن برنامه پاک می‌شود و هرگز همگام‌سازی نمی‌شود. Khuta محتوای برنامه‌ها یا اعلان‌ها را نمی‌خواند.",
+  "app_usage_accept_and_show": "می‌پذیرم، استفاده امروز را نشان بده",
+  "app_usage_open_settings": "باز کردن تنظیمات دسترسی استفاده",
+  "app_usage_access_off": "دسترسی به داده‌های استفاده خاموش است",
+  "app_usage_loading": "در حال خواندن استفاده امروز از برنامه‌ها…",
+  "app_usage_retry": "تلاش دوباره",
+  "app_usage_total": "مجموع استفاده از برنامه‌ها",
+  "app_usage_most_used": "پراستفاده‌ترین برنامه‌ها",
+  "app_usage_empty": "هنوز داده‌ای از استفاده برنامه‌ها برای امروز در دسترس نیست.",
+  "app_usage_unsupported": "خلاصه استفاده از برنامه‌ها فقط در Android در دسترس است.",
+  "app_usage_error": "اکنون نمی‌توان استفاده از برنامه‌ها را خواند.",
+  "app_usage_local_only": "این خلاصه روی همین دستگاه می‌ماند و Khuta آن را ذخیره نمی‌کند.",
+  "app_usage_duration_hours_minutes": "{hours} ساعت و {minutes} دقیقه",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} دقیقه",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "کمتر از یک دقیقه",
+  "goals": "اهداف",
+  "goal_new": "هدف جدید",
+  "goal_edit": "ویرایش هدف",
+  "goal_title": "عنوان هدف",
+  "goal_title_required": "عنوان هدف الزامی است",
+  "goal_description": "برای رسیدن به چه نتیجه‌ای تلاش می‌کنید؟",
+  "goal_parent": "هدف والد",
+  "goal_no_parent": "بدون هدف والد",
+  "goal_target_date": "تاریخ هدف",
+  "goal_no_target_date": "بدون تاریخ هدف",
+  "goal_state": "وضعیت",
+  "goal_active": "فعال",
+  "goal_completed": "تکمیل‌شده",
+  "goal_archived": "بایگانی‌شده",
+  "goal_link_sources": "منابع پیوندشده",
+  "goals_empty": "هنوز هدفی ندارید",
+  "goals_empty_sub": "یک نتیجه ایجاد کنید و عادت‌ها، کارها و مسیرهایی را که شما را به آن نزدیک می‌کنند پیوند دهید.",
+  "goals_entry_empty": "اولین هدف خود را ایجاد کنید",
+  "goal_progress": "پیشرفت",
+  "goal_progress_empty": "یک منبع پیوند دهید تا پیشرفت محاسبه‌شده نمایش داده شود.",
+  "goal_no_sources": "هنوز منبعی پیوند نشده است.",
+  "goal_source_unavailable": "منبع در دسترس نیست",
+  "goal_unavailable": "این هدف در دسترس نیست.",
+  "goal_subgoals": "زیرهدف‌ها",
+  "goal_mark_completed": "علامت‌گذاری به‌عنوان تکمیل‌شده",
+  "goal_restore": "بازیابی هدف",
+  "goal_archive": "بایگانی هدف",
+  "goals_entry_count": "{count} هدف فعال",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} منبع",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "عادت‌ها",
+  "legal_attribution": "بر پایه Streak از InlitX",
+  "legal_licenses": "مجوزهای متن‌باز",
+  "calendar": "تقویم",
+  "calendar_sub": "نحوه نمایش تاریخ‌ها",
+  "calendar_gregorian": "میلادی",
+  "calendar_hijri": "هجری",
+  "calendar_gregorian_hijri": "میلادی + هجری",
+  "calendar_hijri_gregorian": "هجری + میلادی",
+  "hijri_adjust": "تنظیم تاریخ هجری",
+  "hijri_adjust_sub": "تاریخ هجری را جابه‌جا کنید تا با رؤیت هلال محل شما بخواند",
+  "app_name": "Khuta",
+  "hijri_months_hint": "در هر روزِ ماه‌های انتخابی لازم است. روزهای دیگر نه به نفع زنجیره حساب می‌شوند نه به ضرر آن.",
+  "every_day_in": "هر روز در {months}",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "حداقلی که حساب می‌شود",
+  "minimum_goal_hint": "رسیدن به حداقل، روز را کامل می‌کند. هدف بالا همچنان هدف کامل شما می‌ماند.",
+  "minimum_suffix": "حداقل {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "تاریخچه هدف",
+  "history_minimum": "حداقل {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "هدف {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "{amount} مانده",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "با یک قدم کوچک برگردید.",
+  "recovery_threshold": "بازگشت پس از وقفه",
+  "recovery_threshold_sub": "یک عادت چقدر می‌تواند بدون تیک بماند تا بازگشت به شروع دوباره کمکتان کند",
+  "recovery_days": "روز",
+  "recovery_hours": "ساعت",
+  "duration_days_hours": "{days} روز و {hours} ساعت",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "بازگشت",
+  "recovery_hint": "یک قدم کوچک برای شروع دوباره کافی است.",
+  "recovery_dismiss": "رد کردن",
+  "recovery_adjust": "تنظیم",
+  "recovery_enable": "یادآورهای بازگشت",
+  "recovery_enable_sub": "یادآورهای ملایم پس از یک وقفه",
+  "recovery_first_delay": "اولین یادآور بعد از",
+  "recovery_count": "یادآورها",
+  "recovery_repeat_every": "تکرار هر",
+  "recovery_at_time": "در ساعت مشخص",
+  "recovery_time": "زمان",
+  "hours_short": "{n} ساعت",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

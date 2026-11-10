@@ -1,0 +1,1626 @@
+{
+  "@@locale": "nl",
+  "app_tagline": "Gewoontetracker",
+  "today": "Vandaag",
+  "stats": "Statistieken",
+  "settings": "Instellingen",
+  "new_label": "Nieuw",
+  "save": "Opslaan",
+  "cancel": "Annuleer",
+  "delete": "Verwijder",
+  "good_morning": "Goeiemorgen",
+  "good_afternoon": "Goeiemiddag",
+  "good_evening": "Goeieavond",
+  "no_habits_yet": "Nog geen gewoontes",
+  "all_done_today": "Helemaal klaar vandaag!",
+  "x_of_y_completed": "{done} van {total} voltooid",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "Begin je eerste reeks",
+  "empty_body": "Creëer een gewoonte en klik per dag om het te registreren. Kleine stappen, elke dag.",
+  "add_habit": "Voeg gewoonte toe",
+  "all": "Alles",
+  "onb1_title": "Bouw een echte reeks",
+  "onb1_body": "Registreer een gewoonte in één klik en zie je voortgang groeien dag na dag.",
+  "onb2_title": "Blijf op koers",
+  "onb2_body": "Dagelijks, wekelijks of maandelijkse doelen met slimme herinneringen zodat niks over het hoofd wordt gezien.",
+  "onb3_title": "Bekijk je voortgang",
+  "onb3_body": "Rijke inzichten en een jaarlijks overzicht tonen exact hoever je bent gekomen.",
+  "skip": "Overslaan",
+  "next": "Volgende",
+  "get_started": "Aan de slag",
+  "onb_kicker": "Welkom bij",
+  "onb_blurb": "Kleine dagelijkse check-ins die uitgroeien tot gewoontes die je volhoudt.",
+  "onb_free_title": "Gratis, voor altijd",
+  "onb_free_body": "Geen advertenties, geen abonnementen, geen vergrendelde functies.",
+  "onb_private_title": "Privé en offline",
+  "onb_private_body": "Alles blijft op je toestel. Geen account nodig.",
+  "onb_yours_title": "Je gegevens zijn van jou",
+  "onb_yours_body": "Maak een back-up of neem ze mee wanneer je maar wilt.",
+  "onb_step": "Stap {step} van {total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "Statistieken",
+  "done_today": "Klaar vandaag",
+  "best_streak": "Beste reeks",
+  "active_habits": "Actieve gewoontes",
+  "total_logs": "Totale registraties",
+  "last_7_days": "Laatste 7 dagen",
+  "last_30_days": "Laatste 30 dagen",
+  "your_habits": "Jouw gewoontes",
+  "stats_empty": "Voeg gewoontes toe om je statistieken te zien",
+  "completion_rate_short": "Consistentie",
+  "completion_rate": "Voltooiingspercentage",
+  "appearance": "Uiterlijk",
+  "theme": "Thema",
+  "system": "Systeem",
+  "light": "Licht",
+  "dark": "Donker",
+  "week_starts_on": "Week begint op",
+  "mon": "Maa",
+  "sat": "Zat",
+  "sun": "Zon",
+  "language": "Taal",
+  "data": "Gegevens",
+  "export_backup": "Back-up exporteren",
+  "export_backup_sub": "Sla alle gewoontes op naar bestand",
+  "auto_backup": "Automatische back-up",
+  "auto_backup_sub": "Uit",
+  "auto_backup_off": "Uit",
+  "auto_backup_daily": "Elke dag",
+  "auto_backup_weekly": "Elke week",
+  "auto_backup_where": "Wanneer je de app opent, maakt Khuta een back-up en een leesbare kopie van je gewoontes die je in elke teksteditor kunt openen. De laatste 5 back-ups worden bewaard.",
+  "auto_backup_folder": "Map",
+  "auto_backup_folder_default": "App map",
+  "auto_backup_folder_set": "Map opgeslagen",
+  "auto_backup_folder_failed": "Kan niet naar die map schrijven",
+  "auto_backup_no_permission": "Opslag permissies geweigerd",
+  "auto_backup_run_now": "Maak nu een back-up",
+  "refresh_now": "Vernieuw",
+  "refresh_now_sub": "Haal alles wat je andere apparaten in de map hebben achtergelaten binnen",
+  "refresh_brought": "Je gewoontes zijn up-to-date",
+  "refresh_nothing": "Niets nieuws in de map",
+  "import_backup": "Back-up importeren",
+  "import_backup_sub": "Gewoontes uit een bestand herstellen",
+  "import_from_app": "Importeer uit een andere app",
+  "import_from_app_sub": "Loop Habit Tracker, HabitKit…",
+  "import_from_app_done": "{habits} gewoontes ({days} dagen) uit {source} geïmporteerd",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "Bestand kon niet worden geïmporteerd",
+  "about": "Over",
+  "backup_saved": "Back-up opgeslagen",
+  "export_cancelled": "Export geannuleerd",
+  "habits_imported": "Gewoontes geïmporteerd",
+  "new_habit": "Nieuwe gewoonte",
+  "edit_habit": "Bewerk gewoonte",
+  "name": "Naam",
+  "name_hint": "bijv. Ochtendloop",
+  "description": "Beschrijving",
+  "description_hint": "Optionele opmerking",
+  "icon": "Icoon",
+  "color": "Kleur",
+  "category": "Categorie",
+  "category_health": "Gezondheid",
+  "category_fitness": "Fitness",
+  "category_mindfulness": "Mindfulness",
+  "category_productivity": "Productiviteit",
+  "category_learning": "Leren",
+  "category_finance": "Financieel",
+  "count_days": "{count, plural, =1{1 dag} other{{count} dagen}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, =1{1 week} other{{count} weken}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, =1{1 maand} other{{count} maanden}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count}w",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count}mnd",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "Type gewoonte",
+  "kind_positive": "Normaal",
+  "kind_negative": "Vermijd",
+  "kind_quantitative": "Aantal",
+  "kind_locked_hint": "Type kan niet aangepast worden na creatie van gewoonte.",
+  "kind_negative_hint": "Elke dag wordt standaard als 'schoon' geteld — je reeks groeit vanzelf. Tik alleen op het vinkje als je een keer een misstap hebt; die dag wordt dan rood en kun je het ongedaan maken.",
+  "cost_per_day": "Kost per dag",
+  "cost_note": "Optioneel. Laat leeg als deze gewoonte geen geld kost.",
+  "currency": "Valuta",
+  "currency_custom": "Aangepast",
+  "currency_hint": "Symbool of code",
+  "money_saved": "Geld bespaard",
+  "clean_days": "Schone dagen",
+  "quant_preset_water": "Water",
+  "quant_preset_reading": "Lezen",
+  "quant_preset_generic": "Aangepast",
+  "quant_unit_hint": "Eenheid (bijv. ml, paginas, sets)",
+  "quant_unit_ml": "ml",
+  "quant_unit_pages": "paginas",
+  "quant_edit_title": "Aantal van vandaag",
+  "quant_daily_goal": "Dagelijks doel",
+  "quant_tap_amount": "Aantal per klik",
+  "quant_per_day": "Aantal per dag",
+  "quant_average": "Gemiddelde per dag",
+  "quant_logged_days": "Geregistreerde dagen",
+  "quant_best_day": "Beste dag",
+  "quant_goal_days": "Doel bereikt",
+  "quant_stats_empty": "Registreer een aantal en het telt hier op, zelfs op de dagen dat je het doel niet haalt.",
+  "frequency": "Frequentie",
+  "daily": "Dagelijks",
+  "weekly": "Wekelijks",
+  "monthly": "Maandelijks",
+  "sched_days": "Dagen",
+  "sched_interval": "Interval",
+  "times_per_week": "{n} keer per week",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "{n} keer per maand",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n}x/week",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n}×/maand",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "Herinneringen",
+  "add_reminder": "Herinnering toevoegen",
+  "delete_habit": "Gewoonte verwijderen",
+  "archive_habit": "Gewoonte archiveren",
+  "archive": "Archiveer",
+  "copy_message": "Kopieer bericht",
+  "message_copied": "Bericht gekopieerd",
+  "app_lock": "Vergrendel app",
+  "app_lock_sub": "Vraag voor je vingerafdruk of gezicht om Khuta te openen",
+  "app_lock_unavailable": "Op dit toestel zijn geen biometrische gegevens ingesteld",
+  "app_lock_failed": "Kon niet verifiëren als jij het was",
+  "app_lock_title": "Khuta is vergrendeld",
+  "app_lock_unlock": "Ontgrendel",
+  "app_lock_delay": "Vergrendel na",
+  "app_lock_delay_instant": "Onmiddelijk",
+  "app_lock_delay_seconds": "{value} seconden",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "Fotos",
+  "note_take_photo": "Camera",
+  "note_pick_photo": "Galerij",
+  "journey": "Reis",
+  "journey_sub": "{count, plural, =1{1 foto} other{{count} fotos}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "Nog geen fotos",
+  "journey_empty_sub": "Voeg een foto toe aan een notitie en deze verschijnt hier.",
+  "archive_habit_body": "Verplaats \"{name}\" naar archief? De geschiedenis wordt bewaard en je kunt deze via Instellingen herstellen.",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "Gearchiveerde gewoontes",
+  "archived_habits_sub": "Herstel ze of verwijder ze voor altijd",
+  "archived_empty": "Niets gearchiveerd",
+  "archived_empty_sub": "Gewoontes die je verwijdert belanden hier, met al hun geschiedenis.",
+  "restore": "Herstel",
+  "restored": "Gewoonte hersteld",
+  "delete_forever": "Verwijder voor altijd",
+  "delete_forever_body": "Verwijder \"{name}\" en de volledige geschiedenis ervan? Dit kan niet ongedaan worden gemaakt.",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "Gewoonte verwijderd",
+  "clear_progress": "Leeg voortgang",
+  "clear_progress_sub": "Geschiedenis, notities en focussessies",
+  "clear_progress_warning": "Hiermee worden alle geregistreerde dagen, notities en focussessies gewist, maar blijven je gewoontes, de bijbehorende schema’s en je instellingen behouden. Deze actie kan niet ongedaan worden gemaakt, tenzij je een back-upbestand hebt dat je achteraf kunt importeren.",
+  "clear_progress_confirm": "Leeg voortgang",
+  "clear_progress_done": "Voortgang geleegd",
+  "wipe_data": "Alle gegevens verwijderen",
+  "wipe_data_sub": "Gewoontes, notities, focussessies en instellingen",
+  "wipe_data_warning": "Hierdoor worden alle gewoontes, notities, focussessies en instellingen op dit toestel gewist. Dit kan niet ongedaan worden gemaakt, tenzij je een back-upbestand hebt dat je achteraf kunt importeren.",
+  "wipe_data_sure": "Wil je echt alles wissen?",
+  "wipe_data_sure_body": "Laatste kans. Zonder back-up zijn deze gegevens voorgoed verloren.",
+  "wipe_data_confirm": "Alles wissen",
+  "wipe_data_done": "Alle gegevens gewist",
+  "day_start": "Dag start om",
+  "day_start_sub": "Late avonden tellen nog steeds mee voor de dag ervoor",
+  "day_start_midnight": "Middernacht",
+  "day_start_hour": "{hour}:00",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "Foto",
+  "share_stats_short": "Statistieken",
+  "undo": "Ongedaan maken",
+  "habit_archived": "Gewoonte gearchiveerd",
+  "share_blur": "Vervaag",
+  "delete_habit_body": "Verwijder \"{name}\"? Dit kan niet ongedaan worden gemaakt.",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "Registreer een hervalling?",
+  "log_relapse_body": "Hiermee wordt de reeks \"{name}\" van vandaag onderbroken. Je kunt dit ongedaan maken door nogmaals te klikken.",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "Ja, registreer",
+  "permission_required": "Notificatie permissie is vereist",
+  "streaks": "Reeks",
+  "activity": "Activiteit",
+  "current": "Huidig",
+  "best": "Beste",
+  "total": "Totaal",
+  "relapses": "Hervallingen",
+  "strength": "Sterkte",
+  "week": "Week",
+  "month": "Maand",
+  "year": "Jaar",
+  "new_reminder": "Nieuwe herinnering",
+  "edit_reminder": "Bewerk herinnering",
+  "days": "Dagen",
+  "time": "Tijd",
+  "save_reminder": "Sla herinnering op",
+  "select_one_day": "Selecteer minstens één dag",
+  "every_day": "Elke dag",
+  "no_days": "Geen dagen",
+  "repeat_hours": "Herhaal tijdens de dag",
+  "every_n_hours": "Elke {n} u",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "Specifieke dagen",
+  "repeat_interval": "Elke N dagen",
+  "every_n_days": "Elke {n} dagen",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "Elke {n} weken",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "Elke {n} maanden",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "Dagen",
+  "sched_unit_weeks": "Weken",
+  "sched_unit_months": "Maanden",
+  "todo_tags": "Labels",
+  "todo_projects": "Projecten",
+  "todo_project": "Project",
+  "todo_project_new": "Nieuw project",
+  "todo_project_name": "Projectnaam",
+  "todo_project_edit": "Project bewerken",
+  "todo_project_arrange": "Herschikken",
+  "todo_project_arrange_hint": "Sleep de mappen naar de plek die je wilt.",
+  "todo_project_pick": "Kies een project",
+  "todo_project_none": "Geen project",
+  "todo_project_delete_body": "Het project verdwijnt. De taken blijven.",
+  "todo_tag": "Label",
+  "todo_tag_new": "Nieuw label",
+  "todo_tag_name": "Labelnaam",
+  "todo_tag_edit": "Label bewerken",
+  "todo_tag_delete_body": "Het label verdwijnt. De taken blijven.",
+  "todo_tag_none": "Geen label",
+  "todo_tag_all": "Alles",
+  "todo_tag_manage": "Labels beheren",
+  "todo_tag_empty_title": "Nog geen labels",
+  "todo_tag_empty_body": "Groepeer taken per project, plek of wat je maar wilt.",
+  "todo_tag_folders": "Mappen",
+  "todo_tag_list": "Lijst",
+  "todo_tag_count": "{n} open",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "Pictogram",
+  "todo_tag_pick": "Kies labels",
+  "todo_tag_filtered": "Gefilterd op {name}",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "Niet gecategoriseerd",
+  "more_icons": "Meer iconen",
+  "less_icons": "Minder iconen",
+  "completions": "Voltooiingen",
+  "completion_time": "Voltooitijd",
+  "current_streak": "Huidige reeks",
+  "days_active": "Dagen actief",
+  "completions_per_month": "Voltooiingen / Maand",
+  "overview": "Overzicht",
+  "preferences": "Voorkeuren",
+  "profile": "Profiel",
+  "about_app": "Over deze app",
+  "about_app_sub": "Versie, credits en broncode",
+  "my_heatmap": "Mijn heatmap",
+  "my_heatmap_sub": "Open het jaarlijkse activiteitenrooster",
+  "view_source": "Bekijk broncode op GitHub",
+  "about_title": "Voor jou gemaakt. Gratis, voor altijd.",
+  "about_footer": "Gemaakt met ☕ en veel vrije tijd.",
+  "about_body": "Khuta is ontstaan uit een eenvoudig idee: waarom zou je betalen om je eigen gewoontes bij te houden?\n\nDeze app is volledig open source. Iedereen kan precies zien hoe het werkt, verbeteringen voorstellen of zelfs een eigen versie bouwen. Geen ‘black boxes’. Geen verrassingen.\n\nJe privacy is volledig gewaarborgd — alles blijft op je toestel staan. Geen accounts, geen servers, geen advertenties. Er verlaat geen enkele byte je apparaat.\n\nGeen beperkingen. Creëer zoveel gewoontes als je wilt. Geen abonnementen, geen ‘pro-versie’, geen pop-ups waarin je wordt gevraagd om te betalen. Nooit.\n\nAls je iets aan de app hebt, kun je hem steunen door een ster te geven op GitHub of door een koffie voor me te trakteren. Maar dat is helemaal vrijblijvend — de app is hoe dan ook van jou.",
+  "close": "Sluit",
+  "no_data_yet": "Nog geen gegevens",
+  "import_question_body": "Vervang al je huidige gewoontes door de back-up, of ze samenvoegen?",
+  "import_replace": "Vervang alles",
+  "import_merge": "Samenvoegen",
+  "go": "Ga",
+  "quote_1": "Kleine stappen, elke dag.",
+  "quote_2": "Consistentie gaat boven intensiteit.",
+  "quote_3": "Kom voor jezelf op.",
+  "quote_4": "Dag voor dag.",
+  "quote_5": "Vooruitgang, geen perfectie.",
+  "quote_6": "Gedaan is beter dan perfect.",
+  "quote_7": "Houd de reeks in stand.",
+  "quote_8": "Kleine gewoontes, grote verandering.",
+  "quote_9": "Vertrouw op het proces.",
+  "quote_10": "Maak het beste van de ochtend.",
+  "quote_11": "Discipline staat gelijk aan vrijheid.",
+  "quote_12": "Vandaag telt.",
+  "just_tracking_option": "Alleen bijhouden aanbieden",
+  "just_tracking_option_sub": "Voegt de schakelaar toe wanneer je een gewoonte aanmaakt",
+  "just_tracking": "Enkel bijhouden",
+  "just_tracking_sub": "Behoud het eigen raster en de eigen getallen, maar laat het buiten Voortgang en de dagelijkse telling",
+  "quotes": "Citaten",
+  "quotes_which": "Welke citaten",
+  "quotes_app": "Van de app",
+  "quotes_mine": "Eigen",
+  "quotes_both": "Beide",
+  "quotes_off": "Uit",
+  "quotes_my_list": "Mijn citaten",
+  "quotes_add": "Voeg citaat toe",
+  "quotes_edit": "Bewerk citaat",
+  "quotes_hint": "Schrijf je citaat",
+  "quotes_empty": "Geen eigen citaten",
+  "quotes_empty_sub": "Schrijf je eigen en ze verschijnen op Vandaag.",
+  "motiv_start": "Start de dag sterk 💪",
+  "motiv_progress": "Je bent op de goede weg, ga zo door",
+  "motiv_almost": "Je bent er bijna! Nog een klein stukje",
+  "motiv_perfect": "Perfecte dag! 🔥",
+  "app_background": "Achtergrond",
+  "widgets": "Widgets",
+  "customize_widgets": "Bewerk widgets",
+  "customize_widgets_sub": "Achtergrond, doorzichtigheid, rand",
+  "widget_background": "Achtergrond kleur",
+  "widget_opacity": "Doorzichtigheid",
+  "widget_border": "Rand",
+  "widget_preview": "Voorbeeld",
+  "bg_solid": "Solide",
+  "bg_gradient": "Gradiënt",
+  "bg_dots": "Stippen",
+  "bg_oled": "OLED",
+  "weekdays": "Weekdagen",
+  "weekends": "Weekends",
+  "reminder_message": "Bericht (optioneel)",
+  "reminder_message_hint": "Laat leeg voor een motiverend citaat",
+  "new_category": "Nieuwe categorie",
+  "edit_category": "Bewerk categorie",
+  "add_category": "Nieuw",
+  "delete_category": "Verwijder categorie",
+  "edit": "Bewerk",
+  "cover_image": "Omslagafbeelding",
+  "book_cover": "Boekomslag",
+  "add_image": "Afbeelding toevoegen",
+  "when_best": "Wanneer ben je het meest consistent?",
+  "streak_evolution": "Reeks evolutie",
+  "consistency": "Consistentie",
+  "consistency_trend": "Trend in consistentie",
+  "by_habit": "Per gewoonte",
+  "ranking": "Ranglijst",
+  "active_days": "Actieve dagen",
+  "perfect_days": "Perfecte dagen",
+  "per_week": "Per week",
+  "best_month": "Beste maand",
+  "streak_on": "🔥 {n} dagen in een rij. Verbreek het niet!",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 Vandaag kun je een nieuwe reeks beginnen",
+  "not_enough_data": "Nog niet genoeg gegevens",
+  "about_inline": "Khuta is een open-source-app waarmee je je gewoontes kunt bijhouden. Geen accounts, geen beperkingen, geen kosten. Alles blijft op je toestel staan.\n\nIedereen kan de code inzien, verbeteren of vrij gebruiken.",
+  "about_subtitle": "Voor de dagen waarop je ervoor kiest om er te zijn.",
+  "about_story": "Deze app is ontstaan uit frustratie over de bestaande gewoontetrackers. De meeste stellen een limiet in op het aantal gewoontes dat je kunt aanmaken, verbergen basisfuncties achter een betaalmuur, houden je in de gaten of overspoelen je met advertenties. Daarom besloot ik Khuta te ontwikkelen: volledig gratis, geen advertenties, geen betalingen, geen tracking. Alles draait lokaal — jouw gegevens blijven van jou. Open source, zonder addertjes onder het gras.",
+  "share": "Deel",
+  "share_progress": "Deel voortgang",
+  "share_failed": "Kon afbeelding niet creëeren",
+  "share_swipe_hint": "Veeg over de kaart om door de tijd te bewegen",
+  "share_background": "Achtergrond",
+  "share_size": "Grootte",
+  "share_size_large": "Groot",
+  "share_size_small": "Vierkant",
+  "share_show_stats": "Toon statistieken",
+  "share_save": "Opslaan",
+  "share_saved": "Opgeslagen naar je gallerij",
+  "share_save_failed": "Kon de afbeelding niet opslaan",
+  "about_developer": "De ontwikkelaar",
+  "about_credits": "Credits",
+  "about_credits_body": "Gemaakt met Flutter. Iconen door Lucide. Grafieken door fl_chart. Opgemaakt in Figtree & Playfair Display.",
+  "dev_role": "Indie-ontwikkelaar · Khuta",
+  "notes": "Notities",
+  "notes_enable_sub": "Voeg notities toe aan elke dag van een gewoonte",
+  "add_note": "Voeg notitie toe",
+  "edit_note": "Bewerkt notitie",
+  "view_notes": "Bekijk notities",
+  "edit_entry": "Invoer bewerken",
+  "note_type": "Type",
+  "note_kind_note": "Opmerking",
+  "note_kind_planned": "Gepland",
+  "note_kind_completed": "Voltooid",
+  "note_hint": "Schrijf je notitie...",
+  "note_time_optional": "Tijd (optioneel)",
+  "save_note": "Sla notitie op",
+  "notes_empty": "Nog geen notities voor deze dag",
+  "delete_note": "Verwijder notitie",
+  "legend_note_added": "Notitie toegevoegd",
+  "tomorrow": "Morgen",
+  "notes_count": "{count, plural, =1{1 notitie} other{{count} notities}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "To-Do",
+  "todos_enable_sub": "Een kort overzicht buiten je gewoontes",
+  "todo_new": "Nieuwe to-do",
+  "todo_hint": "Wat moet er gebeuren?",
+  "todo_subtasks": "Subtaken",
+  "todo_subtask_hint": "Subtaak",
+  "todo_empty_title": "Niks op de lijst",
+  "todo_empty_body": "Schrijf op wat je de komende dagen wilt doen.",
+  "todo_date": "Datum",
+  "todo_no_date": "Geen datum",
+  "todo_time": "Tijd",
+  "todo_priority": "Prioriteit",
+  "priority_none": "Geen prioriteit",
+  "priority_low": "Laag",
+  "priority_medium": "Gemiddeld",
+  "priority_high": "Hoog",
+  "todo_overdue": "Achterstallig",
+  "todo_upcoming": "Aankomend",
+  "todo_someday": "Op een dag",
+  "pick_a_date": "Kies een datum",
+  "todo_left": "{count, plural, =0{Helemaal klaar} =1{1 to do} other{{count} to do}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, =1{Voltooid (1)} other{({count}) voltooid}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "Doorzoek to-dos",
+  "todo_search_empty": "Niks dat overeenkomt",
+  "todo_clear_completed": "Voltooide legen",
+  "todo_clear_completed_body": "{count, plural, =1{Dit verwijdert de voltooide to-do.} other{Dit verwijdert de {count} voltooide to-dos.}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "Algemeen",
+  "prefs_features": "Functies",
+  "prefs_privacy": "Privacy",
+  "collapse_cards": "Kaarten samenvouwen",
+  "expand_cards": "Kaarten uitvouwen",
+  "view_switcher": "Weergaveschakelaar",
+  "view_switcher_sub": "Toon de Week / Maand / Jaar knoppen op Vandaag",
+  "view_switcher_needs": "Zet activiteit op kaarten aan om te gebruiken",
+  "focus": "Focus",
+  "focus_enable_sub": "Een timer voor gewoontes die een nodig hebben",
+  "focus_free_session": "Vrije sessie",
+  "focus_duration": "Duur",
+  "focus_start": "Start sessie",
+  "focus_style": "Timer stijl",
+  "focus_style_digital": "Cirkel",
+  "focus_style_flip": "Omdraaien",
+  "focus_style_dots": "Stippen",
+  "focus_countdown": "Aftelling van 3 seconden",
+  "focus_skip_break": "Pauze overslaan",
+  "focus_continue": "Doorgaan",
+  "focus_alert": "Melding aan het einde van de ronde",
+  "focus_alert_chime": "Beltoon",
+  "focus_alert_custom": "Kies een geluid",
+  "focus_alert_none": "Stil",
+  "focus_hold": "Wachten tot ik stop",
+  "focus_hold_sub": "De volgende ronde wacht tot je op Doorgaan tikt.",
+  "focus_restart": "Opnieuw",
+  "focus_restart_title": "Deze ronde opnieuw starten?",
+  "focus_restart_body": "De tijd die je in deze ronde hebt gefocust gaat verloren.",
+  "focus_saved": "{time} opgenomen",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_total": "Focus tijd",
+  "focus_sessions": "Sessies",
+  "focus_stop_title": "Sessie beëindigen?",
+  "focus_stop_body": "Je minuten worden hoe dan ook opgeslagen. De gewoonte is pas voltooid als je het doel bereikt.",
+  "focus_end": "Einde",
+  "focus_pick_habit": "Waar focus je op?",
+  "focus_scene_custom": "Jouw afbeelding",
+  "unit_hours": "uren",
+  "unit_minutes": "minuten",
+  "unit_seconds": "seconden",
+  "focus_target_reached": "Doel bereikt",
+  "focus_pause": "Pauzeer",
+  "focus_resume": "Hervat",
+  "focus_sound": "Geluid",
+  "focus_pick_audio": "Kies een nummer op je telefoon",
+  "focus_no_sound": "Geen nummer gekozen",
+  "focus_tasks": "Subtaak weergeven",
+  "focus_custom_duration": "Aangepast",
+  "focus_end_short": "Je zit {time} tekort op het doel.",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_end_tasks": "{count} taken zijn nog niet afgevinkt.",
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_end_reached": "Doel bereikt. De gewoonte wordt gemarkeerd als voltooid.",
+  "focus_end_keep": "Ga door",
+  "focus_end_anyway": "Toch beëindigen",
+  "focus_end_complete": "Markeer als voltooid",
+  "focus_end_add_time": "Gefocuste tijd toevoegen",
+  "focus_amount_added": "{amount} toegevoegd aan {habit}",
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "Aangepast",
+  "focus_track_rain": "Regen",
+  "focus_track_brown": "Bruin geluid",
+  "focus_track_pad": "Warmtekussen",
+  "focus_add_track": "Voeg nummer toe",
+  "focus_shuffle": "Shuffle",
+  "focus_loop": "In volgorde",
+  "focus_repeat_one": "Eén herhalen",
+  "focus_track_too_long": "Nummer moet minder dan 20 minuten zijn",
+  "focus_track_limit": "Maximaal 10 nummers",
+  "focus_done_title": "Sessie voltooid",
+  "focus_your_tracks": "Jouw nummers",
+  "focus_built_in": "Inbegrepen",
+  "unit_hour_short": "u",
+  "unit_min_short": "min",
+  "focus_notif_body": "Je focussessie is afgelopen. Goed gedaan!",
+  "celebration": "Voltooiingseffect",
+  "celebration_confetti": "Confetti",
+  "celebration_fireworks": "Vuurwerk",
+  "celebration_surprise": "Verras me",
+  "focus_notif_channel": "Focussessies",
+  "focus_notif_running": "Bezig met focussen",
+  "focus_paused": "Gepauzeerd",
+  "focus_scene_black": "Zwart",
+  "focus_pomodoro": "Pomodoro",
+  "focus_pomodoro_sub": "Koppel focusrondes aan korte pauzes",
+  "focus_break": "Pauze",
+  "focus_round": "Ronde {n}",
+  "focus_daily_goal": "Focusdoel",
+  "focus_goal_today": "{done} van {goal} vandaag",
+  "focus_keep_awake": "Scherm aanhouden",
+  "focus_images_limit": "Maximaal 10 afbeeldingen",
+  "select_all": "Alles selecteren",
+  "selected_count": "{count, plural, =1{1 geselecteerd} other{{count} geselecteerd}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "Sessies verwijderen?",
+  "focus_delete_sessions_body": "{count, plural, =1{1 focussessie wordt verwijderd. Dit kan niet ongedaan worden gemaakt.} other{{count} focussessies worden verwijderd. Dit kan niet ongedaan worden gemaakt.}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, =1{1 sessie verwijderd} other{{count} sessies verwijderd}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "Dag niet gepland",
+  "unscheduled_body": "Deze gewoonte staat niet gepland op {day}. Toch vastleggen als extra?",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "Toch vastleggen",
+  "rest_days_none": "Geen",
+  "last_90_days": "Laatste 90 dagen",
+  "focus_clear_today": "Sessies van vandaag wissen",
+  "focus_defaults": "Standaard voor sessies",
+  "plan_day": "Plan de dag",
+  "plan_day_sub": "Geef gewoontes een tijdstip en bekijk ze op een tijdlijn.",
+  "habit_time": "Tijdstip",
+  "habit_time_none": "Op elk moment",
+  "habit_duration": "Duur",
+  "habit_duration_none": "Geen duur",
+  "day_timeline": "Dag",
+  "day_timeline_free": "{span} vrij",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "Op elk moment",
+  "day_timeline_empty": "Niets gepland voor deze dag",
+  "day_timeline_empty_sub": "Geef een gewoonte een tijdstip en ze verschijnt hier.",
+  "clear": "Wissen",
+  "start_view": "Vandaag opent op",
+  "start_view_last": "Laatst gebruikt",
+  "focus_stats": "Focusstatistieken",
+  "focus_average": "Gemiddelde sessie",
+  "focus_log": "Sessie vastleggen",
+  "focus_log_date": "Datum",
+  "focus_log_saved": "Sessie toegevoegd",
+  "perfect_streak": "Reeks perfecte dagen",
+  "focus_history": "Geschiedenis",
+  "focus_history_empty": "Nog geen sessies",
+  "focus_history_empty_sub": "Elke focussessie die je afrondt verschijnt hier.",
+  "focus_history_day": "{count, plural, =1{1 sessie} other{{count} sessies}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "Gisteren",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "notes_hint": "Open een gewoonte en houd een dag in de kalender ingedrukt om notities te bekijken of toe te voegen",
+  "app_style": "Appstijl",
+  "app_style_sub": "Kies hoe de hele app eruitziet en aanvoelt.",
+  "style_classic": "Klassiek",
+  "style_minimal": "Minimaal",
+  "style_classic_desc": "Gewoontelijst, onderbalk en alle instellingen op één scherm.",
+  "style_minimal_desc": "Gewoontenraster en instellingen gegroepeerd in vier secties.",
+  "appearance_sub": "Thema, accent en achtergrond",
+  "preferences_sub": "Taal, week en sortering",
+  "data_sub": "Back-ups en import",
+  "about_sub": "Versie, broncode en support",
+  "check_style": "Vinkstijl",
+  "square": "Vierkant",
+  "circle": "Cirkel",
+  "icons_tab": "Pictogrammen",
+  "emojis_tab": "Emoji's",
+  "emoji_own": "Typ of plak een emoji",
+  "advanced_options": "Geavanceerde opties",
+  "default_user": "Gebruiker",
+  "your_name": "Je naam",
+  "edit_name": "Naam bewerken",
+  "change_photo": "Foto wijzigen",
+  "remove_photo": "Foto verwijderen",
+  "notif_greeting": "Hoi {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "App-pictogram",
+  "icon_default": "Standaard",
+  "icon_neutral": "Houtskool",
+  "icon_accent": "Zand",
+  "custom": "Aangepast",
+  "see_more": "Meer tonen",
+  "see_less": "Minder tonen",
+  "colors_tab": "Kleuren",
+  "reorder": "Herschikken",
+  "reorder_hint": "Sleep de gewoontes om ze te herschikken",
+  "category_order": "Volgorde van categorieën",
+  "category_order_sub": "Sleep ze in de gewenste volgorde",
+  "category_order_empty": "Geef een gewoonte een categorie en ze verschijnt hier",
+  "done": "Klaar",
+  "accent_color": "Accentkleur",
+  "heatmap_path": "Verbind de dagen",
+  "heatmap_path_sub": "Tekent het raster als één lange wandeling",
+  "sort_completed_last": "Voltooide onderaan",
+  "sort_completed_last_sub": "Zet wat je afrondt onderaan de lijst",
+  "today_only": "Alleen die van vandaag",
+  "today_only_sub": "Verbergt de gewoontes die niet voor vandaag gepland staan",
+  "card_activity": "Activiteit op kaarten",
+  "card_activity_sub": "Toont de laatste dagen op de kaart, klaar om af te vinken",
+  "readable_copy": "Leesbare kopie",
+  "readable_copy_sub": "Schrijft je gewoontes ook als markdown-bestanden",
+  "theme_sub": "Licht, donker of dat van het systeem",
+  "accent_color_sub": "Gebruikt op knoppen en accenten",
+  "app_background_sub": "Wat je achter de kaarten ziet",
+  "check_style_sub": "Vierkante of ronde vinkjes",
+  "app_icon_sub": "Het pictogram op je startscherm",
+  "language_sub": "De taal van de hele app",
+  "week_start_sub": "De eerste kolom van elk raster",
+  "celebration_sub": "Wat je ziet als je een gewoonte afvinkt",
+  "start_view_sub": "De weergave waarin Vandaag opent",
+  "quotes_sub": "Welke citaten op Vandaag verschijnen",
+  "focus_daily_goal_sub": "Minuten focus die je elke dag nastreeft",
+  "app_lock_delay_sub": "Hoe snel het opnieuw vraagt nadat je weg bent",
+  "focus_only": "Alleen met een focussessie",
+  "focus_only_hint": "De gewoonte wordt afgevinkt als je een sessie afrondt, niet door erop te tikken.",
+  "focus_only_title": "Vereist een focussessie",
+  "focus_only_body": "\"{name}\" wordt voltooid door een focussessie af te ronden.",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "\"{name}\" wordt alleen door een focussessie voltooid, dus voorbije dagen kunnen niet worden afgevinkt.",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "Deze vink wissen?",
+  "focus_only_clear_body": "Alleen een focussessie kan \"{name}\" opnieuw afvinken.",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "Sessie starten",
+  "focus_flowtime": "Flowtime",
+  "focus_flowtime_hint": "Geen doel en geen alarm. De klok telt op en jij stopt als je klaar bent.",
+  "focus_end_flow": "Je hebt {time} gefocust.",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "Aan",
+  "off": "Uit",
+  "checklist": "Checklist",
+  "checklist_hint": "Splits de gewoonte op in stappen. Ze is pas klaar als elke stap is afgevinkt.",
+  "add_step": "Stap toevoegen",
+  "step_hint": "Naam van de stap",
+  "todays_checklist": "Checklist van vandaag",
+  "steps_done": "{done}/{total} stappen",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "Alle gewoontes pauzeren",
+  "vacation_all_sub": "Niets telt als gemist zolang dit aan staat",
+  "vacation_mode": "Vakantiemodus",
+  "vacation_on_desc": "Gepauzeerd — deze dagen tellen niet als gemist of voltooid.",
+  "vacation_off_desc": "Pauzeer deze gewoonte. Overgeslagen dagen verbreken je reeks niet.",
+  "paused": "Gepauzeerd",
+  "start_vacation": "Vakantie starten",
+  "end_vacation": "Vakantie beëindigen",
+  "vacation_day_on": "Markeren als vakantiedag",
+  "vacation_day_off": "Vakantiedag verwijderen",
+  "rest_days": "Rustdagen",
+  "rest_days_desc": "Pauzeer haar elke week op deze dagen. Je kunt ze nog steeds vastleggen en ze tellen mee.",
+  "widget_no_habits": "Nog geen gewoontes\nTik om Khuta te openen",
+  "widget_no_data": "Nog geen gegevens\nOpen Khuta om te synchroniseren",
+  "widget_open_to_sync": "Open Khuta om te synchroniseren",
+  "widget_activity": "Activiteit",
+  "widget_today_progress": "Vandaag  {done}/{total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "To-do  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "Niets meer voor vandaag",
+  "widget_done_today": "vandaag gedaan",
+  "widget_best_streak": "🔥 {streak} beste reeks",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "Widget aanpassen",
+  "widget_cfg_color": "Kleur",
+  "widget_cfg_image": "Afbeelding",
+  "widget_cfg_choose_image": "Afbeelding kiezen",
+  "widget_cfg_change_image": "Afbeelding wijzigen",
+  "widget_cfg_custom_color": "Eigen kleur",
+  "widget_cfg_follow_system": "Systeemthema volgen",
+  "widget_cfg_dark_color": "Donker thema",
+  "widget_cfg_light_color": "Licht thema",
+  "widget_cfg_opacity": "Dekking  {value}%",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "Rand",
+  "widget_cfg_thickness": "Dikte  {value}dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "Taken",
+  "widget_cfg_todos_all": "Alle taken tonen",
+  "widget_cfg_todos_hint": "Uit: alleen taken van vandaag, te late en zonder datum",
+  "widget_cfg_show_activity": "Activiteit tonen van",
+  "widget_cfg_dot_color": "Puntkleur",
+  "widget_cfg_style": "Stijl",
+  "widget_cfg_style_classic": "Klassiek",
+  "widget_cfg_style_card": "Kaart",
+  "widget_cfg_all_habits": "Alle gewoontes",
+  "widget_cfg_save": "Opslaan",
+  "widget_cfg_add": "Widget toevoegen",
+  "widget_cfg_reset": "Standaard herstellen",
+  "widget_cfg_hue": "Tint",
+  "widget_cfg_saturation": "Verzadiging",
+  "widget_cfg_brightness": "Helderheid",
+  "widget_demo_read": "Lezen",
+  "widget_demo_run": "Hardlopen",
+  "widget_demo_water": "Water",
+  "notif_streak": "🔥 Reeks van {streak} dagen",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 Reeks van {streak} weken",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 Reeks van {streak} maanden",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "Klaar",
+  "notif_action_snooze": "Uitstellen",
+  "notif_action_add": "Hoeveelheid toevoegen",
+  "notif_action_add_hint": "Hoeveel?",
+  "snooze_duration": "Uitstellen voor",
+  "snooze_custom": "Aangepast",
+  "snooze_custom_hint": "Minuten",
+  "minutes_short": "{value} min",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "{name} markeren als gedaan",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "{name} markeren als niet gedaan",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "Toevoegen aan {name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "Een terugval vastleggen voor {name}",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "De terugval van vandaag wissen voor {name}",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "niet gedaan",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "Vorige week",
+  "a11y_next_week": "Volgende week",
+  "a11y_increase": "Verhogen",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "Verlagen",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "Kies een kleur",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "Deze week",
+  "period_last_week": "Vorige week",
+  "period_this_month": "Deze maand",
+  "period_last_month": "Vorige maand",
+  "period_this_year": "Dit jaar",
+  "period_all_time": "Altijd",
+  "times_completed": "Keer voltooid",
+  "period_last_year": "Vorig jaar",
+  "period_week_of": "Week van {date}",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{Geen sessies} =1{1 sessie} other{{count} sessies}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "Alle notities",
+  "notes_empty_all": "Nog geen notities",
+  "quant_preset_time": "Tijd",
+  "style_express": "Expressief",
+  "style_express_desc": "Afgeronde vormen, veerkrachtige beweging en een bredere letter.",
+  "celebration_none": "Geen",
+  "quant_add_title": "Hoeveelheid toevoegen",
+  "pane_hint": "Open iets uit de lijst om het hier te zien",
+  "average_short": "Gem.",
+  "island": "Eiland",
+  "island_enable_sub": "Verander je gewoontes in een oase die je stuk voor stuk bouwt",
+  "island_open": "Open het eiland",
+  "island_shop": "Winkel",
+  "island_build": "Bouwen",
+  "island_done": "Gebouwd",
+  "island_complete": "De oase is af",
+  "island_tap_hint": "Tik op een vorm om te zien wat er komt",
+  "island_empty": "Vink een gewoonte af en de oase begint te groeien",
+  "island_how": "Hoe punten werken",
+  "island_how_check": "10 voor elke gewoonte die je afvinkt",
+  "island_how_focus": "1 per focusminuut",
+  "island_how_perfect": "25 extra voor een perfecte dag",
+  "island_how_note": "Munten komen uit je geschiedenis, dus een back-up brengt ze terug.",
+  "island_built": "{done} van {total} gebouwd",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "Nog {count} punten te gaan",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} staat nu op het eiland",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "Woestijnaloë",
+  "island_p_altar": "Bedoeïenentent",
+  "island_p_archway": "Stenen boog",
+  "island_p_banner": "Banier",
+  "island_p_bench": "Bank",
+  "island_p_blue_railing": "Traliescherm",
+  "island_p_bougainvillea": "Bougainville",
+  "island_p_boulder": "Kei",
+  "island_p_crate": "Krat",
+  "island_p_crop_patch": "Akkerstuk",
+  "island_p_cube_house": "Huis met koepel",
+  "island_p_cypress": "Dadelpalm",
+  "island_p_dry_grass": "Droog gras",
+  "island_p_flat_stone": "Platte steen",
+  "island_p_flower_pot": "Bloempot",
+  "island_p_garden_bed": "Tuinbed",
+  "island_p_hanging_lantern": "Hangende lantaarn",
+  "island_p_hay_bale": "Hooibaal",
+  "island_p_house": "Klein huis",
+  "island_p_lantern_post": "Lantaarnpaal",
+  "island_p_large_rock": "Grote rots",
+  "island_p_main_chapel": "Moskee",
+  "island_p_mossy_stone": "Struikrots",
+  "island_p_olive": "Acaciaboom",
+  "island_p_pebbles": "Kiezels",
+  "island_p_pergola_house": "Huis met pergola",
+  "island_p_pottery_jar": "Aardewerken pot",
+  "island_p_rocks": "Rotsen",
+  "island_p_signpost": "Wegwijzer",
+  "island_p_small_bridge": "Plankenbrug",
+  "island_p_stone_basin": "Fontein",
+  "island_p_stone_lantern": "Stenen lantaarn",
+  "island_p_stone_pile": "Stenenhoop",
+  "island_p_storage_box": "Opslagkist",
+  "island_p_terrace_house": "Terrashuis",
+  "island_p_terracotta_pot": "Terracottapot",
+  "island_p_tower_chapel": "Minaret",
+  "island_p_two_story": "Huis met twee verdiepingen",
+  "island_p_veg_garden": "Moestuin",
+  "island_p_villa": "Huis met binnenplaats",
+  "island_p_water_bucket": "Wateremmer",
+  "island_p_well": "Put",
+  "island_p_windmill": "Windvanger",
+  "island_p_wood_pile": "Houtstapel",
+  "island_reset": "Het eiland opnieuw beginnen",
+  "island_reset_sub": "Alles wordt afgebroken en alle punten gaan terug naar je saldo.",
+  "island_coins": "Munten",
+  "island_g_pueblo": "Het dorp",
+  "island_g_cala": "De bron",
+  "island_g_terrazas": "De terrassen",
+  "island_g_puerto": "De karavaanhalte",
+  "island_g_molino": "De windvangerrug",
+  "island_how_todo": "4 voor elke to-do die je afrondt",
+  "island_how_streak": "Een bonus als een gewoonte 7, 30, 100 en 365 dagen bereikt",
+  "island_zoom_hint": "Sleep met één vinger om te verplaatsen. Knijp met twee om te zoomen, draai om het eiland te draaien.",
+  "island_t_teal": "blauwgroen",
+  "island_t_clay": "terracotta",
+  "island_t_white": "wit",
+  "island_t_coral": "koraal",
+  "island_t_lilac": "lila",
+  "island_t_autumn": "herfst",
+  "island_t_deep": "donker",
+  "island_t_silver": "zilver",
+  "island_g_huerta": "Het dadelbos",
+  "island_g_faro": "De rotsstapels",
+  "island_turn": "Weergave draaien",
+  "gamification": "Gamification",
+  "island_default_name": "Mijn eiland",
+  "island_rename": "Geef je eiland een naam",
+  "island_only_affordable": "Alleen wat ik kan betalen",
+  "island_nothing_here": "Hier is nog niets",
+  "island_g_vega": "De wadi",
+  "island_g_mirador": "Het uitkijkpunt",
+  "island_g_astillero": "De werf",
+  "island_g_ermita": "De moskeetuin",
+  "island_g_caleta": "De kleine bron",
+  "island_g_cabo": "De kaap",
+  "island_goal": "Zo ziet het eruit als elk onderdeel is gebouwd.",
+  "island_reset_go": "Opnieuw beginnen",
+  "island_beta": "Dit is een eerste versie van gamification en nog in bèta. Het kan groeien, van vorm veranderen of helemaal vervangen worden, afhankelijk van hoe jullie het gebruiken.",
+  "gamification_beta": "Gamification (bèta)",
+  "last_check": "Laatste vink",
+  "check_history": "Vinkgeschiedenis",
+  "check_history_sub": "{count} dagen afgevinkt",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "Nooit",
+  "check_no_time": "geen tijd opgeslagen",
+  "heatmap_rolling": "Laatste 12 maanden",
+  "heatmap_rolling_sub": "Het jaarraster eindigt vandaag in plaats van op 31 december",
+  "check_marks": "{count} vinkjes",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "Voortgang op Vandaag",
+  "today_progress_option_sub": "De ring van de dag en de sterktebalk op elke gewoonte",
+  "quiet_when_done": "Stil als voltooid",
+  "quiet_when_done_sub": "Geen herinneringen meer vandaag voor een gewoonte die je al hebt voltooid",
+  "plan_tab": "Plan",
+  "difficulty": "Moeilijkheid",
+  "difficulty_hint": "Zwaardere gewoontes tellen zwaarder mee in de voortgang van de dag",
+  "difficulty_easy": "Makkelijk",
+  "difficulty_medium": "Gemiddeld",
+  "difficulty_hard": "Moeilijk",
+  "pin_lock": "Pincode",
+  "pin_lock_sub": "Je eigen code, los van de vergrendeling van de telefoon",
+  "pin_choose": "Kies een pincode",
+  "pin_choose_sub": "4 tot 8 cijfers",
+  "pin_repeat": "Voer hem nogmaals in",
+  "pin_mismatch": "Ze komen niet overeen. Begin opnieuw.",
+  "pin_enter": "Voer je pincode in",
+  "pin_wrong": "Verkeerde pincode",
+  "pin_wait": "Te veel pogingen. Wacht {seconds} s",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "Je herstelcode",
+  "pin_recovery_body": "Als je de pincode vergeet, opent deze code Khuta en zet hij de vergrendeling uit. Bewaar hem op een veilige plek: hij wordt niet opnieuw getoond.",
+  "pin_copy": "Code kopiëren",
+  "pin_copied": "Code gekopieerd",
+  "pin_forgot": "Pincode vergeten?",
+  "pin_recovery_hint": "Herstelcode",
+  "pin_recovery_wrong": "Die code klopt niet",
+  "pin_recovered": "Vergrendeling uitgezet. Je kunt in Instellingen een nieuwe pincode instellen.",
+  "pin_change": "Pincode wijzigen",
+  "pin_remove": "Pincode verwijderen",
+  "pin_fingerprint": "Vingerafdruk gebruiken",
+  "app_lock_method": "Ontgrendelen met",
+  "app_lock_biometric": "Vingerafdruk of gezicht",
+  "difficulty_option": "Moeilijkheid van gewoontes",
+  "difficulty_option_sub": "Laat zwaardere gewoontes zwaarder meetellen in de voortgang van de dag",
+  "todo_save_another": "Opslaan en nog een toevoegen",
+  "todo_add_subtask": "Subtaak toevoegen",
+  "pin_paste": "Code plakken",
+  "journal": "Dagboek",
+  "journal_today": "Vandaag",
+  "journal_calendar": "Kalender",
+  "journal_empty": "Hier is nog niets geschreven",
+  "journal_empty_sub": "Momenten, reflecties en je Khuta-activiteit komen hier samen.",
+  "journal_add_moment": "Moment toevoegen",
+  "journal_daily_reflection": "Dagelijkse reflectie",
+  "journal_write_moment": "Wat is er gebeurd?",
+  "journal_write_reflection": "Hoe voelde vandaag?",
+  "journal_moment": "Moment",
+  "journal_reflection": "Reflectie",
+  "journal_activity": "Khuta-activiteit",
+  "journeys": "Reizen",
+  "journey_new": "Nieuwe reis",
+  "journey_edit": "Reis bewerken",
+  "journey_title": "Titel van de reis",
+  "journey_description": "Waar werk je naartoe?",
+  "journey_start_date": "Startdatum",
+  "journey_target_date": "Streefdatum",
+  "journey_milestones": "Mijlpalen",
+  "journey_add_milestone": "Mijlpaal toevoegen",
+  "journey_linked_habits": "Gekoppelde gewoontes",
+  "journey_focus_target": "Focusdoel",
+  "journey_no_items": "Nog geen reizen",
+  "journey_no_items_sub": "Maak een reis en koppel de gewoontes die haar vooruithelpen.",
+  "journey_planned": "Gepland",
+  "journey_active": "Actief",
+  "journey_completed": "Voltooid",
+  "journey_archived": "Gearchiveerd",
+  "journey_timeline": "Tijdlijn",
+  "journey_progress": "{done} van {total} mijlpalen",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "Herinneringen",
+  "journey_invalid_dates": "De streefdatum kan niet vóór de startdatum liggen",
+  "journey_invalid_focus_target": "Het focusdoel moet tussen 0 en 525600 minuten liggen",
+  "journal_photo_limit": "Je kunt maximaal 8 foto's toevoegen",
+  "journal_content_required": "Schrijf iets of voeg een foto toe",
+  "daily_plan_title": "Mijn dag",
+  "daily_plan_progress": "{done} van {total} prioriteiten voltooid",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "Kies maximaal 3 prioriteiten voor vandaag.",
+  "daily_plan_add": "Prioriteit toevoegen",
+  "daily_plan_edit": "Prioriteiten bewerken",
+  "daily_plan_limit": "Maximaal 3 prioriteiten",
+  "daily_plan_habit": "Gewoonte",
+  "daily_plan_todo": "Taak",
+  "daily_plan_milestones": "Mijlpalen van de reis",
+  "daily_plan_source_missing": "Bron niet beschikbaar",
+  "daily_plan_no_sources": "Er is vandaag niets meer beschikbaar om toe te voegen.",
+  "app_usage_title": "Appgebruik vandaag",
+  "app_usage_disclosure": "Om appnamen en de gebruikstijd van vandaag te tonen, heeft Khuta toegang nodig tot Android-gebruiksgegevens. Het overzicht wordt op dit apparaat verwerkt, verwijderd wanneer de app sluit en nooit gesynchroniseerd. Khuta leest geen app-inhoud of meldingen.",
+  "app_usage_accept_and_show": "Akkoord, appgebruik van vandaag tonen",
+  "app_usage_open_settings": "Instellingen voor gebruikstoegang openen",
+  "app_usage_access_off": "Toegang tot gebruiksgegevens staat uit",
+  "app_usage_loading": "Appgebruik van vandaag wordt opgehaald…",
+  "app_usage_retry": "Opnieuw proberen",
+  "app_usage_total": "Totaal gebruik van apps",
+  "app_usage_most_used": "Meest gebruikte apps",
+  "app_usage_empty": "Er zijn nog geen gebruiksgegevens van apps voor vandaag.",
+  "app_usage_unsupported": "Overzichten van appgebruik zijn alleen beschikbaar op Android.",
+  "app_usage_error": "Appgebruik kan nu niet worden opgehaald.",
+  "app_usage_local_only": "Dit overzicht blijft op dit apparaat en wordt niet door Khuta opgeslagen.",
+  "app_usage_duration_hours_minutes": "{hours} uur {minutes} min",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} min",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "<1 min",
+  "goals": "Doelen",
+  "goal_new": "Nieuw doel",
+  "goal_edit": "Doel bewerken",
+  "goal_title": "Doeltitel",
+  "goal_title_required": "Een doeltitel is verplicht",
+  "goal_description": "Naar welk resultaat werk je toe?",
+  "goal_parent": "Bovenliggend doel",
+  "goal_no_parent": "Geen bovenliggend doel",
+  "goal_target_date": "Streefdatum",
+  "goal_no_target_date": "Geen streefdatum",
+  "goal_state": "Status",
+  "goal_active": "Actief",
+  "goal_completed": "Voltooid",
+  "goal_archived": "Gearchiveerd",
+  "goal_link_sources": "Gekoppelde bronnen",
+  "goals_empty": "Nog geen doelen",
+  "goals_empty_sub": "Maak een resultaat en koppel de gewoonten, taken en journeys die je vooruithelpen.",
+  "goals_entry_empty": "Maak je eerste doel",
+  "goal_progress": "Voortgang",
+  "goal_progress_empty": "Koppel een bron om berekende voortgang te zien.",
+  "goal_no_sources": "Nog geen bronnen gekoppeld.",
+  "goal_source_unavailable": "Bron niet beschikbaar",
+  "goal_unavailable": "Dit doel is niet beschikbaar.",
+  "goal_subgoals": "Subdoelen",
+  "goal_mark_completed": "Markeren als voltooid",
+  "goal_restore": "Doel herstellen",
+  "goal_archive": "Doel archiveren",
+  "goals_entry_count": "{count} actieve doelen",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} bronnen",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "Gewoonten",
+  "legal_attribution": "Gebaseerd op Streak van InlitX",
+  "legal_licenses": "Open-sourcelicenties",
+  "calendar": "Kalender",
+  "calendar_sub": "Hoe datums worden getoond",
+  "calendar_gregorian": "Gregoriaans",
+  "calendar_hijri": "Hijri",
+  "calendar_gregorian_hijri": "Gregoriaans + Hijri",
+  "calendar_hijri_gregorian": "Hijri + Gregoriaans",
+  "hijri_adjust": "Hijri-aanpassing",
+  "hijri_adjust_sub": "Verschuif Hijri-datums zodat ze bij je lokale maanwaarneming passen",
+  "app_name": "Khuta",
+  "hijri_months_hint": "Elke dag van de gekozen maanden is gepland. Andere dagen tellen niet voor of tegen de reeks.",
+  "every_day_in": "Elke dag in {months}",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "Minimum dat telt",
+  "minimum_goal_hint": "Het minimum halen voltooit de dag. Het doel hierboven blijft je volledige streefwaarde.",
+  "minimum_suffix": "minimaal {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "Doelgeschiedenis",
+  "history_minimum": "Minimaal {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "Doel {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "{amount} te gaan",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "Kom terug met één kleine stap.",
+  "recovery_threshold": "Herstel na een pauze",
+  "recovery_threshold_sub": "Hoe lang een gewoonte zonder vink mag blijven voordat Herstel je helpt opnieuw te beginnen",
+  "recovery_days": "Dagen",
+  "recovery_hours": "Uren",
+  "duration_days_hours": "{days}d {hours}u",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "Herstel",
+  "recovery_hint": "Een kleine stap is genoeg om opnieuw te beginnen.",
+  "recovery_dismiss": "Negeren",
+  "recovery_adjust": "Aanpassen",
+  "recovery_enable": "Herstelherinneringen",
+  "recovery_enable_sub": "Zachte herinneringen na een pauze",
+  "recovery_first_delay": "Eerste herinnering na",
+  "recovery_count": "Herinneringen",
+  "recovery_repeat_every": "Herhaal elke",
+  "recovery_at_time": "Op een vast tijdstip",
+  "recovery_time": "Tijd",
+  "hours_short": "{n} u",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+Khuta (خُطى)
+
+SPDX-License-Identifier: GPL-3.0-only
+
+Based on Streak by InlitX
+https://github.com/InlitX/streak
+
+Copyright (C) 2026 InlitX
+    Original work "Streak". Licensed under the GNU General Public License,
+    version 3 only, with the additional term of Section 7(b) set out in
+    ADDITIONAL_TERMS.md (a verbatim copy of the upstream document).
+
+Copyright (c) 2026 Ayoub Droubi
+    Modifications to the original work, including the Khuta name, identity,
+    Arabic-first interface, Hijri scheduling, local-first data model and the
+    island art.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License, version 3 only, as published by
+the Free Software Foundation, supplemented by ADDITIONAL_TERMS.md. It is
+distributed WITHOUT ANY WARRANTY. See LICENSE for the full text.

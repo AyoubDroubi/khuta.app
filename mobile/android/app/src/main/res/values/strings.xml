@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Khuta</string>
+    <string name="widget_description">Track your habits and build streaks</string>
+    <string name="widget_heatmap_label">Khuta heatmap</string>
+    <string name="widget_habit_label">Khuta habits</string>
+    <string name="widget_today_label">Khuta today</string>
+    <string name="widget_stats_label">Khuta summary</string>
+    <string name="widget_todos_label">Khuta to-do</string>
+    <string name="widget_todos_description">See what is left to do today</string>
+</resources>

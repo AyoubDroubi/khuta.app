@@ -1,0 +1,6681 @@
+{
+ "sprites": {
+  "agave": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.0,
+   "h": 43.5,
+   "ax": 20.04,
+   "ay": 16.48,
+   "shadow": true,
+   "flat": false,
+   "base": "agave",
+   "pad": 13.33
+  },
+  "altar": {
+   "cols": 2,
+   "rows": 2,
+   "w": 128.0,
+   "h": 187.0,
+   "ax": 63.89,
+   "ay": 108.41,
+   "shadow": true,
+   "flat": false,
+   "base": "altar",
+   "pad": 13.33
+  },
+  "altar__plum": {
+   "cols": 2,
+   "rows": 2,
+   "w": 128.0,
+   "h": 187.0,
+   "ax": 63.89,
+   "ay": 108.41,
+   "shadow": true,
+   "flat": false,
+   "base": "altar",
+   "pad": 13.33
+  },
+  "archway": {
+   "cols": 1,
+   "rows": 1,
+   "w": 66.0,
+   "h": 88.0,
+   "ax": 33.39,
+   "ay": 52.57,
+   "shadow": true,
+   "flat": false,
+   "base": "archway",
+   "pad": 13.33
+  },
+  "banner__clay": {
+   "cols": 1,
+   "rows": 1,
+   "w": 46.5,
+   "h": 85.5,
+   "ax": 14.34,
+   "ay": 56.69,
+   "shadow": true,
+   "flat": false,
+   "base": "banner",
+   "pad": 13.33
+  },
+  "banner__ochre": {
+   "cols": 1,
+   "rows": 1,
+   "w": 46.5,
+   "h": 85.5,
+   "ax": 14.34,
+   "ay": 56.69,
+   "shadow": true,
+   "flat": false,
+   "base": "banner",
+   "pad": 13.33
+  },
+  "banner__plum": {
+   "cols": 1,
+   "rows": 1,
+   "w": 46.5,
+   "h": 85.5,
+   "ax": 14.34,
+   "ay": 56.69,
+   "shadow": true,
+   "flat": false,
+   "base": "banner",
+   "pad": 13.33
+  },
+  "banner__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 46.5,
+   "h": 85.5,
+   "ax": 14.34,
+   "ay": 56.69,
+   "shadow": true,
+   "flat": false,
+   "base": "banner",
+   "pad": 13.33
+  },
+  "bench__clay": {
+   "cols": 1,
+   "rows": 1,
+   "w": 55.0,
+   "h": 63.5,
+   "ax": 38.94,
+   "ay": 31.36,
+   "shadow": true,
+   "flat": false,
+   "base": "bench",
+   "pad": 13.33
+  },
+  "bench__ochre": {
+   "cols": 1,
+   "rows": 1,
+   "w": 55.0,
+   "h": 63.5,
+   "ax": 38.94,
+   "ay": 31.36,
+   "shadow": true,
+   "flat": false,
+   "base": "bench",
+   "pad": 13.33
+  },
+  "bench__sage": {
+   "cols": 1,
+   "rows": 1,
+   "w": 55.0,
+   "h": 63.5,
+   "ax": 38.94,
+   "ay": 31.36,
+   "shadow": true,
+   "flat": false,
+   "base": "bench",
+   "pad": 13.33
+  },
+  "bench__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 55.0,
+   "h": 63.5,
+   "ax": 38.94,
+   "ay": 31.36,
+   "shadow": true,
+   "flat": false,
+   "base": "bench",
+   "pad": 13.33
+  },
+  "blue_railing__clay": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 45.0,
+   "ax": 20.75,
+   "ay": 13.0,
+   "shadow": true,
+   "flat": true,
+   "base": "blue_railing",
+   "pad": 13.33
+  },
+  "blue_railing__ochre": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 45.0,
+   "ax": 20.75,
+   "ay": 13.0,
+   "shadow": true,
+   "flat": true,
+   "base": "blue_railing",
+   "pad": 13.33
+  },
+  "blue_railing__sage": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 45.0,
+   "ax": 20.75,
+   "ay": 13.0,
+   "shadow": true,
+   "flat": true,
+   "base": "blue_railing",
+   "pad": 13.33
+  },
+  "blue_railing__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 45.0,
+   "ax": 20.75,
+   "ay": 13.0,
+   "shadow": true,
+   "flat": true,
+   "base": "blue_railing",
+   "pad": 13.33
+  },
+  "bougainvillea__amber": {
+   "cols": 1,
+   "rows": 1,
+   "w": 51.0,
+   "h": 67.0,
+   "ax": 25.5,
+   "ay": 51.0,
+   "shadow": true,
+   "flat": false,
+   "base": "bougainvillea",
+   "pad": 13.33
+  },
+  "bougainvillea__coral": {
+   "cols": 1,
+   "rows": 1,
+   "w": 51.0,
+   "h": 67.0,
+   "ax": 25.5,
+   "ay": 51.0,
+   "shadow": true,
+   "flat": false,
+   "base": "bougainvillea",
+   "pad": 13.33
+  },
+  "bougainvillea__lilac": {
+   "cols": 1,
+   "rows": 1,
+   "w": 51.0,
+   "h": 67.0,
+   "ax": 25.5,
+   "ay": 51.0,
+   "shadow": true,
+   "flat": false,
+   "base": "bougainvillea",
+   "pad": 13.33
+  },
+  "bougainvillea__white": {
+   "cols": 1,
+   "rows": 1,
+   "w": 51.0,
+   "h": 67.0,
+   "ax": 25.5,
+   "ay": 51.0,
+   "shadow": true,
+   "flat": false,
+   "base": "bougainvillea",
+   "pad": 13.33
+  },
+  "boulder": {
+   "cols": 1,
+   "rows": 1,
+   "w": 50.5,
+   "h": 41.5,
+   "ax": 25.2,
+   "ay": 15.25,
+   "shadow": true,
+   "flat": false,
+   "base": "boulder",
+   "pad": 13.33
+  },
+  "crate": {
+   "cols": 1,
+   "rows": 1,
+   "w": 37.0,
+   "h": 41.0,
+   "ax": 18.51,
+   "ay": 14.86,
+   "shadow": true,
+   "flat": false,
+   "base": "crate",
+   "pad": 13.33
+  },
+  "crop_patch": {
+   "cols": 1,
+   "rows": 1,
+   "w": 61.0,
+   "h": 47.0,
+   "ax": 30.5,
+   "ay": 15.0,
+   "shadow": false,
+   "flat": true,
+   "base": "",
+   "pad": 0.0
+  },
+  "cube_house": {
+   "cols": 2,
+   "rows": 2,
+   "w": 135.0,
+   "h": 143.5,
+   "ax": 63.91,
+   "ay": 75.71,
+   "shadow": true,
+   "flat": false,
+   "base": "cube_house",
+   "pad": 13.33
+  },
+  "cube_house__clay": {
+   "cols": 2,
+   "rows": 2,
+   "w": 135.0,
+   "h": 143.5,
+   "ax": 63.91,
+   "ay": 75.71,
+   "shadow": true,
+   "flat": false,
+   "base": "cube_house",
+   "pad": 13.33
+  },
+  "cube_house__ochre": {
+   "cols": 2,
+   "rows": 2,
+   "w": 135.0,
+   "h": 143.5,
+   "ax": 63.91,
+   "ay": 75.71,
+   "shadow": true,
+   "flat": false,
+   "base": "cube_house",
+   "pad": 13.33
+  },
+  "cube_house__teal": {
+   "cols": 2,
+   "rows": 2,
+   "w": 135.0,
+   "h": 143.5,
+   "ax": 63.91,
+   "ay": 75.71,
+   "shadow": true,
+   "flat": false,
+   "base": "cube_house",
+   "pad": 13.33
+  },
+  "cypress": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 75.5,
+   "ax": 20.75,
+   "ay": 42.75,
+   "shadow": true,
+   "flat": false,
+   "base": "cypress",
+   "pad": 13.33
+  },
+  "cypress__autumn": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 75.5,
+   "ax": 20.75,
+   "ay": 42.75,
+   "shadow": true,
+   "flat": false,
+   "base": "cypress",
+   "pad": 13.33
+  },
+  "cypress__deep": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 75.5,
+   "ax": 20.75,
+   "ay": 42.75,
+   "shadow": true,
+   "flat": false,
+   "base": "cypress",
+   "pad": 13.33
+  },
+  "cypress__silver": {
+   "cols": 1,
+   "rows": 1,
+   "w": 41.5,
+   "h": 75.5,
+   "ax": 20.75,
+   "ay": 42.75,
+   "shadow": true,
+   "flat": false,
+   "base": "cypress",
+   "pad": 13.33
+  },
+  "flat_stone": {
+   "cols": 1,
+   "rows": 1,
+   "w": 36.5,
+   "h": 28.0,
+   "ax": 18.2,
+   "ay": 5.09,
+   "shadow": true,
+   "flat": false,
+   "base": "flat_stone",
+   "pad": 13.33
+  },
+  "flower_pot__amber": {
+   "cols": 1,
+   "rows": 1,
+   "w": 31.5,
+   "h": 36.5,
+   "ax": 16.14,
+   "ay": 12.5,
+   "shadow": true,
+   "flat": false,
+   "base": "flower_pot",
+   "pad": 13.33
+  },
+  "flower_pot__coral": {
+   "cols": 1,
+   "rows": 1,
+   "w": 31.5,
+   "h": 36.5,
+   "ax": 16.14,
+   "ay": 12.5,
+   "shadow": true,
+   "flat": false,
+   "base": "flower_pot",
+   "pad": 13.33
+  },
+  "flower_pot__lilac": {
+   "cols": 1,
+   "rows": 1,
+   "w": 31.5,
+   "h": 36.5,
+   "ax": 16.14,
+   "ay": 12.5,
+   "shadow": true,
+   "flat": false,
+   "base": "flower_pot",
+   "pad": 13.33
+  },
+  "flower_pot__white": {
+   "cols": 1,
+   "rows": 1,
+   "w": 31.5,
+   "h": 36.5,
+   "ax": 16.14,
+   "ay": 12.5,
+   "shadow": true,
+   "flat": false,
+   "base": "flower_pot",
+   "pad": 13.33
+  },
+  "garden_bed": {
+   "cols": 1,
+   "rows": 1,
+   "w": 61.0,
+   "h": 49.0,
+   "ax": 30.5,
+   "ay": 17.0,
+   "shadow": false,
+   "flat": true,
+   "base": "",
+   "pad": 0.0
+  },
+  "hanging_lantern__plum": {
+   "cols": 1,
+   "rows": 1,
+   "w": 33.0,
+   "h": 60.5,
+   "ax": 16.84,
+   "ay": 30.23,
+   "shadow": true,
+   "flat": false,
+   "base": "hanging_lantern",
+   "pad": 13.33
+  },
+  "hanging_lantern__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 33.0,
+   "h": 60.5,
+   "ax": 16.84,
+   "ay": 30.23,
+   "shadow": true,
+   "flat": false,
+   "base": "hanging_lantern",
+   "pad": 13.33
+  },
+  "hay_bale": {
+   "cols": 1,
+   "rows": 1,
+   "w": 35.5,
+   "h": 38.5,
+   "ax": 17.57,
+   "ay": 12.7,
+   "shadow": true,
+   "flat": false,
+   "base": "hay_bale",
+   "pad": 13.33
+  },
+  "house": {
+   "cols": 2,
+   "rows": 2,
+   "w": 130.5,
+   "h": 134.5,
+   "ax": 66.24,
+   "ay": 68.86,
+   "shadow": true,
+   "flat": false,
+   "base": "house",
+   "pad": 13.33
+  },
+  "house__clay": {
+   "cols": 2,
+   "rows": 2,
+   "w": 130.5,
+   "h": 134.5,
+   "ax": 66.24,
+   "ay": 68.86,
+   "shadow": true,
+   "flat": false,
+   "base": "house",
+   "pad": 13.33
+  },
+  "house__ochre": {
+   "cols": 2,
+   "rows": 2,
+   "w": 130.5,
+   "h": 134.5,
+   "ax": 66.24,
+   "ay": 68.86,
+   "shadow": true,
+   "flat": false,
+   "base": "house",
+   "pad": 13.33
+  },
+  "house__sage": {
+   "cols": 2,
+   "rows": 2,
+   "w": 130.5,
+   "h": 134.5,
+   "ax": 66.24,
+   "ay": 68.86,
+   "shadow": true,
+   "flat": false,
+   "base": "house",
+   "pad": 13.33
+  },
+  "house__teal": {
+   "cols": 2,
+   "rows": 2,
+   "w": 130.5,
+   "h": 134.5,
+   "ax": 66.24,
+   "ay": 68.86,
+   "shadow": true,
+   "flat": false,
+   "base": "house",
+   "pad": 13.33
+  },
+  "lantern_post__clay": {
+   "cols": 1,
+   "rows": 1,
+   "w": 32.5,
+   "h": 114.5,
+   "ax": 16.17,
+   "ay": 84.87,
+   "shadow": true,
+   "flat": false,
+   "base": "lantern_post",
+   "pad": 13.33
+  },
+  "lantern_post__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 32.5,
+   "h": 114.5,
+   "ax": 16.17,
+   "ay": 84.87,
+   "shadow": true,
+   "flat": false,
+   "base": "lantern_post",
+   "pad": 13.33
+  },
+  "large_rock": {
+   "cols": 1,
+   "rows": 1,
+   "w": 46.5,
+   "h": 45.5,
+   "ax": 23.38,
+   "ay": 18.18,
+   "shadow": true,
+   "flat": false,
+   "base": "large_rock",
+   "pad": 13.33
+  },
+  "main_chapel": {
+   "cols": 3,
+   "rows": 3,
+   "w": 192.0,
+   "h": 232.5,
+   "ax": 95.86,
+   "ay": 126.36,
+   "shadow": true,
+   "flat": false,
+   "base": "main_chapel",
+   "pad": 13.33
+  },
+  "main_chapel__clay": {
+   "cols": 3,
+   "rows": 3,
+   "w": 192.0,
+   "h": 232.5,
+   "ax": 95.86,
+   "ay": 126.36,
+   "shadow": true,
+   "flat": false,
+   "base": "main_chapel",
+   "pad": 13.33
+  },
+  "mossy_stone": {
+   "cols": 1,
+   "rows": 1,
+   "w": 29.0,
+   "h": 31.5,
+   "ax": 14.46,
+   "ay": 7.5,
+   "shadow": true,
+   "flat": false,
+   "base": "mossy_stone",
+   "pad": 13.33
+  },
+  "olive": {
+   "cols": 1,
+   "rows": 1,
+   "w": 79.0,
+   "h": 99.0,
+   "ax": 40.39,
+   "ay": 60.3,
+   "shadow": true,
+   "flat": false,
+   "base": "olive",
+   "pad": 13.33
+  },
+  "olive__autumn": {
+   "cols": 1,
+   "rows": 1,
+   "w": 79.0,
+   "h": 99.0,
+   "ax": 40.39,
+   "ay": 60.3,
+   "shadow": true,
+   "flat": false,
+   "base": "olive",
+   "pad": 13.33
+  },
+  "olive__deep": {
+   "cols": 1,
+   "rows": 1,
+   "w": 79.0,
+   "h": 99.0,
+   "ax": 40.39,
+   "ay": 60.3,
+   "shadow": true,
+   "flat": false,
+   "base": "olive",
+   "pad": 13.33
+  },
+  "olive__silver": {
+   "cols": 1,
+   "rows": 1,
+   "w": 79.0,
+   "h": 99.0,
+   "ax": 40.39,
+   "ay": 60.3,
+   "shadow": true,
+   "flat": false,
+   "base": "olive",
+   "pad": 13.33
+  },
+  "pebbles": {
+   "cols": 1,
+   "rows": 1,
+   "w": 33.0,
+   "h": 22.0,
+   "ax": 16.66,
+   "ay": 0.39,
+   "shadow": true,
+   "flat": false,
+   "base": "pebbles",
+   "pad": 13.33
+  },
+  "pergola_house__clay": {
+   "cols": 3,
+   "rows": 3,
+   "w": 193.0,
+   "h": 205.5,
+   "ax": 96.41,
+   "ay": 106.1,
+   "shadow": true,
+   "flat": false,
+   "base": "pergola_house",
+   "pad": 13.33
+  },
+  "pergola_house__sage": {
+   "cols": 3,
+   "rows": 3,
+   "w": 193.0,
+   "h": 205.5,
+   "ax": 96.41,
+   "ay": 106.1,
+   "shadow": true,
+   "flat": false,
+   "base": "pergola_house",
+   "pad": 13.33
+  },
+  "pergola_house__teal": {
+   "cols": 3,
+   "rows": 3,
+   "w": 193.0,
+   "h": 205.5,
+   "ax": 96.41,
+   "ay": 106.1,
+   "shadow": true,
+   "flat": false,
+   "base": "pergola_house",
+   "pad": 13.33
+  },
+  "pottery_jar": {
+   "cols": 1,
+   "rows": 1,
+   "w": 28.5,
+   "h": 57.5,
+   "ax": 14.31,
+   "ay": 27.12,
+   "shadow": true,
+   "flat": false,
+   "base": "pottery_jar",
+   "pad": 13.33
+  },
+  "rocks": {
+   "cols": 1,
+   "rows": 1,
+   "w": 35.0,
+   "h": 38.5,
+   "ax": 17.56,
+   "ay": 12.88,
+   "shadow": true,
+   "flat": false,
+   "base": "rocks",
+   "pad": 13.33
+  },
+  "signpost__clay": {
+   "cols": 1,
+   "rows": 1,
+   "w": 32.0,
+   "h": 66.0,
+   "ax": 15.09,
+   "ay": 39.54,
+   "shadow": true,
+   "flat": false,
+   "base": "signpost",
+   "pad": 13.33
+  },
+  "signpost__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 32.0,
+   "h": 66.0,
+   "ax": 15.09,
+   "ay": 39.54,
+   "shadow": true,
+   "flat": false,
+   "base": "signpost",
+   "pad": 13.33
+  },
+  "small_bridge": {
+   "cols": 2,
+   "rows": 1,
+   "w": 123.5,
+   "h": 89.0,
+   "ax": 63.4,
+   "ay": 42.71,
+   "shadow": true,
+   "flat": false,
+   "base": "small_bridge",
+   "pad": 13.33
+  },
+  "stone_basin__sage": {
+   "cols": 1,
+   "rows": 1,
+   "w": 36.0,
+   "h": 30.5,
+   "ax": 17.82,
+   "ay": 7.0,
+   "shadow": true,
+   "flat": false,
+   "base": "stone_basin",
+   "pad": 13.33
+  },
+  "stone_basin__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 36.0,
+   "h": 30.5,
+   "ax": 17.82,
+   "ay": 7.0,
+   "shadow": true,
+   "flat": false,
+   "base": "stone_basin",
+   "pad": 13.33
+  },
+  "stone_lantern__ochre": {
+   "cols": 1,
+   "rows": 1,
+   "w": 29.5,
+   "h": 70.5,
+   "ax": 14.93,
+   "ay": 42.14,
+   "shadow": true,
+   "flat": false,
+   "base": "stone_lantern",
+   "pad": 13.33
+  },
+  "stone_lantern__sage": {
+   "cols": 1,
+   "rows": 1,
+   "w": 29.5,
+   "h": 70.5,
+   "ax": 14.93,
+   "ay": 42.14,
+   "shadow": true,
+   "flat": false,
+   "base": "stone_lantern",
+   "pad": 13.33
+  },
+  "stone_pile": {
+   "cols": 1,
+   "rows": 1,
+   "w": 35.0,
+   "h": 55.0,
+   "ax": 17.56,
+   "ay": 25.12,
+   "shadow": true,
+   "flat": false,
+   "base": "stone_pile",
+   "pad": 13.33
+  },
+  "storage_box": {
+   "cols": 1,
+   "rows": 1,
+   "w": 48.0,
+   "h": 48.5,
+   "ax": 29.03,
+   "ay": 20.28,
+   "shadow": true,
+   "flat": false,
+   "base": "storage_box",
+   "pad": 13.33
+  },
+  "terrace_house": {
+   "cols": 3,
+   "rows": 2,
+   "w": 160.0,
+   "h": 164.5,
+   "ax": 79.9,
+   "ay": 83.51,
+   "shadow": true,
+   "flat": false,
+   "base": "terrace_house",
+   "pad": 13.33
+  },
+  "terrace_house__clay": {
+   "cols": 3,
+   "rows": 2,
+   "w": 160.0,
+   "h": 164.5,
+   "ax": 79.9,
+   "ay": 83.51,
+   "shadow": true,
+   "flat": false,
+   "base": "terrace_house",
+   "pad": 13.33
+  },
+  "terrace_house__ochre": {
+   "cols": 3,
+   "rows": 2,
+   "w": 160.0,
+   "h": 164.5,
+   "ax": 79.9,
+   "ay": 83.51,
+   "shadow": true,
+   "flat": false,
+   "base": "terrace_house",
+   "pad": 13.33
+  },
+  "terrace_house__teal": {
+   "cols": 3,
+   "rows": 2,
+   "w": 160.0,
+   "h": 164.5,
+   "ax": 79.9,
+   "ay": 83.51,
+   "shadow": true,
+   "flat": false,
+   "base": "terrace_house",
+   "pad": 13.33
+  },
+  "terracotta_pot__amber": {
+   "cols": 1,
+   "rows": 1,
+   "w": 23.0,
+   "h": 26.0,
+   "ax": 11.4,
+   "ay": 3.63,
+   "shadow": true,
+   "flat": false,
+   "base": "terracotta_pot",
+   "pad": 13.33
+  },
+  "terracotta_pot__coral": {
+   "cols": 1,
+   "rows": 1,
+   "w": 23.0,
+   "h": 26.0,
+   "ax": 11.4,
+   "ay": 3.63,
+   "shadow": true,
+   "flat": false,
+   "base": "terracotta_pot",
+   "pad": 13.33
+  },
+  "terracotta_pot__lilac": {
+   "cols": 1,
+   "rows": 1,
+   "w": 23.0,
+   "h": 26.0,
+   "ax": 11.4,
+   "ay": 3.63,
+   "shadow": true,
+   "flat": false,
+   "base": "terracotta_pot",
+   "pad": 13.33
+  },
+  "terracotta_pot__white": {
+   "cols": 1,
+   "rows": 1,
+   "w": 23.0,
+   "h": 26.0,
+   "ax": 11.4,
+   "ay": 3.63,
+   "shadow": true,
+   "flat": false,
+   "base": "terracotta_pot",
+   "pad": 13.33
+  },
+  "tower_chapel": {
+   "cols": 2,
+   "rows": 2,
+   "w": 128.0,
+   "h": 215.0,
+   "ax": 63.87,
+   "ay": 137.77,
+   "shadow": true,
+   "flat": false,
+   "base": "tower_chapel",
+   "pad": 13.33
+  },
+  "tower_chapel__ochre": {
+   "cols": 2,
+   "rows": 2,
+   "w": 128.0,
+   "h": 215.0,
+   "ax": 63.87,
+   "ay": 137.77,
+   "shadow": true,
+   "flat": false,
+   "base": "tower_chapel",
+   "pad": 13.33
+  },
+  "tower_chapel__teal": {
+   "cols": 2,
+   "rows": 2,
+   "w": 128.0,
+   "h": 215.0,
+   "ax": 63.87,
+   "ay": 137.77,
+   "shadow": true,
+   "flat": false,
+   "base": "tower_chapel",
+   "pad": 13.33
+  },
+  "two_story__clay": {
+   "cols": 3,
+   "rows": 3,
+   "w": 194.5,
+   "h": 200.5,
+   "ax": 98.21,
+   "ay": 102.29,
+   "shadow": true,
+   "flat": false,
+   "base": "two_story",
+   "pad": 13.33
+  },
+  "two_story__ochre": {
+   "cols": 3,
+   "rows": 3,
+   "w": 194.5,
+   "h": 200.5,
+   "ax": 98.21,
+   "ay": 102.29,
+   "shadow": true,
+   "flat": false,
+   "base": "two_story",
+   "pad": 13.33
+  },
+  "two_story__teal": {
+   "cols": 3,
+   "rows": 3,
+   "w": 194.5,
+   "h": 200.5,
+   "ax": 98.21,
+   "ay": 102.29,
+   "shadow": true,
+   "flat": false,
+   "base": "two_story",
+   "pad": 13.33
+  },
+  "veg_garden": {
+   "cols": 1,
+   "rows": 1,
+   "w": 61.0,
+   "h": 47.5,
+   "ax": 30.5,
+   "ay": 15.5,
+   "shadow": false,
+   "flat": true,
+   "base": "",
+   "pad": 0.0
+  },
+  "villa": {
+   "cols": 4,
+   "rows": 4,
+   "w": 294.5,
+   "h": 290.5,
+   "ax": 146.74,
+   "ay": 153.55,
+   "shadow": true,
+   "flat": false,
+   "base": "villa",
+   "pad": 13.33
+  },
+  "water_bucket": {
+   "cols": 1,
+   "rows": 1,
+   "w": 23.5,
+   "h": 26.5,
+   "ax": 11.68,
+   "ay": 4.01,
+   "shadow": true,
+   "flat": false,
+   "base": "water_bucket",
+   "pad": 13.33
+  },
+  "well__clay": {
+   "cols": 1,
+   "rows": 1,
+   "w": 38.5,
+   "h": 53.5,
+   "ax": 17.57,
+   "ay": 24.24,
+   "shadow": true,
+   "flat": false,
+   "base": "well",
+   "pad": 13.33
+  },
+  "well__teal": {
+   "cols": 1,
+   "rows": 1,
+   "w": 38.5,
+   "h": 53.5,
+   "ax": 17.57,
+   "ay": 24.24,
+   "shadow": true,
+   "flat": false,
+   "base": "well",
+   "pad": 13.33
+  },
+  "windmill": {
+   "cols": 2,
+   "rows": 2,
+   "w": 160.0,
+   "h": 186.0,
+   "ax": 95.94,
+   "ay": 126.86,
+   "shadow": true,
+   "flat": false,
+   "base": "windmill",
+   "pad": 13.33
+  },
+  "windmill__clay": {
+   "cols": 2,
+   "rows": 2,
+   "w": 160.0,
+   "h": 186.0,
+   "ax": 95.94,
+   "ay": 126.86,
+   "shadow": true,
+   "flat": false,
+   "base": "windmill",
+   "pad": 13.33
+  },
+  "wood_pile": {
+   "cols": 1,
+   "rows": 1,
+   "w": 39.0,
+   "h": 38.5,
+   "ax": 18.59,
+   "ay": 12.82,
+   "shadow": true,
+   "flat": false,
+   "base": "wood_pile",
+   "pad": 13.33
+  }
+ },
+ "pieces": [
+  [
+   "main_chapel_1",
+   "main_chapel",
+   20,
+   23,
+   3,
+   1980,
+   "pueblo",
+   false
+  ],
+  [
+   "villa_1",
+   "villa",
+   26,
+   29,
+   3,
+   2700,
+   "pueblo",
+   false
+  ],
+  [
+   "water_bucket_1",
+   "water_bucket",
+   25,
+   29,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "water_bucket_2",
+   "water_bucket",
+   25,
+   30,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "water_bucket_3",
+   "water_bucket",
+   25,
+   31,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "two_story__teal_1",
+   "two_story__teal",
+   36,
+   27,
+   0,
+   1350,
+   "pueblo",
+   false
+  ],
+  [
+   "flower_pot__lilac_1",
+   "flower_pot__lilac",
+   35,
+   27,
+   0,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "flower_pot__amber_1",
+   "flower_pot__amber",
+   35,
+   28,
+   0,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "flower_pot__white_1",
+   "flower_pot__white",
+   35,
+   29,
+   0,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "terrace_house_1",
+   "terrace_house",
+   17,
+   33,
+   1,
+   1080,
+   "pueblo",
+   true
+  ],
+  [
+   "bench__clay_1",
+   "bench__clay",
+   20,
+   33,
+   3,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "bench__ochre_1",
+   "bench__ochre",
+   20,
+   34,
+   1,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "bench__clay_2",
+   "bench__clay",
+   17,
+   32,
+   1,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "cube_house__clay_1",
+   "cube_house__clay",
+   31,
+   22,
+   1,
+   760,
+   "pueblo",
+   false
+  ],
+  [
+   "pottery_jar_1",
+   "pottery_jar",
+   30,
+   22,
+   1,
+   100,
+   "mirador",
+   false
+  ],
+  [
+   "pottery_jar_2",
+   "pottery_jar",
+   30,
+   23,
+   3,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "terracotta_pot__amber_1",
+   "terracotta_pot__amber",
+   33,
+   22,
+   0,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "house__ochre_1",
+   "house__ochre",
+   34,
+   37,
+   0,
+   680,
+   "pueblo",
+   true
+  ],
+  [
+   "pottery_jar_3",
+   "pottery_jar",
+   33,
+   37,
+   0,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "pottery_jar_4",
+   "pottery_jar",
+   33,
+   38,
+   0,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "terracotta_pot__coral_1",
+   "terracotta_pot__coral",
+   36,
+   37,
+   0,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "pergola_house__clay_1",
+   "pergola_house__clay",
+   28,
+   38,
+   0,
+   1260,
+   "pueblo",
+   false
+  ],
+  [
+   "terracotta_pot__coral_2",
+   "terracotta_pot__coral",
+   27,
+   38,
+   1,
+   80,
+   "cala",
+   false
+  ],
+  [
+   "terracotta_pot__lilac_1",
+   "terracotta_pot__lilac",
+   27,
+   39,
+   0,
+   80,
+   "cala",
+   false
+  ],
+  [
+   "terracotta_pot__amber_2",
+   "terracotta_pot__amber",
+   27,
+   40,
+   0,
+   80,
+   "cala",
+   false
+  ],
+  [
+   "tower_chapel__teal_1",
+   "tower_chapel__teal",
+   26,
+   23,
+   3,
+   900,
+   "pueblo",
+   false
+  ],
+  [
+   "water_bucket_4",
+   "water_bucket",
+   25,
+   23,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "water_bucket_5",
+   "water_bucket",
+   25,
+   24,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "bench__sage_1",
+   "bench__sage",
+   28,
+   23,
+   3,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__deep_1",
+   "cypress__deep",
+   18,
+   28,
+   1,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__deep_2",
+   "cypress__deep",
+   20,
+   28,
+   3,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__deep_3",
+   "cypress__deep",
+   18,
+   30,
+   1,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "olive_1",
+   "olive",
+   31,
+   27,
+   2,
+   220,
+   "pueblo",
+   false
+  ],
+  [
+   "olive_2",
+   "olive",
+   33,
+   27,
+   1,
+   220,
+   "pueblo",
+   false
+  ],
+  [
+   "olive_3",
+   "olive",
+   31,
+   29,
+   2,
+   220,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__coral_1",
+   "bougainvillea__coral",
+   24,
+   35,
+   2,
+   270,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__coral_2",
+   "bougainvillea__coral",
+   26,
+   35,
+   2,
+   270,
+   "pueblo",
+   false
+  ],
+  [
+   "two_story__clay_1",
+   "two_story__clay",
+   35,
+   33,
+   0,
+   1350,
+   "pueblo",
+   true
+  ],
+  [
+   "bench__sage_2",
+   "bench__sage",
+   34,
+   33,
+   1,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "bench__teal_1",
+   "bench__teal",
+   34,
+   34,
+   1,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "bench__clay_3",
+   "bench__clay",
+   34,
+   35,
+   0,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "terrace_house__teal_1",
+   "terrace_house__teal",
+   21,
+   30,
+   3,
+   1080,
+   "pueblo",
+   false
+  ],
+  [
+   "flower_pot__lilac_2",
+   "flower_pot__lilac",
+   20,
+   30,
+   3,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "flower_pot__amber_2",
+   "flower_pot__amber",
+   20,
+   31,
+   3,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "pottery_jar_5",
+   "pottery_jar",
+   24,
+   30,
+   3,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "cube_house__ochre_1",
+   "cube_house__ochre",
+   25,
+   26,
+   3,
+   760,
+   "pueblo",
+   true
+  ],
+  [
+   "water_bucket_6",
+   "water_bucket",
+   24,
+   26,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "water_bucket_7",
+   "water_bucket",
+   24,
+   27,
+   3,
+   100,
+   "pueblo",
+   false
+  ],
+  [
+   "bench__clay_4",
+   "bench__clay",
+   27,
+   26,
+   3,
+   150,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__silver_1",
+   "cypress__silver",
+   31,
+   35,
+   1,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__silver_2",
+   "cypress__silver",
+   33,
+   35,
+   1,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__silver_3",
+   "cypress__silver",
+   29,
+   36,
+   1,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "olive__deep_1",
+   "olive__deep",
+   22,
+   21,
+   1,
+   220,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__coral_3",
+   "bougainvillea__coral",
+   30,
+   25,
+   3,
+   270,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__coral_4",
+   "bougainvillea__coral",
+   32,
+   25,
+   1,
+   270,
+   "pueblo",
+   false
+  ],
+  [
+   "cypress__autumn_1",
+   "cypress__autumn",
+   29,
+   27,
+   3,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "olive__silver_1",
+   "olive__silver",
+   22,
+   28,
+   3,
+   220,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__lilac_1",
+   "bougainvillea__lilac",
+   34,
+   31,
+   1,
+   270,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__lilac_2",
+   "bougainvillea__lilac",
+   36,
+   31,
+   0,
+   270,
+   "pueblo",
+   false
+  ],
+  [
+   "hanging_lantern__plum_1",
+   "hanging_lantern__plum",
+   29,
+   24,
+   3,
+   180,
+   "pueblo",
+   false
+  ],
+  [
+   "signpost__teal_1",
+   "signpost__teal",
+   21,
+   27,
+   3,
+   130,
+   "pueblo",
+   true
+  ],
+  [
+   "archway_1",
+   "archway",
+   27,
+   34,
+   2,
+   360,
+   "pueblo",
+   false
+  ],
+  [
+   "well__teal_1",
+   "well__teal",
+   32,
+   32,
+   2,
+   430,
+   "pueblo",
+   true
+  ],
+  [
+   "lantern_post__clay_1",
+   "lantern_post__clay",
+   22,
+   33,
+   3,
+   190,
+   "pueblo",
+   false
+  ],
+  [
+   "stone_lantern__sage_1",
+   "stone_lantern__sage",
+   24,
+   33,
+   3,
+   170,
+   "pueblo",
+   true
+  ],
+  [
+   "rocks_1",
+   "rocks",
+   34,
+   25,
+   1,
+   90,
+   "pueblo",
+   true
+  ],
+  [
+   "pebbles_1",
+   "pebbles",
+   19,
+   27,
+   1,
+   70,
+   "pueblo",
+   true
+  ],
+  [
+   "stone_pile_1",
+   "stone_pile",
+   19,
+   29,
+   1,
+   90,
+   "pueblo",
+   true
+  ],
+  [
+   "large_rock_1",
+   "large_rock",
+   23,
+   34,
+   2,
+   140,
+   "pueblo",
+   true
+  ],
+  [
+   "flat_stone_1",
+   "flat_stone",
+   25,
+   34,
+   2,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "mossy_stone_1",
+   "mossy_stone",
+   32,
+   34,
+   1,
+   80,
+   "pueblo",
+   true
+  ],
+  [
+   "blue_railing__ochre_1",
+   "blue_railing__ochre",
+   21,
+   35,
+   1,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "blue_railing__teal_1",
+   "blue_railing__teal",
+   32,
+   36,
+   0,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "blue_railing__sage_1",
+   "blue_railing__sage",
+   32,
+   39,
+   0,
+   140,
+   "pueblo",
+   false
+  ],
+  [
+   "flower_pot__amber_3",
+   "flower_pot__amber",
+   17,
+   36,
+   0,
+   80,
+   "pueblo",
+   false
+  ],
+  [
+   "bougainvillea__amber_1",
+   "bougainvillea__amber",
+   25,
+   36,
+   1,
+   270,
+   "pueblo",
+   true
+  ],
+  [
+   "terracotta_pot__lilac_2",
+   "terracotta_pot__lilac",
+   34,
+   40,
+   0,
+   70,
+   "pueblo",
+   false
+  ],
+  [
+   "tower_chapel__ochre_1",
+   "tower_chapel__ochre",
+   19,
+   41,
+   2,
+   1000,
+   "cala",
+   false
+  ],
+  [
+   "house_1",
+   "house",
+   23,
+   38,
+   2,
+   750,
+   "cala",
+   true
+  ],
+  [
+   "water_bucket_8",
+   "water_bucket",
+   22,
+   38,
+   2,
+   110,
+   "cala",
+   false
+  ],
+  [
+   "water_bucket_9",
+   "water_bucket",
+   22,
+   39,
+   2,
+   110,
+   "cala",
+   false
+  ],
+  [
+   "bench__sage_3",
+   "bench__sage",
+   25,
+   38,
+   2,
+   170,
+   "cala",
+   false
+  ],
+  [
+   "cube_house__clay_2",
+   "cube_house__clay",
+   19,
+   38,
+   2,
+   850,
+   "cala",
+   false
+  ],
+  [
+   "water_bucket_10",
+   "water_bucket",
+   18,
+   38,
+   0,
+   110,
+   "cala",
+   false
+  ],
+  [
+   "water_bucket_11",
+   "water_bucket",
+   18,
+   39,
+   0,
+   110,
+   "cala",
+   false
+  ],
+  [
+   "bench__sage_4",
+   "bench__sage",
+   21,
+   38,
+   2,
+   170,
+   "cala",
+   false
+  ],
+  [
+   "agave_1",
+   "agave",
+   25,
+   44,
+   0,
+   130,
+   "cala",
+   false
+  ],
+  [
+   "agave_2",
+   "agave",
+   23,
+   45,
+   0,
+   130,
+   "cala",
+   false
+  ],
+  [
+   "agave_3",
+   "agave",
+   26,
+   42,
+   0,
+   130,
+   "cala",
+   false
+  ],
+  [
+   "cypress__silver_4",
+   "cypress__silver",
+   23,
+   42,
+   2,
+   160,
+   "cala",
+   false
+  ],
+  [
+   "cypress__silver_5",
+   "cypress__silver",
+   25,
+   42,
+   2,
+   160,
+   "cala",
+   false
+  ],
+  [
+   "stone_lantern__sage_2",
+   "stone_lantern__sage",
+   23,
+   36,
+   1,
+   190,
+   "cala",
+   true
+  ],
+  [
+   "banner__plum_1",
+   "banner__plum",
+   22,
+   41,
+   2,
+   250,
+   "cala",
+   false
+  ],
+  [
+   "well__clay_1",
+   "well__clay",
+   24,
+   43,
+   2,
+   480,
+   "cala",
+   false
+  ],
+  [
+   "lantern_post__teal_1",
+   "lantern_post__teal",
+   20,
+   44,
+   0,
+   210,
+   "cala",
+   false
+  ],
+  [
+   "pebbles_2",
+   "pebbles",
+   26,
+   37,
+   1,
+   80,
+   "cala",
+   false
+  ],
+  [
+   "mossy_stone_2",
+   "mossy_stone",
+   28,
+   42,
+   0,
+   90,
+   "cala",
+   true
+  ],
+  [
+   "boulder_1",
+   "boulder",
+   27,
+   43,
+   0,
+   200,
+   "cala",
+   false
+  ],
+  [
+   "rocks_2",
+   "rocks",
+   22,
+   44,
+   0,
+   100,
+   "cala",
+   true
+  ],
+  [
+   "flat_stone_2",
+   "flat_stone",
+   21,
+   45,
+   0,
+   90,
+   "cala",
+   true
+  ],
+  [
+   "pergola_house__clay_2",
+   "pergola_house__clay",
+   39,
+   19,
+   2,
+   1540,
+   "huerta",
+   false
+  ],
+  [
+   "house__teal_1",
+   "house__teal",
+   43,
+   25,
+   0,
+   830,
+   "huerta",
+   true
+  ],
+  [
+   "stone_lantern__sage_3",
+   "stone_lantern__sage",
+   42,
+   25,
+   2,
+   210,
+   "huerta",
+   false
+  ],
+  [
+   "stone_lantern__ochre_1",
+   "stone_lantern__ochre",
+   42,
+   26,
+   0,
+   210,
+   "huerta",
+   false
+  ],
+  [
+   "water_bucket_12",
+   "water_bucket",
+   45,
+   25,
+   0,
+   120,
+   "huerta",
+   false
+  ],
+  [
+   "olive_4",
+   "olive",
+   37,
+   23,
+   2,
+   260,
+   "huerta",
+   false
+  ],
+  [
+   "olive_5",
+   "olive",
+   39,
+   23,
+   2,
+   260,
+   "huerta",
+   false
+  ],
+  [
+   "olive__autumn_1",
+   "olive__autumn",
+   36,
+   19,
+   2,
+   260,
+   "huerta",
+   false
+  ],
+  [
+   "olive__autumn_2",
+   "olive__autumn",
+   36,
+   21,
+   2,
+   260,
+   "huerta",
+   false
+  ],
+  [
+   "crop_patch_1",
+   "crop_patch",
+   44,
+   22,
+   0,
+   420,
+   "huerta",
+   false
+  ],
+  [
+   "garden_bed_1",
+   "garden_bed",
+   44,
+   23,
+   0,
+   420,
+   "huerta",
+   false
+  ],
+  [
+   "veg_garden_1",
+   "veg_garden",
+   45,
+   22,
+   0,
+   460,
+   "huerta",
+   false
+  ],
+  [
+   "garden_bed_2",
+   "garden_bed",
+   45,
+   23,
+   0,
+   420,
+   "huerta",
+   false
+  ],
+  [
+   "lantern_post__clay_2",
+   "lantern_post__clay",
+   41,
+   28,
+   0,
+   230,
+   "huerta",
+   true
+  ],
+  [
+   "stone_lantern__sage_4",
+   "stone_lantern__sage",
+   42,
+   23,
+   2,
+   210,
+   "huerta",
+   true
+  ],
+  [
+   "stone_basin__sage_1",
+   "stone_basin__sage",
+   36,
+   25,
+   2,
+   330,
+   "huerta",
+   true
+  ],
+  [
+   "flat_stone_3",
+   "flat_stone",
+   39,
+   17,
+   0,
+   100,
+   "huerta",
+   true
+  ],
+  [
+   "rocks_3",
+   "rocks",
+   43,
+   20,
+   0,
+   110,
+   "huerta",
+   true
+  ],
+  [
+   "blue_railing__sage_2",
+   "blue_railing__sage",
+   40,
+   27,
+   0,
+   160,
+   "huerta",
+   true
+  ],
+  [
+   "terracotta_pot__white_1",
+   "terracotta_pot__white",
+   35,
+   23,
+   1,
+   90,
+   "huerta",
+   true
+  ],
+  [
+   "bougainvillea__coral_5",
+   "bougainvillea__coral",
+   43,
+   28,
+   0,
+   330,
+   "huerta",
+   false
+  ],
+  [
+   "flower_pot__amber_4",
+   "flower_pot__amber",
+   42,
+   29,
+   0,
+   100,
+   "huerta",
+   true
+  ],
+  [
+   "two_story__ochre_1",
+   "two_story__ochre",
+   25,
+   15,
+   4,
+   1800,
+   "mirador",
+   false
+  ],
+  [
+   "house__sage_1",
+   "house__sage",
+   32,
+   17,
+   0,
+   900,
+   "mirador",
+   false
+  ],
+  [
+   "water_bucket_13",
+   "water_bucket",
+   31,
+   17,
+   1,
+   130,
+   "mirador",
+   false
+  ],
+  [
+   "water_bucket_14",
+   "water_bucket",
+   31,
+   18,
+   1,
+   130,
+   "mirador",
+   false
+  ],
+  [
+   "water_bucket_15",
+   "water_bucket",
+   32,
+   16,
+   0,
+   130,
+   "mirador",
+   false
+  ],
+  [
+   "cypress__silver_6",
+   "cypress__silver",
+   21,
+   18,
+   0,
+   190,
+   "mirador",
+   false
+  ],
+  [
+   "cypress__silver_7",
+   "cypress__silver",
+   23,
+   18,
+   2,
+   190,
+   "mirador",
+   false
+  ],
+  [
+   "cypress__silver_8",
+   "cypress__silver",
+   23,
+   20,
+   1,
+   190,
+   "mirador",
+   false
+  ],
+  [
+   "stone_basin__sage_2",
+   "stone_basin__sage",
+   30,
+   15,
+   4,
+   360,
+   "mirador",
+   false
+  ],
+  [
+   "signpost__teal_2",
+   "signpost__teal",
+   29,
+   19,
+   4,
+   170,
+   "mirador",
+   false
+  ],
+  [
+   "well__teal_2",
+   "well__teal",
+   26,
+   20,
+   4,
+   580,
+   "mirador",
+   true
+  ],
+  [
+   "archway_2",
+   "archway",
+   29,
+   16,
+   4,
+   480,
+   "mirador",
+   false
+  ],
+  [
+   "bench__sage_5",
+   "bench__sage",
+   24,
+   19,
+   4,
+   200,
+   "mirador",
+   false
+  ],
+  [
+   "banner__teal_1",
+   "banner__teal",
+   28,
+   20,
+   4,
+   300,
+   "mirador",
+   false
+  ],
+  [
+   "hanging_lantern__teal_1",
+   "hanging_lantern__teal",
+   30,
+   20,
+   4,
+   240,
+   "mirador",
+   true
+  ],
+  [
+   "lantern_post__teal_2",
+   "lantern_post__teal",
+   25,
+   21,
+   4,
+   250,
+   "mirador",
+   false
+  ],
+  [
+   "pebbles_3",
+   "pebbles",
+   28,
+   13,
+   0,
+   100,
+   "mirador",
+   false
+  ],
+  [
+   "large_rock_2",
+   "large_rock",
+   29,
+   14,
+   1,
+   190,
+   "mirador",
+   false
+  ],
+  [
+   "rocks_4",
+   "rocks",
+   23,
+   16,
+   1,
+   120,
+   "mirador",
+   true
+  ],
+  [
+   "mossy_stone_3",
+   "mossy_stone",
+   22,
+   17,
+   1,
+   110,
+   "mirador",
+   true
+  ],
+  [
+   "stone_pile_2",
+   "stone_pile",
+   22,
+   19,
+   1,
+   120,
+   "mirador",
+   false
+  ],
+  [
+   "flat_stone_4",
+   "flat_stone",
+   32,
+   20,
+   0,
+   110,
+   "mirador",
+   true
+  ],
+  [
+   "boulder_2",
+   "boulder",
+   27,
+   21,
+   4,
+   240,
+   "mirador",
+   false
+  ],
+  [
+   "bougainvillea__white_1",
+   "bougainvillea__white",
+   29,
+   21,
+   4,
+   360,
+   "mirador",
+   false
+  ],
+  [
+   "pergola_house__teal_1",
+   "pergola_house__teal",
+   21,
+   3,
+   2,
+   1820,
+   "terrazas",
+   false
+  ],
+  [
+   "cube_house_1",
+   "cube_house",
+   26,
+   4,
+   2,
+   1100,
+   "terrazas",
+   false
+  ],
+  [
+   "stone_lantern__sage_5",
+   "stone_lantern__sage",
+   25,
+   4,
+   2,
+   250,
+   "terrazas",
+   false
+  ],
+  [
+   "stone_lantern__ochre_2",
+   "stone_lantern__ochre",
+   25,
+   5,
+   2,
+   250,
+   "terrazas",
+   false
+  ],
+  [
+   "water_bucket_16",
+   "water_bucket",
+   28,
+   4,
+   1,
+   140,
+   "terrazas",
+   false
+  ],
+  [
+   "house__clay_1",
+   "house__clay",
+   15,
+   9,
+   1,
+   980,
+   "terrazas",
+   true
+  ],
+  [
+   "flower_pot__lilac_3",
+   "flower_pot__lilac",
+   17,
+   9,
+   2,
+   120,
+   "terrazas",
+   false
+  ],
+  [
+   "flower_pot__amber_5",
+   "flower_pot__amber",
+   17,
+   10,
+   2,
+   120,
+   "terrazas",
+   false
+  ],
+  [
+   "bench__sage_6",
+   "bench__sage",
+   15,
+   8,
+   1,
+   220,
+   "terrazas",
+   false
+  ],
+  [
+   "olive__silver_2",
+   "olive__silver",
+   21,
+   10,
+   4,
+   310,
+   "terrazas",
+   false
+  ],
+  [
+   "olive__silver_3",
+   "olive__silver",
+   22,
+   8,
+   2,
+   310,
+   "terrazas",
+   false
+  ],
+  [
+   "cypress_1",
+   "cypress",
+   18,
+   15,
+   0,
+   210,
+   "terrazas",
+   false
+  ],
+  [
+   "cypress_2",
+   "cypress",
+   20,
+   15,
+   1,
+   210,
+   "terrazas",
+   false
+  ],
+  [
+   "garden_bed_3",
+   "garden_bed",
+   24,
+   7,
+   2,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "crop_patch_2",
+   "crop_patch",
+   24,
+   8,
+   2,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "veg_garden_2",
+   "veg_garden",
+   25,
+   7,
+   2,
+   550,
+   "terrazas",
+   false
+  ],
+  [
+   "crop_patch_3",
+   "crop_patch",
+   25,
+   8,
+   2,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "veg_garden_3",
+   "veg_garden",
+   26,
+   7,
+   2,
+   550,
+   "terrazas",
+   false
+  ],
+  [
+   "crop_patch_4",
+   "crop_patch",
+   26,
+   8,
+   2,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "garden_bed_4",
+   "garden_bed",
+   27,
+   10,
+   0,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "crop_patch_5",
+   "crop_patch",
+   27,
+   11,
+   0,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "veg_garden_4",
+   "veg_garden",
+   28,
+   10,
+   0,
+   550,
+   "terrazas",
+   false
+  ],
+  [
+   "crop_patch_6",
+   "crop_patch",
+   28,
+   11,
+   0,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "cypress__silver_9",
+   "cypress__silver",
+   18,
+   6,
+   1,
+   210,
+   "terrazas",
+   false
+  ],
+  [
+   "cypress__silver_10",
+   "cypress__silver",
+   18,
+   8,
+   2,
+   210,
+   "terrazas",
+   false
+  ],
+  [
+   "garden_bed_5",
+   "garden_bed",
+   18,
+   9,
+   3,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "garden_bed_6",
+   "garden_bed",
+   18,
+   10,
+   3,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "garden_bed_7",
+   "garden_bed",
+   19,
+   9,
+   3,
+   490,
+   "terrazas",
+   false
+  ],
+  [
+   "veg_garden_5",
+   "veg_garden",
+   19,
+   10,
+   3,
+   550,
+   "terrazas",
+   false
+  ],
+  [
+   "lantern_post__teal_3",
+   "lantern_post__teal",
+   17,
+   13,
+   1,
+   270,
+   "terrazas",
+   false
+  ],
+  [
+   "banner__ochre_1",
+   "banner__ochre",
+   21,
+   7,
+   2,
+   320,
+   "terrazas",
+   false
+  ],
+  [
+   "bench__clay_5",
+   "bench__clay",
+   25,
+   10,
+   2,
+   220,
+   "terrazas",
+   false
+  ],
+  [
+   "signpost__teal_3",
+   "signpost__teal",
+   18,
+   12,
+   2,
+   180,
+   "terrazas",
+   true
+  ],
+  [
+   "hanging_lantern__teal_2",
+   "hanging_lantern__teal",
+   19,
+   13,
+   2,
+   260,
+   "terrazas",
+   true
+  ],
+  [
+   "stone_pile_3",
+   "stone_pile",
+   30,
+   8,
+   0,
+   130,
+   "terrazas",
+   true
+  ],
+  [
+   "flat_stone_5",
+   "flat_stone",
+   24,
+   12,
+   2,
+   120,
+   "terrazas",
+   false
+  ],
+  [
+   "pebbles_4",
+   "pebbles",
+   22,
+   14,
+   2,
+   100,
+   "terrazas",
+   true
+  ],
+  [
+   "large_rock_3",
+   "large_rock",
+   30,
+   4,
+   0,
+   210,
+   "terrazas",
+   false
+  ],
+  [
+   "rocks_5",
+   "rocks",
+   19,
+   5,
+   1,
+   130,
+   "terrazas",
+   true
+  ],
+  [
+   "mossy_stone_4",
+   "mossy_stone",
+   30,
+   6,
+   0,
+   120,
+   "terrazas",
+   false
+  ],
+  [
+   "boulder_3",
+   "boulder",
+   16,
+   7,
+   1,
+   260,
+   "terrazas",
+   false
+  ],
+  [
+   "blue_railing__teal_2",
+   "blue_railing__teal",
+   25,
+   13,
+   0,
+   200,
+   "terrazas",
+   false
+  ],
+  [
+   "blue_railing__sage_3",
+   "blue_railing__sage",
+   21,
+   16,
+   0,
+   200,
+   "terrazas",
+   false
+  ],
+  [
+   "terracotta_pot__white_2",
+   "terracotta_pot__white",
+   19,
+   7,
+   2,
+   100,
+   "terrazas",
+   true
+  ],
+  [
+   "flower_pot__lilac_4",
+   "flower_pot__lilac",
+   29,
+   7,
+   1,
+   120,
+   "terrazas",
+   false
+  ],
+  [
+   "bougainvillea__white_2",
+   "bougainvillea__white",
+   20,
+   8,
+   3,
+   390,
+   "terrazas",
+   false
+  ],
+  [
+   "flower_pot__white_2",
+   "flower_pot__white",
+   28,
+   8,
+   1,
+   120,
+   "terrazas",
+   true
+  ],
+  [
+   "terracotta_pot__white_3",
+   "terracotta_pot__white",
+   29,
+   9,
+   0,
+   100,
+   "terrazas",
+   false
+  ],
+  [
+   "bougainvillea__white_3",
+   "bougainvillea__white",
+   20,
+   12,
+   3,
+   390,
+   "terrazas",
+   true
+  ],
+  [
+   "flower_pot__white_3",
+   "flower_pot__white",
+   21,
+   13,
+   3,
+   120,
+   "terrazas",
+   false
+  ],
+  [
+   "bougainvillea__lilac_3",
+   "bougainvillea__lilac",
+   23,
+   13,
+   2,
+   390,
+   "terrazas",
+   false
+  ],
+  [
+   "terracotta_pot__coral_3",
+   "terracotta_pot__coral",
+   19,
+   16,
+   0,
+   100,
+   "terrazas",
+   false
+  ],
+  [
+   "tower_chapel_1",
+   "tower_chapel",
+   5,
+   20,
+   2,
+   1400,
+   "faro",
+   false
+  ],
+  [
+   "house__clay_2",
+   "house__clay",
+   13,
+   24,
+   0,
+   1050,
+   "faro",
+   true
+  ],
+  [
+   "flower_pot__white_4",
+   "flower_pot__white",
+   12,
+   24,
+   1,
+   130,
+   "faro",
+   false
+  ],
+  [
+   "flower_pot__coral_1",
+   "flower_pot__coral",
+   12,
+   25,
+   1,
+   130,
+   "faro",
+   false
+  ],
+  [
+   "flower_pot__white_5",
+   "flower_pot__white",
+   13,
+   23,
+   0,
+   130,
+   "faro",
+   false
+  ],
+  [
+   "cube_house__teal_1",
+   "cube_house__teal",
+   9,
+   19,
+   2,
+   1190,
+   "faro",
+   false
+  ],
+  [
+   "stone_lantern__sage_6",
+   "stone_lantern__sage",
+   8,
+   19,
+   2,
+   270,
+   "faro",
+   false
+  ],
+  [
+   "stone_lantern__ochre_3",
+   "stone_lantern__ochre",
+   8,
+   20,
+   2,
+   270,
+   "faro",
+   false
+  ],
+  [
+   "water_bucket_17",
+   "water_bucket",
+   11,
+   19,
+   2,
+   150,
+   "faro",
+   false
+  ],
+  [
+   "altar_1",
+   "altar",
+   7,
+   28,
+   0,
+   840,
+   "faro",
+   true
+  ],
+  [
+   "pottery_jar_6",
+   "pottery_jar",
+   6,
+   28,
+   0,
+   110,
+   "faro",
+   false
+  ],
+  [
+   "flower_pot__coral_2",
+   "flower_pot__coral",
+   9,
+   28,
+   1,
+   130,
+   "faro",
+   false
+  ],
+  [
+   "flower_pot__lilac_5",
+   "flower_pot__lilac",
+   9,
+   29,
+   0,
+   130,
+   "faro",
+   false
+  ],
+  [
+   "cypress_3",
+   "cypress",
+   3,
+   25,
+   0,
+   220,
+   "faro",
+   false
+  ],
+  [
+   "cypress_4",
+   "cypress",
+   5,
+   25,
+   2,
+   220,
+   "faro",
+   false
+  ],
+  [
+   "cypress_5",
+   "cypress",
+   5,
+   27,
+   0,
+   220,
+   "faro",
+   false
+  ],
+  [
+   "bougainvillea__lilac_4",
+   "bougainvillea__lilac",
+   4,
+   23,
+   1,
+   420,
+   "faro",
+   false
+  ],
+  [
+   "bougainvillea__lilac_5",
+   "bougainvillea__lilac",
+   6,
+   23,
+   2,
+   420,
+   "faro",
+   false
+  ],
+  [
+   "stone_lantern__ochre_4",
+   "stone_lantern__ochre",
+   9,
+   23,
+   2,
+   270,
+   "faro",
+   false
+  ],
+  [
+   "lantern_post__clay_3",
+   "lantern_post__clay",
+   8,
+   25,
+   2,
+   290,
+   "faro",
+   false
+  ],
+  [
+   "hanging_lantern__teal_3",
+   "hanging_lantern__teal",
+   12,
+   22,
+   1,
+   280,
+   "faro",
+   true
+  ],
+  [
+   "archway_3",
+   "archway",
+   7,
+   24,
+   2,
+   560,
+   "faro",
+   true
+  ],
+  [
+   "signpost__teal_4",
+   "signpost__teal",
+   11,
+   23,
+   2,
+   200,
+   "faro",
+   false
+  ],
+  [
+   "stone_basin__teal_1",
+   "stone_basin__teal",
+   10,
+   24,
+   2,
+   420,
+   "faro",
+   false
+  ],
+  [
+   "well__clay_2",
+   "well__clay",
+   9,
+   26,
+   2,
+   670,
+   "faro",
+   true
+  ],
+  [
+   "boulder_4",
+   "boulder",
+   11,
+   27,
+   0,
+   280,
+   "faro",
+   false
+  ],
+  [
+   "pebbles_5",
+   "pebbles",
+   13,
+   21,
+   0,
+   110,
+   "faro",
+   true
+  ],
+  [
+   "stone_pile_4",
+   "stone_pile",
+   4,
+   26,
+   1,
+   140,
+   "faro",
+   false
+  ],
+  [
+   "rocks_6",
+   "rocks",
+   6,
+   26,
+   2,
+   140,
+   "faro",
+   true
+  ],
+  [
+   "large_rock_4",
+   "large_rock",
+   13,
+   27,
+   0,
+   220,
+   "faro",
+   true
+  ],
+  [
+   "flat_stone_6",
+   "flat_stone",
+   11,
+   29,
+   0,
+   130,
+   "faro",
+   false
+  ],
+  [
+   "terrace_house__clay_1",
+   "terrace_house__clay",
+   48,
+   37,
+   0,
+   1800,
+   "puerto",
+   false
+  ],
+  [
+   "cube_house__teal_2",
+   "cube_house__teal",
+   45,
+   33,
+   1,
+   1280,
+   "puerto",
+   true
+  ],
+  [
+   "bench__clay_6",
+   "bench__clay",
+   44,
+   33,
+   1,
+   260,
+   "puerto",
+   false
+  ],
+  [
+   "bench__ochre_2",
+   "bench__ochre",
+   44,
+   34,
+   1,
+   260,
+   "puerto",
+   false
+  ],
+  [
+   "pottery_jar_7",
+   "pottery_jar",
+   47,
+   33,
+   1,
+   120,
+   "puerto",
+   false
+  ],
+  [
+   "tower_chapel_2",
+   "tower_chapel",
+   42,
+   39,
+   0,
+   1500,
+   "puerto",
+   false
+  ],
+  [
+   "flower_pot__white_6",
+   "flower_pot__white",
+   41,
+   39,
+   0,
+   140,
+   "puerto",
+   false
+  ],
+  [
+   "flower_pot__coral_3",
+   "flower_pot__coral",
+   41,
+   40,
+   0,
+   140,
+   "puerto",
+   false
+  ],
+  [
+   "stone_lantern__sage_7",
+   "stone_lantern__sage",
+   44,
+   39,
+   0,
+   280,
+   "puerto",
+   false
+  ],
+  [
+   "olive__autumn_3",
+   "olive__autumn",
+   40,
+   32,
+   1,
+   360,
+   "puerto",
+   false
+  ],
+  [
+   "olive__autumn_4",
+   "olive__autumn",
+   42,
+   32,
+   1,
+   360,
+   "puerto",
+   false
+  ],
+  [
+   "stone_lantern__ochre_5",
+   "stone_lantern__ochre",
+   44,
+   30,
+   1,
+   280,
+   "puerto",
+   false
+  ],
+  [
+   "bench__sage_7",
+   "bench__sage",
+   47,
+   30,
+   1,
+   260,
+   "puerto",
+   false
+  ],
+  [
+   "archway_4",
+   "archway",
+   40,
+   36,
+   1,
+   600,
+   "puerto",
+   true
+  ],
+  [
+   "lantern_post__teal_4",
+   "lantern_post__teal",
+   45,
+   37,
+   1,
+   320,
+   "puerto",
+   true
+  ],
+  [
+   "well__teal_3",
+   "well__teal",
+   40,
+   30,
+   1,
+   720,
+   "puerto",
+   true
+  ],
+  [
+   "signpost__teal_5",
+   "signpost__teal",
+   39,
+   31,
+   1,
+   210,
+   "puerto",
+   true
+  ],
+  [
+   "hanging_lantern__teal_4",
+   "hanging_lantern__teal",
+   45,
+   31,
+   1,
+   300,
+   "puerto",
+   false
+  ],
+  [
+   "stone_basin__sage_3",
+   "stone_basin__sage",
+   39,
+   34,
+   1,
+   450,
+   "puerto",
+   true
+  ],
+  [
+   "banner__clay_1",
+   "banner__clay",
+   42,
+   35,
+   1,
+   380,
+   "puerto",
+   true
+  ],
+  [
+   "well__teal_4",
+   "well__teal",
+   49,
+   35,
+   0,
+   720,
+   "puerto",
+   false
+  ],
+  [
+   "crate_1",
+   "crate",
+   49,
+   31,
+   0,
+   160,
+   "puerto",
+   false
+  ],
+  [
+   "wood_pile_1",
+   "wood_pile",
+   38,
+   38,
+   0,
+   180,
+   "puerto",
+   false
+  ],
+  [
+   "storage_box_1",
+   "storage_box",
+   46,
+   40,
+   0,
+   200,
+   "puerto",
+   true
+  ],
+  [
+   "hay_bale_1",
+   "hay_bale",
+   45,
+   29,
+   0,
+   200,
+   "puerto",
+   true
+  ],
+  [
+   "pottery_jar_8",
+   "pottery_jar",
+   48,
+   32,
+   0,
+   120,
+   "puerto",
+   true
+  ],
+  [
+   "water_bucket_18",
+   "water_bucket",
+   49,
+   33,
+   0,
+   160,
+   "puerto",
+   true
+  ],
+  [
+   "wood_pile_2",
+   "wood_pile",
+   43,
+   36,
+   1,
+   180,
+   "puerto",
+   true
+  ],
+  [
+   "pottery_jar_9",
+   "pottery_jar",
+   42,
+   37,
+   1,
+   120,
+   "puerto",
+   true
+  ],
+  [
+   "hay_bale_2",
+   "hay_bale",
+   46,
+   38,
+   1,
+   200,
+   "puerto",
+   true
+  ],
+  [
+   "storage_box_2",
+   "storage_box",
+   39,
+   39,
+   0,
+   200,
+   "puerto",
+   true
+  ],
+  [
+   "crate_2",
+   "crate",
+   40,
+   41,
+   0,
+   160,
+   "puerto",
+   true
+  ],
+  [
+   "water_bucket_19",
+   "water_bucket",
+   42,
+   42,
+   0,
+   160,
+   "puerto",
+   false
+  ],
+  [
+   "pergola_house__sage_1",
+   "pergola_house__sage",
+   33,
+   46,
+   2,
+   2240,
+   "vega",
+   false
+  ],
+  [
+   "house__clay_3",
+   "house__clay",
+   37,
+   43,
+   0,
+   1200,
+   "vega",
+   true
+  ],
+  [
+   "stone_lantern__sage_8",
+   "stone_lantern__sage",
+   36,
+   43,
+   2,
+   300,
+   "vega",
+   false
+  ],
+  [
+   "stone_lantern__ochre_6",
+   "stone_lantern__ochre",
+   36,
+   44,
+   2,
+   300,
+   "vega",
+   false
+  ],
+  [
+   "bench__sage_8",
+   "bench__sage",
+   39,
+   44,
+   0,
+   270,
+   "vega",
+   false
+  ],
+  [
+   "altar__plum_1",
+   "altar__plum",
+   30,
+   50,
+   0,
+   960,
+   "vega",
+   false
+  ],
+  [
+   "terracotta_pot__amber_3",
+   "terracotta_pot__amber",
+   29,
+   50,
+   0,
+   130,
+   "vega",
+   false
+  ],
+  [
+   "stone_lantern__ochre_7",
+   "stone_lantern__ochre",
+   32,
+   50,
+   0,
+   300,
+   "vega",
+   false
+  ],
+  [
+   "stone_lantern__sage_9",
+   "stone_lantern__sage",
+   32,
+   51,
+   0,
+   300,
+   "vega",
+   false
+  ],
+  [
+   "olive__deep_2",
+   "olive__deep",
+   31,
+   44,
+   2,
+   380,
+   "vega",
+   false
+  ],
+  [
+   "olive__deep_3",
+   "olive__deep",
+   33,
+   44,
+   2,
+   380,
+   "vega",
+   false
+  ],
+  [
+   "olive__deep_4",
+   "olive__deep",
+   31,
+   46,
+   2,
+   380,
+   "vega",
+   false
+  ],
+  [
+   "cypress__autumn_2",
+   "cypress__autumn",
+   40,
+   49,
+   0,
+   260,
+   "vega",
+   false
+  ],
+  [
+   "cypress__autumn_3",
+   "cypress__autumn",
+   40,
+   51,
+   1,
+   290,
+   "ermita",
+   false
+  ],
+  [
+   "veg_garden_6",
+   "veg_garden",
+   38,
+   46,
+   0,
+   670,
+   "vega",
+   false
+  ],
+  [
+   "crop_patch_7",
+   "crop_patch",
+   38,
+   47,
+   0,
+   610,
+   "vega",
+   false
+  ],
+  [
+   "crop_patch_8",
+   "crop_patch",
+   38,
+   48,
+   0,
+   610,
+   "vega",
+   false
+  ],
+  [
+   "veg_garden_7",
+   "veg_garden",
+   39,
+   46,
+   0,
+   670,
+   "vega",
+   false
+  ],
+  [
+   "veg_garden_8",
+   "veg_garden",
+   39,
+   47,
+   0,
+   670,
+   "vega",
+   false
+  ],
+  [
+   "crop_patch_9",
+   "crop_patch",
+   39,
+   48,
+   0,
+   610,
+   "vega",
+   false
+  ],
+  [
+   "crop_patch_10",
+   "crop_patch",
+   40,
+   46,
+   0,
+   610,
+   "vega",
+   false
+  ],
+  [
+   "garden_bed_8",
+   "garden_bed",
+   40,
+   47,
+   0,
+   610,
+   "vega",
+   false
+  ],
+  [
+   "garden_bed_9",
+   "garden_bed",
+   40,
+   48,
+   0,
+   610,
+   "vega",
+   false
+  ],
+  [
+   "lantern_post__clay_4",
+   "lantern_post__clay",
+   37,
+   50,
+   0,
+   340,
+   "vega",
+   true
+  ],
+  [
+   "hanging_lantern__teal_5",
+   "hanging_lantern__teal",
+   32,
+   42,
+   1,
+   320,
+   "vega",
+   false
+  ],
+  [
+   "signpost__clay_1",
+   "signpost__clay",
+   30,
+   43,
+   2,
+   220,
+   "vega",
+   true
+  ],
+  [
+   "well__clay_3",
+   "well__clay",
+   29,
+   44,
+   0,
+   770,
+   "vega",
+   false
+  ],
+  [
+   "stone_lantern__ochre_8",
+   "stone_lantern__ochre",
+   29,
+   47,
+   1,
+   300,
+   "vega",
+   true
+  ],
+  [
+   "stone_basin__teal_2",
+   "stone_basin__teal",
+   30,
+   48,
+   2,
+   480,
+   "vega",
+   true
+  ],
+  [
+   "archway_5",
+   "archway",
+   34,
+   51,
+   0,
+   640,
+   "vega",
+   false
+  ],
+  [
+   "stone_pile_5",
+   "stone_pile",
+   33,
+   41,
+   1,
+   160,
+   "vega",
+   false
+  ],
+  [
+   "mossy_stone_5",
+   "mossy_stone",
+   35,
+   41,
+   0,
+   140,
+   "vega",
+   true
+  ],
+  [
+   "rocks_7",
+   "rocks",
+   34,
+   42,
+   1,
+   160,
+   "vega",
+   false
+  ],
+  [
+   "blue_railing__teal_3",
+   "blue_railing__teal",
+   33,
+   53,
+   0,
+   240,
+   "vega",
+   true
+  ],
+  [
+   "flower_pot__coral_4",
+   "flower_pot__coral",
+   28,
+   45,
+   0,
+   140,
+   "vega",
+   true
+  ],
+  [
+   "bougainvillea__white_4",
+   "bougainvillea__white",
+   28,
+   48,
+   0,
+   480,
+   "vega",
+   false
+  ],
+  [
+   "terracotta_pot__white_4",
+   "terracotta_pot__white",
+   36,
+   52,
+   0,
+   130,
+   "vega",
+   true
+  ],
+  [
+   "terrace_house__ochre_1",
+   "terrace_house__ochre",
+   48,
+   45,
+   1,
+   2040,
+   "astillero",
+   false
+  ],
+  [
+   "cube_house__clay_3",
+   "cube_house__clay",
+   53,
+   42,
+   0,
+   1440,
+   "astillero",
+   true
+  ],
+  [
+   "flower_pot__lilac_6",
+   "flower_pot__lilac",
+   52,
+   42,
+   1,
+   150,
+   "astillero",
+   false
+  ],
+  [
+   "flower_pot__amber_6",
+   "flower_pot__amber",
+   52,
+   43,
+   1,
+   150,
+   "astillero",
+   false
+  ],
+  [
+   "bench__clay_7",
+   "bench__clay",
+   53,
+   44,
+   0,
+   290,
+   "astillero",
+   false
+  ],
+  [
+   "agave_4",
+   "agave",
+   45,
+   48,
+   0,
+   220,
+   "astillero",
+   false
+  ],
+  [
+   "agave_5",
+   "agave",
+   47,
+   48,
+   0,
+   220,
+   "astillero",
+   false
+  ],
+  [
+   "lantern_post__clay_5",
+   "lantern_post__clay",
+   45,
+   44,
+   1,
+   360,
+   "astillero",
+   false
+  ],
+  [
+   "archway_6",
+   "archway",
+   48,
+   41,
+   1,
+   680,
+   "astillero",
+   false
+  ],
+  [
+   "stone_lantern__ochre_9",
+   "stone_lantern__ochre",
+   53,
+   47,
+   0,
+   320,
+   "astillero",
+   true
+  ],
+  [
+   "signpost__clay_2",
+   "signpost__clay",
+   51,
+   40,
+   0,
+   240,
+   "astillero",
+   false
+  ],
+  [
+   "hanging_lantern__teal_6",
+   "hanging_lantern__teal",
+   46,
+   42,
+   1,
+   340,
+   "astillero",
+   false
+  ],
+  [
+   "stone_basin__teal_3",
+   "stone_basin__teal",
+   50,
+   42,
+   1,
+   510,
+   "astillero",
+   false
+  ],
+  [
+   "water_bucket_20",
+   "water_bucket",
+   43,
+   45,
+   0,
+   190,
+   "astillero",
+   false
+  ],
+  [
+   "hay_bale_3",
+   "hay_bale",
+   49,
+   49,
+   0,
+   220,
+   "astillero",
+   false
+  ],
+  [
+   "storage_box_3",
+   "storage_box",
+   43,
+   43,
+   0,
+   220,
+   "astillero",
+   false
+  ],
+  [
+   "wood_pile_3",
+   "wood_pile",
+   47,
+   43,
+   1,
+   200,
+   "astillero",
+   true
+  ],
+  [
+   "crate_3",
+   "crate",
+   49,
+   43,
+   1,
+   190,
+   "astillero",
+   true
+  ],
+  [
+   "pottery_jar_10",
+   "pottery_jar",
+   46,
+   45,
+   1,
+   140,
+   "astillero",
+   false
+  ],
+  [
+   "hay_bale_4",
+   "hay_bale",
+   52,
+   45,
+   1,
+   220,
+   "astillero",
+   true
+  ],
+  [
+   "crate_4",
+   "crate",
+   44,
+   46,
+   0,
+   190,
+   "astillero",
+   false
+  ],
+  [
+   "storage_box_4",
+   "storage_box",
+   54,
+   46,
+   0,
+   220,
+   "astillero",
+   false
+  ],
+  [
+   "pottery_jar_11",
+   "pottery_jar",
+   46,
+   47,
+   1,
+   140,
+   "astillero",
+   false
+  ],
+  [
+   "wood_pile_4",
+   "wood_pile",
+   43,
+   48,
+   0,
+   200,
+   "astillero",
+   true
+  ],
+  [
+   "water_bucket_21",
+   "water_bucket",
+   51,
+   48,
+   0,
+   190,
+   "astillero",
+   false
+  ],
+  [
+   "water_bucket_22",
+   "water_bucket",
+   44,
+   49,
+   0,
+   190,
+   "astillero",
+   true
+  ],
+  [
+   "rocks_8",
+   "rocks",
+   46,
+   49,
+   0,
+   170,
+   "astillero",
+   false
+  ],
+  [
+   "large_rock_5",
+   "large_rock",
+   48,
+   50,
+   0,
+   270,
+   "astillero",
+   false
+  ],
+  [
+   "main_chapel__clay_1",
+   "main_chapel__clay",
+   38,
+   55,
+   3,
+   3960,
+   "ermita",
+   false
+  ],
+  [
+   "altar__plum_2",
+   "altar__plum",
+   38,
+   60,
+   0,
+   1080,
+   "ermita",
+   true
+  ],
+  [
+   "bench__clay_8",
+   "bench__clay",
+   37,
+   60,
+   0,
+   310,
+   "ermita",
+   false
+  ],
+  [
+   "bench__ochre_3",
+   "bench__ochre",
+   37,
+   61,
+   0,
+   310,
+   "ermita",
+   false
+  ],
+  [
+   "pottery_jar_12",
+   "pottery_jar",
+   40,
+   60,
+   0,
+   140,
+   "ermita",
+   false
+  ],
+  [
+   "house__teal_2",
+   "house__teal",
+   42,
+   53,
+   3,
+   1350,
+   "ermita",
+   false
+  ],
+  [
+   "water_bucket_23",
+   "water_bucket",
+   41,
+   53,
+   3,
+   200,
+   "ermita",
+   false
+  ],
+  [
+   "water_bucket_24",
+   "water_bucket",
+   41,
+   54,
+   3,
+   200,
+   "ermita",
+   false
+  ],
+  [
+   "bench__clay_9",
+   "bench__clay",
+   44,
+   53,
+   0,
+   310,
+   "ermita",
+   false
+  ],
+  [
+   "cypress__deep_4",
+   "cypress__deep",
+   34,
+   58,
+   0,
+   290,
+   "ermita",
+   false
+  ],
+  [
+   "cypress__deep_5",
+   "cypress__deep",
+   36,
+   58,
+   1,
+   290,
+   "ermita",
+   false
+  ],
+  [
+   "cypress__deep_6",
+   "cypress__deep",
+   36,
+   60,
+   0,
+   290,
+   "ermita",
+   false
+  ],
+  [
+   "olive__silver_4",
+   "olive__silver",
+   38,
+   52,
+   3,
+   430,
+   "ermita",
+   false
+  ],
+  [
+   "hanging_lantern__teal_7",
+   "hanging_lantern__teal",
+   42,
+   56,
+   3,
+   360,
+   "ermita",
+   false
+  ],
+  [
+   "signpost__teal_6",
+   "signpost__teal",
+   43,
+   57,
+   3,
+   250,
+   "ermita",
+   true
+  ],
+  [
+   "large_rock_6",
+   "large_rock",
+   35,
+   55,
+   2,
+   290,
+   "ermita",
+   false
+  ],
+  [
+   "pebbles_6",
+   "pebbles",
+   45,
+   56,
+   0,
+   140,
+   "ermita",
+   true
+  ],
+  [
+   "rocks_9",
+   "rocks",
+   39,
+   50,
+   1,
+   180,
+   "ermita",
+   false
+  ],
+  [
+   "mossy_stone_6",
+   "mossy_stone",
+   41,
+   50,
+   0,
+   160,
+   "ermita",
+   false
+  ],
+  [
+   "terracotta_pot__coral_4",
+   "terracotta_pot__coral",
+   42,
+   51,
+   0,
+   140,
+   "ermita",
+   false
+  ],
+  [
+   "flower_pot__lilac_7",
+   "flower_pot__lilac",
+   36,
+   54,
+   2,
+   160,
+   "ermita",
+   false
+  ],
+  [
+   "bougainvillea__lilac_6",
+   "bougainvillea__lilac",
+   34,
+   56,
+   1,
+   540,
+   "ermita",
+   true
+  ],
+  [
+   "bougainvillea__white_5",
+   "bougainvillea__white",
+   36,
+   56,
+   2,
+   540,
+   "ermita",
+   false
+  ],
+  [
+   "terracotta_pot__lilac_3",
+   "terracotta_pot__lilac",
+   35,
+   57,
+   1,
+   140,
+   "ermita",
+   false
+  ],
+  [
+   "flower_pot__white_7",
+   "flower_pot__white",
+   35,
+   59,
+   0,
+   160,
+   "ermita",
+   false
+  ],
+  [
+   "terracotta_pot__coral_5",
+   "terracotta_pot__coral",
+   42,
+   59,
+   0,
+   140,
+   "ermita",
+   false
+  ],
+  [
+   "tower_chapel__teal_2",
+   "tower_chapel__teal",
+   52,
+   54,
+   2,
+   1900,
+   "caleta",
+   false
+  ],
+  [
+   "house__sage_2",
+   "house__sage",
+   61,
+   62,
+   0,
+   1420,
+   "caleta",
+   true
+  ],
+  [
+   "water_bucket_25",
+   "water_bucket",
+   60,
+   62,
+   1,
+   210,
+   "caleta",
+   false
+  ],
+  [
+   "water_bucket_26",
+   "water_bucket",
+   60,
+   63,
+   1,
+   210,
+   "caleta",
+   false
+  ],
+  [
+   "bench__clay_10",
+   "bench__clay",
+   63,
+   62,
+   0,
+   320,
+   "caleta",
+   false
+  ],
+  [
+   "agave_6",
+   "agave",
+   57,
+   50,
+   0,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "agave_7",
+   "agave",
+   57,
+   52,
+   0,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "agave_8",
+   "agave",
+   55,
+   51,
+   2,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "house_2",
+   "house",
+   55,
+   60,
+   1,
+   1420,
+   "caleta",
+   false
+  ],
+  [
+   "flower_pot__lilac_8",
+   "flower_pot__lilac",
+   54,
+   60,
+   0,
+   170,
+   "caleta",
+   false
+  ],
+  [
+   "flower_pot__amber_7",
+   "flower_pot__amber",
+   54,
+   61,
+   0,
+   170,
+   "caleta",
+   false
+  ],
+  [
+   "stone_lantern__sage_10",
+   "stone_lantern__sage",
+   57,
+   60,
+   1,
+   360,
+   "caleta",
+   false
+  ],
+  [
+   "agave_9",
+   "agave",
+   49,
+   57,
+   0,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "agave_10",
+   "agave",
+   51,
+   57,
+   0,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "agave_11",
+   "agave",
+   49,
+   59,
+   3,
+   260,
+   "cabo",
+   false
+  ],
+  [
+   "well__teal_5",
+   "well__teal",
+   59,
+   57,
+   0,
+   910,
+   "caleta",
+   false
+  ],
+  [
+   "banner__ochre_2",
+   "banner__ochre",
+   50,
+   52,
+   2,
+   480,
+   "caleta",
+   false
+  ],
+  [
+   "signpost__teal_7",
+   "signpost__teal",
+   48,
+   54,
+   0,
+   270,
+   "caleta",
+   false
+  ],
+  [
+   "lantern_post__teal_5",
+   "lantern_post__teal",
+   52,
+   50,
+   2,
+   400,
+   "caleta",
+   true
+  ],
+  [
+   "bench__teal_2",
+   "bench__teal",
+   53,
+   49,
+   1,
+   320,
+   "caleta",
+   true
+  ],
+  [
+   "archway_7",
+   "archway",
+   50,
+   50,
+   2,
+   760,
+   "caleta",
+   false
+  ],
+  [
+   "stone_basin__teal_4",
+   "stone_basin__teal",
+   54,
+   50,
+   2,
+   570,
+   "caleta",
+   true
+  ],
+  [
+   "stone_lantern__ochre_10",
+   "stone_lantern__ochre",
+   53,
+   51,
+   2,
+   360,
+   "caleta",
+   true
+  ],
+  [
+   "hanging_lantern__teal_8",
+   "hanging_lantern__teal",
+   48,
+   52,
+   0,
+   380,
+   "caleta",
+   false
+  ],
+  [
+   "lantern_post__teal_6",
+   "lantern_post__teal",
+   52,
+   52,
+   2,
+   400,
+   "caleta",
+   false
+  ],
+  [
+   "crate_5",
+   "crate",
+   55,
+   65,
+   0,
+   210,
+   "caleta",
+   true
+  ],
+  [
+   "wood_pile_5",
+   "wood_pile",
+   59,
+   66,
+   0,
+   230,
+   "caleta",
+   false
+  ],
+  [
+   "water_bucket_27",
+   "water_bucket",
+   56,
+   54,
+   0,
+   210,
+   "caleta",
+   true
+  ],
+  [
+   "storage_box_5",
+   "storage_box",
+   58,
+   55,
+   0,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "pottery_jar_13",
+   "pottery_jar",
+   53,
+   58,
+   0,
+   150,
+   "caleta",
+   true
+  ],
+  [
+   "hay_bale_5",
+   "hay_bale",
+   61,
+   58,
+   0,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "storage_box_6",
+   "storage_box",
+   57,
+   64,
+   1,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "water_bucket_28",
+   "water_bucket",
+   55,
+   49,
+   0,
+   210,
+   "caleta",
+   true
+  ],
+  [
+   "wood_pile_6",
+   "wood_pile",
+   54,
+   52,
+   2,
+   230,
+   "caleta",
+   false
+  ],
+  [
+   "hay_bale_6",
+   "hay_bale",
+   49,
+   53,
+   2,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "pottery_jar_14",
+   "pottery_jar",
+   55,
+   53,
+   2,
+   150,
+   "caleta",
+   false
+  ],
+  [
+   "crate_6",
+   "crate",
+   58,
+   53,
+   0,
+   210,
+   "caleta",
+   true
+  ],
+  [
+   "crate_7",
+   "crate",
+   50,
+   54,
+   2,
+   210,
+   "caleta",
+   true
+  ],
+  [
+   "wood_pile_7",
+   "wood_pile",
+   49,
+   55,
+   2,
+   230,
+   "caleta",
+   true
+  ],
+  [
+   "hay_bale_7",
+   "hay_bale",
+   55,
+   55,
+   2,
+   250,
+   "caleta",
+   false
+  ],
+  [
+   "mossy_stone_7",
+   "mossy_stone",
+   48,
+   56,
+   0,
+   170,
+   "caleta",
+   true
+  ],
+  [
+   "pebbles_7",
+   "pebbles",
+   50,
+   56,
+   2,
+   150,
+   "caleta",
+   true
+  ],
+  [
+   "rocks_10",
+   "rocks",
+   56,
+   56,
+   0,
+   190,
+   "caleta",
+   true
+  ],
+  [
+   "large_rock_7",
+   "large_rock",
+   55,
+   57,
+   0,
+   300,
+   "caleta",
+   true
+  ],
+  [
+   "stone_pile_6",
+   "stone_pile",
+   50,
+   58,
+   0,
+   190,
+   "caleta",
+   true
+  ],
+  [
+   "flat_stone_7",
+   "flat_stone",
+   56,
+   58,
+   0,
+   170,
+   "caleta",
+   true
+  ],
+  [
+   "boulder_5",
+   "boulder",
+   58,
+   58,
+   0,
+   380,
+   "caleta",
+   false
+  ],
+  [
+   "pebbles_8",
+   "pebbles",
+   59,
+   59,
+   1,
+   150,
+   "caleta",
+   true
+  ],
+  [
+   "flat_stone_8",
+   "flat_stone",
+   62,
+   59,
+   0,
+   170,
+   "caleta",
+   true
+  ],
+  [
+   "rocks_11",
+   "rocks",
+   60,
+   60,
+   1,
+   190,
+   "caleta",
+   true
+  ],
+  [
+   "large_rock_8",
+   "large_rock",
+   63,
+   60,
+   0,
+   300,
+   "caleta",
+   false
+  ],
+  [
+   "boulder_6",
+   "boulder",
+   58,
+   61,
+   2,
+   380,
+   "caleta",
+   false
+  ],
+  [
+   "blue_railing__clay_1",
+   "blue_railing__clay",
+   60,
+   65,
+   0,
+   280,
+   "caleta",
+   true
+  ],
+  [
+   "flower_pot__white_8",
+   "flower_pot__white",
+   55,
+   63,
+   0,
+   170,
+   "caleta",
+   false
+  ],
+  [
+   "bougainvillea__coral_6",
+   "bougainvillea__coral",
+   58,
+   63,
+   1,
+   570,
+   "caleta",
+   false
+  ],
+  [
+   "terracotta_pot__coral_6",
+   "terracotta_pot__coral",
+   59,
+   64,
+   1,
+   150,
+   "caleta",
+   false
+  ],
+  [
+   "flower_pot__amber_8",
+   "flower_pot__amber",
+   58,
+   65,
+   0,
+   170,
+   "caleta",
+   true
+  ],
+  [
+   "windmill__clay_1",
+   "windmill__clay",
+   46,
+   66,
+   3,
+   3200,
+   "cabo",
+   false
+  ],
+  [
+   "pergola_house__sage_2",
+   "pergola_house__sage",
+   45,
+   61,
+   3,
+   2800,
+   "cabo",
+   true
+  ],
+  [
+   "stone_lantern__sage_11",
+   "stone_lantern__sage",
+   44,
+   61,
+   3,
+   380,
+   "cabo",
+   false
+  ],
+  [
+   "stone_lantern__ochre_11",
+   "stone_lantern__ochre",
+   44,
+   62,
+   3,
+   380,
+   "cabo",
+   false
+  ],
+  [
+   "stone_lantern__sage_12",
+   "stone_lantern__sage",
+   44,
+   63,
+   3,
+   380,
+   "cabo",
+   false
+  ],
+  [
+   "cube_house__ochre_2",
+   "cube_house__ochre",
+   43,
+   65,
+   3,
+   1700,
+   "cabo",
+   false
+  ],
+  [
+   "terracotta_pot__amber_4",
+   "terracotta_pot__amber",
+   42,
+   65,
+   0,
+   160,
+   "cabo",
+   false
+  ],
+  [
+   "terracotta_pot__white_5",
+   "terracotta_pot__white",
+   42,
+   66,
+   0,
+   160,
+   "cabo",
+   false
+  ],
+  [
+   "flower_pot__lilac_9",
+   "flower_pot__lilac",
+   45,
+   65,
+   3,
+   180,
+   "cabo",
+   false
+  ],
+  [
+   "cypress_6",
+   "cypress",
+   52,
+   72,
+   0,
+   320,
+   "cabo",
+   false
+  ],
+  [
+   "cypress_7",
+   "cypress",
+   53,
+   70,
+   0,
+   320,
+   "cabo",
+   false
+  ],
+  [
+   "olive__autumn_5",
+   "olive__autumn",
+   50,
+   65,
+   3,
+   480,
+   "cabo",
+   false
+  ],
+  [
+   "cypress__silver_11",
+   "cypress__silver",
+   56,
+   68,
+   0,
+   320,
+   "cabo",
+   false
+  ],
+  [
+   "cypress__silver_12",
+   "cypress__silver",
+   54,
+   69,
+   0,
+   320,
+   "cabo",
+   false
+  ],
+  [
+   "olive__deep_5",
+   "olive__deep",
+   50,
+   61,
+   3,
+   480,
+   "cabo",
+   false
+  ],
+  [
+   "olive__deep_6",
+   "olive__deep",
+   52,
+   61,
+   0,
+   480,
+   "cabo",
+   false
+  ],
+  [
+   "stone_basin__sage_4",
+   "stone_basin__sage",
+   47,
+   58,
+   1,
+   600,
+   "cabo",
+   false
+  ],
+  [
+   "lantern_post__clay_6",
+   "lantern_post__clay",
+   44,
+   59,
+   3,
+   420,
+   "cabo",
+   false
+  ],
+  [
+   "banner__clay_2",
+   "banner__clay",
+   46,
+   59,
+   3,
+   500,
+   "cabo",
+   false
+  ],
+  [
+   "bench__teal_3",
+   "bench__teal",
+   51,
+   59,
+   3,
+   340,
+   "cabo",
+   true
+  ],
+  [
+   "stone_lantern__sage_13",
+   "stone_lantern__sage",
+   43,
+   60,
+   3,
+   380,
+   "cabo",
+   false
+  ],
+  [
+   "archway_8",
+   "archway",
+   49,
+   64,
+   3,
+   800,
+   "cabo",
+   true
+  ],
+  [
+   "signpost__clay_3",
+   "signpost__clay",
+   42,
+   61,
+   2,
+   280,
+   "cabo",
+   false
+  ],
+  [
+   "well__teal_6",
+   "well__teal",
+   52,
+   64,
+   1,
+   960,
+   "cabo",
+   true
+  ],
+  [
+   "hanging_lantern__teal_9",
+   "hanging_lantern__teal",
+   49,
+   67,
+   3,
+   400,
+   "cabo",
+   false
+  ],
+  [
+   "stone_basin__sage_5",
+   "stone_basin__sage",
+   52,
+   67,
+   2,
+   600,
+   "cabo",
+   true
+  ],
+  [
+   "banner__plum_2",
+   "banner__plum",
+   51,
+   70,
+   1,
+   500,
+   "cabo",
+   false
+  ],
+  [
+   "flat_stone_9",
+   "flat_stone",
+   48,
+   69,
+   0,
+   180,
+   "cabo",
+   true
+  ],
+  [
+   "pebbles_9",
+   "pebbles",
+   46,
+   57,
+   1,
+   160,
+   "cabo",
+   true
+  ],
+  [
+   "large_rock_9",
+   "large_rock",
+   45,
+   58,
+   1,
+   320,
+   "cabo",
+   true
+  ],
+  [
+   "stone_pile_7",
+   "stone_pile",
+   41,
+   63,
+   0,
+   200,
+   "cabo",
+   true
+  ],
+  [
+   "rocks_12",
+   "rocks",
+   53,
+   65,
+   1,
+   200,
+   "cabo",
+   false
+  ],
+  [
+   "boulder_7",
+   "boulder",
+   54,
+   66,
+   0,
+   400,
+   "cabo",
+   true
+  ],
+  [
+   "mossy_stone_8",
+   "mossy_stone",
+   55,
+   67,
+   0,
+   180,
+   "cabo",
+   true
+  ],
+  [
+   "mossy_stone_9",
+   "mossy_stone",
+   43,
+   68,
+   0,
+   180,
+   "cabo",
+   false
+  ],
+  [
+   "stone_pile_8",
+   "stone_pile",
+   50,
+   68,
+   1,
+   200,
+   "cabo",
+   false
+  ],
+  [
+   "pebbles_10",
+   "pebbles",
+   53,
+   68,
+   1,
+   160,
+   "cabo",
+   true
+  ],
+  [
+   "boulder_8",
+   "boulder",
+   52,
+   69,
+   1,
+   400,
+   "cabo",
+   false
+  ],
+  [
+   "large_rock_10",
+   "large_rock",
+   49,
+   70,
+   0,
+   320,
+   "cabo",
+   false
+  ],
+  [
+   "rocks_13",
+   "rocks",
+   55,
+   70,
+   0,
+   200,
+   "cabo",
+   true
+  ],
+  [
+   "flat_stone_10",
+   "flat_stone",
+   50,
+   71,
+   0,
+   180,
+   "cabo",
+   false
+  ],
+  [
+   "windmill_1",
+   "windmill",
+   6,
+   9,
+   3,
+   3360,
+   "molino",
+   false
+  ],
+  [
+   "windmill__clay_2",
+   "windmill__clay",
+   11,
+   12,
+   3,
+   3360,
+   "molino",
+   true
+  ],
+  [
+   "flower_pot__lilac_10",
+   "flower_pot__lilac",
+   10,
+   12,
+   3,
+   190,
+   "molino",
+   false
+  ],
+  [
+   "flower_pot__amber_9",
+   "flower_pot__amber",
+   10,
+   13,
+   3,
+   190,
+   "molino",
+   false
+  ],
+  [
+   "water_bucket_29",
+   "water_bucket",
+   13,
+   13,
+   0,
+   230,
+   "molino",
+   false
+  ],
+  [
+   "cypress__deep_7",
+   "cypress__deep",
+   10,
+   4,
+   1,
+   340,
+   "molino",
+   false
+  ],
+  [
+   "cypress__deep_8",
+   "cypress__deep",
+   10,
+   6,
+   3,
+   340,
+   "molino",
+   false
+  ],
+  [
+   "cypress__deep_9",
+   "cypress__deep",
+   12,
+   6,
+   2,
+   340,
+   "molino",
+   false
+  ],
+  [
+   "signpost__clay_4",
+   "signpost__clay",
+   5,
+   14,
+   2,
+   290,
+   "molino",
+   false
+  ],
+  [
+   "bench__sage_9",
+   "bench__sage",
+   8,
+   15,
+   3,
+   360,
+   "molino",
+   true
+  ],
+  [
+   "archway_9",
+   "archway",
+   10,
+   9,
+   3,
+   840,
+   "molino",
+   false
+  ],
+  [
+   "well__teal_7",
+   "well__teal",
+   11,
+   5,
+   2,
+   1010,
+   "molino",
+   true
+  ],
+  [
+   "banner__ochre_3",
+   "banner__ochre",
+   13,
+   7,
+   1,
+   520,
+   "molino",
+   true
+  ],
+  [
+   "lantern_post__teal_7",
+   "lantern_post__teal",
+   12,
+   10,
+   3,
+   440,
+   "molino",
+   true
+  ],
+  [
+   "large_rock_11",
+   "large_rock",
+   8,
+   5,
+   0,
+   340,
+   "molino",
+   true
+  ],
+  [
+   "flat_stone_11",
+   "flat_stone",
+   4,
+   11,
+   1,
+   190,
+   "molino",
+   true
+  ],
+  [
+   "pebbles_11",
+   "pebbles",
+   3,
+   13,
+   0,
+   170,
+   "molino",
+   false
+  ],
+  [
+   "mossy_stone_10",
+   "mossy_stone",
+   7,
+   13,
+   3,
+   190,
+   "molino",
+   true
+  ],
+  [
+   "boulder_9",
+   "boulder",
+   6,
+   16,
+   0,
+   420,
+   "molino",
+   false
+  ],
+  [
+   "stone_pile_9",
+   "stone_pile",
+   10,
+   16,
+   0,
+   210,
+   "molino",
+   false
+  ],
+  [
+   "rocks_14",
+   "rocks",
+   13,
+   5,
+   0,
+   210,
+   "molino",
+   false
+  ],
+  [
+   "rocks_15",
+   "rocks",
+   14,
+   6,
+   0,
+   210,
+   "molino",
+   false
+  ],
+  [
+   "flat_stone_12",
+   "flat_stone",
+   7,
+   7,
+   0,
+   190,
+   "molino",
+   false
+  ],
+  [
+   "blue_railing__ochre_2",
+   "blue_railing__ochre",
+   9,
+   11,
+   3,
+   320,
+   "molino",
+   true
+  ],
+  [
+   "blue_railing__ochre_3",
+   "blue_railing__ochre",
+   6,
+   12,
+   3,
+   320,
+   "molino",
+   false
+  ],
+  [
+   "blue_railing__clay_2",
+   "blue_railing__clay",
+   9,
+   14,
+   3,
+   320,
+   "molino",
+   true
+  ],
+  [
+   "flower_pot__lilac_11",
+   "flower_pot__lilac",
+   9,
+   7,
+   2,
+   190,
+   "molino",
+   true
+  ],
+  [
+   "bougainvillea__white_6",
+   "bougainvillea__white",
+   11,
+   7,
+   3,
+   630,
+   "molino",
+   false
+  ],
+  [
+   "terracotta_pot__white_6",
+   "terracotta_pot__white",
+   12,
+   8,
+   1,
+   170,
+   "molino",
+   false
+  ],
+  [
+   "bougainvillea__white_7",
+   "bougainvillea__white",
+   13,
+   9,
+   0,
+   630,
+   "molino",
+   true
+  ],
+  [
+   "flower_pot__amber_10",
+   "flower_pot__amber",
+   4,
+   15,
+   0,
+   190,
+   "molino",
+   true
+  ],
+  [
+   "terracotta_pot__white_7",
+   "terracotta_pot__white",
+   11,
+   15,
+   3,
+   170,
+   "molino",
+   false
+  ],
+  [
+   "bougainvillea__lilac_7",
+   "bougainvillea__lilac",
+   7,
+   17,
+   0,
+   630,
+   "molino",
+   false
+  ],
+  [
+   "terracotta_pot__white_8",
+   "terracotta_pot__white",
+   9,
+   17,
+   0,
+   170,
+   "molino",
+   true
+  ],
+  [
+   "small_bridge_1",
+   "small_bridge",
+   33,
+   20,
+   0,
+   500,
+   "pueblo",
+   false
+  ],
+  [
+   "small_bridge_2",
+   "small_bridge",
+   16,
+   26,
+   0,
+   500,
+   "pueblo",
+   false
+  ],
+  [
+   "small_bridge_3",
+   "small_bridge",
+   36,
+   40,
+   0,
+   500,
+   "pueblo",
+   false
+  ],
+  [
+   "small_bridge_4",
+   "small_bridge",
+   38,
+   41,
+   0,
+   500,
+   "pueblo",
+   false
+  ],
+  [
+   "small_bridge_5",
+   "small_bridge",
+   41,
+   45,
+   0,
+   500,
+   "pueblo",
+   false
+  ],
+  [
+   "small_bridge_6",
+   "small_bridge",
+   46,
+   53,
+   0,
+   500,
+   "pueblo",
+   false
+  ],
+  [
+   "small_bridge_7",
+   "small_bridge",
+   53,
+   63,
+   0,
+   500,
+   "pueblo",
+   false
+  ]
+ ],
+ "terrainKinds": [
+  "grass",
+  "path",
+  "rock",
+  "sand",
+  "stone",
+  "thicket",
+  "water"
+ ],
+ "imageSizes": {
+  "agave": [
+   82,
+   87
+  ],
+  "altar": [
+   256,
+   374
+  ],
+  "altar__plum": [
+   256,
+   374
+  ],
+  "archway": [
+   132,
+   176
+  ],
+  "banner__clay": [
+   93,
+   171
+  ],
+  "banner__ochre": [
+   93,
+   171
+  ],
+  "banner__plum": [
+   93,
+   171
+  ],
+  "banner__teal": [
+   93,
+   171
+  ],
+  "bench__clay": [
+   110,
+   127
+  ],
+  "bench__ochre": [
+   110,
+   127
+  ],
+  "bench__sage": [
+   110,
+   127
+  ],
+  "bench__teal": [
+   110,
+   127
+  ],
+  "blue_railing__clay": [
+   83,
+   90
+  ],
+  "blue_railing__ochre": [
+   83,
+   90
+  ],
+  "blue_railing__sage": [
+   83,
+   90
+  ],
+  "blue_railing__teal": [
+   83,
+   90
+  ],
+  "bougainvillea__amber": [
+   102,
+   134
+  ],
+  "bougainvillea__coral": [
+   102,
+   134
+  ],
+  "bougainvillea__lilac": [
+   102,
+   134
+  ],
+  "bougainvillea__white": [
+   102,
+   134
+  ],
+  "boulder": [
+   101,
+   83
+  ],
+  "crate": [
+   74,
+   82
+  ],
+  "crop_patch": [
+   122,
+   94
+  ],
+  "cube_house": [
+   270,
+   287
+  ],
+  "cube_house__clay": [
+   270,
+   287
+  ],
+  "cube_house__ochre": [
+   270,
+   287
+  ],
+  "cube_house__teal": [
+   270,
+   287
+  ],
+  "cypress": [
+   83,
+   151
+  ],
+  "cypress__autumn": [
+   83,
+   151
+  ],
+  "cypress__deep": [
+   83,
+   151
+  ],
+  "cypress__silver": [
+   83,
+   151
+  ],
+  "flat_stone": [
+   73,
+   56
+  ],
+  "flower_pot__amber": [
+   63,
+   73
+  ],
+  "flower_pot__coral": [
+   63,
+   73
+  ],
+  "flower_pot__lilac": [
+   63,
+   73
+  ],
+  "flower_pot__white": [
+   63,
+   73
+  ],
+  "garden_bed": [
+   122,
+   98
+  ],
+  "hanging_lantern__plum": [
+   66,
+   121
+  ],
+  "hanging_lantern__teal": [
+   66,
+   121
+  ],
+  "hay_bale": [
+   71,
+   77
+  ],
+  "house": [
+   261,
+   269
+  ],
+  "house__clay": [
+   261,
+   269
+  ],
+  "house__ochre": [
+   261,
+   269
+  ],
+  "house__sage": [
+   261,
+   269
+  ],
+  "house__teal": [
+   261,
+   269
+  ],
+  "lantern_post__clay": [
+   65,
+   229
+  ],
+  "lantern_post__teal": [
+   65,
+   229
+  ],
+  "large_rock": [
+   93,
+   91
+  ],
+  "main_chapel": [
+   384,
+   465
+  ],
+  "main_chapel__clay": [
+   384,
+   465
+  ],
+  "mossy_stone": [
+   58,
+   63
+  ],
+  "olive": [
+   158,
+   198
+  ],
+  "olive__autumn": [
+   158,
+   198
+  ],
+  "olive__deep": [
+   158,
+   198
+  ],
+  "olive__silver": [
+   158,
+   198
+  ],
+  "pebbles": [
+   66,
+   44
+  ],
+  "pergola_house__clay": [
+   386,
+   411
+  ],
+  "pergola_house__sage": [
+   386,
+   411
+  ],
+  "pergola_house__teal": [
+   386,
+   411
+  ],
+  "pottery_jar": [
+   57,
+   115
+  ],
+  "rocks": [
+   70,
+   77
+  ],
+  "s_agave": [
+   61,
+   63
+  ],
+  "s_altar": [
+   139,
+   192
+  ],
+  "s_archway": [
+   83,
+   103
+  ],
+  "s_banner": [
+   66,
+   101
+  ],
+  "s_bench": [
+   74,
+   81
+  ],
+  "s_blue_railing": [
+   61,
+   64
+  ],
+  "s_bougainvillea": [
+   70,
+   84
+  ],
+  "s_boulder": [
+   69,
+   61
+  ],
+  "s_crate": [
+   57,
+   61
+  ],
+  "s_cube_house": [
+   146,
+   153
+  ],
+  "s_cypress": [
+   61,
+   92
+  ],
+  "s_flat_stone": [
+   57,
+   49
+  ],
+  "s_flower_pot": [
+   52,
+   57
+  ],
+  "s_hanging_lantern": [
+   54,
+   78
+  ],
+  "s_hay_bale": [
+   56,
+   59
+  ],
+  "s_house": [
+   141,
+   145
+  ],
+  "s_lantern_post": [
+   53,
+   127
+  ],
+  "s_large_rock": [
+   66,
+   65
+  ],
+  "s_main_chapel": [
+   197,
+   233
+  ],
+  "s_mossy_stone": [
+   50,
+   52
+  ],
+  "s_olive": [
+   95,
+   113
+  ],
+  "s_pebbles": [
+   54,
+   44
+  ],
+  "s_pergola_house": [
+   198,
+   209
+  ],
+  "s_pottery_jar": [
+   50,
+   76
+  ],
+  "s_rocks": [
+   56,
+   59
+  ],
+  "s_signpost": [
+   53,
+   83
+  ],
+  "s_small_bridge": [
+   135,
+   104
+  ],
+  "s_stone_basin": [
+   56,
+   51
+  ],
+  "s_stone_lantern": [
+   51,
+   87
+  ],
+  "s_stone_pile": [
+   56,
+   74
+  ],
+  "s_storage_box": [
+   67,
+   68
+  ],
+  "s_terrace_house": [
+   168,
+   172
+  ],
+  "s_terracotta_pot": [
+   45,
+   47
+  ],
+  "s_tower_chapel": [
+   139,
+   218
+  ],
+  "s_two_story": [
+   199,
+   204
+  ],
+  "s_villa": [
+   289,
+   285
+  ],
+  "s_water_bucket": [
+   45,
+   48
+  ],
+  "s_well": [
+   59,
+   72
+  ],
+  "s_windmill": [
+   168,
+   191
+  ],
+  "s_wood_pile": [
+   59,
+   59
+  ],
+  "signpost__clay": [
+   64,
+   132
+  ],
+  "signpost__teal": [
+   64,
+   132
+  ],
+  "small_bridge": [
+   247,
+   178
+  ],
+  "stone_basin__sage": [
+   72,
+   61
+  ],
+  "stone_basin__teal": [
+   72,
+   61
+  ],
+  "stone_lantern__ochre": [
+   59,
+   141
+  ],
+  "stone_lantern__sage": [
+   59,
+   141
+  ],
+  "stone_pile": [
+   70,
+   110
+  ],
+  "storage_box": [
+   96,
+   97
+  ],
+  "t_grass_0": [
+   144,
+   223
+  ],
+  "t_grass_1": [
+   144,
+   223
+  ],
+  "t_grass_2": [
+   144,
+   223
+  ],
+  "t_grass_3": [
+   144,
+   223
+  ],
+  "t_path_0": [
+   144,
+   223
+  ],
+  "t_path_1": [
+   144,
+   223
+  ],
+  "t_path_2": [
+   144,
+   223
+  ],
+  "t_path_3": [
+   144,
+   223
+  ],
+  "t_rock_0": [
+   144,
+   223
+  ],
+  "t_rock_1": [
+   144,
+   223
+  ],
+  "t_rock_2": [
+   144,
+   223
+  ],
+  "t_rock_3": [
+   144,
+   223
+  ],
+  "t_sand_0": [
+   144,
+   223
+  ],
+  "t_sand_1": [
+   144,
+   223
+  ],
+  "t_sand_2": [
+   144,
+   223
+  ],
+  "t_sand_3": [
+   144,
+   223
+  ],
+  "t_stone_0": [
+   144,
+   223
+  ],
+  "t_stone_1": [
+   144,
+   223
+  ],
+  "t_stone_2": [
+   144,
+   223
+  ],
+  "t_stone_3": [
+   144,
+   223
+  ],
+  "t_thicket_0": [
+   144,
+   223
+  ],
+  "t_thicket_1": [
+   144,
+   223
+  ],
+  "t_thicket_2": [
+   144,
+   223
+  ],
+  "t_thicket_3": [
+   144,
+   223
+  ],
+  "t_water_0": [
+   144,
+   111
+  ],
+  "t_water_1": [
+   144,
+   111
+  ],
+  "t_water_2": [
+   144,
+   111
+  ],
+  "t_water_3": [
+   144,
+   111
+  ],
+  "terrace_house": [
+   320,
+   329
+  ],
+  "terrace_house__clay": [
+   320,
+   329
+  ],
+  "terrace_house__ochre": [
+   320,
+   329
+  ],
+  "terrace_house__teal": [
+   320,
+   329
+  ],
+  "terracotta_pot__amber": [
+   46,
+   52
+  ],
+  "terracotta_pot__coral": [
+   46,
+   52
+  ],
+  "terracotta_pot__lilac": [
+   46,
+   52
+  ],
+  "terracotta_pot__white": [
+   46,
+   52
+  ],
+  "tower_chapel": [
+   256,
+   430
+  ],
+  "tower_chapel__ochre": [
+   256,
+   430
+  ],
+  "tower_chapel__teal": [
+   256,
+   430
+  ],
+  "two_story__clay": [
+   389,
+   401
+  ],
+  "two_story__ochre": [
+   389,
+   401
+  ],
+  "two_story__teal": [
+   389,
+   401
+  ],
+  "veg_garden": [
+   122,
+   95
+  ],
+  "villa": [
+   589,
+   581
+  ],
+  "water_bucket": [
+   47,
+   53
+  ],
+  "well__clay": [
+   77,
+   107
+  ],
+  "well__teal": [
+   77,
+   107
+  ],
+  "windmill": [
+   320,
+   372
+  ],
+  "windmill__clay": [
+   320,
+   372
+  ],
+  "wood_pile": [
+   78,
+   77
+  ]
+ }
+}

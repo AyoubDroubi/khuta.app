@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">خُطى</string>
+    <string name="widget_description">تابع عاداتك وواصل خطواتك المتتالية</string>
+    <string name="widget_heatmap_label">خُطى: خريطة الأيام</string>
+    <string name="widget_habit_label">خُطى: العادات</string>
+    <string name="widget_today_label">خُطى: اليوم</string>
+    <string name="widget_stats_label">خُطى: الملخص</string>
+    <string name="widget_todos_label">خُطى: المهام</string>
+    <string name="widget_todos_description">شاهد ما تبقى من مهام اليوم</string>
+</resources>

@@ -1,0 +1,1626 @@
+{
+  "@@locale": "uk",
+  "app_tagline": "Відстежувач звичок",
+  "today": "Сьогодні",
+  "stats": "Статистика",
+  "settings": "Налаштування",
+  "new_label": "Нова",
+  "save": "Зберегти",
+  "cancel": "Скасувати",
+  "delete": "Видалити",
+  "good_morning": "Доброго ранку",
+  "good_afternoon": "Доброго дня",
+  "good_evening": "Доброго вечора",
+  "no_habits_yet": "Звички відсутні",
+  "all_done_today": "На сьогодні все!",
+  "x_of_y_completed": "Виконано {done} з {total}",
+  "@x_of_y_completed": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "empty_title": "Розпочніть першу серію",
+  "empty_body": "Створіть звичку та натискайте на день, аби зафіксувати її. Маленькі кроки, щодня.",
+  "add_habit": "Додати звичку",
+  "all": "Усі",
+  "onb1_title": "Створюйте справжні серії",
+  "onb1_body": "Фіксуйте звичку одним дотиком і спостерігайте, як ваші успіхи зростають день за днем.",
+  "onb2_title": "Не збивайтеся з курсу",
+  "onb2_body": "Щоденні, тижневі або місячні цілі з розумними нагадуваннями, щоби нічого не було згаяно.",
+  "onb3_title": "Перегляньте свій поступ",
+  "onb3_body": "Детальна статистика та річна сітка наочно показують, якого поступу ви досягли.",
+  "skip": "Пропустити",
+  "next": "Наступна",
+  "get_started": "Розпочати",
+  "onb_kicker": "Ласкаво просимо до",
+  "onb_blurb": "Невеликі щоденні відмітки, що стають звичками.",
+  "onb_free_title": "Безкоштовно назавжди",
+  "onb_free_body": "Без реклами, підписок і закритих функцій.",
+  "onb_private_title": "Приватно й офлайн",
+  "onb_private_body": "Усе зберігається на вашому пристрої. Акаунт не потрібен.",
+  "onb_yours_title": "Ваші дані належать вам",
+  "onb_yours_body": "Робіть резервну копію або забирайте дані з собою будь-коли.",
+  "onb_step": "Крок {step} з {total}",
+  "@onb_step": {
+    "placeholders": {
+      "step": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "statistics": "Статистика",
+  "done_today": "Виконано сьогодні",
+  "best_streak": "Найкраща серія",
+  "active_habits": "Активні звички",
+  "total_logs": "Усього журналів",
+  "last_7_days": "Останні 7 днів",
+  "last_30_days": "Останні 30 днів",
+  "your_habits": "Ваші звички",
+  "stats_empty": "Додайте звички, щоби побачити свою статистику",
+  "completion_rate_short": "Послідовність",
+  "completion_rate": "Показник завершення",
+  "appearance": "Вигляд",
+  "theme": "Тема",
+  "system": "Як у системі",
+  "light": "Світла",
+  "dark": "Темна",
+  "week_starts_on": "Тиждень починається",
+  "mon": "Пн",
+  "sat": "Сб",
+  "sun": "Нд",
+  "language": "Мова",
+  "data": "Дані",
+  "export_backup": "Експортувати резервну копію",
+  "export_backup_sub": "Зберегти всі звички у файл",
+  "auto_backup": "Автоматична резервна копія",
+  "auto_backup_sub": "Вимк",
+  "auto_backup_off": "Вимк",
+  "auto_backup_daily": "Кожен день",
+  "auto_backup_weekly": "Кожен тиждень",
+  "auto_backup_where": "Коли ви відкриваєте застосунок, Khuta створює резервну копію, а також доступну для читання копію ваших звичок, яку можна відкрити в будь-якому редакторі. Зберігаються останні 5 резервних копій.",
+  "auto_backup_folder": "Тека",
+  "auto_backup_folder_default": "Тека застосунку",
+  "auto_backup_folder_set": "Теку збережено",
+  "auto_backup_folder_failed": "Ця тека захищена від запису",
+  "auto_backup_no_permission": "Доступ до сховища заборонено",
+  "auto_backup_run_now": "Створити копію зараз",
+  "refresh_now": "Оновити",
+  "refresh_now_sub": "Додайте те, що ваші інші пристрої залишили в теці",
+  "refresh_brought": "Ваші звички оновлено",
+  "refresh_nothing": "У теці немає нічого нового",
+  "import_backup": "Імпортувати резервну копію",
+  "import_backup_sub": "Відновити звички з файлу",
+  "import_from_app": "Імпортувати з іншого застосунку",
+  "import_from_app_sub": "Loop Habit Tracker, HabitKit…",
+  "import_from_app_done": "Імпортовано {habits} звичок ({days} днів) із {source}",
+  "@import_from_app_done": {
+    "placeholders": {
+      "habits": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      },
+      "source": {
+        "type": "String"
+      }
+    }
+  },
+  "import_failed": "Не вдалося імпортувати цей файл",
+  "about": "Про застосунок",
+  "backup_saved": "Резервну копію збережено",
+  "export_cancelled": "Експорт скасовано",
+  "habits_imported": "Звички імпортовано",
+  "new_habit": "Нова звичка",
+  "edit_habit": "Редагувати звичку",
+  "name": "Назва",
+  "name_hint": "Наприклад: Ранкова пробіжка",
+  "description": "Опис",
+  "description_hint": "Додаткова примітка",
+  "icon": "Значок",
+  "color": "Колір",
+  "category": "Категорія",
+  "category_health": "Здоров’я",
+  "category_fitness": "Фітнес",
+  "category_mindfulness": "Повнота усвідомлення",
+  "category_productivity": "Продуктивність",
+  "category_learning": "Навчання",
+  "category_finance": "Фінанси",
+  "count_days": "{count, plural, one {{count} день} few {{count} дні} many {{count} днів} other {{count} днів}}",
+  "@count_days": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_weeks": "{count, plural, one{{count} тиждень} few{{count} тижні} many {{count} тижнів} other{{count} тижнів}}",
+  "@count_weeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "count_months": "{count, plural, one{{count} місяць} few{{count} місяці} many{{count} місяців} other{{count} місяця}}",
+  "@count_months": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_week": "{count} тиж",
+  "@streak_unit_week": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streak_unit_month": "{count} міс",
+  "@streak_unit_month": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_kind": "Тип звички",
+  "kind_positive": "Проста",
+  "kind_negative": "Кинути",
+  "kind_quantitative": "Кількість",
+  "kind_locked_hint": "Тип неможливо змінити після створення звички.",
+  "kind_negative_hint": "Дні автоматично зараховуються як «чисті», тож ваша серія триває без зайвих дій. Відмічайте день лише тоді, коли стався зрив: він зафарбується червоним, але це можна буде виправити.",
+  "cost_per_day": "Вартість за день",
+  "cost_note": "Необов’язково. Залиште порожнім, якщо ця звичка не потребує грошових витрат.",
+  "currency": "Валюта",
+  "currency_custom": "Власна",
+  "currency_hint": "Символ або код",
+  "money_saved": "Заощаджені гроші",
+  "clean_days": "Чистих днів",
+  "quant_preset_water": "Вода",
+  "quant_preset_reading": "Читання",
+  "quant_preset_generic": "Власний",
+  "quant_unit_hint": "Міра (наприклад, мл, сторінки, повторення)",
+  "quant_unit_ml": "мл",
+  "quant_unit_pages": "сторінки",
+  "quant_edit_title": "Сьогоднішня кількість",
+  "quant_daily_goal": "Денна ціль",
+  "quant_tap_amount": "Кількість за один дотик",
+  "quant_per_day": "Кількість за днями",
+  "quant_average": "Середнє за день",
+  "quant_logged_days": "Активних днів",
+  "quant_best_day": "Найкращий день",
+  "quant_goal_days": "Мету досягнуто",
+  "quant_stats_empty": "Записуйте суму, і вона додаватиметься сюди, навіть у ті дні, коли вам не вдається досягти мети.",
+  "frequency": "Частота",
+  "daily": "Щодня",
+  "weekly": "Щотижня",
+  "monthly": "Щомісяця",
+  "sched_days": "Днів",
+  "sched_interval": "Інтервал",
+  "times_per_week": "{n} разів на тиждень",
+  "@times_per_week": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "times_per_month": "{n} разів на місяць",
+  "@times_per_month": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "freq_per_week_short": "{n} р. / тиждень",
+  "@freq_per_week_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "freq_per_month_short": "{n} р. / місяць",
+  "@freq_per_month_short": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "reminders": "Нагадування",
+  "add_reminder": "Додати нагадування",
+  "delete_habit": "Видалити звичку",
+  "archive_habit": "Архівна звичка",
+  "archive": "Архів",
+  "copy_message": "Копіювати повідомлення",
+  "message_copied": "Повідомлення скопійовано",
+  "app_lock": "Блокування застосунку",
+  "app_lock_sub": "Запитувати відбиток пальця або обличчя для відкриття Khuta",
+  "app_lock_unavailable": "На цьому телефоні не додано жодної біометрії",
+  "app_lock_failed": "Не вдалося підтвердити вашу особу",
+  "app_lock_title": "Khuta заблоковано",
+  "app_lock_unlock": "Розблокувати",
+  "app_lock_delay": "Блокувати через",
+  "app_lock_delay_instant": "Одразу",
+  "app_lock_delay_seconds": "{value} с",
+  "@app_lock_delay_seconds": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "note_photos": "Фото",
+  "note_take_photo": "Камера",
+  "note_pick_photo": "Галерея",
+  "journey": "Подорож",
+  "journey_sub": "{count, plural, one{1 фотографія} few{{count} фотографії} many{{count} фотографій} other{{count} фотографій}}",
+  "@journey_sub": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "journey_empty": "Фото поки що відсутні",
+  "journey_empty_sub": "Додайте фото до нотатки, і воно з’явиться тут.",
+  "archive_habit_body": "Перемістити «{name}» до архіву? Історія збережеться, і ви зможете відновити її в налаштуваннях.",
+  "@archive_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "archived_habits": "Архівовані звички",
+  "archived_habits_sub": "Відновити або видалити їх назавжди",
+  "archived_empty": "Нічого не заархівовано",
+  "archived_empty_sub": "Звички, які ви видаляєте, потрапляють сюди разом із усією їхньою історією.",
+  "restore": "Відновити",
+  "restored": "Звичку збережено",
+  "delete_forever": "Видалити назавжди",
+  "delete_forever_body": "Видалити «{name}» та всю історію? Цю дію неможливо скасувати.",
+  "@delete_forever_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleted_forever": "Звичку видалено",
+  "clear_progress": "Очистити прогрес",
+  "clear_progress_sub": "Історія, нотатки та сеанси фокусування",
+  "clear_progress_warning": "Це призведе до видалення всіх зафіксованих днів, нотаток та сеансів фокусування, але збереже ваші звички, їхній розклад та ваші налаштування. Цю дію неможливо скасувати, якщо у вас немає файлу резервної копії для подальшого імпорту.",
+  "clear_progress_confirm": "Очистити прогрес",
+  "clear_progress_done": "Прогрес очищено",
+  "wipe_data": "Стерти всі дані",
+  "wipe_data_sub": "Звички, нотатки, сеанси фокусування та налаштування",
+  "wipe_data_warning": "Це видалить усі звички, нотатки, сеанси фокусування та налаштування на цьому телефоні. Цю дію неможливо скасувати, якщо у вас немає файлу резервної копії для подальшого імпорту.",
+  "wipe_data_sure": "Дійсно все видалити?",
+  "wipe_data_sure_body": "Останній шанс. Без резервної копії ці дані втрачено назавжди.",
+  "wipe_data_confirm": "Усе стерти",
+  "wipe_data_done": "Усі дані стерто",
+  "day_start": "Початок дня",
+  "day_start_sub": "Пізні години ночі все ще вважаються попереднім днем",
+  "day_start_midnight": "Опівніч",
+  "day_start_hour": "{hour}:00",
+  "@day_start_hour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "share_photo": "Фото",
+  "share_stats_short": "Статистика",
+  "undo": "Скасувати",
+  "habit_archived": "Звичку архівовано",
+  "share_blur": "Розмиття",
+  "delete_habit_body": "Видалити «{name}»? Цю дію неможливо скасувати.",
+  "@delete_habit_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_title": "Зафіксувати зрив?",
+  "log_relapse_body": "Це перериває сьогоднішню серію чистоти для користувача «{name}». Ви можете скасувати це, натиснувши ще раз.",
+  "@log_relapse_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "log_relapse_confirm": "Так, зафіксувати",
+  "permission_required": "Необхідно надати дозвіл на сповіщення",
+  "streaks": "Серії",
+  "activity": "Активність",
+  "current": "Поточна",
+  "best": "Найкраща",
+  "total": "Усього",
+  "relapses": "Зриви",
+  "strength": "Сила",
+  "week": "Тиждень",
+  "month": "Місяць",
+  "year": "Рік",
+  "new_reminder": "Нове нагадування",
+  "edit_reminder": "Редагувати нагадування",
+  "days": "Днів",
+  "time": "Час",
+  "save_reminder": "Зберегти нагадування",
+  "select_one_day": "Оберіть принаймні один день",
+  "every_day": "Кожен день",
+  "no_days": "Жодного дня",
+  "repeat_hours": "Повторювати протягом дня",
+  "every_n_hours": "Кожні {n} год",
+  "@every_n_hours": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "repeat_weekly": "Певні дні",
+  "repeat_interval": "Кожні N днів",
+  "every_n_days": "Кожні {n} днів",
+  "@every_n_days": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_weeks": "Кожні {n} тиж.",
+  "@every_n_weeks": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "every_n_months": "Кожні {n} міс.",
+  "@every_n_months": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sched_unit_days": "Дні",
+  "sched_unit_weeks": "Тижні",
+  "sched_unit_months": "Місяці",
+  "todo_tags": "Мітки",
+  "todo_projects": "Проєкти",
+  "todo_project": "Проєкт",
+  "todo_project_new": "Новий проєкт",
+  "todo_project_name": "Назва проєкту",
+  "todo_project_edit": "Редагувати проєкт",
+  "todo_project_arrange": "Переставити",
+  "todo_project_arrange_hint": "Перетягніть теки на потрібні місця.",
+  "todo_project_pick": "Оберіть проєкт",
+  "todo_project_none": "Без проєкту",
+  "todo_project_delete_body": "Проєкт буде видалено. Завдання залишаться.",
+  "todo_tag": "Мітка",
+  "todo_tag_new": "Нова мітка",
+  "todo_tag_name": "Назва мітки",
+  "todo_tag_edit": "Редагувати мітку",
+  "todo_tag_delete_body": "Мітку буде видалено. Завдання залишаться.",
+  "todo_tag_none": "Без мітки",
+  "todo_tag_all": "Усі",
+  "todo_tag_manage": "Керувати мітками",
+  "todo_tag_empty_title": "Міток поки немає",
+  "todo_tag_empty_body": "Групуйте завдання за проєктом, місцем або як завгодно.",
+  "todo_tag_folders": "Теки",
+  "todo_tag_list": "Список",
+  "todo_tag_count": "Відкрито: {n}",
+  "@todo_tag_count": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_tag_icon": "Значок",
+  "todo_tag_pick": "Обрати мітки",
+  "todo_tag_filtered": "Фільтр: {name}",
+  "@todo_tag_filtered": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "uncategorized": "Без категорії",
+  "more_icons": "Більше значків",
+  "less_icons": "Менше значків",
+  "completions": "Завершені",
+  "completion_time": "Час завершення",
+  "current_streak": "Поточна серія",
+  "days_active": "Днів активності",
+  "completions_per_month": "Завершень / місяць",
+  "overview": "Огляд",
+  "preferences": "Налаштування",
+  "profile": "Профіль",
+  "about_app": "Про цей застосунок",
+  "about_app_sub": "Версія, автори та вихідний код",
+  "my_heatmap": "Моя мапа інтенсивності",
+  "my_heatmap_sub": "Відкрити сітку річної активності",
+  "view_source": "Переглянути джерело на GitHub",
+  "about_title": "Створено для вас. Безоплатно, назавжди.",
+  "about_footer": "Зроблено з ☕ та великою кількістю вільного часу.",
+  "about_body": "Khuta народився з простої ідеї: навіщо платити за відстеження власних звичок?\n\nЦей застосунок має повністю відкритий вихідний код. Будь-хто може побачити, як саме він працює, запропонувати покращення або навіть створити власну версію. Жодних «чорних скриньок». Жодних сюрпризів.\n\nВаша приватність абсолютна — все залишається у вашому телефоні. Жодних обліковок, жодних серверів, жодної реклами. Жоден байт не покидає ваш пристрій.\n\nБез обмежень. Створюйте стільки звичок, скільки забажаєте. Жодних підписок, жодних «про-версій», жодних спливних вікон із проханням заплатити. Ніколи.\n\nЯкщо застосунок приносить вам користь, ви можете підтримати його зірочкою на GitHub або пригостити мене кавою. Але це цілком необов’язково — застосунок залишається вашим у будь-якому разі.",
+  "close": "Закрити",
+  "no_data_yet": "Поки що без даних",
+  "import_question_body": "Замінити всі ваші поточні звички резервною копією чи об’єднати їх?",
+  "import_replace": "Замінити всі",
+  "import_merge": "Об’єднати",
+  "go": "Уперед",
+  "quote_1": "Маленькі кроки кожного дня.",
+  "quote_2": "Стабільність важливіша за інтенсивність.",
+  "quote_3": "Будь вірним собі.",
+  "quote_4": "Один день за раз.",
+  "quote_5": "Прогрес важливіший за досконалість.",
+  "quote_6": "Краще зроблене, ніж ідеальне.",
+  "quote_7": "Підтримуй серію перемог.",
+  "quote_8": "Маленькі звички — великі зміни.",
+  "quote_9": "Довірся процесу.",
+  "quote_10": "Виграй ранок.",
+  "quote_11": "Дисципліна дорівнює свободі.",
+  "quote_12": "Сьогодні теж рахується.",
+  "just_tracking_option": "Пропонувати лише відстеження",
+  "just_tracking_option_sub": "Додає перемикач під час створення звички",
+  "just_tracking": "Лише відстеження",
+  "just_tracking_sub": "Зберігає власну сітку та числа, але не враховує в прогрес та денний підрахунок",
+  "quotes": "Цитати",
+  "quotes_which": "Які цитати",
+  "quotes_app": "Із застосунку",
+  "quotes_mine": "Мої",
+  "quotes_both": "Усі",
+  "quotes_off": "Вимк",
+  "quotes_my_list": "Мої цитати",
+  "quotes_add": "Додати цитату",
+  "quotes_edit": "Редагувати цитату",
+  "quotes_hint": "Напишіть свою цитату",
+  "quotes_empty": "У вас немає власних цитат",
+  "quotes_empty_sub": "Напишіть свої, і вони з'являться на екрані «Сьогодні».",
+  "motiv_start": "Почни день бадьоро 💪",
+  "motiv_progress": "Ти на правильному шляху, так тримати",
+  "motiv_almost": "Майже на місці! Ще зовсім трохи",
+  "motiv_perfect": "Бомбезний день! 🔥",
+  "app_background": "Тло",
+  "widgets": "Віджети",
+  "customize_widgets": "Персоналізувати віджети",
+  "customize_widgets_sub": "Тло, непрозорість, межа",
+  "widget_background": "Колір тла",
+  "widget_opacity": "Непрозорість",
+  "widget_border": "Межа",
+  "widget_preview": "Передперегляд",
+  "bg_solid": "Суцільне",
+  "bg_gradient": "Градієнт",
+  "bg_dots": "Крапки",
+  "bg_oled": "OLED",
+  "weekdays": "Будні",
+  "weekends": "Вихідні",
+  "reminder_message": "Повідомлення (необов’язково)",
+  "reminder_message_hint": "Залиште порожнім, щоб отримати мотиваційну цитату",
+  "new_category": "Нова категорія",
+  "edit_category": "Редагувати категорію",
+  "add_category": "Нова",
+  "delete_category": "Видалити категорію",
+  "edit": "Редагувати",
+  "cover_image": "Обкладинка",
+  "book_cover": "Обкладинка книги",
+  "add_image": "Додати зображення",
+  "when_best": "Коли ви найбільш послідовні?",
+  "streak_evolution": "Еволюція серії",
+  "consistency": "Послідовність",
+  "consistency_trend": "Тенденція до послідовності",
+  "by_habit": "За звичкою",
+  "ranking": "Рейтинг",
+  "active_days": "Активні дні",
+  "perfect_days": "Ідеальні дні",
+  "per_week": "На тиждень",
+  "best_month": "Найкращий місяць",
+  "streak_on": "🔥 {n} днів поспіль. Не переривай серію!",
+  "@streak_on": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "streak_off": "💪 Сьогодні ти можеш розпочати нову серію",
+  "not_enough_data": "Поки замало даних",
+  "about_inline": "Khuta — це застосунок із відкритим кодом для відстеження ваших звичок. Жодних обліковок, жодних обмежень, жодних оплат. Усе залишається у вашому телефоні.\n\nБудь-хто може переглянути код, покращити його або вільно використовувати.",
+  "about_subtitle": "За кожен день твоїх невтомних зусиль.",
+  "about_story": "Цей застосунок з’явився через розчарування в наявних відстежувачах звичок. Більшість із них обмежують кількість звичок, які можна створити, ховають базові функції за платним доступом, стежать за вами або закидають рекламою. Тому я вирішив створити Khuta: повністю безоплатний, без реклами, без платежів і без відстеження. Усе працює локально — ваші дані належать тільки вам. Відкритий код, без жодних підступів.",
+  "share": "Поділитися",
+  "share_progress": "Поділитися поступом",
+  "share_failed": "Не вдалося створити зображення",
+  "share_swipe_hint": "Проведіть карткою для подорожі в часі",
+  "share_background": "Тло",
+  "share_size": "Розмір",
+  "share_size_large": "Здоровий",
+  "share_size_small": "Квадратний",
+  "share_show_stats": "Показати статистику",
+  "share_save": "Зберегти",
+  "share_saved": "Збережено в галерею",
+  "share_save_failed": "Не вдалося зберегти зображення",
+  "about_developer": "Розробник",
+  "about_credits": "Автори",
+  "about_credits_body": "Створено за допомогою Flutter. Значки від Lucide. Графіки від fl_chart. Використано шрифти Figtree та Playfair Display.",
+  "dev_role": "Інді-розробник · Khuta",
+  "notes": "Нотатки",
+  "notes_enable_sub": "Додавайте нотатки до будь-якого дня звички",
+  "add_note": "Додати нотатку",
+  "edit_note": "Редагувати нотатку",
+  "view_notes": "Переглянути нотатки",
+  "edit_entry": "Редагувати запис",
+  "note_type": "Тип",
+  "note_kind_note": "Нотатка",
+  "note_kind_planned": "Заплановано",
+  "note_kind_completed": "Завершено",
+  "note_hint": "Напишіть нотатку...",
+  "note_time_optional": "Час (необов’язково)",
+  "save_note": "Зберегти нотатку",
+  "notes_empty": "На цей день ще немає нотаток",
+  "delete_note": "Видалити нотатку",
+  "legend_note_added": "Нотатку додано",
+  "tomorrow": "Завтра",
+  "notes_count": "{count, plural, one{1 нотатка} few{{count} нотатки} many{{count} нотаток} other{{count} нотаток}}",
+  "@notes_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todos": "Завдання",
+  "todos_enable_sub": "Швидкий список поруч зі звичками",
+  "todo_new": "Нове завдання",
+  "todo_hint": "Що треба зробити?",
+  "todo_subtasks": "Підзавдання",
+  "todo_subtask_hint": "Підзавдання",
+  "todo_empty_title": "У списку порожньо",
+  "todo_empty_body": "Запишіть, що хочете зробити найближчими днями.",
+  "todo_date": "Дата",
+  "todo_no_date": "Без дати",
+  "todo_time": "Час",
+  "todo_priority": "Пріоритет",
+  "priority_none": "Без пріоритету",
+  "priority_low": "Низький",
+  "priority_medium": "Середній",
+  "priority_high": "Високий",
+  "todo_overdue": "Прострочені",
+  "todo_upcoming": "Найближчі",
+  "todo_someday": "Колись",
+  "pick_a_date": "Оберіть дату",
+  "todo_left": "{count, plural, =0{Усе зроблено} one{{count} завдання} few{{count} завдання} many{{count} завдань} other{{count} завдання}}",
+  "@todo_left": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_completed_count": "{count, plural, other{Виконано ({count})}}",
+  "@todo_completed_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_search": "Пошук завдань",
+  "todo_search_empty": "Нічого не знайдено",
+  "todo_clear_completed": "Видалити виконані",
+  "todo_clear_completed_body": "{count, plural, one{Це видалить {count} виконане завдання.} few{Це видалить {count} виконані завдання.} many{Це видалить {count} виконаних завдань.} other{Це видалить {count} виконані завдання.}}",
+  "@todo_clear_completed_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "prefs_general": "Загальні",
+  "prefs_features": "Функції",
+  "prefs_privacy": "Конфіденційність",
+  "collapse_cards": "Згорнути картки",
+  "expand_cards": "Розгорнути картки",
+  "view_switcher": "Перемикач вигляду",
+  "view_switcher_sub": "Показувати кнопки «Тиждень / Місяць / Рік» на екрані «Сьогодні»",
+  "view_switcher_needs": "Увімкніть активність на картках, щоб скористатися цією функцією",
+  "focus": "Фокус",
+  "focus_enable_sub": "Таймер для звичок, які його потребують",
+  "focus_free_session": "Вільний сеанс",
+  "focus_duration": "Тривалість",
+  "focus_start": "Почати сеанс",
+  "focus_style": "Стиль таймера",
+  "focus_style_digital": "Коло",
+  "focus_style_flip": "Перевернутий",
+  "focus_style_dots": "Крапки",
+  "focus_countdown": "Зворотний відлік 3 секунди",
+  "focus_skip_break": "Пропустити перерву",
+  "focus_continue": "Продовжити",
+  "focus_alert": "Сигнал наприкінці раунду",
+  "focus_alert_chime": "Дзвінок",
+  "focus_alert_custom": "Обрати звук",
+  "focus_alert_none": "Без звуку",
+  "focus_hold": "Чекати, поки я не запущу",
+  "focus_hold_sub": "Наступний раунд чекає, доки ви не натиснете «Продовжити».",
+  "focus_restart": "Спочатку",
+  "focus_restart_title": "Почати цей раунд спочатку?",
+  "focus_restart_body": "Час фокусування в цьому раунді буде втрачено.",
+  "focus_saved": "Записано: {time}",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_total": "Час фокусування",
+  "focus_sessions": "Сеанси",
+  "focus_stop_title": "Завершити сеанс?",
+  "focus_stop_body": "Ваші хвилини зберігаються в будь-якому випадку. Звичка вважається виконаною лише тоді, коли ви досягнете мети.",
+  "focus_end": "Завершити",
+  "focus_pick_habit": "На чому ви зосереджені?",
+  "focus_scene_custom": "Ваше зображення",
+  "unit_hours": "години",
+  "unit_minutes": "хвилини",
+  "unit_seconds": "секунди",
+  "focus_target_reached": "Ціль досягнуто",
+  "focus_pause": "Призупинити",
+  "focus_resume": "Відновити",
+  "focus_sound": "Звук",
+  "focus_pick_audio": "Виберіть трек зі свого телефону",
+  "focus_no_sound": "Трек не вибрано",
+  "focus_tasks": "Список підзавдань",
+  "focus_custom_duration": "Власний",
+  "focus_end_short": "Вам бракує {time} до мети.",
+  "@focus_end_short": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_end_tasks": "{count} завдань досі не позначено.",
+  "@focus_end_tasks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_end_reached": "Ціль досягнута. Звичка буде позначена як виконана.",
+  "focus_end_keep": "Так тримати",
+  "focus_end_anyway": "Усе одно завершити",
+  "focus_end_complete": "Позначити як виконане",
+  "focus_end_add_time": "Додати час фокусування",
+  "focus_amount_added": "{amount} додано до {habit}",
+  "@focus_amount_added": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "habit": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_personalize": "Власний",
+  "focus_track_rain": "Дощ",
+  "focus_track_brown": "Червоний шум",
+  "focus_track_pad": "Теплий ембієнт",
+  "focus_add_track": "Додати трек",
+  "focus_shuffle": "Перемішати",
+  "focus_loop": "По порядку",
+  "focus_repeat_one": "Повторювати одну",
+  "focus_track_too_long": "Тривалість треків має бути менше 20 хвилин",
+  "focus_track_limit": "До 10 треків",
+  "focus_done_title": "Сеанс завершено",
+  "focus_your_tracks": "Ваші треки",
+  "focus_built_in": "Включено",
+  "unit_hour_short": "год",
+  "unit_min_short": "хв",
+  "focus_notif_body": "Ваш сеанс фокусування завершено. Чудова робота!",
+  "celebration": "Ефект завершення",
+  "celebration_confetti": "Конфеті",
+  "celebration_fireworks": "Феєрверк",
+  "celebration_surprise": "Здивуй мене",
+  "focus_notif_channel": "Сеанси фокусування",
+  "focus_notif_running": "Фокусування",
+  "focus_paused": "Призупинено",
+  "focus_scene_black": "Чорна",
+  "focus_pomodoro": "Помодоро",
+  "focus_pomodoro_sub": "Чергуйте періоди концентрації з короткими перервами",
+  "focus_break": "Перерва",
+  "focus_round": "{n} раунд",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_daily_goal": "Ціль для фокусування",
+  "focus_goal_today": "{done} з {goal} за сьогодні",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_keep_awake": "Не вимикати екран",
+  "focus_images_limit": "До 10 зображень",
+  "select_all": "Вибрати все",
+  "selected_count": "{count, plural, other{Вибрано: {count}}}",
+  "@selected_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_delete_sessions": "Видалити сеанси?",
+  "focus_delete_sessions_body": "{count, plural, one{Буде видалено {count} сеанс фокусування. Цю дію неможливо скасувати.} few{Буде видалено {count} сеанси фокусування. Цю дію неможливо скасувати.} many{Буде видалено {count} сеансів фокусування. Цю дію неможливо скасувати.} other{Буде видалено {count} сеансів фокусування. Цю дію неможливо скасувати.}}",
+  "@focus_delete_sessions_body": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "focus_sessions_deleted": "{count, plural, one{Видалено {count} сеанс} few{Видалено {count} сеанси} many{Видалено {count} сеансів} other{Видалено {count} сеансів}}",
+  "@focus_sessions_deleted": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "unscheduled_title": "День не за розкладом",
+  "unscheduled_body": "Ця звичка не запланована на {day}. Усе одно позначити її як додаткову?",
+  "@unscheduled_body": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "unscheduled_confirm": "Усе одно позначити",
+  "rest_days_none": "Немає",
+  "last_90_days": "Останні 90 днів",
+  "focus_clear_today": "Очистити сьогоднішні сеанси",
+  "focus_defaults": "Типові параметри сеансу",
+  "plan_day": "Планувати день",
+  "plan_day_sub": "Задайте звичкам час доби та переглядайте їх на шкалі часу.",
+  "habit_time": "Час доби",
+  "habit_time_none": "Будь-коли",
+  "habit_duration": "Тривалість",
+  "habit_duration_none": "Без тривалості",
+  "day_timeline": "День",
+  "day_timeline_free": "{span} вільно",
+  "@day_timeline_free": {
+    "placeholders": {
+      "span": {
+        "type": "String"
+      }
+    }
+  },
+  "day_timeline_anytime": "Будь-коли",
+  "day_timeline_empty": "На цей день нічого не заплановано",
+  "day_timeline_empty_sub": "Задайте звичці час доби, і вона з'явиться тут.",
+  "clear": "Очистити",
+  "start_view": "«Сьогодні» відкривається на",
+  "start_view_last": "Останній використаний",
+  "focus_stats": "Статистика фокусування",
+  "focus_average": "Середній сеанс",
+  "focus_log": "Записати сеанс",
+  "focus_log_date": "Дата",
+  "focus_log_saved": "Сеанс додано",
+  "perfect_streak": "Серія ідеальних днів",
+  "focus_history": "Історія",
+  "focus_history_empty": "Сеансів ще немає",
+  "focus_history_empty_sub": "Кожен завершений вами сеанс фокусування показується тут.",
+  "focus_history_day": "{count, plural, one{{count} сеанс} few{{count} сеанси} many{{count} сеансів} other{{count} сеанси}}",
+  "@focus_history_day": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "yesterday": "Учора",
+  "notes_hint": "Затисніть день, щоб переглянути або додати нотатки",
+  "app_style": "Стиль застосунку",
+  "app_style_sub": "Оберіть загальний вигляд та інтерфейс застосунку.",
+  "style_classic": "Класичний",
+  "style_minimal": "Мінімальний",
+  "style_classic_desc": "Список звичок, нижня панель та всі налаштування на одному екрані.",
+  "style_minimal_desc": "Сітка звичок і налаштування згруповані у чотири розділи.",
+  "appearance_sub": "Тема, акцент і тло",
+  "preferences_sub": "Мова, тиждень і сортування",
+  "data_sub": "Резервні копії та імпорт",
+  "about_sub": "Версія, вихідний код і підтримка",
+  "check_style": "Перевірити стиль",
+  "square": "Квадрат",
+  "circle": "Коло",
+  "icons_tab": "Значки",
+  "emojis_tab": "Емоджі",
+  "emoji_own": "Введіть або вставте будь-яке емодзі",
+  "advanced_options": "Додаткові параметри",
+  "default_user": "Користувач",
+  "your_name": "Ваше ім’я",
+  "edit_name": "Змінити ім’я",
+  "change_photo": "Змінити фото",
+  "remove_photo": "Видалити фото",
+  "notif_greeting": "Привіт, {name}, ",
+  "@notif_greeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "app_icon": "Значок застосунку",
+  "icon_default": "Типово",
+  "icon_neutral": "Графіт",
+  "icon_accent": "Пісок",
+  "custom": "Власний",
+  "see_more": "Докладніше",
+  "see_less": "Згорнути",
+  "colors_tab": "Кольори",
+  "reorder": "Змінити порядок",
+  "reorder_hint": "Перетягніть звички, щоб змінити їхній порядок",
+  "category_order": "Порядок категорій",
+  "category_order_sub": "Перетягніть їх у потрібному порядку",
+  "category_order_empty": "Призначте звичці категорію, і вона з'явиться тут",
+  "done": "Готово",
+  "accent_color": "Акцентний колір",
+  "heatmap_path": "Поєднувати дні",
+  "heatmap_path_sub": "Малює сітку як одну довгу лінію",
+  "sort_completed_last": "Завершено останньою",
+  "sort_completed_last_sub": "Переміщує завершені завдання в кінець списку",
+  "today_only": "Лише сьогоднішні",
+  "today_only_sub": "Приховує звички, які не заплановані на сьогодні",
+  "card_activity": "Активність на картках",
+  "card_activity_sub": "Показує останні дні на картці, готові до відмітки",
+  "readable_copy": "Текст для читання",
+  "readable_copy_sub": "Також записує ваші звички у вигляді markdown-файлів",
+  "theme_sub": "Світла, темна або системна",
+  "accent_color_sub": "Використовується для кнопок і виділень",
+  "app_background_sub": "Те, що ви бачите за картами",
+  "check_style_sub": "Квадратні або круглі позначки",
+  "app_icon_sub": "Значок на вашому головному екрані",
+  "language_sub": "Мова всього застосунку",
+  "week_start_sub": "Перший стовпець кожної сітки",
+  "celebration_sub": "Що ви бачите, коли відмічаєте звичку",
+  "start_view_sub": "Вигляд, у якому відкривається «Сьогодні»",
+  "quotes_sub": "Які цитати показуються на екрані «Сьогодні»",
+  "focus_daily_goal_sub": "Скільки хвилин фокусування ви прагнете набирати щодня",
+  "app_lock_delay_sub": "Через скільки знову запитувати розблокування після виходу",
+  "focus_only": "Лише через сеанс фокусування",
+  "focus_only_hint": "Звичка позначається після завершення сеансу, а не натисканням.",
+  "focus_only_title": "Потрібен сеанс фокусування",
+  "focus_only_body": "«{name}» позначається завершенням сеансу фокусування.",
+  "@focus_only_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_past": "«{name}» позначається лише сеансом фокусування, тому минулі дні позначити не можна.",
+  "@focus_only_past": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_clear_title": "Зняти позначку?",
+  "focus_only_clear_body": "Тільки сеанс фокусування може знову перевірити «{name}».",
+  "@focus_only_clear_body": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_only_start": "Почати сеанс",
+  "focus_flowtime": "Флоутайм",
+  "focus_flowtime_hint": "Без цілі та без будильника. Час іде вперед, а ви зупиняєтеся, коли відчуваєте, що досить.",
+  "focus_end_flow": "Ви фокусувалися {time}.",
+  "@focus_end_flow": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "on": "Увімк",
+  "off": "Вимк",
+  "checklist": "Перелік пунктів",
+  "checklist_hint": "Розбийте звичку на кроки. Вона вважається виконаною лише тоді, коли кожен крок відмічено.",
+  "add_step": "Додати крок",
+  "step_hint": "Назва кроку",
+  "todays_checklist": "Сьогоднішній перелік пунктів",
+  "steps_done": "{done} / {total} кроків",
+  "@steps_done": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "vacation_all": "Призупити кожну звичку",
+  "vacation_all_sub": "Ніщо не вважається пропущеним, поки вона ввімкнена",
+  "vacation_mode": "Режим відпочинку",
+  "vacation_on_desc": "Призупинено — ці дні не будуть зараховані як пропущені або виконані.",
+  "vacation_off_desc": "Призупиняє цю звичку. Пропущені дні не перервуть вашу серію.",
+  "paused": "Призупинено",
+  "start_vacation": "Почати відпочинок",
+  "end_vacation": "Закінчити відпочинок",
+  "vacation_day_on": "Позначити як вихідний",
+  "vacation_day_off": "Видалити вихідний",
+  "rest_days": "Дні відпочинку",
+  "rest_days_desc": "Призупиняє її щотижня в ці дні. Ви все одно можете їх реєструвати, і вони будуть зараховані.",
+  "widget_no_habits": "Звичок ще немає\nТоркніться, щоб відкрити Khuta",
+  "widget_no_data": "Даних ще немає\nВідкрийте Khuta для синхронізації",
+  "widget_open_to_sync": "Відкрийте Khuta для синхронізації",
+  "widget_activity": "Активність",
+  "widget_today_progress": "Сьогодні  {done} / {total}",
+  "@widget_today_progress": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_open": "Список справ  {count}",
+  "@widget_todos_open": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_todos_empty": "На сьогодні все",
+  "widget_done_today": "зроблено сьогодні",
+  "widget_best_streak": "🔥 {streak} найкраща серія",
+  "@widget_best_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_title": "Персоналізація віджета",
+  "widget_cfg_color": "Колір",
+  "widget_cfg_image": "Зображення",
+  "widget_cfg_choose_image": "Обрати зображення",
+  "widget_cfg_change_image": "Змінити зображення",
+  "widget_cfg_custom_color": "Власний колір",
+  "widget_cfg_follow_system": "Слідувати темі системи",
+  "widget_cfg_dark_color": "Темна тема",
+  "widget_cfg_light_color": "Світла тема",
+  "widget_cfg_opacity": "Непрозорість  {value} %",
+  "@widget_cfg_opacity": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_border": "Межа",
+  "widget_cfg_thickness": "Товщина  {value} dp",
+  "@widget_cfg_thickness": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "widget_cfg_todos_scope": "Задачі",
+  "widget_cfg_todos_all": "Показати кожну задачу",
+  "widget_cfg_todos_hint": "Вимкнено: лише сьогоднішні, прострочені та завдання без дати",
+  "widget_cfg_show_activity": "Показати активність",
+  "widget_cfg_dot_color": "Колір крапки",
+  "widget_cfg_style": "Стиль",
+  "widget_cfg_style_classic": "Класичний",
+  "widget_cfg_style_card": "Картка",
+  "widget_cfg_all_habits": "Усі звички",
+  "widget_cfg_save": "Зберегти",
+  "widget_cfg_add": "Додати віджет",
+  "widget_cfg_reset": "Скинути до типових",
+  "widget_cfg_hue": "Відтінок",
+  "widget_cfg_saturation": "Насиченість",
+  "widget_cfg_brightness": "Яскравість",
+  "widget_demo_read": "Читати",
+  "widget_demo_run": "Запустити",
+  "widget_demo_water": "Вода",
+  "notif_streak": "🔥 {streak}-денна серія",
+  "@notif_streak": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_week": "🔥 Серія: {streak} тиж.",
+  "@notif_streak_week": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_streak_month": "🔥 Серія: {streak} міс.",
+  "@notif_streak_month": {
+    "placeholders": {
+      "streak": {
+        "type": "String"
+      }
+    }
+  },
+  "notif_action_done": "Завершено",
+  "notif_action_snooze": "Відкласти",
+  "notif_action_add": "Додати кількість",
+  "notif_action_add_hint": "Як багато?",
+  "snooze_duration": "Відкласти на",
+  "snooze_custom": "Власний",
+  "snooze_custom_hint": "Хвилин",
+  "minutes_short": "{value} хв",
+  "@minutes_short": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_done": "Позначити {name} як виконане",
+  "@a11y_mark_done": {
+    "description": "Screen reader label for the button that logs a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_mark_not_done": "Позначити {name} як невиконане",
+  "@a11y_mark_not_done": {
+    "description": "Screen reader label for the button that undoes a habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_add_amount": "Додати до {name}",
+  "@a11y_add_amount": {
+    "description": "Screen reader label for the button that adds progress to a quantitative habit",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_log_relapse": "Зафіксувати зрив для {name}",
+  "@a11y_log_relapse": {
+    "description": "Screen reader label for the button that logs a relapse on a habit to avoid",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_clear_relapse": "Видалити сьогоднішній зрив для {name}",
+  "@a11y_clear_relapse": {
+    "description": "Screen reader label for the button that removes today's relapse",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "a11y_not_done": "не виконано",
+  "@a11y_not_done": {
+    "description": "Screen reader state of a day that has not been logged"
+  },
+  "a11y_previous_week": "Попередній тиждень",
+  "a11y_next_week": "Наступний тиждень",
+  "a11y_increase": "Збільшити",
+  "@a11y_increase": {
+    "description": "Screen reader label for the plus button of a number stepper"
+  },
+  "a11y_decrease": "Зменшити",
+  "@a11y_decrease": {
+    "description": "Screen reader label for the minus button of a number stepper"
+  },
+  "a11y_pick_color": "Обрати колір",
+  "@a11y_pick_color": {
+    "description": "Screen reader label for a colour swatch in the picker"
+  },
+  "period_this_week": "Цього тижня",
+  "period_last_week": "Минулого тижня",
+  "period_this_month": "Цього місяця",
+  "period_last_month": "Минулого місяця",
+  "period_this_year": "Цього року",
+  "period_all_time": "Увесь час",
+  "times_completed": "Разів виконано",
+  "period_last_year": "Минулого року",
+  "period_week_of": "Тиждень з {date}",
+  "@period_week_of": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "focus_period_sessions": "{count, plural, =0{Жодного сеансу} one{{count} сеанс} few{{count} сеанси} many{{count} сеансів} other{{count} сеансів}}",
+  "@focus_period_sessions": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notes_all": "Усі нотатки",
+  "notes_empty_all": "Поки немає нотаток",
+  "quant_preset_time": "Час",
+  "style_express": "Експрес",
+  "style_express_desc": "Закруглені форми, пружний рух і ширший шрифт.",
+  "celebration_none": "Немає",
+  "quant_add_title": "Додати кількість",
+  "pane_hint": "Відкрийте щось зі списку, щоби переглянути тут",
+  "average_short": "Сер.",
+  "island": "Острів",
+  "island_enable_sub": "Перетворіть свої звички на оазис, який ви будуєте частина за частиною",
+  "island_open": "Відкрити острів",
+  "island_shop": "Магазин",
+  "island_build": "Будувати",
+  "island_done": "Збудовано",
+  "island_complete": "Оазис готовий",
+  "island_tap_hint": "Торкніться фігури, щоб побачити, що там буде",
+  "island_empty": "Позначте звичку, і оазис почне рости",
+  "island_how": "Як нараховуються бали",
+  "island_how_check": "10 за кожну відмічену звичку",
+  "island_how_focus": "1 за хвилину фокусування",
+  "island_how_perfect": "ще 25 за ідеальний день",
+  "island_how_note": "Монети беруться з вашої історії, тож резервна копія їх поверне.",
+  "island_built": "Збудовано {done} з {total}",
+  "@island_built": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "total": {
+        "type": "String"
+      }
+    }
+  },
+  "island_need": "Залишилося балів: {count}",
+  "@island_need": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "island_placed": "{name} тепер на острові",
+  "@island_placed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "island_p_agave": "Пустельне алое",
+  "island_p_altar": "Намет бедуїна",
+  "island_p_archway": "Кам'яна арка",
+  "island_p_banner": "Вимпел",
+  "island_p_bench": "Лавка",
+  "island_p_blue_railing": "Ґратчаста ширма",
+  "island_p_bougainvillea": "Бугенвілея",
+  "island_p_boulder": "Валун",
+  "island_p_crate": "Ящик",
+  "island_p_crop_patch": "Ділянка з посівами",
+  "island_p_cube_house": "Будинок з куполом",
+  "island_p_cypress": "Фінікова пальма",
+  "island_p_dry_grass": "Суха трава",
+  "island_p_flat_stone": "Плаский камінь",
+  "island_p_flower_pot": "Квітковий горщик",
+  "island_p_garden_bed": "Садова грядка",
+  "island_p_hanging_lantern": "Підвісний ліхтар",
+  "island_p_hay_bale": "Тюк сіна",
+  "island_p_house": "Маленький будинок",
+  "island_p_lantern_post": "Ліхтарний стовп",
+  "island_p_large_rock": "Велика скеля",
+  "island_p_main_chapel": "Мечеть",
+  "island_p_mossy_stone": "Камінь у чагарнику",
+  "island_p_olive": "Акація",
+  "island_p_pebbles": "Галька",
+  "island_p_pergola_house": "Будинок з перголою",
+  "island_p_pottery_jar": "Глиняний глек",
+  "island_p_rocks": "Каміння",
+  "island_p_signpost": "Вказівник",
+  "island_p_small_bridge": "Місток із дошок",
+  "island_p_stone_basin": "Фонтан",
+  "island_p_stone_lantern": "Кам'яний ліхтар",
+  "island_p_stone_pile": "Купа каміння",
+  "island_p_storage_box": "Скриня",
+  "island_p_terrace_house": "Будинок з терасою",
+  "island_p_terracotta_pot": "Горщик з теракоти",
+  "island_p_tower_chapel": "Мінарет",
+  "island_p_two_story": "Двоповерховий будинок",
+  "island_p_veg_garden": "Город",
+  "island_p_villa": "Будинок з подвір'ям",
+  "island_p_water_bucket": "Відро з водою",
+  "island_p_well": "Криниця",
+  "island_p_windmill": "Бадгір",
+  "island_p_wood_pile": "Купа дров",
+  "island_reset": "Почати острів заново",
+  "island_reset_sub": "Усе буде розібрано, а всі бали повернуться на ваш баланс.",
+  "island_coins": "Монети",
+  "island_g_pueblo": "Село",
+  "island_g_cala": "Джерело",
+  "island_g_terrazas": "Тераси",
+  "island_g_puerto": "Стоянка караванів",
+  "island_g_molino": "Гряда бадгірів",
+  "island_how_todo": "4 за кожне виконане завдання",
+  "island_how_streak": "Бонус, коли звичка досягає 7, 30, 100 і 365 днів",
+  "island_zoom_hint": "Проведіть одним пальцем, щоб посунути. Двома пальцями зведіть для масштабу й поверніть, щоб повернути острів.",
+  "island_t_teal": "бірюзовий",
+  "island_t_clay": "теракотовий",
+  "island_t_white": "білий",
+  "island_t_coral": "кораловий",
+  "island_t_lilac": "бузковий",
+  "island_t_autumn": "осінній",
+  "island_t_deep": "темний",
+  "island_t_silver": "сріблястий",
+  "island_g_huerta": "Фінікова діброва",
+  "island_g_faro": "Скельні стовпи",
+  "island_turn": "Повернути вигляд",
+  "gamification": "Гейміфікація",
+  "island_default_name": "Мій острів",
+  "island_rename": "Назвіть свій острів",
+  "island_only_affordable": "Лише те, що мені по кишені",
+  "island_nothing_here": "Тут поки нічого немає",
+  "island_g_vega": "Ваді",
+  "island_g_mirador": "Оглядовий майданчик",
+  "island_g_astillero": "Робочий двір",
+  "island_g_ermita": "Сад біля мечеті",
+  "island_g_caleta": "Мале джерело",
+  "island_g_cabo": "Мис",
+  "island_goal": "Так виглядає острів, коли збудовано все.",
+  "island_reset_go": "Почати заново",
+  "island_beta": "Це перша версія гейміфікації, вона ще в бета-версії. Вона може рости, змінюватися або бути повністю замінена залежно від того, як ви нею користуєтеся.",
+  "gamification_beta": "Гейміфікація (бета)",
+  "last_check": "Остання відмітка",
+  "check_history": "Історія відміток",
+  "check_history_sub": "Відмічено днів: {count}",
+  "@check_history_sub": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "check_never": "Ніколи",
+  "check_no_time": "час не збережено",
+  "heatmap_rolling": "Останні 12 місяців",
+  "heatmap_rolling_sub": "Річна сітка закінчується сьогодні, а не 31 грудня",
+  "check_marks": "Відміток: {count}",
+  "@check_marks": {
+    "placeholders": {
+      "count": {
+        "type": "String"
+      }
+    }
+  },
+  "today_progress_option": "Прогрес на екрані «Сьогодні»",
+  "today_progress_option_sub": "Кільце дня та шкала сили на кожній звичці",
+  "quiet_when_done": "Тиша після виконання",
+  "quiet_when_done_sub": "Більше жодних нагадувань сьогодні про звичку, яку вже виконано",
+  "plan_tab": "План",
+  "difficulty": "Складність",
+  "difficulty_hint": "Складніші звички важать більше в прогресі дня",
+  "difficulty_easy": "Легка",
+  "difficulty_medium": "Середня",
+  "difficulty_hard": "Складна",
+  "pin_lock": "PIN-код",
+  "pin_lock_sub": "Ваш власний код, окремий від блокування телефону",
+  "pin_choose": "Оберіть PIN-код",
+  "pin_choose_sub": "Від 4 до 8 цифр",
+  "pin_repeat": "Введіть ще раз",
+  "pin_mismatch": "Не збігаються. Почніть знову.",
+  "pin_enter": "Введіть PIN-код",
+  "pin_wrong": "Хибний PIN-код",
+  "pin_wait": "Забагато спроб. Зачекайте {seconds} с",
+  "@pin_wait": {
+    "placeholders": {
+      "seconds": {
+        "type": "String"
+      }
+    }
+  },
+  "pin_recovery_title": "Ваш код відновлення",
+  "pin_recovery_body": "Якщо ви забудете PIN-код, цей код відкриє Khuta і вимкне блокування. Зберігайте його в безпечному місці: його більше не буде показано.",
+  "pin_copy": "Копіювати код",
+  "pin_copied": "Код скопійовано",
+  "pin_forgot": "Забули PIN-код?",
+  "pin_recovery_hint": "Код відновлення",
+  "pin_recovery_wrong": "Цей код неправильний",
+  "pin_recovered": "Блокування вимкнено. Новий PIN-код можна встановити в налаштуваннях.",
+  "pin_change": "Змінити PIN-код",
+  "pin_remove": "Видалити PIN-код",
+  "pin_fingerprint": "Використати відбиток пальця",
+  "app_lock_method": "Розблокування",
+  "app_lock_biometric": "Відбиток пальця або обличчя",
+  "difficulty_option": "Складність звичок",
+  "difficulty_option_sub": "Нехай складніші звички важать більше в прогресі дня",
+  "todo_save_another": "Зберегти й додати ще",
+  "todo_add_subtask": "Додати підзавдання",
+  "pin_paste": "Вставити код",
+  "journal": "Щоденник",
+  "journal_today": "Сьогодні",
+  "journal_calendar": "Календар",
+  "journal_empty": "Тут поки нічого не записано",
+  "journal_empty_sub": "Тут збираються моменти, роздуми та ваша активність у Khuta.",
+  "journal_add_moment": "Додати момент",
+  "journal_daily_reflection": "Роздум дня",
+  "journal_write_moment": "Що сталося?",
+  "journal_write_reflection": "Яким був сьогоднішній день?",
+  "journal_moment": "Момент",
+  "journal_reflection": "Роздум",
+  "journal_activity": "Активність у Khuta",
+  "journeys": "Маршрути",
+  "journey_new": "Новий маршрут",
+  "journey_edit": "Редагувати маршрут",
+  "journey_title": "Назва маршруту",
+  "journey_description": "До чого ви йдете?",
+  "journey_start_date": "Дата початку",
+  "journey_target_date": "Цільова дата",
+  "journey_milestones": "Етапи",
+  "journey_add_milestone": "Додати етап",
+  "journey_linked_habits": "Пов'язані звички",
+  "journey_focus_target": "Ціль із фокусування",
+  "journey_no_items": "Маршрутів поки немає",
+  "journey_no_items_sub": "Створіть маршрут і пов'яжіть із ним звички, що просувають вас уперед.",
+  "journey_planned": "Заплановано",
+  "journey_active": "Активний",
+  "journey_completed": "Завершено",
+  "journey_archived": "В архіві",
+  "journey_timeline": "Хронологія",
+  "journey_progress": "Етапів: {done} з {total}",
+  "@journey_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "habit_memories": "Спогади",
+  "journey_invalid_dates": "Цільова дата не може бути раніше за дату початку",
+  "journey_invalid_focus_target": "Ціль із фокусування має бути від 0 до 525600 хвилин",
+  "journal_photo_limit": "Можна прикріпити до 8 фото",
+  "journal_content_required": "Напишіть щось або додайте фото",
+  "daily_plan_title": "Мій день",
+  "daily_plan_progress": "Виконано пріоритетів: {done} з {total}",
+  "@daily_plan_progress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "daily_plan_empty": "Виберіть до 3 пріоритетів на сьогодні.",
+  "daily_plan_add": "Додати пріоритет",
+  "daily_plan_edit": "Редагувати пріоритети",
+  "daily_plan_limit": "До 3 пріоритетів",
+  "daily_plan_habit": "Звичка",
+  "daily_plan_todo": "Завдання",
+  "daily_plan_milestones": "Етапи шляху",
+  "daily_plan_source_missing": "Джерело недоступне",
+  "daily_plan_no_sources": "Сьогодні більше нічого додати.",
+  "app_usage_title": "Використання застосунків сьогодні",
+  "app_usage_disclosure": "Щоб показувати назви застосунків і час їх використання сьогодні, Khuta потрібен доступ Android до статистики використання. Зведення обробляється на цьому пристрої, видаляється після закриття застосунку й ніколи не синхронізується. Khuta не читає вміст застосунків або сповіщення.",
+  "app_usage_accept_and_show": "Погоджуюся, показати використання сьогодні",
+  "app_usage_open_settings": "Відкрити налаштування доступу до статистики використання",
+  "app_usage_access_off": "Доступ до статистики використання вимкнено",
+  "app_usage_loading": "Читаємо дані про використання застосунків за сьогодні…",
+  "app_usage_retry": "Спробувати ще раз",
+  "app_usage_total": "Загальний час у застосунках",
+  "app_usage_most_used": "Найчастіше використовувані застосунки",
+  "app_usage_empty": "Дані про використання застосунків за сьогодні поки недоступні.",
+  "app_usage_unsupported": "Зведення використання застосунків доступне лише на Android.",
+  "app_usage_error": "Не вдалося прочитати дані про використання застосунків.",
+  "app_usage_local_only": "Зведення залишається на цьому пристрої й не зберігається у Khuta.",
+  "app_usage_duration_hours_minutes": "{hours} год {minutes} хв",
+  "@app_usage_duration_hours_minutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_minutes": "{minutes} хв",
+  "@app_usage_duration_minutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "app_usage_duration_under_minute": "<1 хв",
+  "goals": "Цілі",
+  "goal_new": "Нова ціль",
+  "goal_edit": "Редагувати ціль",
+  "goal_title": "Назва цілі",
+  "goal_title_required": "Назва цілі обов’язкова",
+  "goal_description": "До якого результату ви прагнете?",
+  "goal_parent": "Батьківська ціль",
+  "goal_no_parent": "Без батьківської цілі",
+  "goal_target_date": "Цільова дата",
+  "goal_no_target_date": "Без цільової дати",
+  "goal_state": "Стан",
+  "goal_active": "Активна",
+  "goal_completed": "Завершена",
+  "goal_archived": "В архіві",
+  "goal_link_sources": "Пов’язані джерела",
+  "goals_empty": "Цілей ще немає",
+  "goals_empty_sub": "Створіть результат і пов’яжіть звички, завдання та шляхи, які наближають вас до нього.",
+  "goals_entry_empty": "Створіть свою першу ціль",
+  "goal_progress": "Прогрес",
+  "goal_progress_empty": "Пов’яжіть джерело, щоб побачити обчислений прогрес.",
+  "goal_no_sources": "Джерела ще не пов’язані.",
+  "goal_source_unavailable": "Джерело недоступне",
+  "goal_unavailable": "Ця ціль недоступна.",
+  "goal_subgoals": "Підцілі",
+  "goal_mark_completed": "Позначити завершеною",
+  "goal_restore": "Відновити ціль",
+  "goal_archive": "Архівувати ціль",
+  "goals_entry_count": "{count} активних цілей",
+  "@goals_entry_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_sources_count": "{count} джерел",
+  "@goal_sources_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "goal_source_habits": "Звички",
+  "legal_attribution": "На основі Streak від InlitX",
+  "legal_licenses": "Ліцензії відкритого коду",
+  "calendar": "Календар",
+  "calendar_sub": "Як відображаються дати",
+  "calendar_gregorian": "Григоріанський",
+  "calendar_hijri": "Гіджрі",
+  "calendar_gregorian_hijri": "Григоріанський + Гіджрі",
+  "calendar_hijri_gregorian": "Гіджрі + Григоріанський",
+  "hijri_adjust": "Корекція Гіджрі",
+  "hijri_adjust_sub": "Зсуньте дати Гіджрі відповідно до місцевого спостереження Місяця",
+  "app_name": "Khuta",
+  "hijri_months_hint": "Виконується щодня у вибрані місяці. Інші дні не впливають на серію ні в плюс, ні в мінус.",
+  "every_day_in": "Щодня: {months}",
+  "@every_day_in": {
+    "placeholders": {
+      "months": {
+        "type": "String"
+      }
+    }
+  },
+  "minimum_goal": "Мінімум, що зараховується",
+  "minimum_goal_hint": "Досягнення мінімуму завершує день. Ціль вище залишається вашою повною нормою.",
+  "minimum_suffix": "мін. {amount}",
+  "@minimum_suffix": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "target_history": "Історія цілей",
+  "history_minimum": "Мінімум {amount}",
+  "@history_minimum": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "history_target": "Ціль {amount}",
+  "@history_target": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "amount_left": "Залишилося {amount}",
+  "@amount_left": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "recovery_notification": "Поверніться з одним маленьким кроком.",
+  "recovery_threshold": "Повернення після перерви",
+  "recovery_threshold_sub": "Скільки звичка може лишатися без відмітки, перш ніж «Повернення» допоможе почати знову",
+  "recovery_days": "Дні",
+  "recovery_hours": "Години",
+  "duration_days_hours": "{days} д {hours} год",
+  "@duration_days_hours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "recovery_title": "Повернення",
+  "recovery_hint": "Щоб почати знову, досить маленького кроку.",
+  "recovery_dismiss": "Закрити",
+  "recovery_adjust": "Налаштувати",
+  "recovery_enable": "Нагадування про повернення",
+  "recovery_enable_sub": "М'які нагадування після перерви",
+  "recovery_first_delay": "Перше нагадування через",
+  "recovery_count": "Нагадування",
+  "recovery_repeat_every": "Повторювати кожні",
+  "recovery_at_time": "У заданий час",
+  "recovery_time": "Час",
+  "hours_short": "{n} год",
+  "@hours_short": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  }
+}
