@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Projektansicht",
+  "projects_view_sub": "Wie Projekte unter Aufgaben erscheinen",
+  "projects_view_folders": "Ordner",
+  "projects_view_list": "Liste",
+  "projects_view_cards": "Karten",
+  "projects_view_chips": "Chips",
+  "todo_project_done_of": "{done} von {total} erledigt",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Ziehe die Projekte an die gewünschte Stelle."
 }

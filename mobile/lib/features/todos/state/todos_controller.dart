@@ -166,6 +166,18 @@ class TodosController extends ChangeNotifier {
   int projectCount(String projectId) =>
       _todos.where((t) => !t.done && t.project == projectId).length;
 
+  /// Done and total to-dos of a project ('' = the ones without a project).
+  ({int done, int total}) projectProgress(String projectId) {
+    var done = 0;
+    var total = 0;
+    for (final todo in _todos) {
+      if (todo.project != projectId) continue;
+      total++;
+      if (todo.done) done++;
+    }
+    return (done: done, total: total);
+  }
+
   int get looseCount => _todos.where((t) => !t.done && t.project.isEmpty).length;
 
   Future<void> clearCompleted() async {

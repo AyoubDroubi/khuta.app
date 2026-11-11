@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
+import 'package:khuta/features/todos/data/projects_view.dart';
+import 'package:khuta/features/todos/data/projects_view_labels.dart';
 import 'package:khuta/features/recovery/widgets/recovery_threshold_dialog.dart';
 import 'package:khuta/app/theme/app_tokens.dart';
 import 'package:khuta/core/extensions/inset_extensions.dart';
@@ -469,6 +471,20 @@ class _PreferencesPage extends StatelessWidget {
               trailing: _SoftSwitch(
                 value: settings.sortCompletedLast,
                 onChanged: settings.setSortCompletedLast,
+              ),
+            ),
+            SoftRow(
+              icon: LucideIcons.folderKanban,
+              title: context.l10n.projects_view,
+              subtitle: context.l10n.projects_view_sub,
+              value: projectsViewLabels(context)[settings.projectsView.index],
+              onTap: () => showOptionSheet(
+                context,
+                title: context.l10n.projects_view,
+                options: projectsViewLabels(context),
+                index: settings.projectsView.index,
+                onSelected: (i) =>
+                    settings.setProjectsView(ProjectsView.values[i]),
               ),
             ),
             SoftRow(

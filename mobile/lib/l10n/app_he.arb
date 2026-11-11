@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "תצוגת פרויקטים",
+  "projects_view_sub": "איך פרויקטים מופיעים במשימות",
+  "projects_view_folders": "תיקיות",
+  "projects_view_list": "רשימה",
+  "projects_view_cards": "כרטיסים",
+  "projects_view_chips": "תגיות",
+  "todo_project_done_of": "{done} מתוך {total} הושלמו",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "גררו את הפרויקטים למקום שתרצו."
 }

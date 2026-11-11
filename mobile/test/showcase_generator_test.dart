@@ -21,6 +21,9 @@ import 'package:khuta/features/island/pages/island_page.dart';
 import 'package:khuta/features/recovery/data/recovery_config.dart';
 import 'package:khuta/features/settings/pages/about_page.dart';
 import 'package:khuta/features/statistics/pages/statistics_page.dart';
+import 'package:khuta/features/todos/data/todo.dart';
+import 'package:khuta/features/todos/data/todo_tag.dart';
+import 'package:khuta/features/todos/pages/todos_page.dart';
 
 import 'support/app_harness.dart';
 
@@ -141,6 +144,43 @@ List<Habit> _demo(bool ar) {
   ];
 }
 
+const _tasksView = {
+  '9_tasks_folders': 0,
+  '9_tasks_list': 1,
+  '9_tasks_cards': 2,
+  '9_tasks_chips': 3,
+};
+
+Future<void> _seedTasks(WidgetTester tester, bool ar) => tester.runAsync(() async {
+      final now = AppClock.now();
+      final projects = [
+        ('p0', ar ? 'إنفينيت تكنولوجي' : 'Infinite Technology', const Color(0xFFF08032), 'briefcase'),
+        ('p1', ar ? 'شخصي' : 'Personal', const Color(0xFF0A84FF), 'home'),
+        ('p2', ar ? 'دراسة' : 'Study', const Color(0xFFBF5AF2), 'brain'),
+      ];
+      for (final (i, p) in projects.indexed) {
+        await LocalStore.writeTodoTag(TodoTag(
+            id: p.$1, name: p.$2, color: p.$3, icon: p.$4, order: i, kind: TodoTagKind.project));
+      }
+      String t(String a, String e) => ar ? a : e;
+      final items = [
+        ('p0', t('تسليم عرض المشروع', 'Send the project proposal'), false),
+        ('p0', t('مراجعة الميزانية', 'Review the budget'), false),
+        ('p0', t('اجتماع الفريق', 'Team meeting'), true),
+        ('p0', t('تحديث الموقع', 'Update the website'), true),
+        ('p1', t('شراء الهدايا', 'Buy the gifts'), false),
+        ('p1', t('حجز موعد الطبيب', 'Book the doctor'), false),
+        ('p1', t('تجديد الاشتراك', 'Renew the subscription'), true),
+        ('p2', t('مراجعة الفصل الثالث', 'Revise chapter three'), false),
+        ('p2', t('تمارين الرياضيات', 'Maths exercises'), true),
+        ('', t('اتصال بالسباك', 'Call the plumber'), false),
+      ];
+      for (final (i, it) in items.indexed) {
+        await LocalStore.writeTodo(Todo(
+            id: 'd$i', text: it.$2, project: it.$1, done: it.$3, createdAt: now));
+      }
+    });
+
 void main() {
   final out = Platform.environment['SHOWCASE_OUT'];
   useEmptyStore();
@@ -157,6 +197,10 @@ void main() {
     '6_about': (ar) => const AboutPage(),
     '7_hijri_form': (ar) => HabitFormPage(habit: _demo(ar).first),
     '8_focus': (ar) => const FocusPage(),
+    '9_tasks_folders': (ar) => const TodosPage(),
+    '9_tasks_list': (ar) => const TodosPage(),
+    '9_tasks_cards': (ar) => const TodosPage(),
+    '9_tasks_chips': (ar) => const TodosPage(),
   };
   for (final lang in ['ar', 'en']) {
     for (final theme in [ThemeMode.light, ThemeMode.dark]) {
@@ -174,6 +218,7 @@ void main() {
             await tester.runAsync(_fonts);
             await tester.runAsync(IslandArt.load);
             await seedHabits(tester, _demo(lang == 'ar'));
+            if (screen.key.startsWith('9_')) await _seedTasks(tester, lang == 'ar');
             // A partly built island: every fourth piece of the catalogue.
             final owned = [for (var i = 0; i < islandPieces.length; i += 4) islandPieces[i]];
             await tester.runAsync(() async {
@@ -190,6 +235,7 @@ void main() {
                 'planningEnabled': true,
                 'islandEnabled': true,
                 'locale': lang,
+                if (_tasksView[screen.key] case final v?) 'todoProjectsView': v,
                 'profileName': lang == 'ar' ? 'أيوب' : 'Ayoub',
               },
               themeMode: theme,

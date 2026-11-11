@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "프로젝트 보기",
+  "projects_view_sub": "할 일에서 프로젝트가 보이는 방식",
+  "projects_view_folders": "폴더",
+  "projects_view_list": "목록",
+  "projects_view_cards": "카드",
+  "projects_view_chips": "칩",
+  "todo_project_done_of": "{total}개 중 {done}개 완료",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "프로젝트를 원하는 위치로 끌어 놓으세요."
 }

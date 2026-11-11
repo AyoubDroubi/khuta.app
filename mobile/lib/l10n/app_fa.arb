@@ -667,6 +667,13 @@
   "focus_restart_title": "این دور دوباره شروع شود؟",
   "focus_restart_body": "زمانی که در این دور متمرکز بوده‌اید از دست می‌رود.",
   "focus_saved": "{time} ثبت شد",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
   "focus_total": "زمان تمرکز",
   "focus_sessions": "جلسه‌ها",
   "focus_stop_title": "جلسه پایان یابد؟",
@@ -678,13 +685,6 @@
   "unit_minutes": "دقیقه",
   "unit_seconds": "ثانیه",
   "focus_target_reached": "به هدف رسیدید",
-  "@focus_saved": {
-    "placeholders": {
-      "time": {
-        "type": "String"
-      }
-    }
-  },
   "focus_pause": "توقف",
   "focus_resume": "ادامه",
   "focus_sound": "صدا",
@@ -693,13 +693,6 @@
   "focus_tasks": "فهرست زیرکار",
   "focus_custom_duration": "سفارشی",
   "focus_end_short": "{time} تا هدف کم دارید.",
-  "focus_end_tasks": "{count} کار هنوز تیک نخورده است.",
-  "focus_end_reached": "به هدف رسیدید. عادت انجام‌شده علامت می‌خورد.",
-  "focus_end_keep": "ادامه بده",
-  "focus_end_anyway": "به هر حال پایان",
-  "focus_end_complete": "علامت انجام‌شده",
-  "focus_end_add_time": "افزودن زمان تمرکز",
-  "focus_amount_added": "{amount} به {habit} اضافه شد",
   "@focus_end_short": {
     "placeholders": {
       "time": {
@@ -707,6 +700,7 @@
       }
     }
   },
+  "focus_end_tasks": "{count} کار هنوز تیک نخورده است.",
   "@focus_end_tasks": {
     "placeholders": {
       "count": {
@@ -714,6 +708,12 @@
       }
     }
   },
+  "focus_end_reached": "به هدف رسیدید. عادت انجام‌شده علامت می‌خورد.",
+  "focus_end_keep": "ادامه بده",
+  "focus_end_anyway": "به هر حال پایان",
+  "focus_end_complete": "علامت انجام‌شده",
+  "focus_end_add_time": "افزودن زمان تمرکز",
+  "focus_amount_added": "{amount} به {habit} اضافه شد",
   "@focus_amount_added": {
     "placeholders": {
       "amount": {
@@ -752,8 +752,25 @@
   "focus_pomodoro_sub": "دورهای تمرکز را با استراحت‌های کوتاه زنجیره کنید",
   "focus_break": "استراحت",
   "focus_round": "دور {n}",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "focus_daily_goal": "هدف تمرکز",
   "focus_goal_today": "{done} از {goal} امروز",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
   "focus_keep_awake": "روشن ماندن صفحه",
   "focus_images_limit": "حداکثر 10 تصویر",
   "select_all": "انتخاب همه",
@@ -835,23 +852,6 @@
     }
   },
   "yesterday": "دیروز",
-  "@focus_round": {
-    "placeholders": {
-      "n": {
-        "type": "int"
-      }
-    }
-  },
-  "@focus_goal_today": {
-    "placeholders": {
-      "done": {
-        "type": "String"
-      },
-      "goal": {
-        "type": "String"
-      }
-    }
-  },
   "notes_hint": "یک عادت را باز کنید و روی یک روز در تقویمش نگه دارید تا یادداشت‌ها را ببینید یا اضافه کنید",
   "app_style": "سبک برنامه",
   "app_style_sub": "ظاهر و حال‌وهوای کل برنامه را انتخاب کنید.",
@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "نمای پروژه‌ها",
+  "projects_view_sub": "نحوه نمایش پروژه‌ها در کارها",
+  "projects_view_folders": "پوشه‌ها",
+  "projects_view_list": "فهرست",
+  "projects_view_cards": "کارت‌ها",
+  "projects_view_chips": "چیپ‌ها",
+  "todo_project_done_of": "{done} از {total} انجام شد",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "پروژه‌ها را به جای دلخواه بکشید."
 }

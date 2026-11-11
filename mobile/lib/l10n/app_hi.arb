@@ -667,6 +667,13 @@
   "focus_restart_title": "यह राउंड फिर शुरू करें?",
   "focus_restart_body": "इस राउंड में आपने जितना फ़ोकस किया, वह समय खो जाएगा।",
   "focus_saved": "{time} दर्ज हुआ",
+  "@focus_saved": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
   "focus_total": "फ़ोकस समय",
   "focus_sessions": "सेशन",
   "focus_stop_title": "सेशन समाप्त करें?",
@@ -678,13 +685,6 @@
   "unit_minutes": "मिनट",
   "unit_seconds": "सेकंड",
   "focus_target_reached": "लक्ष्य पूरा",
-  "@focus_saved": {
-    "placeholders": {
-      "time": {
-        "type": "String"
-      }
-    }
-  },
   "focus_pause": "रोकें",
   "focus_resume": "फिर चलाएँ",
   "focus_sound": "ध्वनि",
@@ -693,13 +693,6 @@
   "focus_tasks": "उप-कार्य सूची",
   "focus_custom_duration": "कस्टम",
   "focus_end_short": "आप लक्ष्य से {time} पीछे हैं।",
-  "focus_end_tasks": "{count} कार्य अभी अनचेक हैं।",
-  "focus_end_reached": "लक्ष्य पूरा हुआ। आदत पूर्ण के रूप में चिह्नित होगी।",
-  "focus_end_keep": "जारी रखें",
-  "focus_end_anyway": "फिर भी समाप्त करें",
-  "focus_end_complete": "पूर्ण चिह्नित करें",
-  "focus_end_add_time": "फ़ोकस समय जोड़ें",
-  "focus_amount_added": "{habit} में {amount} जुड़ा",
   "@focus_end_short": {
     "placeholders": {
       "time": {
@@ -707,6 +700,7 @@
       }
     }
   },
+  "focus_end_tasks": "{count} कार्य अभी अनचेक हैं।",
   "@focus_end_tasks": {
     "placeholders": {
       "count": {
@@ -714,6 +708,12 @@
       }
     }
   },
+  "focus_end_reached": "लक्ष्य पूरा हुआ। आदत पूर्ण के रूप में चिह्नित होगी।",
+  "focus_end_keep": "जारी रखें",
+  "focus_end_anyway": "फिर भी समाप्त करें",
+  "focus_end_complete": "पूर्ण चिह्नित करें",
+  "focus_end_add_time": "फ़ोकस समय जोड़ें",
+  "focus_amount_added": "{habit} में {amount} जुड़ा",
   "@focus_amount_added": {
     "placeholders": {
       "amount": {
@@ -752,8 +752,25 @@
   "focus_pomodoro_sub": "फ़ोकस राउंड को छोटे ब्रेक के साथ जोड़ें",
   "focus_break": "ब्रेक",
   "focus_round": "राउंड {n}",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "focus_daily_goal": "फ़ोकस लक्ष्य",
   "focus_goal_today": "आज {goal} में से {done}",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
   "focus_keep_awake": "स्क्रीन चालू रखें",
   "focus_images_limit": "अधिकतम 10 चित्र",
   "select_all": "सभी चुनें",
@@ -835,23 +852,6 @@
     }
   },
   "yesterday": "कल",
-  "@focus_round": {
-    "placeholders": {
-      "n": {
-        "type": "int"
-      }
-    }
-  },
-  "@focus_goal_today": {
-    "placeholders": {
-      "done": {
-        "type": "String"
-      },
-      "goal": {
-        "type": "String"
-      }
-    }
-  },
   "notes_hint": "आदत खोलें और नोट देखने या जोड़ने के लिए उसके कैलेंडर में किसी दिन को देर तक दबाएँ",
   "app_style": "ऐप शैली",
   "app_style_sub": "चुनें कि पूरा ऐप कैसा दिखे और कैसा लगे।",
@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "प्रोजेक्ट दृश्य",
+  "projects_view_sub": "कार्यों में प्रोजेक्ट कैसे दिखें",
+  "projects_view_folders": "फ़ोल्डर",
+  "projects_view_list": "सूची",
+  "projects_view_cards": "कार्ड",
+  "projects_view_chips": "चिप्स",
+  "todo_project_done_of": "{total} में से {done} पूरे",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "प्रोजेक्ट को अपनी पसंद की जगह खींचें।"
 }

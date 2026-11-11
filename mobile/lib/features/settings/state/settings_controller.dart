@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:khuta/features/todos/data/projects_view.dart';
 import 'package:khuta/features/recovery/data/recovery_plan.dart';
 import 'package:khuta/core/calendar/hijri_schedule.dart';
 import 'package:khuta/app/theme/khuta_palette.dart';
@@ -79,6 +80,9 @@ class SettingsController extends ChangeNotifier {
     _compactCards = LocalStore.setting('compactCards', false);
     _todosEnabled = LocalStore.setting('todosEnabled', true);
     _sortCompletedLast = LocalStore.setting('sortCompletedLast', true);
+    _projectsView = ProjectsView.of(
+      LocalStore.setting('todoProjectsView', ProjectsView.fallback.index),
+    );
     _todayOnly = LocalStore.setting('todayOnly', false);
     _notesEnabled = LocalStore.setting('notesEnabled', true);
     _trackingOption = LocalStore.setting('trackingOption', false);
@@ -160,6 +164,7 @@ class SettingsController extends ChangeNotifier {
   late bool _todosEnabled;
   late int _appStyle;
   late bool _sortCompletedLast;
+  late ProjectsView _projectsView;
   late bool _todayOnly;
   late bool _notesEnabled;
   late bool _islandEnabled;
@@ -704,6 +709,14 @@ class SettingsController extends ChangeNotifier {
   Future<void> setAppStyle(int value) async {
     _appStyle = value;
     await LocalStore.writeSetting('appStyle', value);
+    notifyListeners();
+  }
+
+  ProjectsView get projectsView => _projectsView;
+
+  Future<void> setProjectsView(ProjectsView value) async {
+    _projectsView = value;
+    await LocalStore.writeSetting('todoProjectsView', value.index);
     notifyListeners();
   }
 

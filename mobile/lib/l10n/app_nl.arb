@@ -752,8 +752,25 @@
   "focus_pomodoro_sub": "Koppel focusrondes aan korte pauzes",
   "focus_break": "Pauze",
   "focus_round": "Ronde {n}",
+  "@focus_round": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "focus_daily_goal": "Focusdoel",
   "focus_goal_today": "{done} van {goal} vandaag",
+  "@focus_goal_today": {
+    "placeholders": {
+      "done": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
   "focus_keep_awake": "Scherm aanhouden",
   "focus_images_limit": "Maximaal 10 afbeeldingen",
   "select_all": "Alles selecteren",
@@ -835,23 +852,6 @@
     }
   },
   "yesterday": "Gisteren",
-  "@focus_round": {
-    "placeholders": {
-      "n": {
-        "type": "int"
-      }
-    }
-  },
-  "@focus_goal_today": {
-    "placeholders": {
-      "done": {
-        "type": "String"
-      },
-      "goal": {
-        "type": "String"
-      }
-    }
-  },
   "notes_hint": "Open een gewoonte en houd een dag in de kalender ingedrukt om notities te bekijken of toe te voegen",
   "app_style": "Appstijl",
   "app_style_sub": "Kies hoe de hele app eruitziet en aanvoelt.",
@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Projectweergave",
+  "projects_view_sub": "Hoe projecten in Taken worden getoond",
+  "projects_view_folders": "Mappen",
+  "projects_view_list": "Lijst",
+  "projects_view_cards": "Kaarten",
+  "projects_view_chips": "Chips",
+  "todo_project_done_of": "{done} van {total} klaar",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Sleep de projecten naar de plek die je wilt."
 }

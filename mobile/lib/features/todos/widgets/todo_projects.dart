@@ -13,7 +13,9 @@ import 'package:khuta/features/settings/state/settings_controller.dart';
 import 'package:khuta/features/todos/data/todo_tag.dart';
 import 'package:khuta/features/todos/state/todo_tags_controller.dart';
 import 'package:khuta/features/todos/state/todos_controller.dart';
+import 'package:khuta/features/todos/data/projects_view.dart';
 import 'package:khuta/features/todos/widgets/folder_shape.dart';
+import 'package:khuta/features/todos/widgets/project_tile.dart';
 import 'package:khuta/features/todos/widgets/todo_tag_sheet.dart';
 
 class TodoProjects extends StatefulWidget {
@@ -30,6 +32,9 @@ class _TodoProjectsState extends State<TodoProjects>
   static const _spacing = 16.0;
   static const _folderRatio = 1.28;
   static const _labelHeight = 42.0;
+
+  static double _textGrowth(BuildContext context) =>
+      MediaQuery.textScalerOf(context).scale(1).clamp(1.0, 2.2);
 
   late final AnimationController _wobble = AnimationController(
     vsync: this,
@@ -90,7 +95,9 @@ class _TodoProjectsState extends State<TodoProjects>
   Widget build(BuildContext context) {
     final projects = context.watch<TodoTagsController>().projects;
     final todos = context.watch<TodosController>();
-    final style = context.watch<SettingsController>().appStyle;
+    final settings = context.watch<SettingsController>();
+    final view = settings.projectsView;
+    final style = settings.appStyle;
     final minimal = style == 1;
     final accent =
         minimal ? context.colors.onSurface : context.colors.primary;
@@ -105,28 +112,43 @@ class _TodoProjectsState extends State<TodoProjects>
             accent: accent,
             onLabel: minimal ? context.colors.surface : context.colors.onPrimary,
             style: style,
+            hint: view == ProjectsView.folders
+                ? context.l10n.todo_project_arrange_hint
+                : context.l10n.todo_project_arrange_hint_flat,
             onDone: () => _arrange(false),
           ),
           const SizedBox(height: 14),
         ],
         LayoutBuilder(
           builder: (context, box) {
-            final columns = math.max(2, (box.maxWidth / 178).floor());
+            final columns = switch (view) {
+              ProjectsView.list => 1,
+              ProjectsView.cards => math.max(2, (box.maxWidth / 200).floor()),
+              _ => math.max(2, (box.maxWidth / 178).floor()),
+            };
+            final spacing = view == ProjectsView.folders ? _spacing : 12.0;
             final cellWidth =
-                (box.maxWidth - _spacing * (columns - 1)) / columns;
-            final cellHeight = cellWidth / _folderRatio + _labelHeight;
+                (box.maxWidth - spacing * (columns - 1)) / columns;
+            final cellHeight = switch (view) {
+              ProjectsView.list =>
+                ProjectTile.heightFor(context, card: false),
+              ProjectsView.cards => ProjectTile.heightFor(context, card: true),
+              _ => cellWidth / _folderRatio +
+                  _labelHeight * _textGrowth(context) +
+                  (_textGrowth(context) - 1) * 14,
+            };
             final total = _order.length + (loose > 0 ? 1 : 0);
             final rows = (total / columns).ceil();
 
             Widget place(int index, Key key, Widget child) {
               final row = index ~/ columns;
               final column = index % columns;
-              return AnimatedPositioned(
+              return AnimatedPositionedDirectional(
                 key: key,
                 duration: const Duration(milliseconds: 260),
                 curve: Curves.easeOutCubic,
-                left: column * (cellWidth + _spacing),
-                top: row * (cellHeight + _spacing),
+                start: column * (cellWidth + spacing),
+                top: row * (cellHeight + spacing),
                 width: cellWidth,
                 height: cellHeight,
                 child: child,
@@ -141,6 +163,8 @@ class _TodoProjectsState extends State<TodoProjects>
                   ValueKey(project.id),
                   _ProjectSlot(
                     project: project,
+                    view: view,
+                    progress: todos.projectProgress(project.id),
                     width: cellWidth,
                     height: cellHeight,
                     count: todos.projectCount(project.id),
@@ -168,18 +192,29 @@ class _TodoProjectsState extends State<TodoProjects>
                 place(
                   _order.length,
                   const ValueKey('loose'),
-                  _ProjectCell(
-                    label: context.l10n.todo_project_none,
-                    color: context.tokens.muted,
-                    icon: LucideIcons.inbox,
-                    count: loose,
-                    onTap: () => widget.onOpen(''),
-                  ),
+                  view == ProjectsView.folders
+                      ? _ProjectCell(
+                          label: context.l10n.todo_project_none,
+                          color: context.tokens.muted,
+                          icon: LucideIcons.inbox,
+                          count: loose,
+                          onTap: () => widget.onOpen(''),
+                        )
+                      : ProjectTile(
+                          card: view == ProjectsView.cards,
+                          label: context.l10n.todo_project_none,
+                          color: context.tokens.muted,
+                          icon: LucideIcons.inbox,
+                          open: loose,
+                          done: todos.projectProgress('').done,
+                          total: todos.projectProgress('').total,
+                          onTap: () => widget.onOpen(''),
+                        ),
                 ),
               );
             }
             return SizedBox(
-              height: math.max(0, rows * cellHeight + (rows - 1) * _spacing),
+              height: math.max(0, rows * cellHeight + (rows - 1) * spacing),
               child: Stack(children: slots),
             );
           },
@@ -223,9 +258,11 @@ class _ArrangeBar extends StatelessWidget {
     required this.accent,
     required this.onLabel,
     required this.style,
+    required this.hint,
     required this.onDone,
   });
 
+  final String hint;
   final Color accent;
   final Color onLabel;
   final int style;
@@ -246,7 +283,7 @@ class _ArrangeBar extends StatelessWidget {
           const SizedBox(width: 10),
           Expanded(
             child: Text(
-              context.l10n.todo_project_arrange_hint,
+              hint,
               style: TextStyle(
                 fontSize: 12.5,
                 fontWeight: FontWeight.w600,
@@ -288,6 +325,8 @@ class _ArrangeBar extends StatelessWidget {
 class _ProjectSlot extends StatelessWidget {
   const _ProjectSlot({
     required this.project,
+    required this.view,
+    required this.progress,
     required this.width,
     required this.height,
     required this.count,
@@ -305,6 +344,8 @@ class _ProjectSlot extends StatelessWidget {
   });
 
   final TodoTag project;
+  final ProjectsView view;
+  final ({int done, int total}) progress;
   final double width;
   final double height;
   final int count;
@@ -322,18 +363,33 @@ class _ProjectSlot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cell = _ProjectCell(
-      label: project.name,
-      color: project.color,
-      icon: CategoryIcons.resolve(project.icon),
-      count: count,
-      arranging: arranging,
-      accent: accent,
-      seed: project.id.codeUnits.fold(0, (sum, unit) => sum + unit),
-      onTap: arranging ? null : onOpen,
-      onLongPress: arranging ? null : onMenu,
-      onMenu: arranging ? onEdit : onMenu,
-    );
+    final Widget cell = view == ProjectsView.folders
+        ? _ProjectCell(
+            label: project.name,
+            color: project.color,
+            icon: CategoryIcons.resolve(project.icon),
+            count: count,
+            arranging: arranging,
+            accent: accent,
+            seed: project.id.codeUnits.fold(0, (sum, unit) => sum + unit),
+            onTap: arranging ? null : onOpen,
+            onLongPress: arranging ? null : onMenu,
+            onMenu: arranging ? onEdit : onMenu,
+          )
+        : ProjectTile(
+            card: view == ProjectsView.cards,
+            label: project.name,
+            color: project.color,
+            icon: CategoryIcons.resolve(project.icon),
+            open: count,
+            done: progress.done,
+            total: progress.total,
+            arranging: arranging,
+            accent: accent,
+            onTap: arranging ? null : onOpen,
+            onLongPress: arranging ? null : onMenu,
+            onMenu: arranging ? onEdit : onMenu,
+          );
 
     if (!arranging) return cell;
 

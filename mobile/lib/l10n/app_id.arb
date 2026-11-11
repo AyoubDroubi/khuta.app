@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Tampilan proyek",
+  "projects_view_sub": "Cara proyek muncul di Tugas",
+  "projects_view_folders": "Folder",
+  "projects_view_list": "Daftar",
+  "projects_view_cards": "Kartu",
+  "projects_view_chips": "Chip",
+  "todo_project_done_of": "{done} dari {total} selesai",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Seret proyek ke tempat yang Anda inginkan."
 }

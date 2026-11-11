@@ -3,6 +3,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:provider/provider.dart';
+import 'package:khuta/features/todos/data/projects_view.dart';
+import 'package:khuta/features/todos/data/projects_view_labels.dart';
 import 'package:khuta/features/recovery/widgets/recovery_threshold_dialog.dart';
 import 'package:khuta/app/theme/app_tokens.dart';
 import 'package:khuta/core/extensions/inset_extensions.dart';
@@ -419,6 +421,21 @@ class _ClassicPreferencesPage extends StatelessWidget {
                       options: [context.l10n.off, context.l10n.on],
                       index: settings.sortCompletedLast ? 1 : 0,
                       onChanged: (i) => settings.setSortCompletedLast(i == 1),
+                    ),
+                  ),
+                  settingsDivider(context),
+                  NavRow(
+                    icon: LucideIcons.folderKanban,
+                    title: context.l10n.projects_view,
+                    subtitle: context.l10n.projects_view_sub,
+                    value: projectsViewLabels(context)[settings.projectsView.index],
+                    onTap: () => showOptionSheet(
+                      context,
+                      title: context.l10n.projects_view,
+                      options: projectsViewLabels(context),
+                      index: settings.projectsView.index,
+                      onSelected: (i) =>
+                          settings.setProjectsView(ProjectsView.values[i]),
                     ),
                   ),
                   settingsDivider(context),

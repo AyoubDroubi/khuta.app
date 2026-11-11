@@ -23,6 +23,7 @@ import 'package:khuta/core/express/express_surface.dart';
 import 'package:khuta/features/habits/data/category.dart';
 import 'package:khuta/features/todos/data/todo.dart';
 import 'package:khuta/features/todos/data/todo_groups.dart';
+import 'package:khuta/features/todos/data/projects_view.dart';
 import 'package:khuta/features/todos/data/todo_tag.dart';
 import 'package:khuta/features/todos/state/todo_tags_controller.dart';
 import 'package:khuta/features/todos/state/todos_controller.dart';
@@ -43,7 +44,13 @@ class TodosPage extends StatefulWidget {
 class _TodosPageState extends State<TodosPage> {
   bool _showCompleted = false;
   bool _searching = false;
-  late bool _folders = context.read<TodoTagsController>().projects.isNotEmpty;
+  late bool _folders = !_chips &&
+      context.read<TodoTagsController>().projects.isNotEmpty;
+
+  /// The chips view has no projects screen: the projects are chips above the
+  /// task list.
+  bool get _chips =>
+      context.read<SettingsController>().projectsView == ProjectsView.chips;
   String _query = '';
   String? _tagFilter;
   String? _projectFilter;
@@ -99,7 +106,7 @@ class _TodosPageState extends State<TodosPage> {
   void _closeFolder() => setState(() {
         _projectFilter = null;
         _tagFilter = null;
-        _folders = true;
+        _folders = !_chips;
       });
 
   bool get _filtering =>
@@ -138,7 +145,7 @@ class _TodosPageState extends State<TodosPage> {
     if (!mounted || project == null) return;
     if (!project) return _compose();
     await createProject(context);
-    if (mounted) setState(() => _folders = true);
+    if (mounted) setState(() => _folders = !_chips);
   }
 
   Future<void> _delete(Todo todo) async {
@@ -168,10 +175,12 @@ class _TodosPageState extends State<TodosPage> {
     final express = style.isExpressStyle;
     final todos = context.watch<TodosController>();
     final tags = context.watch<TodoTagsController>();
+    final chips = style.projectsView == ProjectsView.chips;
+    if (chips && _folders) _folders = false;
     if (_projectFilter case final id? when id.isNotEmpty && tags.byId(id) == null) {
       _projectFilter = null;
       _tagFilter = null;
-      _folders = true;
+      _folders = !chips;
     }
     final labels = _projectFilter == null
         ? tags.labels
@@ -210,6 +219,7 @@ class _TodosPageState extends State<TodosPage> {
               )
             : null,
         actions: [
+          if (!chips)
           IconButton(
             tooltip: context.l10n.todo_tags,
             icon: Icon(_folders ? LucideIcons.list : LucideIcons.folder,
@@ -255,7 +265,16 @@ class _TodosPageState extends State<TodosPage> {
                         setState(() => _query = value.trim().toLowerCase()),
                   ),
                 ),
-              if (!_folders && _projectFilter != null)
+              if (chips)
+                _ProjectChips(
+                  selected: _projectFilter,
+                  minimal: minimal,
+                  onSelected: (id) => setState(() {
+                    _projectFilter = id;
+                    _tagFilter = null;
+                  }),
+                ),
+              if (!chips && !_folders && _projectFilter != null)
                 _ProjectBar(
                   project: openProject,
                   minimal: minimal,
@@ -391,6 +410,71 @@ class _TodosPageState extends State<TodosPage> {
 BorderRadius _corners(bool express, int index, int length) => express
     ? expressSlotRadius(index, length)
     : stackedCorners(index, length);
+
+class _ProjectChips extends StatelessWidget {
+  const _ProjectChips({
+    required this.selected,
+    required this.minimal,
+    required this.onSelected,
+  });
+
+  final String? selected;
+  final bool minimal;
+  final ValueChanged<String?> onSelected;
+
+  @override
+  Widget build(BuildContext context) {
+    final todos = context.watch<TodosController>();
+    final projects = context.watch<TodoTagsController>().projects;
+    final loose = todos.looseCount;
+    final edge = minimal ? 22.0 : 16.0;
+    return SizedBox(
+      height: 54,
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        padding: EdgeInsets.fromLTRB(edge, 0, edge, 10),
+        children: [
+          _PlainChip(
+            label: context.l10n.todo_tag_all,
+            icon: LucideIcons.layers,
+            color: context.colors.primary,
+            selected: selected == null,
+            onTap: () => onSelected(null),
+          ),
+          for (final project in projects) ...[
+            const SizedBox(width: 8),
+            TodoTagChip(
+              tag: project,
+              selected: selected == project.id,
+              trailing: '${todos.projectCount(project.id)}',
+              onTap: () =>
+                  onSelected(selected == project.id ? null : project.id),
+              onLongPress: () => editOrDeleteTag(context, project),
+            ),
+          ],
+          if (projects.isNotEmpty && (loose > 0 || selected == '')) ...[
+            const SizedBox(width: 8),
+            _PlainChip(
+              label: '${context.l10n.todo_project_none}  $loose',
+              icon: LucideIcons.inbox,
+              color: context.tokens.muted,
+              selected: selected == '',
+              onTap: () => onSelected(selected == '' ? null : ''),
+            ),
+          ],
+          const SizedBox(width: 8),
+          _PlainChip(
+            label: context.l10n.todo_project_new,
+            icon: LucideIcons.plus,
+            color: context.colors.primary,
+            selected: false,
+            onTap: () => createProject(context),
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 class _TagBar extends StatelessWidget {
   const _TagBar({

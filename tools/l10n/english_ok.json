@@ -23,6 +23,7 @@
   "kind_positive",
   "name",
   "plan_tab",
+  "projects_view_chips",
   "style_minimal",
   "system",
   "theme",
@@ -160,6 +161,7 @@
   "per_week",
   "plan_tab",
   "prefs_privacy",
+  "projects_view_chips",
   "quant_preset_water",
   "sched_interval",
   "streak_unit_week",
@@ -200,6 +202,7 @@
   "island_p_bougainvillea",
   "island_t_coral",
   "kind_positive",
+  "projects_view_chips",
   "todo_tags",
   "total",
   "widgets"

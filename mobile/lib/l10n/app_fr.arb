@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Affichage des projets",
+  "projects_view_sub": "Comment les projets apparaissent dans les tâches",
+  "projects_view_folders": "Dossiers",
+  "projects_view_list": "Liste",
+  "projects_view_cards": "Cartes",
+  "projects_view_chips": "Pastilles",
+  "todo_project_done_of": "{done} sur {total} terminées",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Faites glisser les projets où vous le souhaitez."
 }

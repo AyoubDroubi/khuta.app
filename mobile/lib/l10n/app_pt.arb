@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Vista de projetos",
+  "projects_view_sub": "Como os projetos aparecem em Tarefas",
+  "projects_view_folders": "Pastas",
+  "projects_view_list": "Lista",
+  "projects_view_cards": "Cartões",
+  "projects_view_chips": "Chips",
+  "todo_project_done_of": "{done} de {total} concluídas",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Arraste os projetos para onde quiser."
 }

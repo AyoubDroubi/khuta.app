@@ -1030,5 +1030,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "عرض المشاريع",
+  "projects_view_sub": "كيف تظهر المشاريع في المهام",
+  "projects_view_folders": "مجلدات",
+  "projects_view_list": "قائمة",
+  "projects_view_cards": "بطاقات",
+  "projects_view_chips": "شرائح",
+  "todo_project_done_of": "أُنجز {done} من {total}",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "اسحب المشاريع إلى المكان الذي تريده."
 }

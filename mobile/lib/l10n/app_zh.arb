@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "项目视图",
+  "projects_view_sub": "项目在任务中的显示方式",
+  "projects_view_folders": "文件夹",
+  "projects_view_list": "列表",
+  "projects_view_cards": "卡片",
+  "projects_view_chips": "标签条",
+  "todo_project_done_of": "已完成 {done}/{total}",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "把项目拖到你想要的位置。"
 }

@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Projects view",
+  "projects_view_sub": "How projects appear in Tasks",
+  "projects_view_folders": "Folders",
+  "projects_view_list": "List",
+  "projects_view_cards": "Cards",
+  "projects_view_chips": "Chips",
+  "todo_project_done_of": "{done} of {total} done",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Drag the projects where you want them."
 }

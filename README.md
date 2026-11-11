@@ -47,6 +47,7 @@
 | ⏱️ **Focus sessions** | Pomodoro rounds or one long stretch, tied to a habit and its goal. |
 | 🏝️ **The oasis** | An island you build with your consistency: date palms, mud-plaster houses, a mosque and minaret, windcatchers. |
 | 📓 **Journal, goals and a daily plan** | Journeys, to-dos and day notes with photos. |
+| 🗂️ **Tasks with projects** | To-dos grouped in projects, shown your way: a list, cards, chips or folders (Settings → Preferences). |
 | 🎨 **Three styles, light and dark** | Classic, Minimal and Express, a complete right-to-left Arabic interface, Western digits (0–9). |
 | 🔔 **Reminders and widgets** | Local notifications and home-screen widgets. |
 | 💾 **Backup and import** | All your data and photos in one file, automatic backups to a folder you choose, and import from Loop Habit Tracker, HabitKit, Habitica, HabitBull or any CSV. |

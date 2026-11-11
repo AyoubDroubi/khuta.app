@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Вигляд проєктів",
+  "projects_view_sub": "Як проєкти відображаються в завданнях",
+  "projects_view_folders": "Папки",
+  "projects_view_list": "Список",
+  "projects_view_cards": "Картки",
+  "projects_view_chips": "Чипи",
+  "todo_project_done_of": "Виконано {done} з {total}",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Перетягніть проєкти, куди потрібно."
 }

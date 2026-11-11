@@ -1622,5 +1622,23 @@
         "type": "int"
       }
     }
-  }
+  },
+  "projects_view": "Вид проектов",
+  "projects_view_sub": "Как проекты отображаются в задачах",
+  "projects_view_folders": "Папки",
+  "projects_view_list": "Список",
+  "projects_view_cards": "Карточки",
+  "projects_view_chips": "Чипы",
+  "todo_project_done_of": "Выполнено {done} из {total}",
+  "@todo_project_done_of": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "todo_project_arrange_hint_flat": "Перетащите проекты туда, куда нужно."
 }
