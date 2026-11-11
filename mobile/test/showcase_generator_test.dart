@@ -10,7 +10,9 @@ import 'package:khuta/core/extensions/date_extensions.dart';
 import 'package:khuta/features/habits/data/completion.dart';
 import 'package:khuta/features/habits/data/habit.dart';
 import 'package:khuta/features/habits/data/substep.dart';
+import 'package:khuta/features/focus/pages/focus_page.dart';
 import 'package:khuta/features/habits/pages/habit_details_page.dart';
+import 'package:khuta/features/habits/pages/habit_form_page.dart';
 import 'package:khuta/features/habits/pages/home_page.dart';
 import 'package:khuta/core/database/local_store.dart';
 import 'package:khuta/features/island/data/island_art.dart';
@@ -95,7 +97,15 @@ List<Habit> _demo(bool ar) {
       now.dayKey: Completion(date: now.dayKey, count: 5, hour: 13),
     },
   );
+  final fasting = testHabit(id: 'g', name: t('صيام رمضان', 'Ramadan fasting'), order: 6,
+          color: const Color(0xFF94492F), daysOld: 400)
+      .copyWith(
+    icon: 'moon',
+    scheduleCalendar: ScheduleCalendar.hijri,
+    hijriMonths: const [9],
+  );
   return [
+    fasting,
     testHabit(id: 'a', name: t('قراءة', 'Read 20 pages'), order: 0, color: const Color(0xFF94492F), daysOld: 140)
         .copyWith(icon: 'bookOpen', completions: _history(130, 1)),
     water,
@@ -138,13 +148,15 @@ void main() {
     for (final s in (Platform.environment['SHOWCASE_STYLES'] ?? 'express').split(','))
       s: {'classic': 0, 'minimal': 1, 'express': 2}[s]!,
   };
-  final screens = <String, Widget Function()>{
-    '1_today': () => const HomePage(),
-    '2_details': () => const HabitDetailsPage(habitId: 'b'),
-    '3_stats': () => const StatisticsPage(),
-    '4_island': () => const IslandPage(),
-    '5_habit': () => const HabitDetailsPage(habitId: 'a'),
-    '6_about': () => const AboutPage(),
+  final screens = <String, Widget Function(bool ar)>{
+    '1_today': (ar) => const HomePage(),
+    '2_details': (ar) => const HabitDetailsPage(habitId: 'b'),
+    '3_stats': (ar) => const StatisticsPage(),
+    '4_island': (ar) => const IslandPage(),
+    '5_habit': (ar) => const HabitDetailsPage(habitId: 'a'),
+    '6_about': (ar) => const AboutPage(),
+    '7_hijri_form': (ar) => HabitFormPage(habit: _demo(ar).first),
+    '8_focus': (ar) => const FocusPage(),
   };
   for (final lang in ['ar', 'en']) {
     for (final theme in [ThemeMode.light, ThemeMode.dark]) {
@@ -152,6 +164,13 @@ void main() {
         for (final screen in screens.entries) {
           final name = '${lang}_${style.key}_${theme.name}_${screen.key}';
           testWidgets(name, (tester) async {
+            // The focus screen keeps the screen awake; answer the plugin.
+            for (final api in ['toggle', 'isEnabled']) {
+              tester.binding.defaultBinaryMessenger.setMockMessageHandler(
+                'dev.flutter.pigeon.wakelock_plus_platform_interface.WakelockPlusApi.$api',
+                (message) async => const StandardMessageCodec().encodeMessage(<Object?>[api == 'isEnabled' ? false : null]),
+              );
+            }
             await tester.runAsync(_fonts);
             await tester.runAsync(IslandArt.load);
             await seedHabits(tester, _demo(lang == 'ar'));
@@ -165,7 +184,7 @@ void main() {
             await pumpScreen(
               tester,
               // Screens paint over the app background, as in the app.
-              AppBackground(child: screen.value()),
+              AppBackground(child: screen.value(lang == 'ar')),
               settings: {
                 'appStyle': style.value,
                 'planningEnabled': true,
@@ -180,6 +199,22 @@ void main() {
             for (var i = 0; i < 30; i++) {
               await tester.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 40)));
               await tester.pump(const Duration(milliseconds: 100));
+            }
+            if (screen.key == '7_hijri_form') {
+              // Show the Hijri months, not the top of the form.
+              final hint = find.textContaining(lang == 'ar' ? 'مطلوبة كل يوم في الأشهر' : 'Due every day of the chosen months');
+              final list = find.byWidgetPredicate((w) => w is Scrollable && w.axis == Axis.vertical).first;
+              final position = tester.state<ScrollableState>(list).position;
+              for (var y = 0.0; hint.evaluate().isEmpty && y < position.maxScrollExtent; y += 200) {
+                position.jumpTo(y);
+                await tester.pump(const Duration(milliseconds: 50));
+              }
+              if (hint.evaluate().isNotEmpty) {
+                await tester.ensureVisible(hint.first);
+                await tester.pump(const Duration(milliseconds: 100));
+                position.jumpTo((position.pixels - 430).clamp(0, position.maxScrollExtent));
+                await tester.pump(const Duration(milliseconds: 600));
+              }
             }
             final boundary = tester.renderObject<RenderRepaintBoundary>(find.byType(RepaintBoundary).first);
             final bytes = await tester.runAsync(() async {

@@ -20,7 +20,7 @@
   <img alt="License GPL-3.0" src="https://img.shields.io/badge/License-GPL--3.0-7C3AED?style=flat-square" />
 </p>
 
-<sub><a href="#english">English</a> · <a href="#العربية">العربية</a> · <a href="#screenshots">Screenshots</a> · <a href="#install">Install</a> · <a href="#build-from-source">Build</a></sub>
+<sub><a href="#english">English</a> · <a href="#العربية">العربية</a> · <a href="#a-closer-look">A closer look</a> · <a href="#screenshots">Screenshots</a> · <a href="#install">Install</a> · <a href="#build-from-source">Build</a></sub>
 
 <br/><br/>
 
@@ -58,6 +58,29 @@ Your data never leaves your device. No account, no server, no ads, no analytics,
 ### 🌍 Languages
 
 Arabic, English, German, Spanish, Persian, French, Hebrew, Hindi, Indonesian, Korean, Dutch, Polish, Portuguese, Russian, Ukrainian and Chinese. Arabic and English are the source languages; the others have not been reviewed by native speakers yet, so corrections are very welcome ([TRANSLATING.md](TRANSLATING.md)).
+
+---
+
+## A closer look
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/features/02-minimum.png" alt="A minimum that still counts" /></td>
+    <td width="50%"><img src="screenshots/features/03-recovery.png" alt="Fell off? Restart, no guilt" /></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/features/04-hijri.png" alt="Built around the Hijri calendar" /></td>
+    <td><img src="screenshots/features/05-insights.png" alt="See your progress at a glance" /></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/features/06-oasis.png" alt="An oasis that grows with you" /></td>
+    <td><img src="screenshots/features/07-focus.png" alt="Deep focus, tied to your habits" /></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/features/08-arabic-first.png" alt="Truly Arabic-first, 16 languages" /></td>
+    <td><img src="screenshots/features/09-private.png" alt="Private by design" /></td>
+  </tr>
+</table>
 
 ---
 
@@ -118,7 +141,7 @@ mobile/                 Flutter app (Android)
   android/              Android project, widgets (Kotlin)
   test/                 unit and widget tests
 tools/island_art/       generator of the oasis art
-tools/screenshots/      showcase images from the app screens
+tools/screenshots/      showcase images and feature slides from the app screens
 tools/l10n/             translation check (every language, every key)
 docs/                   architecture, design and assets
 ```
