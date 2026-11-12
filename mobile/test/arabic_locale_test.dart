@@ -1,12 +1,10 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 import 'package:khuta/features/settings/settings_actions.dart';
-import 'package:khuta/l10n/app_localizations.dart';
 
 // Arabic is shipped, complete, and uses
 // Western digits.
@@ -58,11 +56,5 @@ void main() {
     final date = DateFormat.yMMMMd('ar').format(DateTime(2026, 11, 8));
     expect(_easternDigits.hasMatch(number), isFalse, reason: number);
     expect(_easternDigits.hasMatch(date), isFalse, reason: date);
-  });
-
-  test('the legal attribution keeps Streak and InlitX in Arabic', () {
-    final strings = lookupAppLocalizations(const Locale('ar'));
-    expect(strings.legal_attribution, contains('Streak'));
-    expect(strings.legal_attribution, contains('InlitX'));
   });
 }

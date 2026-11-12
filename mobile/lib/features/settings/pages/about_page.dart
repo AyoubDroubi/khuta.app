@@ -5,9 +5,7 @@ import 'package:khuta/core/extensions/inset_extensions.dart';
 import 'package:khuta/core/i18n/l10n.dart';
 import 'package:khuta/features/settings/widgets/legal_notices.dart';
 
-/// About: who made the app, and below it where it comes from. This is the
-/// place of the Appropriate Legal Notices (the upstream attribution and the
-/// open source licenses).
+/// About: who made the app, and below it the open source licenses.
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
 

@@ -948,7 +948,6 @@
   "goals_entry_count": "{count, plural, =0{لا أهداف نشطة} =1{هدف نشط واحد} =2{هدفان نشطان} few{{count} أهداف نشطة} many{{count} هدفًا نشطًا} other{{count} هدف نشط}}",
   "goal_sources_count": "{count, plural, =0{لا مصادر} =1{مصدر واحد} =2{مصدران} few{{count} مصادر} many{{count} مصدرًا} other{{count} مصدر}}",
   "goal_source_habits": "العادات",
-  "legal_attribution": "مبني على Streak من InlitX",
   "legal_licenses": "تراخيص المصادر المفتوحة",
   "calendar": "التقويم",
   "calendar_sub": "طريقة عرض التواريخ",

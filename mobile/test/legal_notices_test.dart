@@ -9,12 +9,10 @@ import 'package:khuta/l10n/app_localizations.dart';
 
 import 'support/app_harness.dart';
 
-const _attribution = 'Based on Streak by InlitX';
-
 void main() {
   useEmptyStore();
 
-  testWidgets('the attribution renders in every shipped locale', (
+  testWidgets('the licenses link renders in every shipped locale', (
     tester,
   ) async {
     for (final locale in AppLocalizations.supportedLocales) {
@@ -35,22 +33,9 @@ void main() {
       await tester.pumpAndSettle();
 
       final strings = lookupAppLocalizations(locale);
-      expect(
-        find.text(strings.legal_attribution),
-        findsOneWidget,
-        reason: 'attribution missing for $locale',
-      );
-      expect(strings.legal_attribution, contains('InlitX'));
-      expect(strings.legal_attribution, contains('Streak'));
       expect(find.text(strings.legal_licenses), findsOneWidget);
+      expect(find.textContaining('InlitX'), findsNothing);
     }
-  });
-
-  testWidgets('English uses the exact required notice', (tester) async {
-    expect(
-      lookupAppLocalizations(const Locale('en')).legal_attribution,
-      _attribution,
-    );
   });
 
   for (final style in const {
@@ -59,7 +44,7 @@ void main() {
     2: 'express',
   }.entries) {
     testWidgets(
-      '${style.value}: settings link to About, which shows the notice and the licenses',
+      '${style.value}: settings link to About, which shows the owner and the licenses',
       (tester) async {
         await pumpScreen(
           tester,
@@ -70,15 +55,13 @@ void main() {
         await tester.pump(const Duration(seconds: 1));
         await scrollToEnd(tester);
 
-        // The settings screen itself no longer carries the notice.
-        expect(find.text(_attribution), findsNothing);
         await tester.tap(find.text('About this app'));
         await tester.pump(const Duration(seconds: 1));
         await tester.pump(const Duration(seconds: 1));
 
         expect(find.byType(AboutPage), findsOneWidget);
         expect(find.text('Ayoub Droubi'), findsOneWidget);
-        expect(find.text(_attribution), findsOneWidget);
+        expect(find.textContaining('InlitX'), findsNothing);
         await tester.tap(find.text('Open source licenses'));
         await tester.pump(const Duration(seconds: 1));
         await tester.pump(const Duration(seconds: 1));
@@ -88,7 +71,7 @@ void main() {
   }
 
   for (final locale in const ['en', 'ar', 'de', 'he']) {
-    testWidgets('About shows the owner above the attribution in $locale',
+    testWidgets('About shows the owner above the licenses in $locale',
         (tester) async {
       await pumpScreen(
         tester,
@@ -101,7 +84,7 @@ void main() {
       await tester.pump(const Duration(seconds: 1));
       final strings = lookupAppLocalizations(Locale(locale));
       final owner = tester.getTopLeft(find.text('Ayoub Droubi')).dy;
-      final notice = tester.getTopLeft(find.text(strings.legal_attribution)).dy;
+      final notice = tester.getTopLeft(find.text(strings.legal_licenses)).dy;
       expect(notice, greaterThan(owner));
       expect(tester.takeException(), isNull);
     });
