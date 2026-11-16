@@ -28,6 +28,10 @@ Future<CaptureSaveResult> saveProposedItems(
   final saved = <ProposedItem>[];
   final failed = <ProposedItem>[];
   for (final item in items) {
+    // The controllers add an item to memory before its write finishes, so a
+    // write that fails leaves a ghost in the list. Remember what was there.
+    final todoIds = todos.all.map((t) => t.id).toSet();
+    final entryIds = journal.all.map((e) => e.id).toSet();
     try {
       if (item.kind == ProposedKind.note) {
         await journal.create(
@@ -48,6 +52,17 @@ Future<CaptureSaveResult> saveProposedItems(
       }
       saved.add(item);
     } catch (_) {
+      for (final t in todos.all.where((t) => !todoIds.contains(t.id)).toList()) {
+        try {
+          await todos.remove(t.id);
+        } catch (_) {}
+      }
+      for (final e
+          in journal.all.where((e) => !entryIds.contains(e.id)).toList()) {
+        try {
+          await journal.remove(e.id);
+        } catch (_) {}
+      }
       failed.add(item);
     }
   }

@@ -135,4 +135,68 @@ void main() {
       expect(text.data ?? '', isNot(matches(arabicIndic)));
     }
   });
+
+  testWidgets('review: an importance word shows as a priority and can be cleared',
+      (tester) async {
+    await _open(tester);
+    await _find(tester, 'ضروري اشتري خبز');
+    expect(find.text('High'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('capture_priority_clear_0')));
+    await tester.pumpAndSettle();
+    expect(find.text('High'), findsNothing);
+    await tester.tap(find.byKey(const Key('capture_save')));
+    await tester.pump();
+    await _settleWrites(tester);
+    expect(_todos(tester).all.single.priority.name, 'none');
+  });
+
+  testWidgets('review: a negated importance word shows as low', (tester) async {
+    await _open(tester);
+    await _find(tester, 'مش ضروري اشتري خبز');
+    expect(find.text('Low'), findsOneWidget);
+    expect(find.text('High'), findsNothing);
+  });
+
+  testWidgets('review: a note can be turned into a to-do before saving',
+      (tester) async {
+    await _open(tester);
+    await _find(tester, 'ملاحظة: فكرة تطبيق');
+    expect(find.text('Note'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('capture_kind_0')));
+    await tester.pumpAndSettle();
+    expect(find.text('Note'), findsNothing);
+    await tester.tap(find.byKey(const Key('capture_save')));
+    await tester.pump();
+    await _settleWrites(tester);
+    expect(_todos(tester).all.single.text, 'فكرة تطبيق');
+  });
+
+  testWidgets('review: on a small screen with the keyboard up Save stays visible',
+      (tester) async {
+    await pumpScreen(tester, const TodosPage());
+    tester.view.physicalSize = const Size(720, 1280);
+    tester.view.devicePixelRatio = 2;
+    tester.view.viewInsets = const FakeViewPadding(bottom: 600);
+    addTearDown(tester.view.resetViewInsets);
+    await tester.pumpAndSettle();
+    // The Tasks page behind the sheet overflows by itself at this height; that
+    // is not what is under test.
+    tester.takeException();
+    await tester.tap(find.byTooltip('Quick capture'));
+    await tester.pumpAndSettle();
+    await _find(tester, _headline);
+    expect(tester.takeException(), isNull);
+    final save = tester.getRect(find.byKey(const Key('capture_save')));
+    expect(save.bottom, lessThanOrEqualTo(640 - 300 + 1),
+        reason: 'Save must sit above the keyboard');
+  });
+
+  testWidgets('review: every tap target in the sheet has a label',
+      (tester) async {
+    final handle = tester.ensureSemantics();
+    await _open(tester);
+    await _find(tester, _headline);
+    await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
+    handle.dispose();
+  });
 }

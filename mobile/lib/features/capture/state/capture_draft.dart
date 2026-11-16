@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:khuta/features/capture/data/proposed_item.dart';
 import 'package:khuta/features/capture/state/capture_saver.dart';
 import 'package:khuta/features/journal/state/journal_controller.dart';
+import 'package:khuta/features/todos/data/todo.dart';
 import 'package:khuta/features/todos/state/todos_controller.dart';
 
 /// The editable preview: what the parser proposed, which rows are checked, and
@@ -69,6 +70,21 @@ class CaptureDraft extends ChangeNotifier {
   void removeTag(int i, String id) => _edit(
         i,
         (it) => it.copyWith(tags: [...it.tags]..remove(id)),
+      );
+
+  void clearPriority(int i) =>
+      _edit(i, (it) => it.copyWith(priority: TodoPriority.none));
+
+  /// A note becomes a to-do and back, keeping its title.
+  void toggleKind(int i) => _edit(
+        i,
+        (it) => it.copyWith(
+          kind: it.kind == ProposedKind.note
+              ? ProposedKind.task
+              : ProposedKind.note,
+          priority: it.kind == ProposedKind.task ? TodoPriority.none : null,
+          askedToRemind: it.kind == ProposedKind.task ? false : null,
+        ),
       );
 
   void unmarkRemind(int i) => _edit(i, (it) => it.copyWith(askedToRemind: false));

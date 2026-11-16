@@ -88,7 +88,7 @@ final _dayRules = <(DayWord, RegExp)>[
     ),
   ),
   (DayWord.today, RegExp('${_w('اليوم|الليله|today|tonight')}$_dayPart')),
-  (DayWord.sunday, RegExp('${_w('${_wd}احد|sunday')}$_dayPart')),
+  (DayWord.sunday, RegExp('${_w('$_wdاحد|sunday')}$_dayPart')),
   (DayWord.monday, RegExp('${_w('$_wd(?:اثنين|اتنين)|monday')}$_dayPart')),
   (
     DayWord.tuesday,
@@ -98,9 +98,9 @@ final _dayRules = <(DayWord, RegExp)>[
     DayWord.wednesday,
     RegExp('${_w('$_wd(?:اربعاء|اربعا)|wednesday')}$_dayPart'),
   ),
-  (DayWord.thursday, RegExp('${_w('${_wd}خميس|thursday')}$_dayPart')),
-  (DayWord.friday, RegExp('${_w('${_wd}جمعه|friday')}$_dayPart')),
-  (DayWord.saturday, RegExp('${_w('${_wd}سبت|saturday')}$_dayPart')),
+  (DayWord.thursday, RegExp('${_w('$_wdخميس|thursday')}$_dayPart')),
+  (DayWord.friday, RegExp('${_w('$_wdجمعه|friday')}$_dayPart')),
+  (DayWord.saturday, RegExp('${_w('$_wdسبت|saturday')}$_dayPart')),
 ];
 
 const _hourWords = <String, int>{

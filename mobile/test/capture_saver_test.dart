@@ -31,6 +31,39 @@ class _FailingJournal extends JournalController {
   }
 }
 
+// The real controllers add to memory before the write finishes; a write that
+// then fails leaves an item in the list that was never saved.
+class _GhostTodos extends TodosController {
+  @override
+  Future<Todo> create({
+    required String text,
+    String date = '',
+    int? minutes,
+    TodoPriority priority = TodoPriority.none,
+    List<String> photos = const [],
+    List<String> tags = const [],
+    String project = '',
+    List<TodoStep> steps = const [],
+  }) async {
+    await super.create(text: text, date: date, minutes: minutes);
+    throw StateError('write failed after the item was added');
+  }
+}
+
+class _GhostJournal extends JournalController {
+  @override
+  Future<JournalEntry> create({
+    required String date,
+    required JournalEntryKind kind,
+    required String text,
+    int? minutes,
+    List<String> photos = const [],
+  }) async {
+    await super.create(date: date, kind: kind, text: text);
+    throw StateError('write failed after the entry was added');
+  }
+}
+
 ProposedItem _task(String title, {DateTime? day, int? minutes}) =>
     ProposedItem(kind: ProposedKind.task, title: title, day: day, minutes: minutes);
 
@@ -119,6 +152,44 @@ void main() {
       expect(JournalController().all, isEmpty);
     });
 
+    test('a failed to-do write leaves no ghost in memory or in the store',
+        () async {
+      final todos = _GhostTodos();
+      final item = _task('اشتري خبز');
+      final result = await saveProposedItems(
+        [item],
+        todos: todos,
+        journal: JournalController(),
+        today: _today,
+      );
+      expect(result.failed, [item]);
+      expect(todos.all, isEmpty);
+      expect(TodosController().all, isEmpty);
+    });
+
+    test('a failed note write leaves no ghost either', () async {
+      final journal = _GhostJournal();
+      final result = await saveProposedItems(
+        [_note('فكرة')],
+        todos: TodosController(),
+        journal: journal,
+        today: _today,
+      );
+      expect(result.failed, hasLength(1));
+      expect(journal.all, isEmpty);
+      expect(JournalController().all, isEmpty);
+    });
+
+    test('retrying a failed item does not duplicate it', () async {
+      final draft = CaptureDraft([_task('اشتري خبز')]);
+      final todos = _GhostTodos();
+      await draft.save(todos: todos, journal: JournalController(), today: _today);
+      expect(draft.rows, hasLength(1));
+      final healthy = TodosController();
+      await draft.save(todos: healthy, journal: JournalController(), today: _today);
+      expect(TodosController().all, hasLength(1));
+    });
+
     test('a failed write is reported and the others are still saved', () async {
       final journal = _FailingJournal();
       final boom = _note('boom');
@@ -198,6 +269,40 @@ void main() {
       ]);
       draft.clearProject(0);
       expect(draft.rows.single.item.project, '');
+    });
+
+    test('clearPriority resets a row to no priority', () {
+      final draft = CaptureDraft([
+        const ProposedItem(
+          kind: ProposedKind.task,
+          title: 'x',
+          priority: TodoPriority.high,
+        ),
+      ]);
+      draft.clearPriority(0);
+      expect(draft.rows.single.item.priority, TodoPriority.none);
+    });
+
+    test('toggleKind turns a note into a task and back, keeping the title',
+        () {
+      final draft = CaptureDraft([_note('فكرة')]);
+      draft.toggleKind(0);
+      expect(draft.rows.single.item.kind, ProposedKind.task);
+      expect(draft.rows.single.item.title, 'فكرة');
+      draft.toggleKind(0);
+      expect(draft.rows.single.item.kind, ProposedKind.note);
+    });
+
+    test('a note made a task is saved as a to-do', () async {
+      final draft = CaptureDraft([_note('فكرة')]);
+      draft.toggleKind(0);
+      await draft.save(
+        todos: TodosController(),
+        journal: JournalController(),
+        today: _today,
+      );
+      expect(TodosController().all.single.text, 'فكرة');
+      expect(JournalController().all, isEmpty);
     });
 
     test('removeTag drops one label and keeps the others', () {

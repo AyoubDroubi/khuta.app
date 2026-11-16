@@ -10,6 +10,7 @@ import 'package:khuta/features/capture/data/proposed_item.dart';
 import 'package:khuta/features/capture/data/rule_parser.dart';
 import 'package:khuta/features/capture/state/capture_draft.dart';
 import 'package:khuta/features/journal/state/journal_controller.dart';
+import 'package:khuta/features/todos/data/todo.dart';
 import 'package:khuta/features/todos/state/todo_tags_controller.dart';
 import 'package:khuta/features/todos/state/todos_controller.dart';
 import 'package:khuta/features/todos/widgets/todo_labels.dart';
@@ -45,13 +46,11 @@ class _CapturePage extends StatelessWidget {
         ),
         title: Text(context.l10n.capture_title),
       ),
-      body: SingleChildScrollView(
-        child: Align(
-          alignment: Alignment.topCenter,
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: phoneWidth),
-            child: _CaptureSheet(onClose: AppNavigator.pop),
-          ),
+      body: Align(
+        alignment: Alignment.topCenter,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: phoneWidth),
+          child: _CaptureSheet(onClose: AppNavigator.pop),
         ),
       ),
     );
@@ -143,64 +142,75 @@ class _CaptureSheetState extends State<_CaptureSheet> {
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Icon(LucideIcons.sparkles, size: 18, color: scheme.primary),
-                const SizedBox(width: 8),
-                Text(
-                  context.l10n.capture_title,
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w700,
-                    color: scheme.onSurface,
-                  ),
+            Flexible(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(LucideIcons.sparkles,
+                            size: 18, color: scheme.primary),
+                        const SizedBox(width: 8),
+                        Text(
+                          context.l10n.capture_title,
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                            color: scheme.onSurface,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    TextField(
+                      key: const Key('capture_input'),
+                      controller: _text,
+                      autofocus: true,
+                      minLines: 2,
+                      maxLines: 5,
+                      maxLength: maxCaptureInput,
+                      onChanged: (_) => setState(() {}),
+                      buildCounter: (_,
+                              {required currentLength,
+                              required isFocused,
+                              maxLength}) =>
+                          null,
+                      style: TextStyle(
+                        fontSize: 16,
+                        height: 1.35,
+                        color: scheme.onSurface,
+                      ),
+                      decoration: InputDecoration(
+                        isDense: true,
+                        border: InputBorder.none,
+                        hintText: context.l10n.capture_hint,
+                        hintStyle: TextStyle(color: muted, fontSize: 16),
+                      ),
+                    ),
+                    Align(
+                      alignment: AlignmentDirectional.centerEnd,
+                      child: FilledButton.tonal(
+                        key: const Key('capture_find'),
+                        onPressed: _text.text.trim().isEmpty ? null : _find,
+                        child: Text(context.l10n.capture_find),
+                      ),
+                    ),
+                    if (draft != null)
+                      ListenableBuilder(
+                        listenable: draft,
+                        builder: (context, _) =>
+                            _Rows(draft: draft, found: _found),
+                      ),
+                  ],
                 ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            TextField(
-              key: const Key('capture_input'),
-              controller: _text,
-              autofocus: true,
-              minLines: 2,
-              maxLines: 5,
-              maxLength: maxCaptureInput,
-              onChanged: (_) => setState(() {}),
-              buildCounter: (_,
-                      {required currentLength,
-                      required isFocused,
-                      maxLength}) =>
-                  null,
-              style: TextStyle(
-                fontSize: 16,
-                height: 1.35,
-                color: scheme.onSurface,
-              ),
-              decoration: InputDecoration(
-                isDense: true,
-                border: InputBorder.none,
-                hintText: context.l10n.capture_hint,
-                hintStyle: TextStyle(color: muted, fontSize: 16),
-              ),
-            ),
-            Align(
-              alignment: AlignmentDirectional.centerEnd,
-              child: FilledButton.tonal(
-                key: const Key('capture_find'),
-                onPressed: _text.text.trim().isEmpty ? null : _find,
-                child: Text(context.l10n.capture_find),
               ),
             ),
             if (draft != null)
               ListenableBuilder(
                 listenable: draft,
-                builder: (context, _) => _Preview(
-                  draft: draft,
-                  found: _found,
-                  onSave: _save,
-                ),
+                builder: (context, _) => _SaveBar(draft: draft, onSave: _save),
               ),
           ],
         ),
@@ -209,66 +219,62 @@ class _CaptureSheetState extends State<_CaptureSheet> {
   }
 }
 
-class _Preview extends StatelessWidget {
-  const _Preview({
-    required this.draft,
-    required this.found,
-    required this.onSave,
-  });
+class _Rows extends StatelessWidget {
+  const _Rows({required this.draft, required this.found});
 
   final CaptureDraft draft;
   final int found;
-  final VoidCallback onSave;
 
   @override
   Widget build(BuildContext context) {
     final rows = draft.rows;
-    final checked = rows.where((r) => r.checked).length;
-    final canSave = !draft.saveBlocked && !draft.saving;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        const SizedBox(height: 8),
-        if (found == 0)
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
-            child: Text(
-              context.l10n.capture_nothing,
-              key: const Key('capture_nothing'),
-              style: TextStyle(color: context.tokens.muted),
-            ),
-          )
-        else
-          ConstrainedBox(
-            constraints: BoxConstraints(
-              maxHeight: MediaQuery.sizeOf(context).height * 0.4,
-            ),
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  for (var i = 0; i < rows.length; i++)
-                    _CaptureRow(
-                      key: ValueKey('row_state_${rows[i].id}'),
-                      index: i,
-                      draft: draft,
-                      item: rows[i].item,
-                      checked: rows[i].checked,
-                    ),
-                ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: found == 0
+          ? Padding(
+              padding: const EdgeInsets.symmetric(vertical: 12),
+              child: Text(
+                context.l10n.capture_nothing,
+                key: const Key('capture_nothing'),
+                style: TextStyle(color: context.tokens.muted),
               ),
+            )
+          : Column(
+              children: [
+                for (var i = 0; i < rows.length; i++)
+                  _CaptureRow(
+                    key: ValueKey('row_state_${rows[i].id}'),
+                    index: i,
+                    draft: draft,
+                    item: rows[i].item,
+                    checked: rows[i].checked,
+                  ),
+              ],
             ),
-          ),
-        const SizedBox(height: 8),
-        Align(
-          alignment: AlignmentDirectional.centerEnd,
-          child: FilledButton(
-            key: const Key('capture_save'),
-            onPressed: canSave ? onSave : null,
-            child: Text(context.l10n.capture_save_count(checked)),
-          ),
+    );
+  }
+}
+
+class _SaveBar extends StatelessWidget {
+  const _SaveBar({required this.draft, required this.onSave});
+
+  final CaptureDraft draft;
+  final VoidCallback onSave;
+
+  @override
+  Widget build(BuildContext context) {
+    final checked = draft.rows.where((r) => r.checked).length;
+    final canSave = !draft.saveBlocked && !draft.saving;
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: Align(
+        alignment: AlignmentDirectional.centerEnd,
+        child: FilledButton(
+          key: const Key('capture_save'),
+          onPressed: canSave ? onSave : null,
+          child: Text(context.l10n.capture_save_count(checked)),
         ),
-      ],
+      ),
     );
   }
 }
@@ -352,6 +358,7 @@ class _CaptureRowState extends State<_CaptureRow> {
           Checkbox(
             key: ValueKey('capture_check_$i'),
             value: widget.checked,
+            semanticLabel: item.title,
             onChanged: (_) => draft.toggle(i),
           ),
           Expanded(
@@ -380,9 +387,21 @@ class _CaptureRowState extends State<_CaptureRow> {
                   children: [
                     if (item.kind == ProposedKind.note)
                       _Pill(
+                        key: ValueKey('capture_kind_$i'),
                         icon: LucideIcons.stickyNote,
                         label: context.l10n.capture_note,
                         color: scheme.primary,
+                        onTap: () => draft.toggleKind(i),
+                      ),
+                    if (item.kind == ProposedKind.task &&
+                        item.priority != TodoPriority.none)
+                      _Pill(
+                        key: ValueKey('capture_priority_$i'),
+                        icon: LucideIcons.flag,
+                        label: todoPriorityLabels(context)[item.priority.index],
+                        color: todoPriorityColor(context, item.priority),
+                        removeKey: ValueKey('capture_priority_clear_$i'),
+                        onRemove: () => draft.clearPriority(i),
                       ),
                     _Pill(
                       icon: LucideIcons.calendar,
@@ -464,11 +483,13 @@ class _CaptureRowState extends State<_CaptureRow> {
 
 class _Pill extends StatelessWidget {
   const _Pill({
+    super.key,
     required this.icon,
     required this.label,
     required this.color,
     this.onTap,
     this.onRemove,
+    this.removeKey,
   });
 
   final IconData icon;
@@ -476,6 +497,7 @@ class _Pill extends StatelessWidget {
   final Color color;
   final VoidCallback? onTap;
   final VoidCallback? onRemove;
+  final Key? removeKey;
 
   @override
   Widget build(BuildContext context) {
@@ -483,7 +505,12 @@ class _Pill extends StatelessWidget {
       borderRadius: BorderRadius.circular(20),
       onTap: onTap,
       child: Container(
-        padding: const EdgeInsetsDirectional.fromSTEB(8, 4, 8, 4),
+        padding: EdgeInsetsDirectional.only(
+          start: 8,
+          end: onRemove == null ? 8 : 2,
+          top: 3,
+          bottom: 3,
+        ),
         decoration: BoxDecoration(
           color: color.withValues(alpha: 0.12),
           borderRadius: BorderRadius.circular(20),
@@ -493,14 +520,31 @@ class _Pill extends StatelessWidget {
           children: [
             Icon(icon, size: 14, color: color),
             const SizedBox(width: 4),
-            Text(label, style: TextStyle(fontSize: 12.5, color: color)),
-            if (onRemove != null) ...[
-              const SizedBox(width: 4),
-              GestureDetector(
-                onTap: onRemove,
-                child: Icon(LucideIcons.x, size: 13, color: color),
+            Flexible(
+              child: Text(
+                label,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontSize: 12.5, color: color),
               ),
-            ],
+            ),
+            if (onRemove != null)
+              Semantics(
+                button: true,
+                label: MaterialLocalizations.of(context).deleteButtonTooltip,
+                child: GestureDetector(
+                  key: removeKey,
+                  behavior: HitTestBehavior.opaque,
+                  onTap: onRemove,
+                  child: SizedBox(
+                    width: 24,
+                    height: 24,
+                    child: Center(child: Icon(LucideIcons.x, size: 13, color: color)),
+                  ),
+                ),
+              )
+            else
+              const SizedBox(width: 0),
           ],
         ),
       ),
