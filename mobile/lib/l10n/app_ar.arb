@@ -1047,5 +1047,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "اسحب المشاريع إلى المكان الذي تريده."
+  "todo_project_arrange_hint_flat": "اسحب المشاريع إلى المكان الذي تريده.",
+  "capture_title": "إدخال سريع",
+  "capture_hint": "اكتب ما تريد فعله بكلماتك",
+  "capture_find": "استخراج",
+  "capture_nothing": "لم أجد شيئاً. اكتب ما تريد فعله ومتى.",
+  "capture_save_count": "حفظ {count}",
+  "capture_needs_time": "يحتاج وقتاً",
+  "capture_time_passed": "الوقت مضى",
+  "capture_note": "ملاحظة",
+  "capture_no_date": "بدون تاريخ",
+  "capture_remove_reminder": "ليس تذكيراً",
+  "capture_save_failed": "تعذّر حفظ بعض العناصر"
 }

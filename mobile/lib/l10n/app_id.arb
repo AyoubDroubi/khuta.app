@@ -1639,5 +1639,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "Seret proyek ke tempat yang Anda inginkan."
+  "todo_project_arrange_hint_flat": "Seret proyek ke tempat yang Anda inginkan.",
+  "capture_title": "Catatan cepat",
+  "capture_hint": "Tulis apa yang perlu kamu lakukan dengan kata-katamu sendiri",
+  "capture_find": "Temukan item",
+  "capture_nothing": "Tidak ada yang ditemukan. Tulis apa yang harus dilakukan dan kapan.",
+  "capture_save_count": "Simpan {count}",
+  "capture_needs_time": "Perlu waktu",
+  "capture_time_passed": "Waktu sudah lewat",
+  "capture_note": "Catatan",
+  "capture_no_date": "Tanpa tanggal",
+  "capture_remove_reminder": "Bukan pengingat",
+  "capture_save_failed": "Sebagian item tidak dapat disimpan"
 }

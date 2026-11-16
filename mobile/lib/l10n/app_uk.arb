@@ -1639,5 +1639,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "Перетягніть проєкти, куди потрібно."
+  "todo_project_arrange_hint_flat": "Перетягніть проєкти, куди потрібно.",
+  "capture_title": "Швидкий ввід",
+  "capture_hint": "Напишіть своїми словами, що потрібно зробити",
+  "capture_find": "Знайти пункти",
+  "capture_nothing": "Нічого не знайдено. Напишіть, що зробити і коли.",
+  "capture_save_count": "Зберегти: {count}",
+  "capture_needs_time": "Потрібен час",
+  "capture_time_passed": "Час уже минув",
+  "capture_note": "Нотатка",
+  "capture_no_date": "Без дати",
+  "capture_remove_reminder": "Не нагадування",
+  "capture_save_failed": "Не вдалося зберегти деякі пункти"
 }

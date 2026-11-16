@@ -1639,5 +1639,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "پروژه‌ها را به جای دلخواه بکشید."
+  "todo_project_arrange_hint_flat": "پروژه‌ها را به جای دلخواه بکشید.",
+  "capture_title": "ثبت سریع",
+  "capture_hint": "آنچه باید انجام دهید را با کلمات خودتان بنویسید",
+  "capture_find": "یافتن موارد",
+  "capture_nothing": "چیزی پیدا نشد. بنویسید چه کاری و کِی.",
+  "capture_save_count": "ذخیره {count}",
+  "capture_needs_time": "به ساعت نیاز دارد",
+  "capture_time_passed": "زمان گذشته است",
+  "capture_note": "یادداشت",
+  "capture_no_date": "بدون تاریخ",
+  "capture_remove_reminder": "یادآور نیست",
+  "capture_save_failed": "ذخیره‌ی برخی موارد ممکن نشد"
 }

@@ -1639,5 +1639,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "프로젝트를 원하는 위치로 끌어 놓으세요."
+  "todo_project_arrange_hint_flat": "프로젝트를 원하는 위치로 끌어 놓으세요.",
+  "capture_title": "빠른 입력",
+  "capture_hint": "해야 할 일을 자신의 말로 적어 보세요",
+  "capture_find": "항목 찾기",
+  "capture_nothing": "찾은 항목이 없습니다. 무엇을 언제 할지 적어 보세요.",
+  "capture_save_count": "{count}개 저장",
+  "capture_needs_time": "시간이 필요합니다",
+  "capture_time_passed": "시간이 지났습니다",
+  "capture_note": "메모",
+  "capture_no_date": "날짜 없음",
+  "capture_remove_reminder": "알림 아님",
+  "capture_save_failed": "일부 항목을 저장하지 못했습니다"
 }

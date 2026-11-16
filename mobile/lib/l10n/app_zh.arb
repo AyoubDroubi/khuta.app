@@ -1639,5 +1639,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "把项目拖到你想要的位置。"
+  "todo_project_arrange_hint_flat": "把项目拖到你想要的位置。",
+  "capture_title": "快速输入",
+  "capture_hint": "用你自己的话写下要做的事",
+  "capture_find": "查找事项",
+  "capture_nothing": "没有找到内容。请写下要做什么以及何时做。",
+  "capture_save_count": "保存 {count} 项",
+  "capture_needs_time": "需要设定时间",
+  "capture_time_passed": "时间已过",
+  "capture_note": "笔记",
+  "capture_no_date": "无日期",
+  "capture_remove_reminder": "不是提醒",
+  "capture_save_failed": "部分事项无法保存"
 }

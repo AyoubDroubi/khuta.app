@@ -1639,5 +1639,16 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "Перетащите проекты туда, куда нужно."
+  "todo_project_arrange_hint_flat": "Перетащите проекты туда, куда нужно.",
+  "capture_title": "Быстрый ввод",
+  "capture_hint": "Напишите своими словами, что нужно сделать",
+  "capture_find": "Найти пункты",
+  "capture_nothing": "Ничего не найдено. Напишите, что сделать и когда.",
+  "capture_save_count": "Сохранить: {count}",
+  "capture_needs_time": "Нужно время",
+  "capture_time_passed": "Время уже прошло",
+  "capture_note": "Заметка",
+  "capture_no_date": "Без даты",
+  "capture_remove_reminder": "Не напоминание",
+  "capture_save_failed": "Не удалось сохранить некоторые пункты"
 }
