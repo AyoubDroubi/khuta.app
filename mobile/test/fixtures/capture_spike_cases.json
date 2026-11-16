@@ -1,0 +1,370 @@
+[
+ {
+  "t": "بكرة عندي اجتماع الساعة 10 الصبح",
+  "g": [
+   {
+    "type": "task",
+    "kw": "اجتماع",
+    "day": "tomorrow",
+    "time": "10:00",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "ذكرني أتصل بأمي الساعة 5 العصر",
+  "g": [
+   {
+    "type": "task",
+    "kw": "أمي",
+    "day": "today",
+    "time": "17:00",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "بدي أشتري هدية وأحجز عند الدكتور يوم الخميس",
+  "g": [
+   {
+    "type": "task",
+    "kw": "هدية",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "دكتور",
+    "day": "thu",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "الخميس الساعة 5 العصر اجتماع مهم مع المدير وبعدها ذكرني أدفع الفاتورة",
+  "g": [
+   {
+    "type": "task",
+    "kw": "اجتماع",
+    "day": "thu",
+    "time": "17:00",
+    "prio": "high",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "فاتورة",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "ضروري جدا أخلص تقرير المشروع اليوم",
+  "g": [
+   {
+    "type": "task",
+    "kw": "تقرير",
+    "day": "today",
+    "time": "",
+    "prio": "high",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "سجل ملاحظة: فكرة تطبيق للتوصيل للقرى",
+  "g": [
+   {
+    "type": "note",
+    "kw": "فكرة",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "بعد بكرة عندي موعد أسنان الساعة 9 الصبح",
+  "g": [
+   {
+    "type": "task",
+    "kw": "أسنان",
+    "day": "day_after_tomorrow",
+    "time": "09:00",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "نبهني الساعة 8 بالليل آخذ الدواء",
+  "g": [
+   {
+    "type": "task",
+    "kw": "دواء",
+    "day": "today",
+    "time": "20:00",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "الأحد لازم أرجع الكتب للمكتبة",
+  "g": [
+   {
+    "type": "task",
+    "kw": "كتب",
+    "day": "sun",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "بكرة الصبح رياضة وبعدين أراجع الدرس",
+  "g": [
+   {
+    "type": "task",
+    "kw": "رياضة",
+    "day": "tomorrow",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "درس",
+    "day": "tomorrow",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "ذكرني بكرة أكلم أبو احمد بخصوص السيارة",
+  "g": [
+   {
+    "type": "task",
+    "kw": "أحمد",
+    "day": "tomorrow",
+    "time": "",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "عندي امتحان السبت الساعة 11 الصبح، ولازم أذاكر الليلة",
+  "g": [
+   {
+    "type": "task",
+    "kw": "امتحان",
+    "day": "sat",
+    "time": "11:00",
+    "prio": "none",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "أذاكر",
+    "day": "today",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "اليوم الساعة 3 العصر غسيل السيارة",
+  "g": [
+   {
+    "type": "task",
+    "kw": "غسيل",
+    "day": "today",
+    "time": "15:00",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "مش مهم بس لو فضيت بدي أرتب المكتب",
+  "g": [
+   {
+    "type": "task",
+    "kw": "أرتب",
+    "day": "",
+    "time": "",
+    "prio": "low",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "ملاحظة: كلمة سر الواي فاي الجديدة عند الجيران",
+  "g": [
+   {
+    "type": "note",
+    "kw": "واي",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "Tomorrow at 2 pm call the bank and remind me to send the report",
+  "g": [
+   {
+    "type": "task",
+    "kw": "bank",
+    "day": "tomorrow",
+    "time": "14:00",
+    "prio": "none",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "report",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "الجمعة بعد الصلاة زيارة الجدة",
+  "g": [
+   {
+    "type": "task",
+    "kw": "الجدة",
+    "day": "fri",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "ذكرني الساعة 6 الصبح أصحى أمي للمطار",
+  "g": [
+   {
+    "type": "task",
+    "kw": "مطار",
+    "day": "tomorrow",
+    "time": "06:00",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "الاثنين دوام وعندي تسليم مشروع الساعة 12 الظهر، عاجل",
+  "g": [
+   {
+    "type": "task",
+    "kw": "تسليم",
+    "day": "mon",
+    "time": "12:00",
+    "prio": "high",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "بدي أدفع القسط وأجدد الإقامة وأشتري خبز",
+  "g": [
+   {
+    "type": "task",
+    "kw": "قسط",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "إقامة",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   },
+   {
+    "type": "task",
+    "kw": "خبز",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "الثلاثاء الساعة 7 المسا اجتماع الأهل",
+  "g": [
+   {
+    "type": "task",
+    "kw": "اجتماع",
+    "day": "tue",
+    "time": "19:00",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "الأربعاء الصبح ذكرني أعمل نسخة احتياطية للصور",
+  "g": [
+   {
+    "type": "task",
+    "kw": "نسخة",
+    "day": "wed",
+    "time": "",
+    "prio": "none",
+    "remind": true
+   }
+  ]
+ },
+ {
+  "t": "يا رب أخلص هالأسبوع مشروع التخرج، مهم كتير",
+  "g": [
+   {
+    "type": "task",
+    "kw": "مشروع",
+    "day": "",
+    "time": "",
+    "prio": "high",
+    "remind": false
+   }
+  ]
+ },
+ {
+  "t": "كل ما أتذكر: أسأل خالد عن رقم المحامي",
+  "g": [
+   {
+    "type": "note",
+    "kw": "خالد",
+    "day": "",
+    "time": "",
+    "prio": "none",
+    "remind": false
+   }
+  ]
+ }
+]
