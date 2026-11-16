@@ -141,6 +141,41 @@ void main() {
     }
   });
 
+  group('review: a day or time said in another clause', () {
+    test('a day in the next clause reaches the item with a bare time', () async {
+      final items = await _parse('اجتماع الساعة 5 العصر، يوم الخميس');
+      expect(items, hasLength(1));
+      expect(items.single.day, DateTime(2026, 11, 19));
+      expect(items.single.minutes, 1020);
+    });
+
+    test('a time in the next clause is resolved against the first day', () async {
+      final items = await _parse('اجتماع بكرة، الساعة 12 بالليل');
+      expect(items, hasLength(1));
+      expect(items.single.day, DateTime(2026, 11, 18));
+      expect(items.single.minutes, 0);
+    });
+
+    test('a leading clause with only a day and time goes to the next item',
+        () async {
+      final items = await _parse('بكرة الساعة 5 العصر، اجتماع مع أحمد');
+      expect(items, hasLength(1));
+      expect(items.single.title, contains('اجتماع'));
+      expect(items.single.day, DateTime(2026, 11, 17));
+      expect(items.single.minutes, 1020);
+    });
+
+    test('a leading day-only clause too', () async {
+      final items = await _parse('بكرة الصبح، اشتري خبز');
+      expect(items.single.day, DateTime(2026, 11, 17));
+    });
+
+    test('a leading importance-only clause too', () async {
+      final items = await _parse('ضروري جدا، اشتري خبز');
+      expect(items.single.priority, TodoPriority.high);
+    });
+  });
+
   test('a note is a note, with no priority', () async {
     final items = await _parse('سجل ملاحظة: فكرة تطبيق للتوصيل للقرى');
     expect(items, hasLength(1));

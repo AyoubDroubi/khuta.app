@@ -94,6 +94,25 @@ void main() {
     expect(splitClauses('ملح، فلفل'), ['ملح فلفل']);
   });
 
+  test('a word that starts with و keeps its letter after a separator', () {
+    expect(splitClauses('اشتري خبز، ورق عنب'), ['اشتري خبز', 'ورق عنب']);
+    expect(splitClauses('اشتري خبز، واجب الرياضيات'),
+        ['اشتري خبز', 'واجب الرياضيات']);
+    expect(splitClauses('اشتري خبز. وصل الاولاد'),
+        ['اشتري خبز', 'وصل الاولاد']);
+    expect(splitClauses('اشتري خبز، وقت الصلاة'), ['اشتري خبز', 'وقت الصلاة']);
+  });
+
+  test('an abbreviation does not end a sentence', () {
+    expect(splitClauses('زور د. أحمد بكرة'), ['زور د. أحمد بكرة']);
+    expect(splitClauses('Call Dr. Smith at 3pm'), ['Call Dr. Smith at 3pm']);
+  });
+
+  test('a real sentence end still splits', () {
+    expect(splitClauses('اشتري خبز. اتصل بأمي'), ['اشتري خبز', 'اتصل بأمي']);
+    expect(splitClauses('buy milk. call mom'), ['buy milk', 'call mom']);
+  });
+
   test('empty and separator-only input give no clauses', () {
     expect(splitClauses(''), isEmpty);
     expect(splitClauses('   '), isEmpty);

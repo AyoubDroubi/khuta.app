@@ -16,7 +16,8 @@ String _w(String body) => '(?<![$_letters])(?:$body)(?![$_letters])';
 const _intensifier = r'(?:\s+(?:جدا|كتير|كثير|very))?';
 
 final _low = RegExp(
-  _w(r'مش\s+مهم|مو\s+مهم|غير\s+مهم|لو\s+فضيت|لو\s+فاضي|not\s+important'),
+  _w(r'(?:مش|مو|غير|ليس)\s+(?:مهم|ضروري|ضروره|عاجل)|'
+      r'not\s+(?:important|urgent)|لو\s+فضيت|لو\s+فاضي'),
 );
 final _high = RegExp('${_w('مهم|ضروري|ضروره|عاجل|urgent|important|asap')}'
     '$_intensifier');
@@ -24,10 +25,12 @@ final _remind = RegExp(_w('ذكرني|نبهني|remind\\s+me'));
 final _remindCut = RegExp(
   '${_w(r'ذكرني|نبهني|remind\s+me')}(?:\\s+(?:on|at|to))*',
 );
-final _note = RegExp(_w(r'ملاحظه|note|كل\s+ما\s+اتذكر|كلما\s+تذكرت'));
-final _noteCut = RegExp(
-  '(?:${_w('سجل')}\\s+)?${_w(r'ملاحظه|note|كل\s+ما\s+اتذكر|كلما\s+تذكرت')}',
+// Only at the start of the clause: "رد على ملاحظة أحمد" and "send a note to
+// Sara" are tasks that mention a note.
+final _note = RegExp(
+  '^\\s*(?:(?:سجل\\s+)?(?:ملاحظه|note)(?![$_letters])|كل\\s+ما\\s+اتذكر|كلما\\s+تذكرت)',
 );
+final _noteCut = _note;
 
 final _filler = RegExp(
   '^\\s*(?:و\\s*)?(?:بدي|بدنا|لازم|عندي|محتاج|i\\s+need\\s+to|i\\s+have\\s+to|'

@@ -7,7 +7,7 @@ final _today = DateTime(2026, 11, 16);
 final _now = DateTime(2026, 11, 16, 9, 0);
 
 ResolvedWhen _r(String text, {DateTime? today, DateTime? now}) => resolveWhen(
-      findWhen(foldLetters(text)),
+      findWhen(foldLetters(stripMarks(text))),
       today: today ?? _today,
       now: now ?? _now,
     );
@@ -150,6 +150,97 @@ void main() {
     test('a bare time that has passed on the wall clock rolls forward', () {
       final r = _r('الساعة 5 العصر', today: logicalToday, now: late);
       expect(r.day, _d(16));
+    });
+  });
+
+  group('review: spellings of tomorrow', () {
+    test('بكرا and the other common spellings', () {
+      for (final t in ['بكرا', 'بكرى', 'غدا', 'غداً', 'الغد', 'في الغد']) {
+        expect(_r('$t عندي اجتماع').day, _d(17), reason: t);
+      }
+    });
+
+    test('the day after tomorrow in every spelling, never tomorrow', () {
+      for (final t in ['بعد بكرا', 'بعد غد', 'بعد غداً', 'بعد الغد']) {
+        expect(_r('$t موعد الطبيب').day, _d(18), reason: t);
+      }
+    });
+  });
+
+  group('review: a period word that is not right after the digits', () {
+    final cases = <String, int>{
+      'بكرة العصر الساعة 5 اجتماع': 1020,
+      'بكرة بالليل الساعة 9 عشا': 1260,
+      'اجتماع الساعة 3 بعد الظهر': 900,
+      'الليلة الساعة 9 فيلم': 1260,
+      'tonight at 9 pm movie': 1260,
+      'الساعة 5 ونص العصر': 1050,
+      'الساعة 5 وربع العصر': 1035,
+      'الساعة 6 الا ربع المسا': 1065,
+      'at 5 p.m.': 1020,
+      'الساعة 8 المغرب': 1200,
+      'الساعة 8 العشاء': 1200,
+      'الساعة 7 الصباح': 420,
+    };
+    cases.forEach((text, minutes) {
+      test('"$text" is $minutes minutes', () {
+        expect(_r(text).minutes, minutes);
+      });
+    });
+
+    test('the day phrase keeps its period out of the title spans', () {
+      final text = foldLetters('بكرة العصر الساعة 5 اجتماع');
+      final m = findWhen(text);
+      var rest = text;
+      for (final (s, e) in [...m.spans]..sort((a, b) => b.$1.compareTo(a.$1))) {
+        rest = rest.replaceRange(s, e, '');
+      }
+      expect(rest.trim(), 'اجتماع');
+    });
+  });
+
+  group('review: words that only look like a time or a day', () {
+    test('English "at N" needs am/pm or a colon', () {
+      expect(_r('look at 2 options for the trip').minutes, isNull);
+      expect(_r('Meet at 20 Main Street').minutes, isNull);
+      expect(_r('Call Dr. Smith at 3pm').minutes, 900);
+      expect(_r('meet at 3:30').minutes, 210);
+    });
+
+    test('a bare number with a colon is not a time without a period word', () {
+      expect(_r('دفع 3:30 دينار').minutes, isNull);
+      expect(_r('score 3:30 tonight').minutes, isNull);
+      expect(_r('3:30 العصر اجتماع').minutes, 930);
+    });
+
+    test('a person named like a weekday is not a day', () {
+      expect(_r('كلم خميس عن الشغل').day, isNull);
+      expect(_r('كلم الخميس عن الشغل').day, _d(19));
+      expect(_r('يوم خميس').day, _d(19));
+    });
+  });
+
+  group('review: rolling forward with the logical-day cutoff', () {
+    final logicalToday = _d(15);
+
+    test('a bare 1 AM seen at 02:00 is the next 1 AM', () {
+      final r = _r('الساعة 1 الصبح',
+          today: logicalToday, now: DateTime(2026, 11, 16, 2, 0));
+      expect(r.day, _d(17));
+    });
+
+    test('a bare midnight seen at 01:00 is the next midnight', () {
+      final r = _r('الساعة 12 بالليل',
+          today: logicalToday, now: DateTime(2026, 11, 16, 1, 0));
+      expect(r.day, _d(17));
+      expect(r.minutes, 0);
+    });
+
+    test('a bare 2 at night seen at 01:00 is in one hour', () {
+      final r = _r('الساعة 2 بالليل',
+          today: _d(16), now: DateTime(2026, 11, 16, 1, 0));
+      expect(r.day, _d(16));
+      expect(r.minutes, 120);
     });
   });
 

@@ -1,7 +1,8 @@
 /// Finds and resolves the day and time words in one clause.
 ///
-/// All text passed in is already folded with `foldLetters`, so the keyword
-/// tables below are written in folded spelling (ة as ه, أ إ آ as ا).
+/// All text passed in is already stripped of marks and folded with
+/// `foldLetters`, so the keyword tables below are written in folded spelling
+/// (ة as ه, أ إ آ as ا, no diacritics).
 library;
 
 enum DayWord {
@@ -34,6 +35,15 @@ class WhenMatch {
 
   /// `[start, end)` ranges of the folded text to cut from the title.
   final List<(int, int)> spans;
+
+  /// This match with the gaps filled from [other] (a later clause that only
+  /// carried a day or a time).
+  WhenMatch merge(WhenMatch other) => WhenMatch(
+        day: day ?? other.day,
+        minutes: minutes ?? other.minutes,
+        midnightNight: minutes != null ? midnightNight : other.midnightNight,
+        spans: spans,
+      );
 }
 
 class ResolvedWhen {
@@ -45,42 +55,52 @@ class ResolvedWhen {
 }
 
 const _letters = r'؀-ۿa-z0-9';
-const _period =
-    r'(?:الصبح|صباحا|الفجر|العصر|الظهر|الضهر|المسا|مساءا|مساء|بالليل|الليل|am|pm)';
-const _dayPart = r'(?:\s+(?:الصبح|العصر|الظهر|المسا|بالليل))?';
+
+const _dayPeriodWords =
+    'الصبح|الصباح|العصر|الظهر|المسا|المغرب|العشاء|العشا|بالليل';
+const _periodWords =
+    'الصبح|الصباح|صباحا|الفجر|بعد\\s+الظهر|الظهر|الضهر|العصر|المغرب|العشاء|'
+    'العشا|المسا|مساءا|مساء|بالليل|الليل';
+const _ampm = r'am|pm|a\.m\.?|p\.m\.?';
+const _period = '(?:$_periodWords|$_ampm)';
+
+// "و نص" (half), "و ربع" (quarter), "الا ربع" (a quarter to).
+const _adjust = r'(?:\s*(?:و\s*(?<adj>نص|نصف|ربع|ثلث)|الا\s+(?<less>ربع|ثلث)))?';
 
 String _w(String body) => '(?<![$_letters])(?:$body)(?![$_letters])';
+
+const _dayPart = '(?:\\s+(?<part>$_dayPeriodWords))?';
+
+const _wd = r'(?:يوم\s+(?:ال)?|ال)';
 
 final _dayRules = <(DayWord, RegExp)>[
   (
     DayWord.dayAfterTomorrow,
-    RegExp('${_w(r'بعد\s+(?:بكره|غد)|day\s+after\s+tomorrow')}$_dayPart'),
+    RegExp(
+      '${_w(r'بعد\s+(?:بكره|بكرا|بكري|غدا|(?:ال)?غد)|day\s+after\s+tomorrow')}'
+      '$_dayPart',
+    ),
   ),
-  (DayWord.tomorrow, RegExp('${_w('بكره|غدا|tomorrow')}$_dayPart')),
+  (
+    DayWord.tomorrow,
+    RegExp(
+      '${_w(r'(?:في\s+)?(?:بكره|بكرا|بكري|غدا|الغد|غد)|tomorrow')}$_dayPart',
+    ),
+  ),
   (DayWord.today, RegExp('${_w('اليوم|الليله|today|tonight')}$_dayPart')),
-  (
-    DayWord.sunday,
-    RegExp('${_w(r'(?:يوم\s+(?:ال)?|ال)احد|sunday')}$_dayPart')
-  ),
-  (
-    DayWord.monday,
-    RegExp('${_w(r'(?:يوم\s+(?:ال)?|ال)(?:اثنين|اتنين)|monday')}$_dayPart'),
-  ),
+  (DayWord.sunday, RegExp('${_w('${_wd}احد|sunday')}$_dayPart')),
+  (DayWord.monday, RegExp('${_w('$_wd(?:اثنين|اتنين)|monday')}$_dayPart')),
   (
     DayWord.tuesday,
-    RegExp(
-        '${_w(r'(?:يوم\s+)?(?:ال)?(?:ثلاثاء|ثلاثا|تلاتاء)|tuesday')}$_dayPart'),
+    RegExp('${_w('$_wd(?:ثلاثاء|ثلاثا|تلاتاء|تلاتا)|tuesday')}$_dayPart'),
   ),
   (
     DayWord.wednesday,
-    RegExp('${_w(r'(?:يوم\s+)?(?:ال)?(?:اربعاء|اربعا)|wednesday')}$_dayPart'),
+    RegExp('${_w('$_wd(?:اربعاء|اربعا)|wednesday')}$_dayPart'),
   ),
-  (
-    DayWord.thursday,
-    RegExp('${_w(r'(?:يوم\s+)?(?:ال)?خميس|thursday')}$_dayPart')
-  ),
-  (DayWord.friday, RegExp('${_w(r'(?:يوم\s+)?(?:ال)?جمعه|friday')}$_dayPart')),
-  (DayWord.saturday, RegExp('${_w(r'(?:يوم\s+)?(?:ال)?سبت|saturday')}$_dayPart')),
+  (DayWord.thursday, RegExp('${_w('${_wd}خميس|thursday')}$_dayPart')),
+  (DayWord.friday, RegExp('${_w('${_wd}جمعه|friday')}$_dayPart')),
+  (DayWord.saturday, RegExp('${_w('${_wd}سبت|saturday')}$_dayPart')),
 ];
 
 const _hourWords = <String, int>{
@@ -111,23 +131,31 @@ final _hourWordPattern = (_hourWords.keys.toList()
     .map((w) => w.replaceAll(' ', r'\s+'))
     .join('|');
 
-// Marker + digits, with an optional period word after.
-final _timeMarked = RegExp(
-  '(?<![$_letters])(?:الساعه|at)\\s*(\\d{1,2})(?::(\\d{2}))?(?!\\d)'
-  '(?:\\s*($_period)(?![$_letters]))?',
+final _perOpt = '(?:\\s*(?<per>$_period)(?![$_letters]))?';
+
+// "الساعة 5 [ونص] [العصر]".
+final _timeAr = RegExp(
+  '(?<![$_letters])الساعه\\s*(?<h>\\d{1,2})(?::(?<mi>\\d{2}))?(?!\\d)'
+  '$_adjust$_perOpt',
 );
-// "2 pm" / "2:30 am".
-final _timeAmPm = RegExp(
-  '(?<![$_letters])(\\d{1,2})(?::(\\d{2}))?\\s*(am|pm)(?![$_letters])',
-);
-// "3:30" with a colon and optional period word.
-final _timeColon = RegExp(
-  '(?<![$_letters:])(\\d{1,2}):(\\d{2})(?!\\d)(?:\\s*($_period)(?![$_letters]))?',
-);
-// "الساعة تسعة الصبح".
+// "الساعة تسعة [الصبح]".
 final _timeWord = RegExp(
-  '(?<![$_letters])الساعه\\s+($_hourWordPattern)(?![$_letters])'
-  '(?:\\s*($_period)(?![$_letters]))?',
+  '(?<![$_letters])الساعه\\s+(?<w>$_hourWordPattern)(?![$_letters])'
+  '$_adjust$_perOpt',
+);
+// "2 pm", "at 2 pm", "3pm", "5 p.m.": am/pm is required.
+final _timeAmPm = RegExp(
+  '(?<![$_letters])(?:at\\s+)?(?<h>\\d{1,2})(?::(?<mi>\\d{2}))?\\s*'
+  '(?<per>$_ampm)(?![$_letters])',
+);
+// "at 3:30".
+final _timeAtColon = RegExp(
+  '(?<![$_letters])at\\s+(?<h>\\d{1,2}):(?<mi>\\d{2})(?!\\d)$_perOpt',
+);
+// "3:30 العصر": a colon time needs a period word.
+final _timeColon = RegExp(
+  '(?<![$_letters:])(?<h>\\d{1,2}):(?<mi>\\d{2})(?!\\d)\\s*'
+  '(?<per>$_period)(?![$_letters])',
 );
 
 WhenMatch findWhen(String folded) {
@@ -135,63 +163,68 @@ WhenMatch findWhen(String folded) {
 
   // Day: earliest match; "after tomorrow" claims its words before "tomorrow".
   DayWord? day;
-  var dayStart = -1;
+  RegExpMatch? dayMatch;
   final claimed = <(int, int)>[];
   for (final (word, rx) in _dayRules) {
     for (final m in rx.allMatches(folded)) {
-      final overlaps = claimed.any((c) => m.start < c.$2 && m.end > c.$1);
-      if (overlaps) continue;
+      if (claimed.any((c) => m.start < c.$2 && m.end > c.$1)) continue;
       claimed.add((m.start, m.end));
-      if (day == null || m.start < dayStart) {
+      if (dayMatch == null || m.start < dayMatch.start) {
         day = word;
-        dayStart = m.start;
+        dayMatch = m;
       }
     }
   }
-  if (day != null) {
-    final span = claimed.firstWhere((c) => c.$1 == dayStart);
-    spans.add(span);
+  String? dayPeriod;
+  if (dayMatch != null) {
+    spans.add((dayMatch.start, dayMatch.end));
+    dayPeriod = dayMatch.namedGroup('part');
+    final text = dayMatch.group(0)!;
+    if (dayPeriod == null && (text.contains('الليله') || text.contains('tonight'))) {
+      dayPeriod = 'بالليل';
+    }
   }
 
-  // Time: earliest match among the four shapes.
-  int? minutes;
-  var midnight = false;
+  // Time: the earliest match among the shapes.
   RegExpMatch? best;
-  String? bestKind;
-  for (final (kind, rx) in [
-    ('marked', _timeMarked),
-    ('ampm', _timeAmPm),
-    ('colon', _timeColon),
+  var kind = '';
+  for (final (k, rx) in [
+    ('ar', _timeAr),
     ('word', _timeWord),
+    ('ampm', _timeAmPm),
+    ('atcolon', _timeAtColon),
+    ('colon', _timeColon),
   ]) {
     final m = rx.firstMatch(folded);
     if (m != null && (best == null || m.start < best.start)) {
       best = m;
-      bestKind = kind;
+      kind = k;
     }
   }
+
+  int? minutes;
+  var midnight = false;
   if (best != null) {
-    int? hour;
-    var minute = 0;
-    String? period;
-    if (bestKind == 'word') {
-      final key = best.group(1)!.replaceAll(RegExp(r'\s+'), ' ');
-      hour = _hourWords[key];
-      period = best.group(2);
-    } else if (bestKind == 'ampm') {
-      hour = int.parse(best.group(1)!);
-      minute = int.tryParse(best.group(2) ?? '0') ?? 0;
-      period = best.group(3);
-    } else {
-      hour = int.parse(best.group(1)!);
-      minute = int.tryParse(best.group(2) ?? '0') ?? 0;
-      period = best.group(3);
-    }
+    final int? hour = kind == 'word'
+        ? _hourWords[best.namedGroup('w')!.replaceAll(RegExp(r'\s+'), ' ')]
+        : int.parse(best.namedGroup('h')!);
+    final minute = int.tryParse(_group(best, 'mi') ?? '0') ?? 0;
     if (hour != null && hour <= 23 && minute <= 59) {
+      final period = _group(best, 'per') ?? dayPeriod;
       final r = _applyPeriod(hour, period);
-      minutes = r.$1 * 60 + minute;
-      midnight = r.$2;
-      spans.add((best.start, best.end));
+      var total = r.$1 * 60 + minute;
+      final adj = _group(best, 'adj');
+      final less = _group(best, 'less');
+      if (adj != null) {
+        total += adj.startsWith('نص') ? 30 : (adj == 'ربع' ? 15 : 20);
+      } else if (less != null) {
+        total -= less == 'ربع' ? 15 : 20;
+      }
+      if (total >= 0 && total < 24 * 60) {
+        minutes = total;
+        midnight = r.$2;
+        spans.add((best.start, best.end));
+      }
     }
   }
 
@@ -203,11 +236,21 @@ WhenMatch findWhen(String folded) {
   );
 }
 
+String? _group(RegExpMatch m, String name) {
+  try {
+    return m.namedGroup(name);
+  } catch (_) {
+    return null;
+  }
+}
+
 /// Returns the 24-hour hour, and whether it is a small hour of the night after
 /// the named day.
 (int, bool) _applyPeriod(int hour, String? period) {
-  switch (period) {
+  final key = period?.replaceAll(RegExp(r'\s+'), ' ').replaceAll('.', '');
+  switch (key) {
     case 'الصبح':
+    case 'الصباح':
     case 'صباحا':
     case 'الفجر':
     case 'am':
@@ -215,16 +258,20 @@ WhenMatch findWhen(String folded) {
     case 'الظهر':
     case 'الضهر':
       return (hour >= 1 && hour <= 5 ? hour + 12 : hour, false);
-    case 'بالليل':
-    case 'الليل':
-      if (hour == 12) return (0, true);
-      if (hour >= 1 && hour <= 5) return (hour, true);
-      return (hour < 12 ? hour + 12 : hour, false);
+    case 'بعد الظهر':
     case 'العصر':
     case 'المسا':
     case 'مساء':
     case 'مساءا':
+    case 'المغرب':
+    case 'العشاء':
+    case 'العشا':
     case 'pm':
+      return (hour < 12 ? hour + 12 : hour, false);
+    case 'بالليل':
+    case 'الليل':
+      if (hour == 12) return (0, true);
+      if (hour >= 1 && hour <= 5) return (hour, true);
       return (hour < 12 ? hour + 12 : hour, false);
   }
   return (hour, false);
@@ -261,26 +308,24 @@ ResolvedWhen resolveWhen(
   required DateTime today,
   required DateTime now,
 }) {
-  var day = resolveDay(m.day, today: today);
+  final day = resolveDay(m.day, today: today);
   final minutes = m.minutes;
   if (minutes == null) return ResolvedWhen(day: day);
 
-  if (m.midnightNight) {
-    final base = day ?? DateTime(today.year, today.month, today.day);
-    return ResolvedWhen(
-      day: DateTime(base.year, base.month, base.day + 1),
-      minutes: minutes,
-    );
-  }
-
   DateTime at(DateTime d) =>
       DateTime(d.year, d.month, d.day, minutes ~/ 60, minutes % 60);
+  DateTime plus(DateTime d, int n) => DateTime(d.year, d.month, d.day + n);
 
   if (m.day == null) {
-    final base = DateTime(today.year, today.month, today.day);
-    final passed = at(base).isBefore(now);
-    day = passed ? DateTime(base.year, base.month, base.day + 1) : base;
-    return ResolvedWhen(day: day, minutes: minutes);
+    // A bare time is the next time that clock reading comes round.
+    var d = DateTime(today.year, today.month, today.day);
+    for (var i = 0; i < 3 && at(d).isBefore(now); i++) {
+      d = plus(d, 1);
+    }
+    return ResolvedWhen(day: d, minutes: minutes);
+  }
+  if (m.midnightNight) {
+    return ResolvedWhen(day: plus(day!, 1), minutes: minutes);
   }
   final flagged = m.day == DayWord.today && at(day!).isBefore(now);
   return ResolvedWhen(day: day, minutes: minutes, timePassed: flagged);

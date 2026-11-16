@@ -94,6 +94,55 @@ void main() {
     });
   });
 
+  group('review: negated importance', () {
+    test('"not" plus any importance word is low, never high', () {
+      for (final s in [
+        'مش ضروري اروح عالبنك',
+        'مش عاجل',
+        'مو ضروري',
+        'غير ضروري',
+        'ليس مهم',
+        'not urgent: clean the garage',
+        'not important',
+      ]) {
+        expect(_prio(s), TodoPriority.low, reason: s);
+      }
+    });
+
+    test('the negated word does not leave its "not" behind in the title', () {
+      expect(_title('مش ضروري اروح عالبنك'), 'اروح عالبنك');
+    });
+  });
+
+  group('review: a note marker only counts at the start of the clause', () {
+    test('notes mentioned inside a sentence are tasks', () {
+      for (final s in [
+        'send a thank-you note to sara',
+        'اكتب ملاحظة للمدير عن التأخير',
+        'رد على ملاحظة أحمد',
+      ]) {
+        expect(isNote(foldLetters(s)), isFalse, reason: s);
+      }
+    });
+
+    test('and the title keeps the word', () {
+      expect(_title('send a thank-you note to Sara'),
+          'send a thank-you note to Sara');
+      expect(_title('رد على ملاحظة أحمد'), 'رد على ملاحظة أحمد');
+    });
+
+    test('a leading marker still makes a note', () {
+      for (final s in [
+        'ملاحظة: كذا',
+        'سجل ملاحظة كذا',
+        'note: milk',
+        'كل ما أتذكر: أسأل خالد',
+      ]) {
+        expect(isNote(foldLetters(s)), isTrue, reason: s);
+      }
+    });
+  });
+
   group('buildTitle', () {
     test('drops "remind me"', () {
       expect(_title('ذكرني أتصل بأمي'), 'أتصل بأمي');
