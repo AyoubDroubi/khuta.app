@@ -9,15 +9,19 @@ import 'package:khuta/features/todos/state/todos_controller.dart';
 class CaptureDraft extends ChangeNotifier {
   CaptureDraft(List<ProposedItem> items)
       : _items = [...items],
-        _checked = List.filled(items.length, true, growable: true);
+        _checked = List.filled(items.length, true, growable: true),
+        _ids = List.generate(items.length, (i) => i, growable: true);
 
   final List<ProposedItem> _items;
   final List<bool> _checked;
+  final List<int> _ids;
   bool _saving = false;
 
-  List<({ProposedItem item, bool checked})> get rows => [
+  /// Each row keeps its [id] while rows before it are removed, so a view can
+  /// key per-row state (like a text field) to it.
+  List<({int id, ProposedItem item, bool checked})> get rows => [
         for (var i = 0; i < _items.length; i++)
-          (item: _items[i], checked: _checked[i]),
+          (id: _ids[i], item: _items[i], checked: _checked[i]),
       ];
 
   bool get saving => _saving;
@@ -42,6 +46,7 @@ class CaptureDraft extends ChangeNotifier {
   void remove(int i) {
     _items.removeAt(i);
     _checked.removeAt(i);
+    _ids.removeAt(i);
     notifyListeners();
   }
 
@@ -60,6 +65,11 @@ class CaptureDraft extends ChangeNotifier {
       );
 
   void clearProject(int i) => _edit(i, (it) => it.copyWith(project: ''));
+
+  void removeTag(int i, String id) => _edit(
+        i,
+        (it) => it.copyWith(tags: [...it.tags]..remove(id)),
+      );
 
   void unmarkRemind(int i) => _edit(i, (it) => it.copyWith(askedToRemind: false));
 
@@ -97,6 +107,7 @@ class CaptureDraft extends ChangeNotifier {
         if (i != -1) {
           _items.removeAt(i);
           _checked.removeAt(i);
+          _ids.removeAt(i);
         }
       }
       return result;

@@ -200,6 +200,26 @@ void main() {
       expect(draft.rows.single.item.project, '');
     });
 
+    test('removeTag drops one label and keeps the others', () {
+      final draft = CaptureDraft([
+        const ProposedItem(
+          kind: ProposedKind.task,
+          title: 'x',
+          tags: ['l1', 'l2'],
+        ),
+      ]);
+      draft.removeTag(0, 'l1');
+      expect(draft.rows.single.item.tags, ['l2']);
+    });
+
+    test('every row keeps its id when an earlier row is removed', () {
+      final draft = CaptureDraft([_task('أ'), _task('ب'), _task('ج')]);
+      final ids = draft.rows.map((r) => r.id).toList();
+      expect(ids.toSet(), hasLength(3));
+      draft.remove(0);
+      expect(draft.rows.map((r) => r.id), [ids[1], ids[2]]);
+    });
+
     test('a double tap saves each item once and the second call is a no-op',
         () async {
       final draft = CaptureDraft([_task('أ'), _task('ب')]);

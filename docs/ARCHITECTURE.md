@@ -24,6 +24,14 @@ Khuta is a local-first Flutter app (Android). All data lives on the device; ther
 
 The island is an isometric scene painted from sprite files in `mobile/assets/island/` (see `tools/island_art/`). Sprite identifiers, file names, pixel sizes and anchors are a contract pinned by `mobile/test/island_pins_test.dart`, so the art can be replaced without touching the ledger or user progress.
 
+## Smart capture
+
+`mobile/lib/features/capture/` turns one typed sentence (Arabic dialect, MSA or simple English) into proposed to-dos and journal notes, shown in a preview that the person confirms with one tap. It is rules only, on the device: `RuleParser` (behind the async `CaptureParser` interface, so an optional model parser can be added later) normalizes the text, splits it into clauses, finds day, time, importance and type words, and builds titles.
+
+- Nothing is written before the save button. Saving goes through `TodosController.create` and `JournalController.create`; there is no new storage. A reminder is a to-do with a time (the existing notification scheduling fires it); a note is a new journal moment.
+- The typed text lives only in the sheet's state: no logging, no network, no persistence. `test/capture_privacy_test.dart` scans the feature for logging, networking and direct store writes, and `test/local_first_gate_test.dart` keeps the Internet permission out of the manifest.
+- Day and time are resolved in rules code against `AppClock.today()` and `AppClock.wallNow()`. Known limit: a day said once for several items is not shared across them, and a lone "و" between verbs is not a split point; `test/rule_parser_test.dart` lists these as known misses. Corpora: `test/fixtures/capture_spike_cases.json` and `capture_heldout.json`.
+
 ## Testing
 
 `flutter test` runs the suite (about 900 tests): model and controller tests, backup round trips, schedule and Hijri rules, time-zone and daylight-saving robustness, accessibility checks (labels, contrast, tap targets) and Arabic layout checks. Opt-in tests regenerate the island art and a year-of-data backup.
