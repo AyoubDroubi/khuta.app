@@ -44,6 +44,7 @@ class JournalController extends ChangeNotifier {
     required String text,
     int? minutes,
     List<String> photos = const [],
+    String? id,
   }) async {
     _validateEntry(date, text, minutes, photos);
     if (kind == JournalEntryKind.reflection && reflectionForDay(date) != null) {
@@ -51,7 +52,7 @@ class JournalController extends ChangeNotifier {
     }
 
     final entry = JournalEntry(
-      id: _uuid.v4(),
+      id: id ?? _uuid.v4(),
       date: date,
       kind: kind,
       text: text.trim(),

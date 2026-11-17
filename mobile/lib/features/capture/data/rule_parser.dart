@@ -1,0 +1,178 @@
+import 'package:khuta/features/capture/data/capture_normalize.dart';
+import 'package:khuta/features/capture/data/capture_parser.dart';
+import 'package:khuta/features/capture/data/capture_split.dart';
+import 'package:khuta/features/capture/data/capture_when.dart';
+import 'package:khuta/features/capture/data/capture_words.dart';
+import 'package:khuta/features/capture/data/proposed_item.dart';
+import 'package:khuta/features/todos/data/todo.dart';
+import 'package:khuta/features/todos/data/todo_tag.dart';
+
+const maxCaptureInput = 2000;
+
+/// The to-do composer's text limit; a captured to-do title never exceeds it,
+/// so editing the to-do later cannot cut it.
+const maxTodoTitle = 300;
+
+/// [text] cut to at most [max] characters, at a space when there is one and
+/// never inside a surrogate pair.
+String capTitle(String text, [int max = maxTodoTitle]) {
+  if (text.length <= max) return text;
+  var cut = text.lastIndexOf(' ', max);
+  if (cut <= 0) {
+    cut = max;
+    final unit = text.codeUnitAt(cut - 1);
+    if (unit >= 0xD800 && unit <= 0xDBFF) cut--;
+  }
+  return text.substring(0, cut).trimRight();
+}
+
+final _wordChar = RegExp(r'[\p{L}\p{N}]', unicode: true);
+
+bool _hasWords(String title) => _wordChar.hasMatch(title);
+
+class _Draft {
+  _Draft({
+    required this.note,
+    required this.title,
+    required this.when,
+    required this.priority,
+    required this.project,
+    required this.tags,
+    required this.askedToRemind,
+  });
+
+  final bool note;
+  final String title;
+  WhenMatch when;
+  TodoPriority priority;
+  final String project;
+  final List<String> tags;
+  bool askedToRemind;
+
+  /// The day came through "and then" from an item that is past midnight, so
+  /// this one is a day later than its day word says.
+  bool afterMidnight = false;
+}
+
+/// The always-on, on-device parser: no model, no network, no state.
+class RuleParser implements CaptureParser {
+  const RuleParser();
+
+  @override
+  Future<List<ProposedItem>> parse(
+    String text, {
+    required DateTime now,
+    required DateTime today,
+    List<TodoTag> projects = const [],
+    List<TodoTag> labels = const [],
+  }) async {
+    final input = text.length > maxCaptureInput
+        ? text.substring(0, maxCaptureInput)
+        : text;
+
+    final drafts = <_Draft>[];
+    // A clause with nothing but importance, day or time words ("مهم كتير",
+    // "يوم الخميس") is not an item. It fills the gaps of the item before it,
+    // or, if it comes first, of the item after it.
+    WhenMatch? carryWhen;
+    var carryPriority = TodoPriority.none;
+
+    for (final link in splitClauseLinks(stripMarks(input))) {
+      final clause = link.text;
+      final folded = foldLetters(clause);
+      var when = findWhen(folded);
+      final title = buildTitle(clause, when.spans);
+      final priority = findPriority(folded);
+
+      if (!_hasWords(title)) {
+        if (drafts.isNotEmpty) {
+          final last = drafts.last;
+          last.when = last.when.merge(when);
+          if (!last.note && last.priority == TodoPriority.none) {
+            last.priority = priority;
+          }
+          // "اتصل بالبنك ونبهني": a lone "remind me" belongs to the item.
+          if (!last.note && asksToRemind(folded)) last.askedToRemind = true;
+        } else {
+          carryWhen = carryWhen == null ? when : carryWhen.merge(when);
+          if (carryPriority == TodoPriority.none) carryPriority = priority;
+        }
+        continue;
+      }
+      if (drafts.length >= maxClauses) continue;
+
+      // "... وبعدين الساعة 6 عشا": after "and then" the day said before
+      // still holds.
+      var afterMidnight = false;
+      if (link.then && when.day == null && drafts.isNotEmpty) {
+        final previous = drafts.last.when;
+        when = when.merge(WhenMatch(day: previous.day));
+        afterMidnight = previous.midnightNight && previous.day != null;
+      }
+      final note = isNote(blankSpans(folded, when.spans));
+      final known = matchKnown(folded, projects: projects, labels: labels);
+      var merged = when;
+      var itemPriority = note ? TodoPriority.none : priority;
+      if (carryWhen != null) {
+        merged = when.merge(carryWhen);
+        carryWhen = null;
+        if (!note && itemPriority == TodoPriority.none) {
+          itemPriority = carryPriority;
+        }
+        carryPriority = TodoPriority.none;
+      }
+      drafts.add(_Draft(
+        note: note,
+        title: title,
+        when: merged,
+        priority: itemPriority,
+        // A journal entry has no project or labels.
+        project: note ? '' : known.project,
+        tags: note ? const [] : known.tags,
+        askedToRemind: !note && asksToRemind(folded),
+      )..afterMidnight = afterMidnight);
+    }
+
+    return [
+      for (final d in drafts) _build(d, today: today, now: now),
+    ];
+  }
+
+  ProposedItem _build(
+    _Draft d, {
+    required DateTime today,
+    required DateTime now,
+  }) {
+    // A note records something, often from earlier today: its time is not
+    // pushed forward to the next occurrence, and it is never "too late".
+    final resolved = resolveWhen(
+      d.when,
+      today: today,
+      now: d.note ? DateTime(today.year, today.month, today.day) : now,
+    );
+    final shift =
+        d.afterMidnight && resolved.day != null && !d.when.midnightNight;
+    final day = shift
+        ? DateTime(resolved.day!.year, resolved.day!.month, resolved.day!.day + 1)
+        : resolved.day;
+    final minutes = resolved.minutes;
+    // Shifted a day later, the "passed" check is made again for the new day.
+    final passed = shift
+        ? !d.note &&
+            minutes != null &&
+            DateTime(day!.year, day.month, day.day, minutes ~/ 60, minutes % 60)
+                .isBefore(now)
+        : resolved.timePassed;
+    return ProposedItem(
+      kind: d.note ? ProposedKind.note : ProposedKind.task,
+      title: d.note ? d.title : capTitle(d.title),
+      day: day,
+      minutes: resolved.minutes,
+      priority: d.note ? TodoPriority.none : d.priority,
+      project: d.project,
+      tags: d.tags,
+      askedToRemind: d.askedToRemind,
+      timePassed: passed,
+    );
+  }
+}

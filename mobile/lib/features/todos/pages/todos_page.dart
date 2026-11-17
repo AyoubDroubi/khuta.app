@@ -21,6 +21,7 @@ import 'package:khuta/core/express/express_button.dart';
 import 'package:khuta/core/minimal/minimal_kit.dart';
 import 'package:khuta/core/express/express_surface.dart';
 import 'package:khuta/features/habits/data/category.dart';
+import 'package:khuta/features/capture/widgets/quick_capture_sheet.dart';
 import 'package:khuta/features/todos/data/todo.dart';
 import 'package:khuta/features/todos/data/todo_groups.dart';
 import 'package:khuta/features/todos/data/projects_view.dart';
@@ -219,6 +220,11 @@ class _TodosPageState extends State<TodosPage> {
               )
             : null,
         actions: [
+          IconButton(
+            tooltip: context.l10n.capture_title,
+            icon: const Icon(LucideIcons.sparkles, size: 20),
+            onPressed: () => showQuickCapture(context),
+          ),
           if (!chips)
           IconButton(
             tooltip: context.l10n.todo_tags,

@@ -50,9 +50,10 @@ class TodosController extends ChangeNotifier {
     List<String> tags = const [],
     String project = '',
     List<TodoStep> steps = const [],
+    String? id,
   }) async {
     final todo = Todo(
-      id: const Uuid().v4(),
+      id: id ?? const Uuid().v4(),
       text: text.trim(),
       date: date,
       minutes: minutes,

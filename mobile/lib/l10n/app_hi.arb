@@ -1639,5 +1639,17 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "प्रोजेक्ट को अपनी पसंद की जगह खींचें।"
+  "todo_project_arrange_hint_flat": "प्रोजेक्ट को अपनी पसंद की जगह खींचें।",
+  "capture_title": "त्वरित प्रविष्टि",
+  "capture_hint": "अपने शब्दों में लिखें कि क्या करना है",
+  "capture_find": "आइटम खोजें",
+  "capture_nothing": "कुछ नहीं मिला। क्या करना है और कब, यह लिखें।",
+  "capture_save_count": "{count} सहेजें",
+  "capture_needs_time": "समय चाहिए",
+  "capture_time_passed": "समय बीत चुका है",
+  "capture_note": "नोट",
+  "capture_no_date": "कोई तारीख नहीं",
+  "capture_remove_reminder": "रिमाइंडर नहीं",
+  "capture_save_failed": "कुछ आइटम सहेजे नहीं जा सके",
+  "capture_task": "कार्य"
 }
