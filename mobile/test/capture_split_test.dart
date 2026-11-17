@@ -147,6 +147,16 @@ void main() {
         ['I said no', 'Call mom tomorrow']);
   });
 
+  test('final review: a trailing "and then" word is not an item', () {
+    expect(splitClauses('اجتماع بكرة وبعدين'), ['اجتماع بكرة']);
+    expect(splitClauses('اشتري خبز وبعدين ثم اتصل'), ['اشتري خبز', 'اتصل']);
+  });
+
+  test('final review: "St." does not end a sentence', () {
+    expect(splitClauses('trip to St. Louis tomorrow'),
+        ['trip to St. Louis tomorrow']);
+  });
+
   test('an abbreviation does not end a sentence', () {
     expect(splitClauses('زور د. أحمد بكرة'), ['زور د. أحمد بكرة']);
     expect(splitClauses('Call Dr. Smith at 3pm'), ['Call Dr. Smith at 3pm']);

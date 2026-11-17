@@ -260,6 +260,24 @@ void main() {
     });
   });
 
+  group('final review', () {
+    test('a trailing وبعدين adds no item', () async {
+      final items = await _parse('اجتماع بكرة وبعدين');
+      expect(items.map((i) => i.title), ['اجتماع']);
+    });
+
+    test('an item shifted past midnight is not flagged as passed', () async {
+      final items = await const RuleParser().parse(
+        'اليوم الساعة 12 بالليل سهرة وبعدين الساعة 1 الصبح نوم',
+        now: DateTime(2026, 11, 16, 10),
+        today: _today,
+      );
+      expect(items[1].day, DateTime(2026, 11, 17));
+      expect(items[1].minutes, 60);
+      expect(items[1].timePassed, isFalse);
+    });
+  });
+
   test('a note is a note, with no priority', () async {
     final items = await _parse('سجل ملاحظة: فكرة تطبيق للتوصيل للقرى');
     expect(items, hasLength(1));

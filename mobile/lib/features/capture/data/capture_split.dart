@@ -28,12 +28,13 @@ final _markerBefore = RegExp(
 // Common abbreviations whose dot does not end a sentence ("Mrs. Smith").
 final _abbreviation = RegExp(
   // Titles only: "etc." and "no." usually do end a sentence.
-  r'(?<![A-Za-z])(Mrs|Mr|Ms|Dr|Prof|Eng|Jr|Sr|Mt)\.',
+  r'(?<![A-Za-z])(Mrs|Mr|Ms|Dr|Prof|Eng|Jr|Sr|Mt|St)\.',
   caseSensitive: false,
 );
 const _keptDot = '\u2024';
 
-final _dropWhole = RegExp(r'^(?:وبعدين|وبعدها|ثم)\s+');
+// Also a lone marker at the end ("اجتماع بكرة وبعدين"), which leaves nothing.
+final _dropWhole = RegExp(r'^(?:وبعدين|وبعدها|ثم)(?:\s+|$)');
 final _andRemind = RegExp(r'^and\s+(?=remind\s+me)', caseSensitive: false);
 final _vavMarker = RegExp('^و(?=(?:بدي|لازم|ذكرني|نبهني)(?![$_letters]))');
 

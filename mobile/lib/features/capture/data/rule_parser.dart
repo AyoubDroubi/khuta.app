@@ -150,19 +150,29 @@ class RuleParser implements CaptureParser {
       today: today,
       now: d.note ? DateTime(today.year, today.month, today.day) : now,
     );
-    final day = resolved.day;
+    final shift =
+        d.afterMidnight && resolved.day != null && !d.when.midnightNight;
+    final day = shift
+        ? DateTime(resolved.day!.year, resolved.day!.month, resolved.day!.day + 1)
+        : resolved.day;
+    final minutes = resolved.minutes;
+    // Shifted a day later, the "passed" check is made again for the new day.
+    final passed = shift
+        ? !d.note &&
+            minutes != null &&
+            DateTime(day!.year, day.month, day.day, minutes ~/ 60, minutes % 60)
+                .isBefore(now)
+        : resolved.timePassed;
     return ProposedItem(
       kind: d.note ? ProposedKind.note : ProposedKind.task,
       title: d.note ? d.title : capTitle(d.title),
-      day: d.afterMidnight && day != null && !d.when.midnightNight
-          ? DateTime(day.year, day.month, day.day + 1)
-          : day,
+      day: day,
       minutes: resolved.minutes,
       priority: d.note ? TodoPriority.none : d.priority,
       project: d.project,
       tags: d.tags,
       askedToRemind: d.askedToRemind,
-      timePassed: resolved.timePassed,
+      timePassed: passed,
     );
   }
 }
