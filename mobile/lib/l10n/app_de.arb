@@ -1650,5 +1650,6 @@
   "capture_note": "Notiz",
   "capture_no_date": "Kein Datum",
   "capture_remove_reminder": "Keine Erinnerung",
-  "capture_save_failed": "Einige Einträge konnten nicht gespeichert werden"
+  "capture_save_failed": "Einige Einträge konnten nicht gespeichert werden",
+  "capture_task": "Aufgabe"
 }

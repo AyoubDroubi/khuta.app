@@ -1650,5 +1650,6 @@
   "capture_note": "Notitie",
   "capture_no_date": "Geen datum",
   "capture_remove_reminder": "Geen herinnering",
-  "capture_save_failed": "Sommige items konden niet worden opgeslagen"
+  "capture_save_failed": "Sommige items konden niet worden opgeslagen",
+  "capture_task": "Taak"
 }

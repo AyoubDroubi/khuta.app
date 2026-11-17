@@ -61,8 +61,9 @@ const _letters = captureLetters;
 // Dialect and MSA period words, in folded spelling ("مساءً" is "مساءا" or
 // "مساء" once its marks are stripped). Longer forms come first.
 const _periodWords =
-    'الصباح|الصبح|صباحا|الفجر|فجرا|بعد\\s+الظهر|الظهر|الضهر|ظهرا|العصر|عصرا|'
-    'المغرب|العشاء|العشا|المساء|المسا|مساءا|مساء|بالليل|الليل|ليلا';
+    'الصباح|الصبح|صباحا|الفجر|فجرا|بكير|بدري|بعد\\s+الظهر|الظهر|الضهر|ظهرا|'
+    'العصر|عصرا|المغرب|العشاء|العشا|المساء|المسا|مساءا|مساء|بالليل|الليل|ليلا|'
+    'morning|early|afternoon|evening|night';
 const _ampm = r'am|pm|a\.m\.?|p\.m\.?';
 const _period = '(?:$_periodWords|$_ampm)';
 
@@ -294,6 +295,10 @@ String? _group(RegExpMatch m, String name) =>
     case 'صباحا':
     case 'الفجر':
     case 'فجرا':
+    case 'بكير':
+    case 'بدري':
+    case 'morning':
+    case 'early':
     case 'am':
       return (hour == 12 ? 0 : hour, false);
     case 'الظهر':
@@ -304,6 +309,8 @@ String? _group(RegExpMatch m, String name) =>
     case 'العصر':
     case 'عصرا':
     case 'المساء':
+    case 'afternoon':
+    case 'evening':
     case 'المسا':
     case 'مساء':
     case 'مساءا':
@@ -315,6 +322,7 @@ String? _group(RegExpMatch m, String name) =>
     case 'بالليل':
     case 'الليل':
     case 'ليلا':
+    case 'night':
       if (hour == 12) return (0, true);
       if (hour >= 1 && hour <= 5) return (hour, true);
       return (hour < 12 ? hour + 12 : hour, false);

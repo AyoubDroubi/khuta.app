@@ -47,7 +47,11 @@ class _Draft {
   TodoPriority priority;
   final String project;
   final List<String> tags;
-  final bool askedToRemind;
+  bool askedToRemind;
+
+  /// The day came through "and then" from an item that is past midnight, so
+  /// this one is a day later than its day word says.
+  bool afterMidnight = false;
 }
 
 /// The always-on, on-device parser: no model, no network, no state.
@@ -87,6 +91,8 @@ class RuleParser implements CaptureParser {
           if (!last.note && last.priority == TodoPriority.none) {
             last.priority = priority;
           }
+          // "اتصل بالبنك ونبهني": a lone "remind me" belongs to the item.
+          if (!last.note && asksToRemind(folded)) last.askedToRemind = true;
         } else {
           carryWhen = carryWhen == null ? when : carryWhen.merge(when);
           if (carryPriority == TodoPriority.none) carryPriority = priority;
@@ -97,8 +103,11 @@ class RuleParser implements CaptureParser {
 
       // "... وبعدين الساعة 6 عشا": after "and then" the day said before
       // still holds.
+      var afterMidnight = false;
       if (link.then && when.day == null && drafts.isNotEmpty) {
-        when = when.merge(WhenMatch(day: drafts.last.when.day));
+        final previous = drafts.last.when;
+        when = when.merge(WhenMatch(day: previous.day));
+        afterMidnight = previous.midnightNight && previous.day != null;
       }
       final note = isNote(blankSpans(folded, when.spans));
       final known = matchKnown(folded, projects: projects, labels: labels);
@@ -121,7 +130,7 @@ class RuleParser implements CaptureParser {
         project: note ? '' : known.project,
         tags: note ? const [] : known.tags,
         askedToRemind: !note && asksToRemind(folded),
-      ));
+      )..afterMidnight = afterMidnight);
     }
 
     return [
@@ -141,10 +150,13 @@ class RuleParser implements CaptureParser {
       today: today,
       now: d.note ? DateTime(today.year, today.month, today.day) : now,
     );
+    final day = resolved.day;
     return ProposedItem(
       kind: d.note ? ProposedKind.note : ProposedKind.task,
       title: d.note ? d.title : capTitle(d.title),
-      day: resolved.day,
+      day: d.afterMidnight && day != null && !d.when.midnightNight
+          ? DateTime(day.year, day.month, day.day + 1)
+          : day,
       minutes: resolved.minutes,
       priority: d.note ? TodoPriority.none : d.priority,
       project: d.project,

@@ -1650,5 +1650,6 @@
   "capture_note": "笔记",
   "capture_no_date": "无日期",
   "capture_remove_reminder": "不是提醒",
-  "capture_save_failed": "部分事项无法保存"
+  "capture_save_failed": "部分事项无法保存",
+  "capture_task": "待办"
 }

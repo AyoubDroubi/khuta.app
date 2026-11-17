@@ -1657,5 +1657,6 @@
   "capture_note": "Note",
   "capture_no_date": "No date",
   "capture_remove_reminder": "Not a reminder",
-  "capture_save_failed": "Some items could not be saved"
+  "capture_save_failed": "Some items could not be saved",
+  "capture_task": "To-do"
 }

@@ -1650,5 +1650,6 @@
   "capture_note": "메모",
   "capture_no_date": "날짜 없음",
   "capture_remove_reminder": "알림 아님",
-  "capture_save_failed": "일부 항목을 저장하지 못했습니다"
+  "capture_save_failed": "일부 항목을 저장하지 못했습니다",
+  "capture_task": "할 일"
 }

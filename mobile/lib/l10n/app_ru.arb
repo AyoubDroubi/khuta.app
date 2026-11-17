@@ -1650,5 +1650,6 @@
   "capture_note": "Заметка",
   "capture_no_date": "Без даты",
   "capture_remove_reminder": "Не напоминание",
-  "capture_save_failed": "Не удалось сохранить некоторые пункты"
+  "capture_save_failed": "Не удалось сохранить некоторые пункты",
+  "capture_task": "Задача"
 }

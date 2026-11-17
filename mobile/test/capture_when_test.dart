@@ -333,6 +333,29 @@ void main() {
     });
   });
 
+  group('review 4: early and morning words', () {
+    test('بكير and بدري make a bare hour morning', () {
+      expect(_r('بكرة بكير الساعة 6 رياضة').minutes, 360);
+      expect(_r('بكرة بدري الساعة 5').minutes, 300);
+      expect(_r('الساعة 6 بكير').minutes, 360);
+    });
+
+    test('English morning/evening after the day word', () {
+      expect(_r('tomorrow morning at 6am run').minutes, 360);
+      expect(_r('tomorrow evening at 7pm dinner').minutes, 1140);
+    });
+
+    test('the early word is cut from the title spans', () {
+      final text = foldLetters(stripMarks('بكرة بكير الساعة 6 رياضة'));
+      final m = findWhen(text);
+      var rest = text;
+      for (final (s, e) in [...m.spans]..sort((a, b) => b.$1.compareTo(a.$1))) {
+        rest = rest.replaceRange(s, e, '');
+      }
+      expect(rest.trim(), 'رياضه');
+    });
+  });
+
   group('spans', () {
     test('cover the day word and the time phrase', () {
       final text = foldLetters('بكرة الساعة 10 الصبح');

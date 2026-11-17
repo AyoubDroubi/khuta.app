@@ -1650,5 +1650,6 @@
   "capture_note": "Nota",
   "capture_no_date": "Sem data",
   "capture_remove_reminder": "Não é um lembrete",
-  "capture_save_failed": "Não foi possível salvar alguns itens"
+  "capture_save_failed": "Não foi possível salvar alguns itens",
+  "capture_task": "Tarefa"
 }

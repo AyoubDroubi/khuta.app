@@ -1650,5 +1650,6 @@
   "capture_note": "یادداشت",
   "capture_no_date": "بدون تاریخ",
   "capture_remove_reminder": "یادآور نیست",
-  "capture_save_failed": "ذخیره‌ی برخی موارد ممکن نشد"
+  "capture_save_failed": "ذخیره‌ی برخی موارد ممکن نشد",
+  "capture_task": "کار"
 }

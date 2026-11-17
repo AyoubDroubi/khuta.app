@@ -1650,5 +1650,6 @@
   "capture_note": "Notatka",
   "capture_no_date": "Bez daty",
   "capture_remove_reminder": "To nie przypomnienie",
-  "capture_save_failed": "Nie udało się zapisać części elementów"
+  "capture_save_failed": "Nie udało się zapisać części elementów",
+  "capture_task": "Zadanie"
 }

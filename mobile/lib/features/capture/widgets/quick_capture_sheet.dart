@@ -423,7 +423,7 @@ class _CaptureRowState extends State<_CaptureRow> {
                           : LucideIcons.listTodo,
                       label: item.kind == ProposedKind.note
                           ? context.l10n.capture_note
-                          : context.l10n.todos,
+                          : context.l10n.capture_task,
                       color: item.kind == ProposedKind.note
                           ? scheme.primary
                           : muted,

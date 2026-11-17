@@ -102,6 +102,7 @@ class CaptureDraft extends ChangeNotifier {
             project: '',
             tags: const [],
             askedToRemind: false,
+            timePassed: false,
           );
         }
         return it.copyWith(kind: ProposedKind.task, title: capTitle(it.title));
@@ -110,6 +111,8 @@ class CaptureDraft extends ChangeNotifier {
   void unmarkRemind(int i) => _edit(i, (it) => it.copyWith(askedToRemind: false));
 
   ProposedItem _flagPassed(ProposedItem it) {
+    // A note records something; it is never "too late".
+    if (it.kind == ProposedKind.note) return it.copyWith(timePassed: false);
     final day = it.day;
     final minutes = it.minutes;
     final passed = day != null &&

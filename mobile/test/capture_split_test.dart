@@ -134,6 +134,19 @@ void main() {
         ['Buy milk', 'Remind me to call Sam at 5pm']);
   });
 
+  test('review 4: a one-word item after "and then" stays its own clause', () {
+    expect(splitClauses('سهرة وبعدين نوم'), ['سهرة', 'نوم']);
+    expect(splitClauses('رياضة وبعدين فطور'), ['رياضة', 'فطور']);
+    expect(splitClauses('ملح، فلفل'), ['ملح فلفل']);
+  });
+
+  test('review 4: "etc." and "no." still end a sentence', () {
+    expect(splitClauses('buy eggs, milk etc. Call mom tomorrow'),
+        ['buy eggs', 'milk etc', 'Call mom tomorrow']);
+    expect(splitClauses('I said no. Call mom tomorrow'),
+        ['I said no', 'Call mom tomorrow']);
+  });
+
   test('an abbreviation does not end a sentence', () {
     expect(splitClauses('زور د. أحمد بكرة'), ['زور د. أحمد بكرة']);
     expect(splitClauses('Call Dr. Smith at 3pm'), ['Call Dr. Smith at 3pm']);

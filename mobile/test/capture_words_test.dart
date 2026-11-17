@@ -209,6 +209,23 @@ void main() {
       expect(_title('مش ضروري بس رتب المكتب'), 'رتب المكتب');
     });
 
+    test('review 4: phrasal verbs keep their particle', () {
+      expect(_title('check in tomorrow at 9am'), 'check in');
+      expect(_title('log in tomorrow'), 'log in');
+      expect(_title('drop by tomorrow'), 'drop by');
+      expect(_title('call mom on friday'), 'call mom');
+    });
+
+    test('review 4: a leading "to" stays unless "remind me" came before it', () {
+      expect(_title('to do list for the trip tomorrow'),
+          'to do list for the trip');
+      expect(_title('remind me today to buy bread'), 'buy bread');
+    });
+
+    test('review 4: a leading والله is a filler', () {
+      expect(_title('والله لازم اروح عالبنك'), 'اروح عالبنك');
+    });
+
     test('a clause that is only a day word has no title', () {
       expect(_title('بكرة'), '');
     });

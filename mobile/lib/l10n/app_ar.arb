@@ -1058,5 +1058,6 @@
   "capture_note": "ملاحظة",
   "capture_no_date": "بدون تاريخ",
   "capture_remove_reminder": "ليس تذكيراً",
-  "capture_save_failed": "تعذّر حفظ بعض العناصر"
+  "capture_save_failed": "تعذّر حفظ بعض العناصر",
+  "capture_task": "مهمة"
 }

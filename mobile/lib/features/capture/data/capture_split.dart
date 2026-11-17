@@ -12,10 +12,10 @@ const maxClauses = 20;
 const _letters = captureLetters;
 
 // Commas inside numbers ("1,234") do not separate.
-// A sentence end needs three letters before it, so "د. أحمد" and "Dr. Smith"
-// do not split.
+// A sentence end needs two letters before it, so "د. أحمد" does not split;
+// longer titles ("Dr.", "Mrs.") are protected by [_abbreviation].
 final _separators = RegExp(
-  r'(?<![\d]),|,(?![\d])|[،;؛\n]|(?<=[\p{L}\p{N}]{3}[.!؟?])\s+',
+  r'(?<![\d]),|,(?![\d])|[،;؛\n]|(?<=[\p{L}\p{N}]{2}[.!؟?])\s+',
   unicode: true,
 );
 
@@ -27,7 +27,8 @@ final _markerBefore = RegExp(
 
 // Common abbreviations whose dot does not end a sentence ("Mrs. Smith").
 final _abbreviation = RegExp(
-  r'(?<![A-Za-z])(Mrs|Mr|Ms|Dr|Prof|Eng|St|Jr|Sr|Mt|No|vs|etc)\.',
+  // Titles only: "etc." and "no." usually do end a sentence.
+  r'(?<![A-Za-z])(Mrs|Mr|Ms|Dr|Prof|Eng|Jr|Sr|Mt)\.',
   caseSensitive: false,
 );
 const _keptDot = '\u2024';
@@ -54,8 +55,8 @@ String _stripVav(String seg) {
   final word = foldLetters(rest.split(RegExp(r'\s+')).first);
   final hamza = 'أإآ'.contains(rest[0]);
   final conjunction =
-      // "والدتي" (my mother) and "والدي" are words, not "and" + ال.
-      (word.startsWith('ال') && !word.startsWith('الد')) ||
+      // "والدتي" (my mother), "والدي" and "والله" are words, not "and" + ال.
+      (word.startsWith('ال') && !word.startsWith('الد') && word != 'الله') ||
       hamza ||
       _verbsAfterVav.contains(word);
   return conjunction ? rest : seg;
@@ -71,7 +72,9 @@ List<String> splitClauses(String text) =>
 /// (وبعدين، وبعدها، ثم): such a clause happens on the same day as the one
 /// before it.
 List<({String text, bool then})> splitClauseLinks(String text) {
-  final pieces = <({String text, bool then})>[];
+  // `marker`: the piece began at a marker split (وبعدين، وبدي، ...), not at a
+  // comma or a sentence end.
+  final pieces = <({String text, bool then, bool marker})>[];
 
   final protected =
       text.replaceAllMapped(_abbreviation, (m) => '${m[1]}$_keptDot');
@@ -98,28 +101,34 @@ List<({String text, bool then})> splitClauseLinks(String text) {
           .replaceFirst(_vavMarker, '');
       if (s == 0 && p > 0) seg = _stripVav(seg);
       seg = seg.replaceAll(RegExp(r'^[.!؟?\s]+|[.!؟?\s]+$'), '');
-      if (seg.isNotEmpty) pieces.add((text: seg, then: then));
+      if (seg.isNotEmpty) pieces.add((text: seg, then: then, marker: s > 0));
     }
     if (pieces.length > maxClauses * 3) break;
   }
 
-  // A one-word piece joins its neighbour.
+  // A one-word piece after a comma joins its neighbour ("ملح، فلفل"). Across a
+  // marker it is an item of its own ("سهرة وبعدين نوم").
   final out = <({String text, bool then})>[];
   ({String text, bool then})? pending;
-  for (var piece in pieces) {
+  for (final piece in pieces) {
+    var current = (text: piece.text, then: piece.then);
     if (pending != null) {
-      piece = (text: '${pending.text} ${piece.text}', then: pending.then);
+      if (piece.marker) {
+        out.add(pending);
+      } else {
+        current = (text: '${pending.text} ${piece.text}', then: pending.then);
+      }
       pending = null;
     }
-    if (_words(piece.text) < 2) {
+    if (_words(current.text) < 2 && !piece.marker) {
       if (out.isNotEmpty) {
         out[out.length - 1] =
-            (text: '${out.last.text} ${piece.text}', then: out.last.then);
+            (text: '${out.last.text} ${current.text}', then: out.last.then);
       } else {
-        pending = piece;
+        pending = current;
       }
     } else {
-      out.add(piece);
+      out.add(current);
     }
   }
   if (pending != null) {

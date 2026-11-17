@@ -454,6 +454,28 @@ void main() {
       expect(draft.lastFailed, 1);
     });
 
+    test('review 4: a note is never flagged as passed', () {
+      final draft = CaptureDraft([_note('فكرة')],
+          now: () => DateTime(2026, 11, 16, 18, 0));
+      draft.setDay(0, DateTime(2026, 11, 16));
+      draft.setMinutes(0, 540);
+      expect(draft.rows.single.item.timePassed, isFalse);
+    });
+
+    test('review 4: a flagged to-do turned into a note loses the flag', () {
+      final draft = CaptureDraft([
+        ProposedItem(
+          kind: ProposedKind.task,
+          title: 'x',
+          day: DateTime(2026, 11, 16),
+          minutes: 540,
+          timePassed: true,
+        ),
+      ]);
+      draft.toggleKind(0);
+      expect(draft.rows.single.item.timePassed, isFalse);
+    });
+
     test('removeTag drops one label and keeps the others', () {
       final draft = CaptureDraft([
         const ProposedItem(

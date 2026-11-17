@@ -1650,5 +1650,6 @@
   "capture_note": "Note",
   "capture_no_date": "Sans date",
   "capture_remove_reminder": "Pas un rappel",
-  "capture_save_failed": "Certains éléments n'ont pas pu être enregistrés"
+  "capture_save_failed": "Certains éléments n'ont pas pu être enregistrés",
+  "capture_task": "Tâche"
 }

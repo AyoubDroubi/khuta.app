@@ -232,6 +232,34 @@ void main() {
     });
   });
 
+  group('review 4', () {
+    test('والله after a comma keeps the sentence intact', () async {
+      final items = await _parse('اشتري خبز، والله لازم اروح عالبنك');
+      expect(items.map((i) => i.title), ['اشتري خبز', 'اروح عالبنك']);
+    });
+
+    test('a lone "remind me" after an item still makes it a reminder',
+        () async {
+      final items = await _parse('اتصل بالبنك ونبهني');
+      expect(items, hasLength(1));
+      expect(items.single.askedToRemind, isTrue);
+    });
+
+    test('a one-word item after وبعدين is its own item', () async {
+      final items = await _parse('بكرة الساعة 12 بالليل سهرة وبعدين نوم');
+      expect(items.map((i) => i.title), ['سهرة', 'نوم']);
+    });
+
+    test('after a midnight item, "and then" stays on the night after',
+        () async {
+      final items =
+          await _parse('بكرة الساعة 12 بالليل سهرة وبعدين الساعة 2 نوم');
+      expect(items, hasLength(2));
+      expect(items[0].day, DateTime(2026, 11, 18));
+      expect(items[1].day, DateTime(2026, 11, 18));
+    });
+  });
+
   test('a note is a note, with no priority', () async {
     final items = await _parse('سجل ملاحظة: فكرة تطبيق للتوصيل للقرى');
     expect(items, hasLength(1));

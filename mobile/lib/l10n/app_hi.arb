@@ -1650,5 +1650,6 @@
   "capture_note": "नोट",
   "capture_no_date": "कोई तारीख नहीं",
   "capture_remove_reminder": "रिमाइंडर नहीं",
-  "capture_save_failed": "कुछ आइटम सहेजे नहीं जा सके"
+  "capture_save_failed": "कुछ आइटम सहेजे नहीं जा सके",
+  "capture_task": "कार्य"
 }

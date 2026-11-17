@@ -242,4 +242,16 @@ void main() {
     ));
     expect(field.controller!.text.length, lessThanOrEqualTo(300));
   });
+
+  testWidgets('review 4: the to-do kind pill names one to-do', (tester) async {
+    await _open(tester);
+    await _find(tester, 'اشتري خبز');
+    expect(
+      find.descendant(
+        of: find.byKey(const ValueKey('capture_kind_0')),
+        matching: find.text('To-do'),
+      ),
+      findsOneWidget,
+    );
+  });
 }

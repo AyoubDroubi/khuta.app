@@ -34,14 +34,18 @@ final _noteCut = _note;
 
 final _filler = RegExp(
   '^\\s*(?:و\\s*)?(?:بدي|بدنا|لازم|عندي|محتاج|i\\s+need\\s+to|i\\s+have\\s+to|'
-  'need\\s+to|i\\s+want\\s+to|to|بس)(?![$_letters])\\s*',
+  'need\\s+to|i\\s+want\\s+to|بس|والله)(?![$_letters])\\s*',
 );
+// "to" after "remind me" ("remind me today to buy bread"), once the day
+// or time between them is gone.
+final _leadingTo = RegExp('^\\s*to(?![$_letters])\\s*');
 final _trailing = RegExp(
   '\\s+(?:وهاد|وهذا|وهاي|و|بس|ثم|and)\\s*\$',
 );
 // A preposition right before a removed day or time goes with it ("on Friday",
 // "في يوم الخميس"), so the title is not left with "call mom on".
-final _prepositionBefore = RegExp('(?<![$_letters])(?:on|at|in|by|في)\\s+\$');
+// Not "in"/"by": they are usually part of the verb ("check in", "drop by").
+final _prepositionBefore = RegExp('(?<![$_letters])(?:on|at|في)\\s+\$');
 
 final _edges = RegExp(r'^[\s:،,.;؛!؟?\-]+|[\s:،,.;؛!؟?\-]+$');
 
@@ -56,7 +60,7 @@ bool asksToRemind(String folded) => _remind.hasMatch(folded);
 
 bool isNote(String folded) => _note.hasMatch(folded);
 
-// Tag names change rarely; compile each one once.
+// Tag names change rarely; compile each one once (bounded: cleared past 256).
 final _nameCache = <String, RegExp>{};
 
 /// The id of the first project whose name occurs in [folded] and the ids of
@@ -69,6 +73,7 @@ final _nameCache = <String, RegExp>{};
   bool named(TodoTag tag) {
     final name = foldLetters(stripMarks(tag.name.trim()));
     if (name.isEmpty) return false;
+    if (_nameCache.length > 256) _nameCache.clear();
     final rx = _nameCache[name] ??= RegExp(_w(RegExp.escape(name)));
     return rx.hasMatch(folded);
   }
@@ -123,6 +128,10 @@ String buildTitle(String clause, List<(int, int)> cutSpans) {
     final m = _filler.firstMatch(foldLetters(title));
     if (m == null || m.end == 0) break;
     title = title.substring(m.end);
+  }
+  if (_remind.hasMatch(folded)) {
+    final m = _leadingTo.firstMatch(foldLetters(title));
+    if (m != null) title = title.substring(m.end);
   }
   while (true) {
     final m = _trailing.firstMatch(foldLetters(title));

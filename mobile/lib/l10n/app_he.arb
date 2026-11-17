@@ -1650,5 +1650,6 @@
   "capture_note": "הערה",
   "capture_no_date": "ללא תאריך",
   "capture_remove_reminder": "לא תזכורת",
-  "capture_save_failed": "לא ניתן היה לשמור חלק מהפריטים"
+  "capture_save_failed": "לא ניתן היה לשמור חלק מהפריטים",
+  "capture_task": "משימה"
 }
