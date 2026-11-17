@@ -244,6 +244,35 @@ void main() {
     });
   });
 
+  group('review 2: minute words and midnight', () {
+    test('"ونصف" is half past and keeps the period word', () {
+      expect(_r('الساعة 5 ونصف العصر اجتماع').minutes, 1050);
+    });
+
+    test('a word that only starts with "ونص" is not half past', () {
+      expect(_r('الساعة 5 ونصلي العصر').minutes, isNot(330));
+      expect(_r('الساعة 5 ونصلي العصر').minutes, isNot(1050));
+    });
+
+    test('a quarter to midnight is 23:45 of the same night', () {
+      final r = _r('بكرة الساعة 12 الا ربع بالليل');
+      expect(r.minutes, 1425);
+      expect(r.day, _d(17));
+    });
+  });
+
+  group('review 2: غدا is also lunch', () {
+    test('after a cooking or eating verb it is not a day', () {
+      expect(_r('بدي اطبخ غدا للولاد').day, isNull);
+      expect(_r('نعمل غدا مع الجيران').day, isNull);
+    });
+
+    test('elsewhere it still means tomorrow', () {
+      expect(_r('غدا عندي اجتماع').day, _d(17));
+      expect(_r('عندي اجتماع غدا').day, _d(17));
+    });
+  });
+
   group('spans', () {
     test('cover the day word and the time phrase', () {
       final text = foldLetters('بكرة الساعة 10 الصبح');

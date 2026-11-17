@@ -103,6 +103,20 @@ void main() {
     expect(splitClauses('اشتري خبز، وقت الصلاة'), ['اشتري خبز', 'وقت الصلاة']);
   });
 
+  test('review 2: names and nouns that start with و keep it', () {
+    expect(splitClauses('اشتري خبز، وليد بده يزورنا'),
+        ['اشتري خبز', 'وليد بده يزورنا']);
+    expect(splitClauses('اشتري خبز، وحدة سكر'), ['اشتري خبز', 'وحدة سكر']);
+    expect(splitClauses('اشتري خبز، وائل جاي'), ['اشتري خبز', 'وائل جاي']);
+  });
+
+  test('review 2: a conjunction before a verb or ال is still dropped', () {
+    expect(splitClauses('اتصل بالبنك، واشتري هدية'), ['اتصل بالبنك', 'اشتري هدية']);
+    expect(splitClauses('اشتري خبز، وأحجز عند الدكتور'),
+        ['اشتري خبز', 'أحجز عند الدكتور']);
+    expect(splitClauses('اشتري خبز، والجمعة زيارة'), ['اشتري خبز', 'الجمعة زيارة']);
+  });
+
   test('an abbreviation does not end a sentence', () {
     expect(splitClauses('زور د. أحمد بكرة'), ['زور د. أحمد بكرة']);
     expect(splitClauses('Call Dr. Smith at 3pm'), ['Call Dr. Smith at 3pm']);

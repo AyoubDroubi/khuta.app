@@ -3,6 +3,7 @@ import 'package:khuta/features/capture/data/proposed_item.dart';
 import 'package:khuta/features/journal/data/journal_entry.dart';
 import 'package:khuta/features/journal/state/journal_controller.dart';
 import 'package:khuta/features/todos/state/todos_controller.dart';
+import 'package:uuid/uuid.dart';
 
 class CaptureSaveResult {
   const CaptureSaveResult({this.saved = const [], this.failed = const []});
@@ -29,16 +30,18 @@ Future<CaptureSaveResult> saveProposedItems(
   final failed = <ProposedItem>[];
   for (final item in items) {
     // The controllers add an item to memory before its write finishes, so a
-    // write that fails leaves a ghost in the list. Remember what was there.
-    final todoIds = todos.all.map((t) => t.id).toSet();
-    final entryIds = journal.all.map((e) => e.id).toSet();
+    // write that fails leaves a ghost in the list. Give the item its id here,
+    // so exactly that one can be taken out again.
+    final id = const Uuid().v4();
+    final note = item.kind == ProposedKind.note;
     try {
-      if (item.kind == ProposedKind.note) {
+      if (note) {
         await journal.create(
           date: (item.day ?? today).dayKey,
           kind: JournalEntryKind.moment,
           text: item.title,
           minutes: item.minutes,
+          id: id,
         );
       } else {
         await todos.create(
@@ -48,21 +51,18 @@ Future<CaptureSaveResult> saveProposedItems(
           priority: item.priority,
           project: item.project,
           tags: item.tags,
+          id: id,
         );
       }
       saved.add(item);
     } catch (_) {
-      for (final t in todos.all.where((t) => !todoIds.contains(t.id)).toList()) {
-        try {
-          await todos.remove(t.id);
-        } catch (_) {}
-      }
-      for (final e
-          in journal.all.where((e) => !entryIds.contains(e.id)).toList()) {
-        try {
-          await journal.remove(e.id);
-        } catch (_) {}
-      }
+      try {
+        if (note) {
+          if (journal.all.any((e) => e.id == id)) await journal.remove(id);
+        } else {
+          if (todos.all.any((t) => t.id == id)) await todos.remove(id);
+        }
+      } catch (_) {}
       failed.add(item);
     }
   }

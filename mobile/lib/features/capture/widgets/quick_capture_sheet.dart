@@ -191,10 +191,18 @@ class _CaptureSheetState extends State<_CaptureSheet> {
                     ),
                     Align(
                       alignment: AlignmentDirectional.centerEnd,
-                      child: FilledButton.tonal(
-                        key: const Key('capture_find'),
-                        onPressed: _text.text.trim().isEmpty ? null : _find,
-                        child: Text(context.l10n.capture_find),
+                      child: ListenableBuilder(
+                        // Finding again while a save runs would replace the
+                        // draft under it.
+                        listenable: draft ?? const AlwaysStoppedAnimation(0),
+                        builder: (context, _) => FilledButton.tonal(
+                          key: const Key('capture_find'),
+                          onPressed: _text.text.trim().isEmpty ||
+                                  (draft?.saving ?? false)
+                              ? null
+                              : _find,
+                          child: Text(context.l10n.capture_find),
+                        ),
                       ),
                     ),
                     if (draft != null)
@@ -369,6 +377,13 @@ class _CaptureRowState extends State<_CaptureRow> {
                   controller: _title,
                   minLines: 1,
                   maxLines: 3,
+                  maxLength:
+                      item.kind == ProposedKind.task ? maxTodoTitle : null,
+                  buildCounter: (_,
+                          {required currentLength,
+                          required isFocused,
+                          maxLength}) =>
+                      null,
                   onChanged: (value) => draft.retitle(i, value),
                   style: TextStyle(
                     fontSize: 15.5,

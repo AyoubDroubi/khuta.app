@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:khuta/features/capture/data/proposed_item.dart';
+import 'package:khuta/features/capture/data/rule_parser.dart';
 import 'package:khuta/features/capture/state/capture_draft.dart';
 import 'package:khuta/features/capture/state/capture_saver.dart';
 import 'package:khuta/features/journal/data/journal_entry.dart';
@@ -19,6 +22,7 @@ class _FailingJournal extends JournalController {
     required String text,
     int? minutes,
     List<String> photos = const [],
+    String? id,
   }) {
     if (text == 'boom') throw StateError('disk full');
     return super.create(
@@ -27,6 +31,7 @@ class _FailingJournal extends JournalController {
       text: text,
       minutes: minutes,
       photos: photos,
+      id: id,
     );
   }
 }
@@ -44,8 +49,9 @@ class _GhostTodos extends TodosController {
     List<String> tags = const [],
     String project = '',
     List<TodoStep> steps = const [],
+    String? id,
   }) async {
-    await super.create(text: text, date: date, minutes: minutes);
+    await super.create(text: text, date: date, minutes: minutes, id: id);
     throw StateError('write failed after the item was added');
   }
 }
@@ -58,9 +64,50 @@ class _GhostJournal extends JournalController {
     required String text,
     int? minutes,
     List<String> photos = const [],
+    String? id,
   }) async {
-    await super.create(date: date, kind: kind, text: text);
+    await super.create(date: date, kind: kind, text: text, id: id);
     throw StateError('write failed after the entry was added');
+  }
+}
+
+// While this save's write is failing, something else in the app adds a to-do.
+class _BusyGhostTodos extends TodosController {
+  @override
+  Future<Todo> create({
+    required String text,
+    String date = '',
+    int? minutes,
+    TodoPriority priority = TodoPriority.none,
+    List<String> photos = const [],
+    List<String> tags = const [],
+    String project = '',
+    List<TodoStep> steps = const [],
+    String? id,
+  }) async {
+    await super.create(text: text, id: id);
+    await super.create(text: 'from the home widget');
+    throw StateError('write failed after the item was added');
+  }
+}
+
+class _SlowTodos extends TodosController {
+  final gate = Completer<void>();
+
+  @override
+  Future<Todo> create({
+    required String text,
+    String date = '',
+    int? minutes,
+    TodoPriority priority = TodoPriority.none,
+    List<String> photos = const [],
+    List<String> tags = const [],
+    String project = '',
+    List<TodoStep> steps = const [],
+    String? id,
+  }) async {
+    await gate.future;
+    return super.create(text: text, date: date, minutes: minutes, id: id);
   }
 }
 
@@ -190,6 +237,19 @@ void main() {
       expect(TodosController().all, hasLength(1));
     });
 
+    test('review 2: rollback removes only the item this save created',
+        () async {
+      final todos = _BusyGhostTodos();
+      final result = await saveProposedItems(
+        [_task('اشتري خبز')],
+        todos: todos,
+        journal: JournalController(),
+        today: _today,
+      );
+      expect(result.failed, hasLength(1));
+      expect(todos.all.map((t) => t.text), ['from the home widget']);
+    });
+
     test('a failed write is reported and the others are still saved', () async {
       final journal = _FailingJournal();
       final boom = _note('boom');
@@ -303,6 +363,84 @@ void main() {
       );
       expect(TodosController().all.single.text, 'فكرة');
       expect(JournalController().all, isEmpty);
+    });
+
+    test('review 2: row ids never repeat across drafts', () {
+      final a = CaptureDraft([_task('أ'), _task('ب')]);
+      final b = CaptureDraft([_task('ج'), _task('د')]);
+      expect(
+        a.rows.map((r) => r.id).toSet().intersection(b.rows.map((r) => r.id).toSet()),
+        isEmpty,
+      );
+    });
+
+    test('review 2: disposing the draft while it saves does not throw',
+        () async {
+      final todos = _SlowTodos();
+      final draft = CaptureDraft([_task('أ')]);
+      final saving = draft.save(
+        todos: todos,
+        journal: JournalController(),
+        today: _today,
+      );
+      draft.dispose();
+      todos.gate.complete();
+      expect((await saving)!.saved, hasLength(1));
+    });
+
+    test('review 2: a row retitled while saving still leaves the draft',
+        () async {
+      final todos = _SlowTodos();
+      final draft = CaptureDraft([_task('أ'), _task('ب')]);
+      draft.toggle(1);
+      final saving = draft.save(
+        todos: todos,
+        journal: JournalController(),
+        today: _today,
+      );
+      draft.retitle(0, 'أ معدّل');
+      todos.gate.complete();
+      await saving;
+      expect(draft.rows.map((r) => r.item.title), ['ب']);
+    });
+
+    test('review 2: a picked day and time already past are flagged', () {
+      final draft = CaptureDraft(
+        [
+          const ProposedItem(
+            kind: ProposedKind.task,
+            title: 'اتصل',
+            askedToRemind: true,
+          ),
+        ],
+        now: () => DateTime(2026, 11, 16, 18, 0),
+      );
+      draft.setDay(0, DateTime(2026, 11, 16));
+      draft.setMinutes(0, 540);
+      expect(draft.rows.single.item.timePassed, isTrue);
+      draft.setDay(0, DateTime(2026, 11, 17));
+      expect(draft.rows.single.item.timePassed, isFalse);
+    });
+
+    test('review 2: a to-do turned into a note loses its project and labels',
+        () {
+      final draft = CaptureDraft([
+        const ProposedItem(
+          kind: ProposedKind.task,
+          title: 'x',
+          project: 'p1',
+          tags: ['l1'],
+        ),
+      ]);
+      draft.toggleKind(0);
+      expect(draft.rows.single.item.project, '');
+      expect(draft.rows.single.item.tags, isEmpty);
+    });
+
+    test('review 2: a long note turned into a to-do is capped', () {
+      final draft = CaptureDraft([_note(List.filled(400, 'ا').join())]);
+      draft.toggleKind(0);
+      expect(draft.rows.single.item.title.length, maxTodoTitle);
     });
 
     test('removeTag drops one label and keeps the others', () {

@@ -41,3 +41,11 @@ int _fold(int unit) {
   if (unit >= 0x06F0 && unit <= 0x06F9) return 0x30 + (unit - 0x06F0);
   return unit;
 }
+
+/// Characters that make up a word for matching: the Arabic block, a-z, 0-9.
+/// Text is folded first, so upper-case letters never appear.
+const captureLetters = r'\u0600-\u06FFa-z0-9';
+
+/// [body] as a whole word: not preceded or followed by a word character.
+String wordBounded(String body) =>
+    '(?<![$captureLetters])(?:$body)(?![$captureLetters])';

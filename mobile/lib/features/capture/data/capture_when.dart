@@ -5,6 +5,8 @@
 /// (ة as ه, أ إ آ as ا, no diacritics).
 library;
 
+import 'package:khuta/features/capture/data/capture_normalize.dart';
+
 enum DayWord {
   today,
   tomorrow,
@@ -54,7 +56,7 @@ class ResolvedWhen {
   final bool timePassed;
 }
 
-const _letters = r'؀-ۿa-z0-9';
+const _letters = captureLetters;
 
 const _dayPeriodWords =
     'الصبح|الصباح|العصر|الظهر|المسا|المغرب|العشاء|العشا|بالليل';
@@ -65,13 +67,18 @@ const _ampm = r'am|pm|a\.m\.?|p\.m\.?';
 const _period = '(?:$_periodWords|$_ampm)';
 
 // "و نص" (half), "و ربع" (quarter), "الا ربع" (a quarter to).
-const _adjust = r'(?:\s*(?:و\s*(?<adj>نص|نصف|ربع|ثلث)|الا\s+(?<less>ربع|ثلث)))?';
+const _adjust = '(?:\\s*(?:و\\s*(?<adj>نصف|نص|ربع|ثلث)(?![$_letters])|'
+    'الا\\s+(?<less>ربع|ثلث)(?![$_letters])))?';
 
-String _w(String body) => '(?<![$_letters])(?:$body)(?![$_letters])';
+const _w = wordBounded;
 
 const _dayPart = '(?:\\s+(?<part>$_dayPeriodWords))?';
 
 const _wd = r'(?:يوم\s+(?:ال)?|ال)';
+
+// "غدا" is tomorrow, but after a cooking or eating verb it is lunch.
+const _ghada = r'(?<!(?:اطبخ|نطبخ|بطبخ|طبخ|اعمل|نعمل|بعمل|بنعمل|حضر|نحضر|جهز|نجهز|'
+    r'سوي|اسوي|نسوي|ناكل|اكل|بناكل|ماكل|تغدي|نتغدي)\s+)غدا';
 
 final _dayRules = <(DayWord, RegExp)>[
   (
@@ -84,7 +91,7 @@ final _dayRules = <(DayWord, RegExp)>[
   (
     DayWord.tomorrow,
     RegExp(
-      '${_w(r'(?:في\s+)?(?:بكره|بكرا|بكري|غدا|الغد|غد)|tomorrow')}$_dayPart',
+      '${_w('(?:في\\s+)?(?:بكره|بكرا|بكري|$_ghada|الغد|غد)|tomorrow')}$_dayPart',
     ),
   ),
   (DayWord.today, RegExp('${_w('اليوم|الليله|today|tonight')}$_dayPart')),
@@ -215,14 +222,20 @@ WhenMatch findWhen(String folded) {
       var total = r.$1 * 60 + minute;
       final adj = _group(best, 'adj');
       final less = _group(best, 'less');
+      var night = r.$2;
       if (adj != null) {
         total += adj.startsWith('نص') ? 30 : (adj == 'ربع' ? 15 : 20);
       } else if (less != null) {
         total -= less == 'ربع' ? 15 : 20;
+        if (total < 0) {
+          // "12 الا ربع بالليل": a quarter to midnight is late on the same day.
+          total += 24 * 60;
+          night = false;
+        }
       }
       if (total >= 0 && total < 24 * 60) {
         minutes = total;
-        midnight = r.$2;
+        midnight = night;
         spans.add((best.start, best.end));
       }
     }
@@ -236,13 +249,8 @@ WhenMatch findWhen(String folded) {
   );
 }
 
-String? _group(RegExpMatch m, String name) {
-  try {
-    return m.namedGroup(name);
-  } catch (_) {
-    return null;
-  }
-}
+String? _group(RegExpMatch m, String name) =>
+    m.groupNames.contains(name) ? m.namedGroup(name) : null;
 
 /// Returns the 24-hour hour, and whether it is a small hour of the night after
 /// the named day.

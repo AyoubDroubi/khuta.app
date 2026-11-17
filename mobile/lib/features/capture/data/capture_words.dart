@@ -9,9 +9,9 @@ import 'package:khuta/features/capture/data/capture_normalize.dart';
 import 'package:khuta/features/todos/data/todo.dart';
 import 'package:khuta/features/todos/data/todo_tag.dart';
 
-const _letters = r'؀-ۿa-z0-9';
+const _letters = captureLetters;
 
-String _w(String body) => '(?<![$_letters])(?:$body)(?![$_letters])';
+const _w = wordBounded;
 
 const _intensifier = r'(?:\s+(?:جدا|كتير|كثير|very))?';
 
@@ -52,6 +52,9 @@ bool asksToRemind(String folded) => _remind.hasMatch(folded);
 
 bool isNote(String folded) => _note.hasMatch(folded);
 
+// Tag names change rarely; compile each one once.
+final _nameCache = <String, RegExp>{};
+
 /// The id of the first project whose name occurs in [folded] and the ids of
 /// every label whose name occurs. Never produces an id that does not exist.
 ({String project, List<String> tags}) matchKnown(
@@ -60,9 +63,10 @@ bool isNote(String folded) => _note.hasMatch(folded);
   required List<TodoTag> labels,
 }) {
   bool named(TodoTag tag) {
-    final name = foldLetters(tag.name.trim());
+    final name = foldLetters(stripMarks(tag.name.trim()));
     if (name.isEmpty) return false;
-    return RegExp(_w(RegExp.escape(name))).hasMatch(folded);
+    final rx = _nameCache[name] ??= RegExp(_w(RegExp.escape(name)));
+    return rx.hasMatch(folded);
   }
 
   final project = projects.where(named).map((t) => t.id).firstOrNull ?? '';

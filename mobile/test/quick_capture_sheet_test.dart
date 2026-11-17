@@ -27,17 +27,21 @@ Future<void> _find(WidgetTester tester, String text) async {
 }
 
 // Writes need real time; what runs after each one runs on the test clock, so
-// alternate between them, then let the widget-sync debounce timer (0.7 s) fire.
-Future<void> _settleWrites(WidgetTester tester) async {
-  for (var i = 0; i < 12; i++) {
+// alternate between them until [done] holds (or a generous limit), then let
+// the widget-sync debounce timer (0.7 s) fire.
+Future<void> _settleWrites(WidgetTester tester, {bool Function()? done}) async {
+  for (var i = 0; i < 200 && !(done?.call() ?? i >= 12); i++) {
     await tester.runAsync(
-      () => Future<void>.delayed(const Duration(milliseconds: 40)),
+      () => Future<void>.delayed(const Duration(milliseconds: 20)),
     );
-    await tester.pump(const Duration(milliseconds: 100));
+    await tester.pump(const Duration(milliseconds: 50));
   }
   await tester.pump(const Duration(seconds: 1));
   await tester.pumpAndSettle();
 }
+
+bool _closed(WidgetTester tester) =>
+    find.byKey(const Key('capture_input')).evaluate().isEmpty;
 
 VoidCallback? _saveAction(WidgetTester tester) =>
     tester.widget<FilledButton>(find.byKey(const Key('capture_save'))).onPressed;
@@ -70,7 +74,7 @@ void main() {
 
     await tester.tap(find.byKey(const Key('capture_save')));
     await tester.pump();
-    await _settleWrites(tester);
+    await _settleWrites(tester, done: () => _closed(tester) && _todos(tester).all.length >= 3);
 
     expect(_todos(tester).all, hasLength(3));
     expect(find.byKey(const Key('capture_input')), findsNothing);
@@ -117,7 +121,7 @@ void main() {
     await tester.tap(save);
     await tester.tap(save, warnIfMissed: false);
     await tester.pump();
-    await _settleWrites(tester);
+    await _settleWrites(tester, done: () => _closed(tester) && _todos(tester).all.length >= 2);
     expect(_todos(tester).all, hasLength(2));
   });
 
@@ -198,5 +202,18 @@ void main() {
     await _find(tester, _headline);
     await expectLater(tester, meetsGuideline(labeledTapTargetGuideline));
     handle.dispose();
+  });
+
+  testWidgets('review 2: finding again shows the new titles', (tester) async {
+    await _open(tester);
+    await _find(tester, 'اشتري خبز');
+    await _find(tester, 'اتصل بأمي');
+    final titles = tester
+        .widgetList<TextField>(find.descendant(
+          of: find.byKey(const ValueKey('capture_row_0')),
+          matching: find.byType(TextField),
+        ))
+        .map((f) => f.controller!.text);
+    expect(titles, ['اتصل بأمي']);
   });
 }

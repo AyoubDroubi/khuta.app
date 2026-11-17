@@ -176,6 +176,18 @@ void main() {
     });
   });
 
+  test('review 2: a to-do title is capped at the composer limit', () async {
+    final long = List.filled(120, 'كلمة').join(' ');
+    final items = await _parse(long);
+    expect(items.single.title.length, lessThanOrEqualTo(maxTodoTitle));
+  });
+
+  test('review 2: a long note keeps its full text', () async {
+    final long = 'ملاحظة: ${List.filled(120, 'كلمة').join(' ')}';
+    final items = await _parse(long);
+    expect(items.single.title.length, greaterThan(maxTodoTitle));
+  });
+
   test('a note is a note, with no priority', () async {
     final items = await _parse('سجل ملاحظة: فكرة تطبيق للتوصيل للقرى');
     expect(items, hasLength(1));

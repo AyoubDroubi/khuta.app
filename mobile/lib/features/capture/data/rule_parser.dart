@@ -9,6 +9,23 @@ import 'package:khuta/features/todos/data/todo_tag.dart';
 
 const maxCaptureInput = 2000;
 
+/// The to-do composer's text limit; a captured to-do title never exceeds it,
+/// so editing the to-do later cannot cut it.
+const maxTodoTitle = 300;
+
+/// [text] cut to at most [max] characters, at a space when there is one and
+/// never inside a surrogate pair.
+String capTitle(String text, [int max = maxTodoTitle]) {
+  if (text.length <= max) return text;
+  var cut = text.lastIndexOf(' ', max);
+  if (cut <= 0) {
+    cut = max;
+    final unit = text.codeUnitAt(cut - 1);
+    if (unit >= 0xD800 && unit <= 0xDBFF) cut--;
+  }
+  return text.substring(0, cut).trimRight();
+}
+
 final _wordChar = RegExp(r'[\p{L}\p{N}]', unicode: true);
 
 bool _hasWords(String title) => _wordChar.hasMatch(title);
@@ -113,7 +130,7 @@ class RuleParser implements CaptureParser {
     final resolved = resolveWhen(d.when, today: today, now: now);
     return ProposedItem(
       kind: d.note ? ProposedKind.note : ProposedKind.task,
-      title: d.title,
+      title: d.note ? d.title : capTitle(d.title),
       day: resolved.day,
       minutes: resolved.minutes,
       priority: d.note ? TodoPriority.none : d.priority,

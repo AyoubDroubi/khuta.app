@@ -179,6 +179,10 @@ void main() {
       expect(_title('اشتري هدية لأمي'), 'اشتري هدية لأمي');
     });
 
+    test('"ونصف" leaves no letter behind in the title', () {
+      expect(_title('الساعة 5 ونصف العصر اجتماع'), 'اجتماع');
+    });
+
     test('a clause that is only a day word has no title', () {
       expect(_title('بكرة'), '');
     });

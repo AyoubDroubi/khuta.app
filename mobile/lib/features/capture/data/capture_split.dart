@@ -5,9 +5,11 @@
 /// does not split, because a wrong split is worse than one editable item.
 library;
 
+import 'package:khuta/features/capture/data/capture_normalize.dart';
+
 const maxClauses = 20;
 
-const _letters = r'؀-ۿa-z0-9';
+const _letters = captureLetters;
 
 // Commas inside numbers ("1,234") do not separate.
 // A sentence end needs three letters before it, so "د. أحمد" and "Dr. Smith"
@@ -25,21 +27,27 @@ final _markerBefore = RegExp(
 final _dropWhole = RegExp(r'^(?:وبعدين|وبعدها|ثم)\s+');
 final _andRemind = RegExp(r'^and\s+(?=remind\s+me)', caseSensitive: false);
 final _vavMarker = RegExp('^و(?=(?:بدي|لازم|ذكرني|نبهني)(?![$_letters]))');
-final _vavAfterSeparator = RegExp(r'^و(?=[ء-ي])');
 
-// Common words that really start with و: their letter stays.
-const _vavWords = {
-  'ورق', 'ورقه', 'ورقة', 'واجب', 'واجبات', 'وصل', 'وصفه', 'وصفة', 'وقت',
-  'ورد', 'ولد', 'ولاد', 'وزن', 'وظيفه', 'وظيفة', 'وجبه', 'وجبة', 'وجه',
-  'وعد', 'وكاله', 'وكالة', 'ورشه', 'ورشة', 'وسادة', 'وثائق', 'وثيقه',
-  'وثيقة', 'وزاره', 'وزارة', 'وجع', 'وعاء', 'وقود', 'وكيل', 'وسام', 'وليمه',
-  'وليمة', 'وضوء', 'وطن', 'وتر',
+// After a separator a leading "و" is "and" only when what follows is clearly a
+// new word: "ال...", a hamza form ("وأحجز"), or a common verb ("وكلم"). Any
+// other word keeps its و, because many words and names start with it (وليد،
+// وحدة، وائل، ورق).
+const _verbsAfterVav = {
+  'كلم', 'اتصل', 'اشتري', 'اشتر', 'روح', 'رح', 'خلص', 'جيب', 'ابعت', 'احجز',
+  'جدد', 'راجع', 'نظف', 'رتب', 'زور', 'حضر', 'اطبخ', 'اغسل', 'خذ', 'خد',
+  'اخد', 'اخذ', 'ادفع', 'ذاكر', 'صلي', 'رد', 'سجل', 'ارجع', 'رجع', 'شوف',
+  'اسال', 'اطلب', 'حط', 'نزل', 'طلع', 'بلش', 'ابدا', 'قول', 'دور', 'صلح',
+  'غسل', 'نام', 'كمل', 'اكتب', 'اعمل', 'امشي',
 };
 
 String _stripVav(String seg) {
-  if (!_vavAfterSeparator.hasMatch(seg)) return seg;
-  final first = seg.split(RegExp(r'\s+')).first;
-  return _vavWords.contains(first) ? seg : seg.substring(1);
+  if (!seg.startsWith('و') || seg.length < 2) return seg;
+  final rest = seg.substring(1);
+  final word = foldLetters(rest.split(RegExp(r'\s+')).first);
+  final hamza = 'أإآ'.contains(rest[0]);
+  final conjunction =
+      word.startsWith('ال') || hamza || _verbsAfterVav.contains(word);
+  return conjunction ? rest : seg;
 }
 
 int _words(String s) => s.trim().isEmpty ? 0 : s.trim().split(RegExp(r'\s+')).length;
