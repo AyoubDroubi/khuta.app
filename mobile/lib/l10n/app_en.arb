@@ -1639,5 +1639,24 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "Drag the projects where you want them."
+  "todo_project_arrange_hint_flat": "Drag the projects where you want them.",
+  "capture_title": "Quick capture",
+  "capture_hint": "Write what you need to do, in your own words",
+  "capture_find": "Find items",
+  "capture_nothing": "Nothing found. Try adding what to do and when.",
+  "capture_save_count": "Save {count}",
+  "@capture_save_count": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "capture_needs_time": "Needs a time",
+  "capture_time_passed": "Time has passed",
+  "capture_note": "Note",
+  "capture_no_date": "No date",
+  "capture_remove_reminder": "Not a reminder",
+  "capture_save_failed": "Some items could not be saved",
+  "capture_task": "To-do"
 }

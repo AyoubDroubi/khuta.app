@@ -1639,5 +1639,17 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "Ziehe die Projekte an die gewünschte Stelle."
+  "todo_project_arrange_hint_flat": "Ziehe die Projekte an die gewünschte Stelle.",
+  "capture_title": "Schnellerfassung",
+  "capture_hint": "Schreibe in eigenen Worten, was du tun musst",
+  "capture_find": "Einträge finden",
+  "capture_nothing": "Nichts gefunden. Schreibe, was zu tun ist und wann.",
+  "capture_save_count": "{count} speichern",
+  "capture_needs_time": "Braucht eine Uhrzeit",
+  "capture_time_passed": "Zeit ist vorbei",
+  "capture_note": "Notiz",
+  "capture_no_date": "Kein Datum",
+  "capture_remove_reminder": "Keine Erinnerung",
+  "capture_save_failed": "Einige Einträge konnten nicht gespeichert werden",
+  "capture_task": "Aufgabe"
 }

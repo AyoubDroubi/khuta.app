@@ -105,7 +105,8 @@
   "widget_cfg_image",
   "widget_cfg_saturation",
   "widget_cfg_style",
-  "widgets"
+  "widgets",
+  "capture_note"
  ],
  "he": [
   "app_name",

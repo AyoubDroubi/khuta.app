@@ -1639,5 +1639,17 @@
       }
     }
   },
-  "todo_project_arrange_hint_flat": "גררו את הפרויקטים למקום שתרצו."
+  "todo_project_arrange_hint_flat": "גררו את הפרויקטים למקום שתרצו.",
+  "capture_title": "הוספה מהירה",
+  "capture_hint": "כתבו במילים שלכם מה צריך לעשות",
+  "capture_find": "מצא פריטים",
+  "capture_nothing": "לא נמצא דבר. כתבו מה לעשות ומתי.",
+  "capture_save_count": "שמירת {count}",
+  "capture_needs_time": "נדרשת שעה",
+  "capture_time_passed": "השעה עברה",
+  "capture_note": "הערה",
+  "capture_no_date": "ללא תאריך",
+  "capture_remove_reminder": "לא תזכורת",
+  "capture_save_failed": "לא ניתן היה לשמור חלק מהפריטים",
+  "capture_task": "משימה"
 }
