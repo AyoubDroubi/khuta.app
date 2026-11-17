@@ -66,7 +66,7 @@ void main() {
       'الساعة ٥ العصر': 1020,
       'الساعة تسعة الصبح': 540,
       'الساعة ثمانية بالليل': 1200,
-      'الساعة 5': 300,
+      'الساعة 5': 1020,
     };
     cases.forEach((text, minutes) {
       test('"$text" is $minutes minutes', () {
@@ -204,7 +204,7 @@ void main() {
       expect(_r('look at 2 options for the trip').minutes, isNull);
       expect(_r('Meet at 20 Main Street').minutes, isNull);
       expect(_r('Call Dr. Smith at 3pm').minutes, 900);
-      expect(_r('meet at 3:30').minutes, 210);
+      expect(_r('meet at 3:30').minutes, 930);
     });
 
     test('a bare number with a colon is not a time without a period word', () {
@@ -270,6 +270,66 @@ void main() {
     test('elsewhere it still means tomorrow', () {
       expect(_r('غدا عندي اجتماع').day, _d(17));
       expect(_r('عندي اجتماع غدا').day, _d(17));
+    });
+  });
+
+  group('review 3: a bare 1 to 6 o\'clock is afternoon or evening', () {
+    test('1-6 without a period word are pm, 7-12 stay as said', () {
+      expect(_r('ذكرني اتصل بأمي الساعة 5').minutes, 1020);
+      expect(_r('ذكرني اتصل بأمي الساعة 5').day, _d(16));
+      expect(_r('الساعة 1').minutes, 780);
+      expect(_r('الساعة 6').minutes, 1080);
+      expect(_r('الساعة 7').minutes, 420);
+      expect(_r('الساعة 12').minutes, 720);
+      expect(_r('الساعة 5 الصبح').minutes, 300);
+    });
+  });
+
+  group('review 3: MSA period words and hour words', () {
+    final cases = <String, int>{
+      'اجتماع الساعة 8 المساء': 1200,
+      'اتصل بأحمد الساعة 9 ليلاً': 1260,
+      'الساعة 1 ظهراً': 780,
+      'الساعة 4 عصراً': 960,
+      'اجتماع غداً الساعة الخامسة مساءً': 1020,
+      'الساعة الثامنة صباحاً': 480,
+      'الساعة خمس ونص': 1050,
+      'الساعة تسع الصبح': 540,
+      'الساعة الحادية عشرة ليلاً': 1380,
+    };
+    cases.forEach((text, minutes) {
+      test('"$text" is $minutes minutes', () {
+        expect(_r(text).minutes, minutes);
+      });
+    });
+  });
+
+  group('review 3: a period said after the day word', () {
+    test('بعد الظهر and المساء after the day apply to the time', () {
+      expect(_r('بكرة بعد الظهر الساعة 3 اجتماع').minutes, 900);
+      expect(_r('اتصل بأمي اليوم مساءً الساعة 8').minutes, 1200);
+    });
+
+    test('a period word after the day is cut whole, never in half', () {
+      final text = foldLetters(stripMarks('بكرة المساء اجتماع مع أحمد'));
+      final m = findWhen(text);
+      var rest = text;
+      for (final (s, e) in [...m.spans]..sort((a, b) => b.$1.compareTo(a.$1))) {
+        rest = rest.replaceRange(s, e, '');
+      }
+      expect(rest.trim(), 'اجتماع مع احمد');
+    });
+  });
+
+  group('review 3: tonight with an am hour', () {
+    test('is the coming night, not this morning', () {
+      final r = _r('call the bank tonight at 1am');
+      expect(r.day, _d(17));
+      expect(r.minutes, 60);
+      expect(r.timePassed, isFalse);
+      final m = _r('tonight at 12am call');
+      expect(m.day, _d(17));
+      expect(m.minutes, 0);
     });
   });
 

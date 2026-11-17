@@ -73,9 +73,10 @@ class RuleParser implements CaptureParser {
     WhenMatch? carryWhen;
     var carryPriority = TodoPriority.none;
 
-    for (final clause in splitClauses(stripMarks(input))) {
+    for (final link in splitClauseLinks(stripMarks(input))) {
+      final clause = link.text;
       final folded = foldLetters(clause);
-      final when = findWhen(folded);
+      var when = findWhen(folded);
       final title = buildTitle(clause, when.spans);
       final priority = findPriority(folded);
 
@@ -94,7 +95,12 @@ class RuleParser implements CaptureParser {
       }
       if (drafts.length >= maxClauses) continue;
 
-      final note = isNote(folded);
+      // "... وبعدين الساعة 6 عشا": after "and then" the day said before
+      // still holds.
+      if (link.then && when.day == null && drafts.isNotEmpty) {
+        when = when.merge(WhenMatch(day: drafts.last.when.day));
+      }
+      final note = isNote(blankSpans(folded, when.spans));
       final known = matchKnown(folded, projects: projects, labels: labels);
       var merged = when;
       var itemPriority = note ? TodoPriority.none : priority;
@@ -111,8 +117,9 @@ class RuleParser implements CaptureParser {
         title: title,
         when: merged,
         priority: itemPriority,
-        project: known.project,
-        tags: known.tags,
+        // A journal entry has no project or labels.
+        project: note ? '' : known.project,
+        tags: note ? const [] : known.tags,
         askedToRemind: !note && asksToRemind(folded),
       ));
     }
@@ -127,7 +134,13 @@ class RuleParser implements CaptureParser {
     required DateTime today,
     required DateTime now,
   }) {
-    final resolved = resolveWhen(d.when, today: today, now: now);
+    // A note records something, often from earlier today: its time is not
+    // pushed forward to the next occurrence, and it is never "too late".
+    final resolved = resolveWhen(
+      d.when,
+      today: today,
+      now: d.note ? DateTime(today.year, today.month, today.day) : now,
+    );
     return ProposedItem(
       kind: d.note ? ProposedKind.note : ProposedKind.task,
       title: d.note ? d.title : capTitle(d.title),

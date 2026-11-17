@@ -443,6 +443,17 @@ void main() {
       expect(draft.rows.single.item.title.length, maxTodoTitle);
     });
 
+    test('review 3: the number of failed rows is kept for the sheet', () async {
+      final draft = CaptureDraft([_task('أولى'), _note('boom')]);
+      expect(draft.lastFailed, 0);
+      await draft.save(
+        todos: TodosController(),
+        journal: _FailingJournal(),
+        today: _today,
+      );
+      expect(draft.lastFailed, 1);
+    });
+
     test('removeTag drops one label and keeps the others', () {
       final draft = CaptureDraft([
         const ProposedItem(

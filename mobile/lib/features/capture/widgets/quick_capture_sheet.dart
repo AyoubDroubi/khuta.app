@@ -115,12 +115,9 @@ class _CaptureSheetState extends State<_CaptureSheet> {
       today: AppClock.today(),
     );
     if (!mounted || result == null) return;
-    if (result.failed.isNotEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(context.l10n.capture_save_failed)),
-      );
-      return;
-    }
+    // A failure is shown inside the sheet (see _SaveBar); a SnackBar would sit
+    // under the modal sheet where nobody sees it.
+    if (result.failed.isNotEmpty) return;
     _close();
   }
 
@@ -275,13 +272,23 @@ class _SaveBar extends StatelessWidget {
     final canSave = !draft.saveBlocked && !draft.saving;
     return Padding(
       padding: const EdgeInsets.only(top: 8),
-      child: Align(
-        alignment: AlignmentDirectional.centerEnd,
-        child: FilledButton(
-          key: const Key('capture_save'),
-          onPressed: canSave ? onSave : null,
-          child: Text(context.l10n.capture_save_count(checked)),
-        ),
+      child: Row(
+        children: [
+          Expanded(
+            child: draft.lastFailed > 0
+                ? Text(
+                    context.l10n.capture_save_failed,
+                    key: const Key('capture_save_failed'),
+                    style: TextStyle(color: context.colors.error),
+                  )
+                : const SizedBox.shrink(),
+          ),
+          FilledButton(
+            key: const Key('capture_save'),
+            onPressed: canSave ? onSave : null,
+            child: Text(context.l10n.capture_save_count(checked)),
+          ),
+        ],
       ),
     );
   }
@@ -307,6 +314,14 @@ class _CaptureRow extends StatefulWidget {
 
 class _CaptureRowState extends State<_CaptureRow> {
   late final _title = TextEditingController(text: widget.item.title);
+
+  @override
+  void didUpdateWidget(_CaptureRow old) {
+    super.didUpdateWidget(old);
+    // Typing keeps the two equal; a change from elsewhere (a title capped when
+    // a note becomes a to-do) must show in the field.
+    if (widget.item.title != _title.text) _title.text = widget.item.title;
+  }
 
   @override
   void dispose() {
@@ -400,14 +415,20 @@ class _CaptureRowState extends State<_CaptureRow> {
                   spacing: 6,
                   runSpacing: 6,
                   children: [
-                    if (item.kind == ProposedKind.note)
-                      _Pill(
-                        key: ValueKey('capture_kind_$i'),
-                        icon: LucideIcons.stickyNote,
-                        label: context.l10n.capture_note,
-                        color: scheme.primary,
-                        onTap: () => draft.toggleKind(i),
-                      ),
+                    // The kind can be switched both ways.
+                    _Pill(
+                      key: ValueKey('capture_kind_$i'),
+                      icon: item.kind == ProposedKind.note
+                          ? LucideIcons.stickyNote
+                          : LucideIcons.listTodo,
+                      label: item.kind == ProposedKind.note
+                          ? context.l10n.capture_note
+                          : context.l10n.todos,
+                      color: item.kind == ProposedKind.note
+                          ? scheme.primary
+                          : muted,
+                      onTap: () => draft.toggleKind(i),
+                    ),
                     if (item.kind == ProposedKind.task &&
                         item.priority != TodoPriority.none)
                       _Pill(

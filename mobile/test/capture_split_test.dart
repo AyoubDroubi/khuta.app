@@ -117,6 +117,23 @@ void main() {
     expect(splitClauses('اشتري خبز، والجمعة زيارة'), ['اشتري خبز', 'الجمعة زيارة']);
   });
 
+  test('review 3: words from والد keep their و', () {
+    expect(splitClauses('اشتري خبز، والدتي بدها دوا بكرة'),
+        ['اشتري خبز', 'والدتي بدها دوا بكرة']);
+    expect(splitClauses('اشتري خبز، والدي جاي'), ['اشتري خبز', 'والدي جاي']);
+  });
+
+  test('review 3: longer abbreviations do not end a sentence', () {
+    expect(splitClauses('meeting Mrs. Smith tomorrow at 5pm'),
+        ['meeting Mrs. Smith tomorrow at 5pm']);
+    expect(splitClauses('call Prof. Adams'), ['call Prof. Adams']);
+  });
+
+  test('review 3: "And remind me" splits in any letter case', () {
+    expect(splitClauses('Buy milk And Remind me to call Sam at 5pm'),
+        ['Buy milk', 'Remind me to call Sam at 5pm']);
+  });
+
   test('an abbreviation does not end a sentence', () {
     expect(splitClauses('زور د. أحمد بكرة'), ['زور د. أحمد بكرة']);
     expect(splitClauses('Call Dr. Smith at 3pm'), ['Call Dr. Smith at 3pm']);

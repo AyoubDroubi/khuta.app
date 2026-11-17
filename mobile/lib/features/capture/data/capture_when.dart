@@ -58,11 +58,11 @@ class ResolvedWhen {
 
 const _letters = captureLetters;
 
-const _dayPeriodWords =
-    'الصبح|الصباح|العصر|الظهر|المسا|المغرب|العشاء|العشا|بالليل';
+// Dialect and MSA period words, in folded spelling ("مساءً" is "مساءا" or
+// "مساء" once its marks are stripped). Longer forms come first.
 const _periodWords =
-    'الصبح|الصباح|صباحا|الفجر|بعد\\s+الظهر|الظهر|الضهر|العصر|المغرب|العشاء|'
-    'العشا|المسا|مساءا|مساء|بالليل|الليل';
+    'الصباح|الصبح|صباحا|الفجر|فجرا|بعد\\s+الظهر|الظهر|الضهر|ظهرا|العصر|عصرا|'
+    'المغرب|العشاء|العشا|المساء|المسا|مساءا|مساء|بالليل|الليل|ليلا';
 const _ampm = r'am|pm|a\.m\.?|p\.m\.?';
 const _period = '(?:$_periodWords|$_ampm)';
 
@@ -72,7 +72,8 @@ const _adjust = '(?:\\s*(?:و\\s*(?<adj>نصف|نص|ربع|ثلث)(?![$_letters]
 
 const _w = wordBounded;
 
-const _dayPart = '(?:\\s+(?<part>$_dayPeriodWords))?';
+// The same period words may follow a day word ("بكرة بعد الظهر").
+const _dayPart = '(?:\\s+(?<part>$_periodWords)(?![$_letters]))?';
 
 const _wd = r'(?:يوم\s+(?:ال)?|ال)';
 
@@ -131,6 +132,32 @@ const _hourWords = <String, int>{
   'احدعشر': 11,
   'اثنا عشر': 12,
   'اثنعشر': 12,
+  // Without ة, and the MSA ordinals ("الساعة الخامسة").
+  'واحد': 1,
+  'ثلاث': 3,
+  'تلات': 3,
+  'اربع': 4,
+  'خمس': 5,
+  'ست': 6,
+  'سبع': 7,
+  'ثمان': 8,
+  'تمن': 8,
+  'تسع': 9,
+  'عشر': 10,
+  'الواحده': 1,
+  'الثانيه': 2,
+  'الثالثه': 3,
+  'الرابعه': 4,
+  'الخامسه': 5,
+  'السادسه': 6,
+  'السابعه': 7,
+  'الثامنه': 8,
+  'التاسعه': 9,
+  'العاشره': 10,
+  'الحاديه عشره': 11,
+  'الحادي عشر': 11,
+  'الثانيه عشره': 12,
+  'الثاني عشر': 12,
 };
 
 final _hourWordPattern = (_hourWords.keys.toList()
@@ -183,12 +210,15 @@ WhenMatch findWhen(String folded) {
     }
   }
   String? dayPeriod;
+  var tonight = false;
   if (dayMatch != null) {
     spans.add((dayMatch.start, dayMatch.end));
     dayPeriod = dayMatch.namedGroup('part');
     final text = dayMatch.group(0)!;
-    if (dayPeriod == null && (text.contains('الليله') || text.contains('tonight'))) {
+    if (dayPeriod == null &&
+        (text.contains('الليله') || text.contains('tonight'))) {
       dayPeriod = 'بالليل';
+      tonight = true;
     }
   }
 
@@ -217,12 +247,14 @@ WhenMatch findWhen(String folded) {
         : int.parse(best.namedGroup('h')!);
     final minute = int.tryParse(_group(best, 'mi') ?? '0') ?? 0;
     if (hour != null && hour <= 23 && minute <= 59) {
-      final period = _group(best, 'per') ?? dayPeriod;
-      final r = _applyPeriod(hour, period);
+      final own = _group(best, 'per');
+      final r = _applyPeriod(hour, own ?? dayPeriod);
       var total = r.$1 * 60 + minute;
       final adj = _group(best, 'adj');
       final less = _group(best, 'less');
-      var night = r.$2;
+      // "tonight at 1am": a small morning hour said with tonight is the
+      // coming night, not this morning.
+      var night = r.$2 || (tonight && own != null && r.$1 <= 5);
       if (adj != null) {
         total += adj.startsWith('نص') ? 30 : (adj == 'ربع' ? 15 : 20);
       } else if (less != null) {
@@ -261,13 +293,17 @@ String? _group(RegExpMatch m, String name) =>
     case 'الصباح':
     case 'صباحا':
     case 'الفجر':
+    case 'فجرا':
     case 'am':
       return (hour == 12 ? 0 : hour, false);
     case 'الظهر':
     case 'الضهر':
+    case 'ظهرا':
       return (hour >= 1 && hour <= 5 ? hour + 12 : hour, false);
     case 'بعد الظهر':
     case 'العصر':
+    case 'عصرا':
+    case 'المساء':
     case 'المسا':
     case 'مساء':
     case 'مساءا':
@@ -278,9 +314,14 @@ String? _group(RegExpMatch m, String name) =>
       return (hour < 12 ? hour + 12 : hour, false);
     case 'بالليل':
     case 'الليل':
+    case 'ليلا':
       if (hour == 12) return (0, true);
       if (hour >= 1 && hour <= 5) return (hour, true);
       return (hour < 12 ? hour + 12 : hour, false);
+    case null:
+      // No period said: 1 to 6 o'clock is afternoon or evening ("الساعة 5"
+      // is 17:00), 7 to 12 is as said. The preview shows AM/PM to correct.
+      if (hour >= 1 && hour <= 6) return (hour + 12, false);
   }
   return (hour, false);
 }

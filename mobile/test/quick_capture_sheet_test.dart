@@ -216,4 +216,30 @@ void main() {
         .map((f) => f.controller!.text);
     expect(titles, ['اتصل بأمي']);
   });
+
+  testWidgets('review 3: a to-do can be turned into a note', (tester) async {
+    await _open(tester);
+    await _find(tester, 'اشتري خبز');
+    expect(find.text('Note'), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('capture_kind_0')));
+    await tester.pumpAndSettle();
+    expect(find.text('Note'), findsOneWidget);
+  });
+
+  testWidgets('review 3: a title capped by turning a note into a to-do shows capped',
+      (tester) async {
+    await _open(tester);
+    final long = 'ملاحظة: ${List.filled(120, 'كلمة').join(' ')}';
+    await tester.enterText(find.byKey(const Key('capture_input')), long);
+    await tester.pump();
+    await tester.tap(find.byKey(const Key('capture_find')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('capture_kind_0')));
+    await tester.pumpAndSettle();
+    final field = tester.widget<TextField>(find.descendant(
+      of: find.byKey(const ValueKey('capture_row_0')),
+      matching: find.byType(TextField),
+    ));
+    expect(field.controller!.text.length, lessThanOrEqualTo(300));
+  });
 }

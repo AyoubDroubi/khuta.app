@@ -22,7 +22,15 @@ final _separators = RegExp(
 final _markerBefore = RegExp(
   r'\s+(?=(?:و(?:بدي|لازم|ذكرني|نبهني)|وبعدين|وبعدها|ثم|and\s+remind\s+me)'
   '(?![$_letters]))',
+  caseSensitive: false,
 );
+
+// Common abbreviations whose dot does not end a sentence ("Mrs. Smith").
+final _abbreviation = RegExp(
+  r'(?<![A-Za-z])(Mrs|Mr|Ms|Dr|Prof|Eng|St|Jr|Sr|Mt|No|vs|etc)\.',
+  caseSensitive: false,
+);
+const _keptDot = '\u2024';
 
 final _dropWhole = RegExp(r'^(?:وبعدين|وبعدها|ثم)\s+');
 final _andRemind = RegExp(r'^and\s+(?=remind\s+me)', caseSensitive: false);
@@ -46,16 +54,28 @@ String _stripVav(String seg) {
   final word = foldLetters(rest.split(RegExp(r'\s+')).first);
   final hamza = 'أإآ'.contains(rest[0]);
   final conjunction =
-      word.startsWith('ال') || hamza || _verbsAfterVav.contains(word);
+      // "والدتي" (my mother) and "والدي" are words, not "and" + ال.
+      (word.startsWith('ال') && !word.startsWith('الد')) ||
+      hamza ||
+      _verbsAfterVav.contains(word);
   return conjunction ? rest : seg;
 }
 
 int _words(String s) => s.trim().isEmpty ? 0 : s.trim().split(RegExp(r'\s+')).length;
 
-List<String> splitClauses(String text) {
-  final pieces = <String>[];
+/// The clauses of [text], in order.
+List<String> splitClauses(String text) =>
+    [for (final c in splitClauseLinks(text)) c.text];
 
-  final parts = text.split(_separators);
+/// The clauses of [text], each with whether it followed "and then"
+/// (وبعدين، وبعدها، ثم): such a clause happens on the same day as the one
+/// before it.
+List<({String text, bool then})> splitClauseLinks(String text) {
+  final pieces = <({String text, bool then})>[];
+
+  final protected =
+      text.replaceAllMapped(_abbreviation, (m) => '${m[1]}$_keptDot');
+  final parts = protected.split(_separators);
   for (var p = 0; p < parts.length; p++) {
     final part = parts[p].trim();
     if (part.isEmpty) continue;
@@ -71,40 +91,47 @@ List<String> splitClauses(String text) {
 
     for (var s = 0; s < segments.length; s++) {
       var seg = segments[s].trim();
+      final then = _dropWhole.hasMatch(seg);
       seg = seg
           .replaceFirst(_dropWhole, '')
           .replaceFirst(_andRemind, '')
           .replaceFirst(_vavMarker, '');
       if (s == 0 && p > 0) seg = _stripVav(seg);
       seg = seg.replaceAll(RegExp(r'^[.!؟?\s]+|[.!؟?\s]+$'), '');
-      if (seg.isNotEmpty) pieces.add(seg);
+      if (seg.isNotEmpty) pieces.add((text: seg, then: then));
     }
     if (pieces.length > maxClauses * 3) break;
   }
 
-  final out = <String>[];
-  var pending = '';
-  for (var seg in pieces) {
-    if (pending.isNotEmpty) {
-      seg = '$pending $seg';
-      pending = '';
+  // A one-word piece joins its neighbour.
+  final out = <({String text, bool then})>[];
+  ({String text, bool then})? pending;
+  for (var piece in pieces) {
+    if (pending != null) {
+      piece = (text: '${pending.text} ${piece.text}', then: pending.then);
+      pending = null;
     }
-    if (_words(seg) < 2) {
+    if (_words(piece.text) < 2) {
       if (out.isNotEmpty) {
-        out[out.length - 1] = '${out.last} $seg';
+        out[out.length - 1] =
+            (text: '${out.last.text} ${piece.text}', then: out.last.then);
       } else {
-        pending = seg;
+        pending = piece;
       }
     } else {
-      out.add(seg);
+      out.add(piece);
     }
   }
-  if (pending.isNotEmpty) {
+  if (pending != null) {
     if (out.isNotEmpty) {
-      out[out.length - 1] = '${out.last} $pending';
+      out[out.length - 1] =
+          (text: '${out.last.text} ${pending.text}', then: out.last.then);
     } else {
       out.add(pending);
     }
   }
-  return out.take(maxClauses).toList();
+  return [
+    for (final c in out.take(maxClauses))
+      (text: c.text.replaceAll(_keptDot, '.'), then: c.then),
+  ];
 }

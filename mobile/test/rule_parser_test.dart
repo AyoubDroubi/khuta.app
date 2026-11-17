@@ -89,12 +89,6 @@ const _knownMisses = <String, String>{
   // is worse than one editable item); the model parser is for these.
   'بدي أشتري هدية وأحجز عند الدكتور يوم الخميس': 'lone و not split',
   'بدي أدفع القسط وأجدد الإقامة وأشتري خبز': 'lone و not split',
-  // A day or time said once for several items is not shared across clauses
-  // (design: left for later, the model parser's job).
-  'بكرة الصبح رياضة وبعدين أراجع الدرس': 'day not shared across clauses',
-  'الثلاثاء الساعة 10 الصبح مقابلة عمل ضروري وبعدين الساعة 2 العصر غداء مع ماما':
-      'day not shared across clauses',
-  'الجمعة الصبح صلاة الجمعة ثم زيارة الأهل': 'day not shared across clauses',
 };
 
 void main() {
@@ -186,6 +180,56 @@ void main() {
     final long = 'ملاحظة: ${List.filled(120, 'كلمة').join(' ')}';
     final items = await _parse(long);
     expect(items.single.title.length, greaterThan(maxTodoTitle));
+  });
+
+  group('review 3: notes', () {
+    test('a note about earlier today stays today, unflagged', () async {
+      final items = await const RuleParser().parse(
+        'ملاحظة الساعة 7 الصبح أخذت الدواء',
+        now: DateTime(2026, 11, 16, 10),
+        today: _today,
+      );
+      expect(items.single.kind, ProposedKind.note);
+      expect(items.single.day, DateTime(2026, 11, 16));
+      expect(items.single.timePassed, isFalse);
+    });
+
+    test('a note never carries a project or labels', () async {
+      const home = TodoTag(
+        id: 'p1',
+        name: 'Home',
+        color: Colors.red,
+        kind: TodoTagKind.project,
+      );
+      final items = await _parse('Note: Home needs paint', projects: [home]);
+      expect(items.single.kind, ProposedKind.note);
+      expect(items.single.project, '');
+      expect(items.single.tags, isEmpty);
+    });
+
+    test('a note after a leading day word is a note on that day', () async {
+      final items = await _parse('الخميس، ملاحظة: الاجتماع اتأجل');
+      expect(items.single.kind, ProposedKind.note);
+      expect(items.single.title, 'الاجتماع اتأجل');
+      expect(items.single.day, DateTime(2026, 11, 19));
+    });
+  });
+
+  group('review 3: "and then" keeps the same day', () {
+    test('a time after وبعدين is on the day said before it', () async {
+      final items = await _parse(
+          'بكرة الساعة 3 بعد الظهر غسيل السيارة وبعدين الساعة 6 عشا مع الأهل');
+      expect(items, hasLength(2));
+      expect(items[1].day, DateTime(2026, 11, 17));
+      expect(items[1].minutes, 1080);
+    });
+
+    test('ثم and وبعدها too, but a plain comma does not', () async {
+      final then = await _parse('الجمعة الصبح صلاة الجمعة ثم زيارة الأهل');
+      expect(then[1].day, DateTime(2026, 11, 20));
+      final comma = await _parse('اجتماع بكرة، اشتري خبز');
+      expect(comma[1].day, isNull);
+    });
   });
 
   test('a note is a note, with no priority', () async {

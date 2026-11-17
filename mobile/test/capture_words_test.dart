@@ -183,6 +183,32 @@ void main() {
       expect(_title('الساعة 5 ونصف العصر اجتماع'), 'اجتماع');
     });
 
+    test('review 3: "remind me" does not eat the next word', () {
+      expect(_title("Remind me Tom's birthday on Friday at 5pm"),
+          "Tom's birthday");
+      expect(_title('remind me onboarding docs tomorrow at 9am'),
+          'onboarding docs');
+    });
+
+    test('review 3: no preposition is left hanging by a removed day or time',
+        () {
+      expect(_title('call mom on friday'), 'call mom');
+      expect(_title('meeting on Friday at 10am'), 'meeting');
+      expect(_title('meeting on Friday with Sam'), 'meeting with Sam');
+      expect(_title('اجتماع في يوم الخميس'), 'اجتماع');
+      expect(_title('Remind me at 5pm to call mom'), 'call mom');
+      expect(_title('Remind me on Monday to pay rent at 9am'), 'pay rent');
+      expect(_title('remind me today to buy bread'), 'buy bread');
+    });
+
+    test('review 3: a note marker after a leading day is still a note', () {
+      expect(_title('الخميس ملاحظة: الاجتماع اتأجل'), 'الاجتماع اتأجل');
+    });
+
+    test('review 3: a leading "بس" is a filler', () {
+      expect(_title('مش ضروري بس رتب المكتب'), 'رتب المكتب');
+    });
+
     test('a clause that is only a day word has no title', () {
       expect(_title('بكرة'), '');
     });

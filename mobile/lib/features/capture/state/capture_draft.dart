@@ -26,6 +26,10 @@ class CaptureDraft extends ChangeNotifier {
   final List<int> _ids;
   bool _saving = false;
   bool _disposeAfterSave = false;
+  int _lastFailed = 0;
+
+  /// How many rows the last save could not write; they are still in [rows].
+  int get lastFailed => _lastFailed;
 
   /// Each row keeps its [id] while rows before it are removed.
   List<({int id, ProposedItem item, bool checked})> get rows => [
@@ -157,6 +161,7 @@ class CaptureDraft extends ChangeNotifier {
         journal: journal,
         today: today,
       );
+      _lastFailed = result.failed.length;
       // Match saved items back by row id, so a row edited during the save
       // still leaves the draft.
       final savedIds = {

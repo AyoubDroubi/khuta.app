@@ -23,7 +23,7 @@ final _high = RegExp('${_w('مهم|ضروري|ضروره|عاجل|urgent|importa
     '$_intensifier');
 final _remind = RegExp(_w('ذكرني|نبهني|remind\\s+me'));
 final _remindCut = RegExp(
-  '${_w(r'ذكرني|نبهني|remind\s+me')}(?:\\s+(?:on|at|to))*',
+  '${_w(r'ذكرني|نبهني|remind\s+me')}(?:\\s+(?:on|at|to)(?![$_letters]))*',
 );
 // Only at the start of the clause: "رد على ملاحظة أحمد" and "send a note to
 // Sara" are tasks that mention a note.
@@ -34,11 +34,15 @@ final _noteCut = _note;
 
 final _filler = RegExp(
   '^\\s*(?:و\\s*)?(?:بدي|بدنا|لازم|عندي|محتاج|i\\s+need\\s+to|i\\s+have\\s+to|'
-  'need\\s+to|i\\s+want\\s+to)(?![$_letters])\\s*',
+  'need\\s+to|i\\s+want\\s+to|to|بس)(?![$_letters])\\s*',
 );
 final _trailing = RegExp(
   '\\s+(?:وهاد|وهذا|وهاي|و|بس|ثم|and)\\s*\$',
 );
+// A preposition right before a removed day or time goes with it ("on Friday",
+// "في يوم الخميس"), so the title is not left with "call mom on".
+final _prepositionBefore = RegExp('(?<![$_letters])(?:on|at|in|by|في)\\s+\$');
+
 final _edges = RegExp(r'^[\s:،,.;؛!؟?\-]+|[\s:،,.;؛!؟?\-]+$');
 
 /// Low wins over high; no importance word means none.
@@ -74,17 +78,34 @@ final _nameCache = <String, RegExp>{};
   return (project: project, tags: tags);
 }
 
+/// [folded] with each of [spans] replaced by spaces (same length), so a check
+/// anchored at the start ("ملاحظة: ...") still sees past a leading day.
+String blankSpans(String folded, List<(int, int)> spans) {
+  final units = folded.codeUnits.toList();
+  for (final (start, end) in spans) {
+    for (var i = start; i < end && i < units.length; i++) {
+      units[i] = 0x20;
+    }
+  }
+  return String.fromCharCodes(units);
+}
+
 /// The item's title: [clause] without the [cutSpans] (indices into the folded
 /// clause, from `findWhen`), importance words, type words and leading fillers.
 /// Returns `''` when nothing is left.
 String buildTitle(String clause, List<(int, int)> cutSpans) {
   final folded = foldLetters(clause);
-  final ranges = <(int, int)>[...cutSpans];
-  for (final rx in [_low, _high, _remindCut, _noteCut]) {
+  final ranges = <(int, int)>[
+    for (final (start, end) in cutSpans)
+      (_prepositionBefore.firstMatch(folded.substring(0, start))?.start ?? start, end),
+  ];
+  for (final rx in [_low, _high, _remindCut]) {
     for (final m in rx.allMatches(folded)) {
       ranges.add((m.start, m.end));
     }
   }
+  final note = _noteCut.firstMatch(blankSpans(folded, cutSpans));
+  if (note != null) ranges.add((note.start, note.end));
   ranges.sort((a, b) => a.$1.compareTo(b.$1));
 
   final out = StringBuffer();
